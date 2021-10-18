@@ -1,3 +1,4 @@
+#General
 node_modules
 .env
 coverage

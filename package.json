@@ -1,14 +1,26 @@
 {
   "name": "evm-cross-deployer",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
+  "description": "Deploy your smart contracts across multiple EVM chains with the same deterministic address.",
   "author": "Pascal Marco Caversaccio",
   "license": "MIT",
+  "scripts": {
+    "test": "npx hardhat test"
+  },
+  "keywords": [
+    "create2",
+    "smart-contracts",
+    "solidity",
+    "deployment",
+    "ethereum"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pcaversaccio/evm-cross-deployer.git"
+  },
+  "bugs": {
+    "url": "https://github.com/pcaversaccio/evm-cross-deployer/issues"
+  },
   "devDependencies": {
     "@nomiclabs/hardhat-ethers": "^2.0.0",
     "@nomiclabs/hardhat-etherscan": "^2.1.3",
