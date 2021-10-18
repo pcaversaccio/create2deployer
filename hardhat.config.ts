@@ -29,6 +29,9 @@ const config: HardhatUserConfig = {
     },
   },
   networks: {
+    hardhat: {
+      initialBaseFeePerGas: 0,
+    },
     rinkeby: {
       url: process.env.RINKEBY_URL || "",
       accounts:

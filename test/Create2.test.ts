@@ -1,4 +1,5 @@
 import { artifacts, contract, web3 } from "hardhat";
+import { computeCreate2Address } from "@eth-sdk/utils";
 
 const {
   balance,
@@ -39,9 +40,9 @@ contract("Create2", function (accounts) {
         web3.utils.soliditySha3(constructorByteCode)
       );
       const offChainComputed = computeCreate2Address(
+        this.factory.address,
         saltHex,
-        constructorByteCode,
-        this.factory.address
+        constructorByteCode
       );
       expect(onChainComputed).to.equal(offChainComputed);
     });
@@ -53,9 +54,9 @@ contract("Create2", function (accounts) {
         deployerAccount
       );
       const offChainComputed = computeCreate2Address(
+        deployerAccount,
         saltHex,
-        constructorByteCode,
-        deployerAccount
+        constructorByteCode
       );
       expect(onChainComputed).to.equal(offChainComputed);
     });
@@ -64,9 +65,9 @@ contract("Create2", function (accounts) {
   describe("deploy", function () {
     it("deploys a ERC1820Implementer from inline assembly code", async function () {
       const offChainComputed = computeCreate2Address(
+        this.factory.address,
         saltHex,
-        ERC1820Implementer.bytecode,
-        this.factory.address
+        ERC1820Implementer.bytecode
       );
       await this.factory.deployERC1820Implementer(0, saltHex);
       expect(ERC1820Implementer.bytecode).to.include(
@@ -76,9 +77,9 @@ contract("Create2", function (accounts) {
 
     it("deploys a ERC20Mock with correct balances", async function () {
       const offChainComputed = computeCreate2Address(
+        this.factory.address,
         saltHex,
-        constructorByteCode,
-        this.factory.address
+        constructorByteCode
       );
 
       await this.factory.deploy(0, saltHex, constructorByteCode);
@@ -137,13 +138,3 @@ contract("Create2", function (accounts) {
     });
   });
 });
-
-function computeCreate2Address(saltHex: any, bytecode: any, deployer: any) {
-  const arr = ["0xff", deployer, saltHex, web3.utils.soliditySha3(bytecode)];
-  const concat = arr.join("");
-  const h1 = `0x${concat}`;
-  const clean = h1.split(/0x/).join("");
-  return web3.utils.toChecksumAddress(
-    `0x${web3.utils.soliditySha3(clean).slice(-40)}`
-  );
-}
