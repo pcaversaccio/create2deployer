@@ -137,4 +137,46 @@ contract("Create2", function (accounts) {
       );
     });
   });
+
+  describe("pause", function () {
+    it("success", async function () {
+      expect(await this.factory.pause({ from: accounts[0] }));
+    });
+    it("prevents non-owners from executing", async function () {
+      await expectRevert(
+        this.factory.pause({ from: accounts[1] }),
+        "Ownable: caller is not the owner"
+      );
+    });
+  });
+
+  describe("unpause", function () {
+    it("success", async function () {
+      await this.factory.pause({ from: accounts[0] });
+      expect(await this.factory.unpause({ from: accounts[0] }));
+    });
+    it("prevents non-owners from executing", async function () {
+      await this.factory.pause({ from: accounts[0] });
+      await expectRevert(
+        this.factory.unpause({ from: accounts[1] }),
+        "Ownable: caller is not the owner"
+      );
+    });
+  });
+
+  describe("killCreate2Deployer", function () {
+    it("success", async function () {
+      expect(
+        await this.factory.killCreate2Deployer(accounts[0], {
+          from: accounts[0],
+        })
+      );
+    });
+    it("prevents non-owners from executing", async function () {
+      await expectRevert(
+        this.factory.killCreate2Deployer(accounts[0], { from: accounts[1] }),
+        "Ownable: caller is not the owner"
+      );
+    });
+  });
 });
