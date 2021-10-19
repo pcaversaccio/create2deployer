@@ -38,7 +38,14 @@ All files             |      100 |      100 |      100 |      100 |             
 - Kovan: [`0xbe9eb78b9fB4eD9e11e3dedB5B3d324Ea8dF6544`](https://kovan.etherscan.io/address/0xbe9eb78b9fB4eD9e11e3dedB5B3d324Ea8dF6544)
 - Goerli: [`0xd411B211bCD6DE869570238FEBb4EfF7f3c6d1D1`](https://goerli.etherscan.io/address/0xd411B211bCD6DE869570238FEBb4EfF7f3c6d1D1)
 
+## Hardhat: Programmatic Deployment
+TBD
+
+## Truffle: Programmatic Deployment
+TBD
+
 ## TO DOS
 - Frontend
 - Automatic download of OpenZeppelin dependencies (similar to Remix)
 - Implement automatic smart contract verification (for Etherscan supported chains)
+- Using programmatically 
