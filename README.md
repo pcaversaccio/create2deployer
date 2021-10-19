@@ -1,6 +1,10 @@
 # EVM Cross Deployer
 Deploy your smart contracts across multiple EVM chains with the same deterministic address.
 
+<div align="center">
+  <img src="assets/img/distribution.jpg" alt="A very fancy meme" width="80%" />
+</div>
+
 ## Unit Tests
 Since [Hardhat](https://hardhat.org) implements great features for Solidity debugging like Solidity stack traces, console.log, and explicit error messages when transactions fail, we leverage [Hardhat](https://hardhat.org) for testing:
 ```bash
@@ -31,3 +35,4 @@ All files             |      100 |      100 |      100 |      100 |             
 - Kovan: `[]()`
 - Goerli: `[]()`
 
+## TO DOS 
