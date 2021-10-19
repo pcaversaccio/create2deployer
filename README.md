@@ -30,10 +30,10 @@ All files             |      100 |      100 |      100 |      100 |             
 > **Important:** A test coverage of 100% does not mean that there are no vulnerabilities. What really counts is the quality and spectrum of the tests themselves. This project is in beta, use at your own risk!
 
 ## Test Deployments
-- Rinkeby: `[]()`
-- Ropsten: `[]()`
-- Kovan: `[]()`
-- Goerli: `[]()`
+- Rinkeby: `[0xCBb870898c2b41b431E0007F20d47fadDF2C1BDB](https://rinkeby.etherscan.io/address/0xCBb870898c2b41b431E0007F20d47fadDF2C1BDB)`
+- Ropsten: `[0xcAb9c567C02db1907372201897c56E0c18F4183d](https://ropsten.etherscan.io/address/0xcAb9c567C02db1907372201897c56E0c18F4183d)`
+- Kovan: `[0xbe9eb78b9fB4eD9e11e3dedB5B3d324Ea8dF6544](https://kovan.etherscan.io/address/0xbe9eb78b9fB4eD9e11e3dedB5B3d324Ea8dF6544)`
+- Goerli: `[0xd411B211bCD6DE869570238FEBb4EfF7f3c6d1D1](https://goerli.etherscan.io/address/0xd411B211bCD6DE869570238FEBb4EfF7f3c6d1D1)`
 
 ## TO DOS
 - Frontend
