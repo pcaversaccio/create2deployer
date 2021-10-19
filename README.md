@@ -1,4 +1,7 @@
 # EVM Cross Deployer
+[![build status](https://github.com/pcaversaccio/evm-cross-deployer/actions/workflows/test-contracts.yml/badge.svg)](https://github.com/pcaversaccio/evm-cross-deployer/actions)
+![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)
+
 Deploy your smart contracts across multiple EVM chains with the same deterministic address.
 
 <div align="center">
