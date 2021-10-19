@@ -24,29 +24,119 @@ task("accounts", "Prints the list of accounts", async (taskArgs, hre) => {
 task("xdeploy", "Deploys the contract across all test networks")
   .addParam("contract", "The to be deployed contract's name")
   .addParam("salt", "Salt message")
-  .addOptionalParam("deployargs", "Path to constructor arguments")
+  .addParam("deployargs", "Path to constructor arguments, formatted as array")
   .setAction(async (taskArgs, hre) => {
-    const provider = new hre.ethers.providers.JsonRpcProvider(
+    // RINKEBY
+    const providerRinkeby = new hre.ethers.providers.JsonRpcProvider(
       process.env.RINKEBY_URL
     );
-    const wallet = new hre.ethers.Wallet(process.env.PRIVATE_KEY, provider);
-    const signer = wallet.connect(provider);
+    const walletRinkeby = new hre.ethers.Wallet(
+      process.env.PRIVATE_KEY,
+      providerRinkeby
+    );
+    const signerRinkeby = walletRinkeby.connect(providerRinkeby);
     const create2DeployerRinkeby = new hre.ethers.Contract(
       data.rinkeby,
       abi,
-      signer
+      signerRinkeby
     );
 
+    // ROPSTEN
+    const providerRopsten = new hre.ethers.providers.JsonRpcProvider(
+      process.env.ROPSTEN_URL
+    );
+    const walletRopsten = new hre.ethers.Wallet(
+      process.env.PRIVATE_KEY,
+      providerRopsten
+    );
+    const signerRopsten = walletRopsten.connect(providerRopsten);
+    const create2DeployerRopsten = new hre.ethers.Contract(
+      data.ropsten,
+      abi,
+      signerRopsten
+    );
+
+    // KOVAN
+    const providerKovan = new hre.ethers.providers.JsonRpcProvider(
+      process.env.KOVAN_URL
+    );
+    const walletKovan = new hre.ethers.Wallet(
+      process.env.PRIVATE_KEY,
+      providerKovan
+    );
+    const signerKovan = walletKovan.connect(providerKovan);
+    const create2DeployerKovan = new hre.ethers.Contract(
+      data.kovan,
+      abi,
+      signerKovan
+    );
+
+    // GOERLI
+    const providerGoerli = new hre.ethers.providers.JsonRpcProvider(
+      process.env.GOERLI_URL
+    );
+    const walletGoerli = new hre.ethers.Wallet(
+      process.env.PRIVATE_KEY,
+      providerGoerli
+    );
+    const signerGoerli = walletGoerli.connect(providerGoerli);
+    const create2DeployerGoerli = new hre.ethers.Contract(
+      data.goerli,
+      abi,
+      signerGoerli
+    );
+
+    // Create contract instance and retrieve creation bytecode including constructor arguments
     const args = require(taskArgs.deployargs);
     const Contract = await hre.ethers.getContractFactory(taskArgs.contract);
     const initcode = await Contract.getDeployTransaction(...args);
+
+    // RINKBEY DEPLOYMENT
+    const createReceiptRinkeby = await create2DeployerRinkeby.deploy(
+      0,
+      hre.ethers.utils.id(taskArgs.salt),
+      initcode.data,
+      { gasLimit: 10 ** 6 }
+    );
+    await createReceiptRinkeby.wait();
     console.log(
-      await create2DeployerRinkeby.deploy(
-        0,
-        hre.ethers.utils.id(taskArgs.salt),
-        initcode.data,
-        { gasLimit: 10 ** 6 }
-      )
+      `Rinkeby deployment successful with hash: ${createReceiptRinkeby.hash}`
+    );
+
+    // ROPSTEN DEPLOYMENT
+    const createReceiptRopsten = await create2DeployerRopsten.deploy(
+      0,
+      hre.ethers.utils.id(taskArgs.salt),
+      initcode.data,
+      { gasLimit: 10 ** 6 }
+    );
+    await createReceiptRopsten.wait();
+    console.log(
+      `Ropsten deployment successful with hash: ${createReceiptRopsten.hash}`
+    );
+
+    // KOVAN DEPLOYMENT
+    const createReceiptKovan = await create2DeployerKovan.deploy(
+      0,
+      hre.ethers.utils.id(taskArgs.salt),
+      initcode.data,
+      { gasLimit: 10 ** 6 }
+    );
+    await createReceiptKovan.wait();
+    console.log(
+      `Kovan deployment successful with hash: ${createReceiptKovan.hash}`
+    );
+
+    // GOERLI DEPLOYMENT
+    const createReceiptGoerli = await create2DeployerGoerli.deploy(
+      0,
+      hre.ethers.utils.id(taskArgs.salt),
+      initcode.data,
+      { gasLimit: 10 ** 6 }
+    );
+    await createReceiptGoerli.wait();
+    console.log(
+      `Goerli deployment successful with hash: ${createReceiptGoerli.hash}`
     );
   });
 

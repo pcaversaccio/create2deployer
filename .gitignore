@@ -9,3 +9,6 @@ bin
 #Hardhat files
 cache
 artifacts
+
+#Private keys
+secrets.txt

@@ -32,11 +32,11 @@ All files             |      100 |      100 |      100 |      100 |             
 ```
 > **Important:** A test coverage of 100% does not mean that there are no vulnerabilities. What really counts is the quality and spectrum of the tests themselves. This project is in beta, use at your own risk!
 
-## Test Deployments
-- Rinkeby: [`0xCBb870898c2b41b431E0007F20d47fadDF2C1BDB`](https://rinkeby.etherscan.io/address/0xCBb870898c2b41b431E0007F20d47fadDF2C1BDB)
-- Ropsten: [`0xcAb9c567C02db1907372201897c56E0c18F4183d`](https://ropsten.etherscan.io/address/0xcAb9c567C02db1907372201897c56E0c18F4183d)
-- Kovan: [`0xbe9eb78b9fB4eD9e11e3dedB5B3d324Ea8dF6544`](https://kovan.etherscan.io/address/0xbe9eb78b9fB4eD9e11e3dedB5B3d324Ea8dF6544)
-- Goerli: [`0xd411B211bCD6DE869570238FEBb4EfF7f3c6d1D1`](https://goerli.etherscan.io/address/0xd411B211bCD6DE869570238FEBb4EfF7f3c6d1D1)
+## Test Deployments `Create2Deployer`
+- Rinkeby: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://rinkeby.etherscan.io/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
+- Ropsten: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://ropsten.etherscan.io/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
+- Kovan: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://kovan.etherscan.io/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
+- Goerli: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://goerli.etherscan.io/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
 
 ## Hardhat: Programmatic Deployment
 TBD
@@ -44,8 +44,12 @@ TBD
 ## Truffle: Programmatic Deployment
 TBD
 
+### Example
+
 ## TO DOS
 - Frontend
 - Automatic download of OpenZeppelin dependencies (similar to Remix)
 - Implement automatic smart contract verification (for Etherscan supported chains)
-- Using programmatically 
+- Using programmatically [WIP]
+- Proper error handling
+- Fix big number issue with constructor args
