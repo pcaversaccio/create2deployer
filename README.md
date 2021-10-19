@@ -39,7 +39,29 @@ All files             |      100 |      100 |      100 |      100 |             
 - Goerli: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://goerli.etherscan.io/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
 
 ## Hardhat: Programmatic Deployment
-TBD
+Simply run `npx hardhat help xdeploy`:
+```bash
+Usage: hardhat [GLOBAL OPTIONS] xdeploy --contract <STRING> --deployargs <STRING> --salt <STRING>
+
+OPTIONS:
+
+  --contract    Contract name
+  --deployargs  Path to constructor arguments (formatted as array)
+  --salt        Salt message
+
+xdeploy: Deploys the contract across all test networks
+```
+
+Example:
+```bash
+npx hardhat xdeploy --contract "ERC20Mock" --salt "WAGMI" --deployargs "./contracts/mocks/deploy-args.json"
+```
+>*Note:* Using exactly the same salt (`"WAGMI"`) and the mock contract (`"ERC20Mock"`) as above will lead to a transaction revert since a contract has already been deployed to the computed address. Just use another salt and it will work as promised 😀.
+
+The above example deployed the `ERC20Mock` smart contract (including the constructor arguments) across all live test networks at the address `0x13b0d85ccb8bf860b6b79af3029fca081ae9bef2` using only one single CLI instruction!
+<div align="center">
+  <img src="assets/img/blockscan.png" alt="A very fancy screenshot" width="80%" />
+</div>
 
 ## Truffle: Programmatic Deployment
 TBD

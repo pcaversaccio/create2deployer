@@ -22,9 +22,9 @@ task("accounts", "Prints the list of accounts", async (taskArgs, hre) => {
 });
 
 task("xdeploy", "Deploys the contract across all test networks")
-  .addParam("contract", "The to be deployed contract's name")
+  .addParam("contract", "Contract name")
   .addParam("salt", "Salt message")
-  .addParam("deployargs", "Path to constructor arguments, formatted as array")
+  .addParam("deployargs", "Path to constructor arguments (formatted as array)")
   .setAction(async (taskArgs, hre) => {
     // RINKEBY
     const providerRinkeby = new hre.ethers.providers.JsonRpcProvider(
