@@ -1,10 +1,11 @@
 // SPDX-License-Identifier: MIT
+// Source: https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/mocks/ERC20Mock.sol
 
 pragma solidity ^0.8.4;
 
 import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 
-// mock class using ERC20
+// Mock class using ERC20
 contract ERC20Mock is ERC20 {
     constructor(
         string memory name,
