@@ -35,4 +35,7 @@ All files             |      100 |      100 |      100 |      100 |             
 - Kovan: `[]()`
 - Goerli: `[]()`
 
-## TO DOS 
+## TO DOS
+- Frontend
+- Automatic download of OpenZeppelin dependencies (similar to Remix)
+- Implement automatic smart contract verification (for Etherscan supported chains)
