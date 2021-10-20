@@ -1,6 +1,6 @@
 import * as dotenv from "dotenv";
 import * as data from "./deployments/addresses.json";
-import abi from "./deployments/abi/contracts/Create2Deployer.sol/Create2Deployer.json";
+import abi from "./deployments/abi/Create2Deployer.json";
 
 import { HardhatUserConfig, task } from "hardhat/config";
 import "@nomiclabs/hardhat-truffle5";
@@ -190,8 +190,8 @@ const config: HardhatUserConfig = {
   abiExporter: {
     path: "deployments/abi",
     clear: false,
-    flat: false,
-    only: [":Create2Deployer$"],
+    flat: true,
+    only: ["Create2Deployer"],
     spacing: 2,
     pretty: true,
   },
