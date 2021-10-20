@@ -1,6 +1,5 @@
 import * as dotenv from "dotenv";
-import * as data from "./deployments/addresses.json";
-import abi from "./deployments/abi/Create2Deployer.json";
+import abi from "./abi/Create2Deployer.json";
 
 import { HardhatUserConfig, task } from "hardhat/config";
 import "@nomiclabs/hardhat-truffle5";
@@ -12,6 +11,8 @@ import "solidity-coverage";
 import "hardhat-abi-exporter";
 
 dotenv.config();
+
+const create2DeployerAddress = "0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2";
 
 task("accounts", "Prints the list of accounts", async (taskArgs, hre) => {
   const accounts = await hre.ethers.getSigners();
@@ -36,7 +37,7 @@ task("xdeploy", "Deploys the contract across all test networks")
     );
     const signerRinkeby = walletRinkeby.connect(providerRinkeby);
     const create2DeployerRinkeby = new hre.ethers.Contract(
-      data.rinkeby,
+      create2DeployerAddress,
       abi,
       signerRinkeby
     );
@@ -51,7 +52,7 @@ task("xdeploy", "Deploys the contract across all test networks")
     );
     const signerRopsten = walletRopsten.connect(providerRopsten);
     const create2DeployerRopsten = new hre.ethers.Contract(
-      data.ropsten,
+      create2DeployerAddress,
       abi,
       signerRopsten
     );
@@ -66,7 +67,7 @@ task("xdeploy", "Deploys the contract across all test networks")
     );
     const signerKovan = walletKovan.connect(providerKovan);
     const create2DeployerKovan = new hre.ethers.Contract(
-      data.kovan,
+      create2DeployerAddress,
       abi,
       signerKovan
     );
@@ -81,7 +82,7 @@ task("xdeploy", "Deploys the contract across all test networks")
     );
     const signerGoerli = walletGoerli.connect(providerGoerli);
     const create2DeployerGoerli = new hre.ethers.Contract(
-      data.goerli,
+      create2DeployerAddress,
       abi,
       signerGoerli
     );
@@ -188,7 +189,7 @@ const config: HardhatUserConfig = {
     apiKey: process.env.ETHERSCAN_API_KEY,
   },
   abiExporter: {
-    path: "deployments/abi",
+    path: "abi",
     clear: false,
     flat: true,
     only: ["Create2Deployer"],

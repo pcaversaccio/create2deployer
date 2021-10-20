@@ -64,7 +64,7 @@ The above example deployed the `ERC20Mock` smart contract (including the constru
 </div>
 
 ## Truffle: Programmatic Deployment
-TBD
+Use hardhat plugin: https://hardhat.org/plugins/nomiclabs-hardhat-truffle5.html.
 
 ### Example
 
@@ -75,3 +75,13 @@ TBD
 - Using programmatically [WIP]
 - Proper error handling
 - Fix big number issue with constructor args
+
+The overall goal is to build a hardhat plugin that can be used via a simple configuration:
+```bash
+xdeploy: {
+  networks: ["rinkeby", "kovan", "ropsten", "goerli"],
+  contract: ["ERC20Mock"],
+  deployargs: ["./contracts/mocks/deploy-args.json"],
+  salt: ["WAGMI"]
+}
+```
