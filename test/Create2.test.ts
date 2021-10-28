@@ -7,8 +7,10 @@ const {
   ether,
   expectRevert,
   send,
+// eslint-disable-next-line @typescript-eslint/no-var-requires
 } = require("@openzeppelin/test-helpers");
 
+// eslint-disable-next-line @typescript-eslint/no-var-requires
 const { expect } = require("chai");
 
 const Create2Deployer = artifacts.require("Create2Deployer");

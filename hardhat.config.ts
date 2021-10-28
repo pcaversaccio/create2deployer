@@ -1,5 +1,4 @@
 import * as dotenv from "dotenv";
-import abi from "./abi/Create2Deployer.json";
 
 import { HardhatUserConfig, task } from "hardhat/config";
 import "@nomiclabs/hardhat-truffle5";
@@ -8,11 +7,8 @@ import "@nomiclabs/hardhat-waffle";
 import "@typechain/hardhat";
 import "hardhat-gas-reporter";
 import "solidity-coverage";
-import "hardhat-abi-exporter";
 
 dotenv.config();
-
-const create2DeployerAddress = "0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2";
 
 task("accounts", "Prints the list of accounts", async (taskArgs, hre) => {
   const accounts = await hre.ethers.getSigners();
@@ -21,125 +17,6 @@ task("accounts", "Prints the list of accounts", async (taskArgs, hre) => {
     console.log(account.address);
   }
 });
-
-task("xdeploy", "Deploys the contract across all test networks")
-  .addParam("contract", "Contract name")
-  .addParam("salt", "Salt message")
-  .addParam("deployargs", "Path to constructor arguments (formatted as array)")
-  .setAction(async (taskArgs, hre) => {
-    // RINKEBY
-    const providerRinkeby = new hre.ethers.providers.JsonRpcProvider(
-      process.env.RINKEBY_URL
-    );
-    const walletRinkeby = new hre.ethers.Wallet(
-      process.env.PRIVATE_KEY,
-      providerRinkeby
-    );
-    const signerRinkeby = walletRinkeby.connect(providerRinkeby);
-    const create2DeployerRinkeby = new hre.ethers.Contract(
-      create2DeployerAddress,
-      abi,
-      signerRinkeby
-    );
-
-    // ROPSTEN
-    const providerRopsten = new hre.ethers.providers.JsonRpcProvider(
-      process.env.ROPSTEN_URL
-    );
-    const walletRopsten = new hre.ethers.Wallet(
-      process.env.PRIVATE_KEY,
-      providerRopsten
-    );
-    const signerRopsten = walletRopsten.connect(providerRopsten);
-    const create2DeployerRopsten = new hre.ethers.Contract(
-      create2DeployerAddress,
-      abi,
-      signerRopsten
-    );
-
-    // KOVAN
-    const providerKovan = new hre.ethers.providers.JsonRpcProvider(
-      process.env.KOVAN_URL
-    );
-    const walletKovan = new hre.ethers.Wallet(
-      process.env.PRIVATE_KEY,
-      providerKovan
-    );
-    const signerKovan = walletKovan.connect(providerKovan);
-    const create2DeployerKovan = new hre.ethers.Contract(
-      create2DeployerAddress,
-      abi,
-      signerKovan
-    );
-
-    // GOERLI
-    const providerGoerli = new hre.ethers.providers.JsonRpcProvider(
-      process.env.GOERLI_URL
-    );
-    const walletGoerli = new hre.ethers.Wallet(
-      process.env.PRIVATE_KEY,
-      providerGoerli
-    );
-    const signerGoerli = walletGoerli.connect(providerGoerli);
-    const create2DeployerGoerli = new hre.ethers.Contract(
-      create2DeployerAddress,
-      abi,
-      signerGoerli
-    );
-
-    // Create contract instance and retrieve creation bytecode including constructor arguments
-    const args = require(taskArgs.deployargs);
-    const Contract = await hre.ethers.getContractFactory(taskArgs.contract);
-    const initcode = await Contract.getDeployTransaction(...args);
-
-    // RINKBEY DEPLOYMENT
-    const createReceiptRinkeby = await create2DeployerRinkeby.deploy(
-      0,
-      hre.ethers.utils.id(taskArgs.salt),
-      initcode.data,
-      { gasLimit: 10 ** 6 }
-    );
-    await createReceiptRinkeby.wait();
-    console.log(
-      `Rinkeby deployment successful with hash: ${createReceiptRinkeby.hash}`
-    );
-
-    // ROPSTEN DEPLOYMENT
-    const createReceiptRopsten = await create2DeployerRopsten.deploy(
-      0,
-      hre.ethers.utils.id(taskArgs.salt),
-      initcode.data,
-      { gasLimit: 10 ** 6 }
-    );
-    await createReceiptRopsten.wait();
-    console.log(
-      `Ropsten deployment successful with hash: ${createReceiptRopsten.hash}`
-    );
-
-    // KOVAN DEPLOYMENT
-    const createReceiptKovan = await create2DeployerKovan.deploy(
-      0,
-      hre.ethers.utils.id(taskArgs.salt),
-      initcode.data,
-      { gasLimit: 10 ** 6 }
-    );
-    await createReceiptKovan.wait();
-    console.log(
-      `Kovan deployment successful with hash: ${createReceiptKovan.hash}`
-    );
-
-    // GOERLI DEPLOYMENT
-    const createReceiptGoerli = await create2DeployerGoerli.deploy(
-      0,
-      hre.ethers.utils.id(taskArgs.salt),
-      initcode.data,
-      { gasLimit: 10 ** 6 }
-    );
-    await createReceiptGoerli.wait();
-    console.log(
-      `Goerli deployment successful with hash: ${createReceiptGoerli.hash}`
-    );
-  });
 
 const config: HardhatUserConfig = {
   solidity: {
@@ -180,21 +57,49 @@ const config: HardhatUserConfig = {
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
+    bsctestnet: {
+      url: "https://data-seed-prebsc-1-s1.binance.org:8545", // Publicly known RPC
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
+    fantomtestnet: {
+      url: "https://rpc.testnet.fantom.network", // Publicly known RPC
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
+    hecoinfotestnet: {
+      url: "https://http-testnet.hecochain.com", // Publicly known RPC
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
+    optimismtestnet: {
+      url: process.env.OPTIMISM_TESTNET_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
+    mumbai: {
+      url: process.env.MUMBAI_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
+    arbitrumtestnet: {
+      url: process.env.ARBITRUM_TESTNET_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
   },
   gasReporter: {
     enabled: process.env.REPORT_GAS !== undefined,
     currency: "USD",
   },
   etherscan: {
-    apiKey: process.env.ETHERSCAN_API_KEY,
-  },
-  abiExporter: {
-    path: "abi",
-    clear: false,
-    flat: true,
-    only: ["Create2Deployer"],
-    spacing: 2,
-    pretty: true,
+    // apiKey: process.env.ETHERSCAN_API_KEY, // For Ethereum
+    // apiKey: process.env.BSC_API_KEY // For BSC
+    // apiKey: process.env.OPTIMISM_API_KEY // For Optimism
+    // apiKey: process.env.ARBITRUM_API_KEY // For Arbitrum
+    // apiKey: process.env.POLYGON_API_KEY // For Polygon
+    // apiKey: process.env.HECOINFO_API_KEY // For HecoInfo
+    apiKey: process.env.FANTOM_API_KEY // For Fantom
   },
 };
 
