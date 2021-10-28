@@ -3,7 +3,7 @@
 [![build status](https://github.com/pcaversaccio/evm-cross-deployer/actions/workflows/test-contracts.yml/badge.svg)](https://github.com/pcaversaccio/evm-cross-deployer/actions)
 ![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)
 
-Helper smart contract to make easier and safer usage of the `CREATE2` EVM opcode. `CREATE2` can be used to compute in advance the address where a smart contract will be deployed, which allows for interesting new mechanisms known as *counterfactual interactions*.
+Helper smart contract to make easier and safer usage of the `CREATE2` EVM opcode. `CREATE2` can be used to compute in advance the address where a smart contract will be deployed, which allows for interesting new mechanisms known as _counterfactual interactions_.
 
 <div align="center">
   <img src="assets/img/distribution.jpg" alt="A very fancy meme" width="80%" />

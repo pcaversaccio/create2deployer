@@ -62,18 +62,13 @@ const config: HardhatUserConfig = {
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
-    fantomtestnet: {
-      url: "https://rpc.testnet.fantom.network", // Publicly known RPC
-      accounts:
-        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
-    },
-    hecoinfotestnet: {
-      url: "https://http-testnet.hecochain.com", // Publicly known RPC
-      accounts:
-        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
-    },
     optimismtestnet: {
       url: process.env.OPTIMISM_TESTNET_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
+    arbitrumtestnet: {
+      url: process.env.ARBITRUM_TESTNET_URL || "",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
@@ -82,8 +77,13 @@ const config: HardhatUserConfig = {
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
-    arbitrumtestnet: {
-      url: process.env.ARBITRUM_TESTNET_URL || "",
+    hecoinfotestnet: {
+      url: "https://http-testnet.hecochain.com", // Publicly known RPC
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
+    fantomtestnet: {
+      url: "https://rpc.testnet.fantom.network", // Publicly known RPC
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
