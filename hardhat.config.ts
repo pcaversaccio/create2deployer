@@ -99,7 +99,7 @@ const config: HardhatUserConfig = {
     // apiKey: process.env.ARBITRUM_API_KEY // For Arbitrum
     // apiKey: process.env.POLYGON_API_KEY // For Polygon
     // apiKey: process.env.HECOINFO_API_KEY // For HecoInfo
-    apiKey: process.env.FANTOM_API_KEY // For Fantom
+    apiKey: process.env.FANTOM_API_KEY, // For Fantom
   },
 };
 

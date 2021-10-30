@@ -7,7 +7,7 @@ const {
   ether,
   expectRevert,
   send,
-// eslint-disable-next-line @typescript-eslint/no-var-requires
+  // eslint-disable-next-line @typescript-eslint/no-var-requires
 } = require("@openzeppelin/test-helpers");
 
 // eslint-disable-next-line @typescript-eslint/no-var-requires

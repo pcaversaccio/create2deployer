@@ -38,8 +38,8 @@
     "deploy:fantomtestnet": "npx hardhat run --network fantomtestnet scripts/deploy.ts",
     "lint:check": "npx eslint **/*.{js,ts}",
     "lint:fix": "npx eslint **/*.{js,ts} --fix",
-    "prettier:check": "prettier -c **/*.{json,sol,md}",
-    "prettier:fix": "prettier --write **/*.{json,sol,md}",
+    "prettier:check": "prettier -c **/*.{js,ts}",
+    "prettier:fix": "prettier --write **/*.{js,ts}",
     "solhint:check": "npx solhint 'contracts/**/*.sol'",
     "solhint:fix": "npx solhint 'contracts/**/*.sol' --fix"
   },
