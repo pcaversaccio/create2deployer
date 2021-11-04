@@ -87,19 +87,25 @@ const config: HardhatUserConfig = {
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
+    fuji: {
+      url: "https://api.avax-test.network/ext/bc/C/rpc", // Publicly known RPC
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
   },
   gasReporter: {
     enabled: process.env.REPORT_GAS !== undefined,
     currency: "USD",
   },
   etherscan: {
-    // apiKey: process.env.ETHERSCAN_API_KEY, // For Ethereum
-    // apiKey: process.env.BSC_API_KEY // For BSC
-    // apiKey: process.env.OPTIMISM_API_KEY // For Optimism
-    // apiKey: process.env.ARBITRUM_API_KEY // For Arbitrum
-    // apiKey: process.env.POLYGON_API_KEY // For Polygon
-    // apiKey: process.env.HECOINFO_API_KEY // For HecoInfo
-    apiKey: process.env.FANTOM_API_KEY, // For Fantom
+    // apiKey: process.env.ETHERSCAN_API_KEY, // For Rinkeby, Ropsten, Kovan, Goerli, Mainnet
+    // apiKey: process.env.BSC_API_KEY // For BSC testnet
+    // apiKey: process.env.OPTIMISM_API_KEY // For Optimism testnet
+    // apiKey: process.env.ARBITRUM_API_KEY // For Arbitrum testnet
+    // apiKey: process.env.POLYGON_API_KEY // For Polygon testnet
+    // apiKey: process.env.HECOINFO_API_KEY // For HecoInfo testnet
+    // apiKey: process.env.FANTOM_API_KEY, // For Fantom testnet
+    apiKey: process.env.FUJI_API_KEY, // For Avalanche testnet
   },
 };
 
