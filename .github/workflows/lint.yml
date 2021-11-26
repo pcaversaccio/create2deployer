@@ -1,4 +1,4 @@
-name: Test smart contracts
+name: Lint
 
 on: [push, pull_request]
 
@@ -34,6 +34,9 @@ jobs:
 
       - name: Install npm project with a clean slate
         run: npm ci
-        
-      - name: Hardhat tests
-        run: npx hardhat test
+
+      - name: Prettier
+        run: npm run prettier:check
+
+      - name: Lint
+        run: npm run solhint:check && npm run lint:check
