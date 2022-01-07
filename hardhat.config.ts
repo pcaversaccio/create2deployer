@@ -87,6 +87,11 @@ const config: HardhatUserConfig = {
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
+    fantom: {
+      url: "https://rpc.ftm.tools/", // Publicly known RPC
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
     fuji: {
       url: "https://api.avax-test.network/ext/bc/C/rpc", // Publicly known RPC
       accounts:
@@ -109,8 +114,8 @@ const config: HardhatUserConfig = {
     // apiKey: process.env.ARBITRUM_API_KEY // For Arbitrum testnet
     // apiKey: process.env.POLYGON_API_KEY // For Polygon testnet
     // apiKey: process.env.HECOINFO_API_KEY // For HecoInfo testnet
-    // apiKey: process.env.FANTOM_API_KEY, // For Fantom testnet
-    apiKey: process.env.FUJI_API_KEY, // For Avalanche testnet
+    apiKey: process.env.FANTOM_API_KEY, // For Fantom testnet
+    // apiKey: process.env.FUJI_API_KEY, // For Avalanche testnet
   },
 };
 
