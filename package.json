@@ -34,6 +34,7 @@
     "deploy:optimismtestnet": "npx hardhat run --network optimismtestnet scripts/deploy.ts",
     "deploy:arbitrumtestnet": "npx hardhat run --network arbitrumtestnet scripts/deploy.ts",
     "deploy:mumbai": "npx hardhat run --network mumbai scripts/deploy.ts",
+    "deploy:polygon": "npx hardhat run --network polygon scripts/deploy.ts",
     "deploy:hecoinfotestnet": "npx hardhat run --network hecoinfotestnet scripts/deploy.ts",
     "deploy:fantomtestnet": "npx hardhat run --network fantomtestnet scripts/deploy.ts",
     "deploy:fantom": "npx hardhat run --network fantom scripts/deploy.ts",
