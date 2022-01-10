@@ -72,8 +72,18 @@ const config: HardhatUserConfig = {
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
+    optimismmain: {
+      url: process.env.OPTIMISM_MAIN_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
     arbitrumtestnet: {
       url: process.env.ARBITRUM_TESTNET_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
+    arbitrummain: {
+      url: process.env.ARBITRUM_MAIN_URL || "",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
@@ -89,6 +99,11 @@ const config: HardhatUserConfig = {
     },
     hecoinfotestnet: {
       url: "https://http-testnet.hecochain.com", // Publicly known RPC
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
+    hecoinfomain: {
+      url: "https://http-mainnet.hecochain.com/", // Publicly known RPC
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
