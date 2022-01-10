@@ -62,6 +62,11 @@ const config: HardhatUserConfig = {
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
+    bscmain: {
+      url: "https://bsc-dataseed.binance.org", // Publicly known RPC
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
     optimismtestnet: {
       url: process.env.OPTIMISM_TESTNET_URL || "",
       accounts:
@@ -102,6 +107,11 @@ const config: HardhatUserConfig = {
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
+    avalanche: {
+      url: "https://api.avax.network/ext/bc/C/rpc", // Publicly known RPC
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
     gnosis: {
       url: "https://rpc.xdaichain.com", // Publicly known RPC
       accounts:
@@ -113,8 +123,8 @@ const config: HardhatUserConfig = {
     currency: "USD",
   },
   etherscan: {
-    apiKey: process.env.ETHERSCAN_API_KEY, // For Rinkeby, Ropsten, Kovan, Goerli, Mainnet
-    // apiKey: process.env.BSC_API_KEY // For BSC testnet
+    // apiKey: process.env.ETHERSCAN_API_KEY, // For Rinkeby, Ropsten, Kovan, Goerli, Mainnet
+    apiKey: process.env.BSC_API_KEY // For BSC testnet
     // apiKey: process.env.OPTIMISM_API_KEY // For Optimism testnet
     // apiKey: process.env.ARBITRUM_API_KEY // For Arbitrum testnet
     // apiKey: process.env.POLYGON_API_KEY, // For Polygon testnet
