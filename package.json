@@ -30,6 +30,7 @@
     "deploy:ropsten": "npx hardhat run --network ropsten scripts/deploy.ts",
     "deploy:kovan": "npx hardhat run --network kovan scripts/deploy.ts",
     "deploy:goerli": "npx hardhat run --network goerli scripts/deploy.ts",
+    "deploy:main": "npx hardhat run --network main scripts/deploy.ts",
     "deploy:bsctestnet": "npx hardhat run --network bsctestnet scripts/deploy.ts",
     "deploy:optimismtestnet": "npx hardhat run --network optimismtestnet scripts/deploy.ts",
     "deploy:arbitrumtestnet": "npx hardhat run --network arbitrumtestnet scripts/deploy.ts",

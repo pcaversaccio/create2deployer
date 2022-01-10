@@ -35,6 +35,7 @@ All files             |      100 |      100 |      100 |      100 |             
 
 ## Deployments [`Create2Deployer.sol`](https://github.com/pcaversaccio/create2deployer/blob/main/contracts/Create2Deployer.sol)
 - **EVM-Based Production Networks:**
+  - Ethereum: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://etherscan.io/address/0x13b0d85ccb8bf860b6b79af3029fca081ae9bef2)
   - Polygon: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://polygonscan.com/address/0x13b0d85ccb8bf860b6b79af3029fca081ae9bef2)
   - Fantom: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://ftmscan.com/address/0x13b0d85ccb8bf860b6b79af3029fca081ae9bef2)
   - Gnosis Chain: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://blockscout.com/xdai/mainnet/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2/transactions)
