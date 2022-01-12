@@ -44,7 +44,7 @@ All files             |      100 |      100 |      100 |      100 |             
   - Fantom: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://ftmscan.com/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - Avalanche: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://snowtrace.io/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - Gnosis Chain: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://blockscout.com/xdai/mainnet/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2/transactions)
-  - Moonriver: [`TBD`]()
+  - Moonriver: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://moonriver.moonscan.io/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
 - **Ethereum Test Networks:**
   - Rinkeby: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://rinkeby.etherscan.io/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - Ropsten: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://ropsten.etherscan.io/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
@@ -59,4 +59,4 @@ All files             |      100 |      100 |      100 |      100 |             
   - Fantom Testnet: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://testnet.ftmscan.com/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - Avalanche Testnet (Fuji): [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://testnet.snowtrace.io/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - Sokol: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://blockscout.com/poa/sokol/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2/transactions)
-  - Moonriver Testnet (Moonbeam): [`TBD`]()
+  - Moonbase Alpha: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://moonbase.moonscan.io/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
