@@ -127,8 +127,23 @@ const config: HardhatUserConfig = {
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
+    sokol: {
+      url: "https://sokol.poa.network", // Publicly known RPC
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
     gnosis: {
       url: "https://rpc.xdaichain.com", // Publicly known RPC
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
+    moonbasealpha: {
+      url: "https://rpc.api.moonbase.moonbeam.network", // Publicly known RPC
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
+    moonriver: {
+      url: "https://rpc.moonriver.moonbeam.network", // Publicly known RPC
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
@@ -140,12 +155,13 @@ const config: HardhatUserConfig = {
   etherscan: {
     // apiKey: process.env.ETHERSCAN_API_KEY, // For Rinkeby, Ropsten, Kovan, Goerli, Mainnet
     // apiKey: process.env.BSC_API_KEY, // For BSC testnet
-    apiKey: process.env.OPTIMISM_API_KEY, // For Optimism testnet
+    // apiKey: process.env.OPTIMISM_API_KEY, // For Optimism testnet
     // apiKey: process.env.ARBITRUM_API_KEY, // For Arbitrum testnet
     // apiKey: process.env.POLYGON_API_KEY, // For Polygon testnet
     // apiKey: process.env.HECOINFO_API_KEY, // For HecoInfo testnet
     // apiKey: process.env.FANTOM_API_KEY, // For Fantom testnet
     // apiKey: process.env.FUJI_API_KEY, // For Avalanche testnet
+    apiKey: process.env.MOONBEAM_API_KEY, // For Avalanche testnet
   },
 };
 
