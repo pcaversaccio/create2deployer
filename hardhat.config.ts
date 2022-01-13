@@ -103,7 +103,7 @@ const config: HardhatUserConfig = {
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
     hecoinfomain: {
-      url: "https://http-mainnet.hecochain.com/", // Publicly known RPC
+      url: "https://http-mainnet.hecochain.com", // Publicly known RPC
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
@@ -113,7 +113,7 @@ const config: HardhatUserConfig = {
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
     fantommain: {
-      url: "https://rpc.ftm.tools/", // Publicly known RPC
+      url: "https://rpc.ftm.tools", // Publicly known RPC
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
