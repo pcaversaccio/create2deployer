@@ -2,7 +2,7 @@
   "name": "create2deployer",
   "version": "1.0.0",
   "description": "Helper smart contract to make easier and safer usage of the `CREATE2` EVM opcode.",
-  "author": "Pascal Marco Caversaccio",
+  "author": "Pascal Marco Caversaccio <pascal.caversaccio@hotmail.ch>",
   "license": "MIT",
   "keywords": [
     "create2",
