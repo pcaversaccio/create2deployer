@@ -52,7 +52,7 @@ const config: HardhatUserConfig = {
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
-    main: {
+    ethmain: {
       url: process.env.MAIN_URL || "",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
@@ -112,7 +112,7 @@ const config: HardhatUserConfig = {
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
-    fantom: {
+    fantommain: {
       url: "https://rpc.ftm.tools/", // Publicly known RPC
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
@@ -166,7 +166,7 @@ const config: HardhatUserConfig = {
     // apiKey: process.env.ETHERSCAN_API_KEY, // For Rinkeby, Ropsten, Kovan, Goerli, Mainnet
     // apiKey: process.env.BSC_API_KEY, // For BSC testnet & mainnet
     // apiKey: process.env.OPTIMISM_API_KEY, // For Optimism testnet & mainnet
-    // apiKey: process.env.ARBITRUM_API_KEY, // For Arbitrum testnet & mainnet
+    apiKey: process.env.ARBITRUM_API_KEY, // For Arbitrum testnet & mainnet
     // apiKey: process.env.POLYGON_API_KEY, // For Polygon testnet & mainnet
     // apiKey: process.env.HECOINFO_API_KEY, // For HecoInfo testnet & mainnet
     // apiKey: process.env.FANTOM_API_KEY, // For Fantom testnet & mainnet
