@@ -49,6 +49,8 @@
     "deploy:gnosis": "npx hardhat run --network gnosis scripts/deploy.ts",
     "deploy:moonbasealpha": "npx hardhat run --network moonbasealpha scripts/deploy.ts",
     "deploy:moonriver": "npx hardhat run --network moonriver scripts/deploy.ts",
+    "deploy:alfajores": "npx hardhat run --network alfajores scripts/deploy.ts",
+    "deploy:celo": "npx hardhat run --network celo scripts/deploy.ts",
     "lint:check": "npx eslint **/*.{js,ts}",
     "lint:fix": "npx eslint **/*.{js,ts} --fix",
     "prettier:check": "prettier -c **/*.{js,ts,sol}",
