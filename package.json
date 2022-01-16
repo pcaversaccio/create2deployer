@@ -91,7 +91,7 @@
     "hardhat-abi-exporter": "^2.7.2",
     "hardhat-gas-reporter": "^1.0.7",
     "json-schema": ">=0.4.0",
-    "mem": ">=4.0.0",
+    "mem": "^9.0.2",
     "prettier": "^2.5.1",
     "prettier-plugin-solidity": "^1.0.0-beta.19",
     "solhint": "^3.3.6",
