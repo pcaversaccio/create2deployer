@@ -52,37 +52,37 @@ const config: HardhatUserConfig = {
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
-    ethmain: {
+    ethMain: {
       url: process.env.MAIN_URL || "",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
-    bsctestnet: {
+    bscTestnet: {
       url: "https://data-seed-prebsc-1-s1.binance.org:8545", // Publicly known RPC
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
-    bscmain: {
+    bscMain: {
       url: "https://bsc-dataseed.binance.org", // Publicly known RPC
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
-    optimismtestnet: {
+    optimismTestnet: {
       url: process.env.OPTIMISM_TESTNET_URL || "",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
-    optimismmain: {
+    optimismMain: {
       url: process.env.OPTIMISM_MAIN_URL || "",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
-    arbitrumtestnet: {
+    arbitrumTestnet: {
       url: process.env.ARBITRUM_TESTNET_URL || "",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
-    arbitrummain: {
+    arbitrumMain: {
       url: process.env.ARBITRUM_MAIN_URL || "",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
@@ -97,22 +97,22 @@ const config: HardhatUserConfig = {
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
-    hecoinfotestnet: {
+    hecoTestnet: {
       url: "https://http-testnet.hecochain.com", // Publicly known RPC
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
-    hecoinfomain: {
+    hecoMain: {
       url: "https://http-mainnet.hecochain.com", // Publicly known RPC
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
-    fantomtestnet: {
+    fantomTestnet: {
       url: "https://rpc.testnet.fantom.network", // Publicly known RPC
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
-    fantommain: {
+    fantomMain: {
       url: "https://rpc.ftm.tools", // Publicly known RPC
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
@@ -137,7 +137,7 @@ const config: HardhatUserConfig = {
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
-    moonbasealpha: {
+    moonbaseAlpha: {
       url: "https://rpc.api.moonbase.moonbeam.network", // Publicly known RPC
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
@@ -168,7 +168,7 @@ const config: HardhatUserConfig = {
     // apiKey: process.env.OPTIMISM_API_KEY, // For Optimism testnet & mainnet
     // apiKey: process.env.ARBITRUM_API_KEY, // For Arbitrum testnet & mainnet
     // apiKey: process.env.POLYGON_API_KEY, // For Polygon testnet & mainnet
-    apiKey: process.env.HECOINFO_API_KEY, // For HecoInfo testnet & mainnet
+    apiKey: process.env.HECO_API_KEY, // For Heco testnet & mainnet
     // apiKey: process.env.FANTOM_API_KEY, // For Fantom testnet & mainnet
     // apiKey: process.env.FUJI_API_KEY, // For Avalanche testnet & mainnet
     // apiKey: process.env.MOONBEAM_API_KEY, // For Moonbeam testnet & mainnet
