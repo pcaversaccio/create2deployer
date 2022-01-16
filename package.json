@@ -51,6 +51,8 @@
     "deploy:moonriver": "npx hardhat run --network moonriver scripts/deploy.ts",
     "deploy:alfajores": "npx hardhat run --network alfajores scripts/deploy.ts",
     "deploy:celo": "npx hardhat run --network celo scripts/deploy.ts",
+    "deploy:auroratestnet": "npx hardhat run --network auroraTestnet scripts/deploy.ts",
+    "deploy:auroramain": "npx hardhat run --network auroraMain scripts/deploy.ts",
     "lint:check": "npx eslint **/*.{js,ts}",
     "lint:fix": "npx eslint **/*.{js,ts} --fix",
     "prettier:check": "prettier -c **/*.{js,ts,sol}",
