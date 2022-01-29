@@ -173,15 +173,42 @@ const config: HardhatUserConfig = {
     currency: "USD",
   },
   etherscan: {
-    // apiKey: process.env.ETHERSCAN_API_KEY, // For Rinkeby, Ropsten, Kovan, Goerli, Mainnet
-    // apiKey: process.env.BSC_API_KEY, // For BSC testnet & mainnet
-    // apiKey: process.env.OPTIMISM_API_KEY, // For Optimism testnet & mainnet
-    // apiKey: process.env.ARBITRUM_API_KEY, // For Arbitrum testnet & mainnet
-    // apiKey: process.env.POLYGON_API_KEY, // For Polygon testnet & mainnet
-    apiKey: process.env.HECO_API_KEY, // For Heco testnet & mainnet
-    // apiKey: process.env.FANTOM_API_KEY, // For Fantom testnet & mainnet
-    // apiKey: process.env.FUJI_API_KEY, // For Avalanche testnet & mainnet
-    // apiKey: process.env.MOONBEAM_API_KEY, // For Moonbeam testnet & mainnet
+    apiKey: {
+      // For Rinkeby, Ropsten, Kovan, Goerli, Mainnet
+      mainnet: process.env.ETHERSCAN_API_KEY,
+      ropsten: process.env.ETHERSCAN_API_KEY,
+      rinkeby: process.env.ETHERSCAN_API_KEY,
+      goerli: process.env.ETHERSCAN_API_KEY,
+      kovan: process.env.ETHERSCAN_API_KEY,
+      // For BSC testnet & mainnet
+      bsc: process.env.BSC_API_KEY,
+      bscTestnet: process.env.BSC_API_KEY,
+      // For Heco testnet & mainnet
+      heco: process.env.HECO_API_KEY,
+      hecoTestnet: process.env.HECO_API_KEY,
+      // For Fantom testnet & mainnet
+      opera: process.env.FANTOM_API_KEY,
+      ftmTestnet: process.env.FANTOM_API_KEY,
+      // For Optimism testnet & mainnet
+      optimisticEthereum: process.env.OPTIMISM_API_KEY,
+      optimisticKovan: process.env.OPTIMISM_API_KEY,
+      // For Polygon testnet & mainnet
+      polygon: process.env.POLYGON_API_KEY,
+      polygonMumbai: process.env.POLYGON_API_KEY,
+      // For Arbitrum testnet & mainnet
+      arbitrumOne: process.env.ARBITRUM_API_KEY,
+      arbitrumTestnet: process.env.ARBITRUM_API_KEY,
+      // For Avalanche testnet & mainnet
+      avalanche: process.env.AVALANCHE_API_KEY,
+      avalancheFujiTestnet: process.env.AVALANCHE_API_KEY,
+      // For Moonbeam testnet & mainnet
+      moonriver: process.env.MOONBEAM_API_KEY,
+      moonbaseAlpha: process.env.MOONBEAM_API_KEY,
+      // xdai and sokol don't need an API key, but you still need
+      // to specify one; any string placeholder will work
+      xdai: "wagmi",
+      sokol: "wagmi",
+    },
   },
 };
 
