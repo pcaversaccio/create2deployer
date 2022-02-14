@@ -34,6 +34,10 @@ jobs:
 
       - name: Install npm project with a clean slate
         run: npm ci
-        
+
       - name: Hardhat tests
         run: npx hardhat test
+
+      - name: Slither static analyser
+        uses: crytic/slither-action@v0.1.0
+        continue-on-error: true
