@@ -228,10 +228,10 @@ const config: HardhatUserConfig = {
       moonbeam: process.env.MOONBEAM_API_KEY,
       moonriver: process.env.MOONBEAM_API_KEY,
       moonbaseAlpha: process.env.MOONBEAM_API_KEY,
-      // For Harmony testnet & mainnets
+      // For Harmony testnet & mainnet
       harmony: process.env.HARMONY_API_KEY,
       harmonyTest: process.env.HARMONY_API_KEY,
-      // For Aurora testnet & mainnets
+      // For Aurora testnet & mainnet
       aurora: process.env.AURORA_API_KEY,
       auroraTestnet: process.env.AURORA_API_KEY,
       // xdai and sokol don't need an API key, but you still need

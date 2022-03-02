@@ -60,8 +60,8 @@
     "deploy:autobahn": "npx hardhat run --network autobahn scripts/deploy.ts",
     "lint:check": "npx eslint **/*.{js,ts}",
     "lint:fix": "npx eslint **/*.{js,ts} --fix",
-    "prettier:check": "prettier -c **/*.{js,ts,sol}",
-    "prettier:fix": "prettier --write **/*.{js,ts,sol}",
+    "prettier:check": "prettier -c **/*.{js,ts,sol,md}",
+    "prettier:fix": "prettier --write **/*.{js,ts,sol,md}",
     "solhint:check": "npx solhint contracts/**/*.sol",
     "solhint:fix": "npx solhint contracts/**/*.sol --fix"
   },
