@@ -44,11 +44,11 @@ All files             |      100 |      100 |      100 |      100 |             
   - Fantom: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://ftmscan.com/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - Avalanche: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://snowtrace.io/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - Gnosis Chain: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://blockscout.com/xdai/mainnet/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2/transactions)
-  - Moonbeam: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://moonscan.io/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - Moonriver: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://moonriver.moonscan.io/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
+  - Moonbeam: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://moonscan.io/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - Celo: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://explorer.celo.org/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2/transactions)
   - Aurora: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://aurorascan.dev/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
-  - Harmony: [`TBD`]()
+  - Harmony: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://explorer.harmony.one/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - Autobahn: [`TBD`]()
 - **Ethereum Test Networks:**
   - Rinkeby: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://rinkeby.etherscan.io/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
@@ -68,3 +68,7 @@ All files             |      100 |      100 |      100 |      100 |             
   - Celo Testnet (Alfajores): [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://alfajores-blockscout.celo-testnet.org/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2/transactions)
   - Aurora Testnet: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://testnet.aurorascan.dev/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - Harmony Testnet: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://explorer.pops.one/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
+
+## To Dos
+- Verify Harmony & Harmony Testnet;
+- Deploy & verify Autobahn;
