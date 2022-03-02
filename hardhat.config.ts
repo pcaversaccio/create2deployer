@@ -32,6 +32,9 @@ const config: HardhatUserConfig = {
     hardhat: {
       initialBaseFeePerGas: 0,
     },
+    localhost: {
+      url: "http://127.0.0.1:8545",
+    },
     rinkeby: {
       url: process.env.RINKEBY_URL || "",
       accounts:
@@ -147,6 +150,11 @@ const config: HardhatUserConfig = {
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
+    moonbeam: {
+      url: "https://rpc.api.moonbeam.network", // Publicly known RPC
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
     alfajores: {
       url: "https://alfajores-forno.celo-testnet.org", // Publicly known RPC
       accounts:
@@ -164,6 +172,21 @@ const config: HardhatUserConfig = {
     },
     auroraMain: {
       url: "https://mainnet.aurora.dev", // Publicly known RPC
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
+    harmonyTestnet: {
+      url: "https://api.s0.b.hmny.io", // Publicly known RPC
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
+    harmonyMain: {
+      url: "https://api.harmony.one", // Publicly known RPC
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
+    autobahn: {
+      url: "https://rpc.autobahn.network", // Publicly known RPC
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
@@ -201,9 +224,16 @@ const config: HardhatUserConfig = {
       // For Avalanche testnet & mainnet
       avalanche: process.env.AVALANCHE_API_KEY,
       avalancheFujiTestnet: process.env.AVALANCHE_API_KEY,
-      // For Moonbeam testnet & mainnet
+      // For Moonbeam testnet & mainnets
+      moonbeam: process.env.MOONBEAM_API_KEY,
       moonriver: process.env.MOONBEAM_API_KEY,
       moonbaseAlpha: process.env.MOONBEAM_API_KEY,
+      // For Harmony testnet & mainnets
+      harmony: process.env.HARMONY_API_KEY,
+      harmonyTest: process.env.HARMONY_API_KEY,
+      // For Aurora testnet & mainnets
+      aurora: process.env.AURORA_API_KEY,
+      auroraTestnet: process.env.AURORA_API_KEY,
       // xdai and sokol don't need an API key, but you still need
       // to specify one; any string placeholder will work
       xdai: "wagmi",

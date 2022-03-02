@@ -44,9 +44,12 @@ All files             |      100 |      100 |      100 |      100 |             
   - Fantom: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://ftmscan.com/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - Avalanche: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://snowtrace.io/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - Gnosis Chain: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://blockscout.com/xdai/mainnet/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2/transactions)
+  - Moonbeam: [`TBD`]()
   - Moonriver: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://moonriver.moonscan.io/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - Celo: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://explorer.celo.org/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2/transactions)
   - Aurora: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://explorer.mainnet.aurora.dev/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2/transactions)
+  - Harmony: [`TBD`]()
+  - Autobahn: [`TBD`]()
 - **Ethereum Test Networks:**
   - Rinkeby: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://rinkeby.etherscan.io/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - Ropsten: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://ropsten.etherscan.io/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
@@ -64,3 +67,4 @@ All files             |      100 |      100 |      100 |      100 |             
   - Moonbeam Testnet (Moonbase Alpha): [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://moonbase.moonscan.io/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - Celo Testnet (Alfajores): [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://alfajores-blockscout.celo-testnet.org/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2/transactions)
   - Aurora Testnet: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://explorer.testnet.aurora.dev/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2/transactions)
+  - Harmony Testnet: [`TBD`]()
