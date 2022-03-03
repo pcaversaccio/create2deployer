@@ -76,7 +76,3 @@ All files             |      100 |      100 |      100 |      100 |             
   - Celo Testnet (Alfajores): [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://alfajores-blockscout.celo-testnet.org/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2/transactions)
   - Aurora Testnet: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://testnet.aurorascan.dev/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - Harmony Testnet: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://explorer.pops.one/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
-
-## To Dos
-
-- Verify Autobahn;
