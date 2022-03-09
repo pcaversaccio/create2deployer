@@ -85,7 +85,7 @@
     "@typescript-eslint/parser": "5.13.0",
     "ansi-regex": "6.0.1",
     "chai": "4.3.6",
-    "dotenv": "14.3.2",
+    "dotenv": "16.0.0",
     "elliptic": "6.5.4",
     "eslint": "8.10.0",
     "eslint-config-prettier": "8.5.0",
