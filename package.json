@@ -104,7 +104,7 @@
     "json-schema": "0.4.0",
     "lodash": "4.17.21",
     "mem": "9.0.2",
-    "node-fetch": "3.2.1",
+    "node-fetch": "3.2.2",
     "prettier": "2.5.1",
     "prettier-plugin-solidity": "1.0.0-beta.19",
     "simple-get": "4.0.1",
