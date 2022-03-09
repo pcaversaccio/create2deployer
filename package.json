@@ -93,7 +93,7 @@
     "eslint-plugin-import": "2.25.4",
     "eslint-plugin-node": "11.1.0",
     "eslint-plugin-prettier": "4.0.0",
-    "eslint-plugin-promise": "5.2.0",
+    "eslint-plugin-promise": "6.0.0",
     "ethereum-waffle": "3.4.0",
     "ethers": "5.5.4",
     "glob-parent": "6.0.2",
