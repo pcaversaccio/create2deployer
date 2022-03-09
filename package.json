@@ -77,7 +77,7 @@
     "@openzeppelin/contracts": "4.5.0",
     "@openzeppelin/test-helpers": "0.5.15",
     "@typechain/ethers-v5": "7.2.0",
-    "@typechain/hardhat": "2.3.1",
+    "@typechain/hardhat": "5.0.0",
     "@types/chai": "4.3.0",
     "@types/mocha": "9.1.0",
     "@types/node": "16.11.26",
