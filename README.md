@@ -57,7 +57,7 @@ All files             |      100 |      100 |      100 |      100 |             
   - Celo: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://explorer.celo.org/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2/transactions)
   - Aurora: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://aurorascan.dev/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - Harmony: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://explorer.harmony.one/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
-  - Autobahn: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://explorer.autobahn.network/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2/transactions)
+  - Autobahn: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://explorer.autobahn.network/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - Fuse Network: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://explorer.fuse.io/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2/transactions)
 - **Ethereum Test Networks:**
   - Rinkeby: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://rinkeby.etherscan.io/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
