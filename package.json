@@ -60,6 +60,8 @@
     "deploy:autobahn": "npx hardhat run --network autobahn scripts/deploy.ts",
     "deploy:spark": "npx hardhat run --network spark scripts/deploy.ts",
     "deploy:fuse": "npx hardhat run --network fuse scripts/deploy.ts",
+    "deploy:cronostestnet": "npx hardhat run --network cronosTestnet scripts/deploy.ts",
+    "deploy:cronosmain": "npx hardhat run --network cronosMain scripts/deploy.ts",
     "lint:check": "npx eslint **/*.{js,ts}",
     "lint:fix": "npx eslint **/*.{js,ts} --fix",
     "prettier:check": "prettier -c **/*.{js,ts,sol,md}",
