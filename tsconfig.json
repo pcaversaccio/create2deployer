@@ -9,6 +9,6 @@
     "declaration": true,
     "strictNullChecks": false
   },
-  "include": ["./scripts", "./test", "./typechain"],
+  "include": ["./scripts", "./test", "./typechain-types"],
   "files": ["./hardhat.config.ts"]
 }
