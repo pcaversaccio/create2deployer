@@ -13,8 +13,9 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/pcaversaccio/create2deployer.git"
+    "url": "git+https://github.com/pcaversaccio/create2deployer.git"
   },
+  "homepage": "https://github.com/pcaversaccio/create2deployer#readme",
   "bugs": {
     "url": "https://github.com/pcaversaccio/create2deployer/issues"
   },
@@ -64,8 +65,8 @@
     "deploy:cronosmain": "npx hardhat run --network cronosMain scripts/deploy.ts",
     "lint:check": "npx eslint **/*.{js,ts}",
     "lint:fix": "npx eslint **/*.{js,ts} --fix",
-    "prettier:check": "prettier -c **/*.{js,ts,sol,md}",
-    "prettier:fix": "prettier -w **/*.{js,ts,sol,md}",
+    "prettier:check": "prettier -c **/*.{js,ts,md,sol,json,yml}",
+    "prettier:fix": "prettier -w **/*.{js,ts,md,sol,json,yml}",
     "solhint:check": "npx solhint contracts/**/*.sol",
     "solhint:fix": "npx solhint contracts/**/*.sol --fix"
   },
