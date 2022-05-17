@@ -55,6 +55,11 @@ const config: HardhatUserConfig = {
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
+    sepolia: {
+      url: "https://nunki.htznr.fault.dev/rpc", // Publicly known RPC,
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
     ethMain: {
       url: process.env.MAIN_URL || "",
       accounts:
