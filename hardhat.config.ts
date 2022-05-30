@@ -222,12 +222,13 @@ const config: HardhatUserConfig = {
   },
   etherscan: {
     apiKey: {
-      // For Rinkeby, Ropsten, Kovan, Goerli, Mainnet
+      // For Mainnet, Ropsten, Rinkeby, Goerli, Kovan, Sepolia
       mainnet: process.env.ETHERSCAN_API_KEY,
       ropsten: process.env.ETHERSCAN_API_KEY,
       rinkeby: process.env.ETHERSCAN_API_KEY,
       goerli: process.env.ETHERSCAN_API_KEY,
       kovan: process.env.ETHERSCAN_API_KEY,
+      sepolia: process.env.ETHERSCAN_API_KEY,
       // For BSC testnet & mainnet
       bsc: process.env.BSC_API_KEY,
       bscTestnet: process.env.BSC_API_KEY,
