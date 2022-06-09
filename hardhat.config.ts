@@ -223,48 +223,69 @@ const config: HardhatUserConfig = {
   etherscan: {
     apiKey: {
       // For Mainnet, Ropsten, Rinkeby, Goerli, Kovan, Sepolia
-      mainnet: process.env.ETHERSCAN_API_KEY,
-      ropsten: process.env.ETHERSCAN_API_KEY,
-      rinkeby: process.env.ETHERSCAN_API_KEY,
-      goerli: process.env.ETHERSCAN_API_KEY,
-      kovan: process.env.ETHERSCAN_API_KEY,
-      sepolia: process.env.ETHERSCAN_API_KEY,
+      mainnet: process.env.ETHERSCAN_API_KEY || "",
+      ropsten: process.env.ETHERSCAN_API_KEY || "",
+      rinkeby: process.env.ETHERSCAN_API_KEY || "",
+      goerli: process.env.ETHERSCAN_API_KEY || "",
+      kovan: process.env.ETHERSCAN_API_KEY || "",
+      sepolia: process.env.ETHERSCAN_API_KEY || "",
       // For BSC testnet & mainnet
-      bsc: process.env.BSC_API_KEY,
-      bscTestnet: process.env.BSC_API_KEY,
+      bsc: process.env.BSC_API_KEY || "",
+      bscTestnet: process.env.BSC_API_KEY || "",
       // For Heco testnet & mainnet
-      heco: process.env.HECO_API_KEY,
-      hecoTestnet: process.env.HECO_API_KEY,
+      heco: process.env.HECO_API_KEY || "",
+      hecoTestnet: process.env.HECO_API_KEY || "",
       // For Fantom testnet & mainnet
-      opera: process.env.FANTOM_API_KEY,
-      ftmTestnet: process.env.FANTOM_API_KEY,
+      opera: process.env.FANTOM_API_KEY || "",
+      ftmTestnet: process.env.FANTOM_API_KEY || "",
       // For Optimism testnet & mainnet
-      optimisticEthereum: process.env.OPTIMISM_API_KEY,
-      optimisticKovan: process.env.OPTIMISM_API_KEY,
+      optimisticEthereum: process.env.OPTIMISM_API_KEY || "",
+      optimisticKovan: process.env.OPTIMISM_API_KEY || "",
       // For Polygon testnet & mainnet
-      polygon: process.env.POLYGON_API_KEY,
-      polygonMumbai: process.env.POLYGON_API_KEY,
+      polygon: process.env.POLYGON_API_KEY || "",
+      polygonMumbai: process.env.POLYGON_API_KEY || "",
       // For Arbitrum testnet & mainnet
-      arbitrumOne: process.env.ARBITRUM_API_KEY,
-      arbitrumTestnet: process.env.ARBITRUM_API_KEY,
+      arbitrumOne: process.env.ARBITRUM_API_KEY || "",
+      arbitrumTestnet: process.env.ARBITRUM_API_KEY || "",
       // For Avalanche testnet & mainnet
-      avalanche: process.env.AVALANCHE_API_KEY,
-      avalancheFujiTestnet: process.env.AVALANCHE_API_KEY,
+      avalanche: process.env.AVALANCHE_API_KEY || "",
+      avalancheFujiTestnet: process.env.AVALANCHE_API_KEY || "",
       // For Moonbeam testnet & mainnets
-      moonbeam: process.env.MOONBEAM_API_KEY,
-      moonriver: process.env.MOONBEAM_API_KEY,
-      moonbaseAlpha: process.env.MOONBEAM_API_KEY,
+      moonbeam: process.env.MOONBEAM_API_KEY || "",
+      moonriver: process.env.MOONBEAM_API_KEY || "",
+      moonbaseAlpha: process.env.MOONBEAM_API_KEY || "",
       // For Harmony testnet & mainnet
-      harmony: process.env.HARMONY_API_KEY,
-      harmonyTest: process.env.HARMONY_API_KEY,
+      harmony: process.env.HARMONY_API_KEY || "",
+      harmonyTest: process.env.HARMONY_API_KEY || "",
       // For Aurora testnet & mainnet
-      aurora: process.env.AURORA_API_KEY,
-      auroraTestnet: process.env.AURORA_API_KEY,
+      aurora: process.env.AURORA_API_KEY || "",
+      auroraTestnet: process.env.AURORA_API_KEY || "",
+      // For Cronos testnet & mainnet
+      cronos: process.env.CRONOS_API_KEY || "",
+      cronosTestnet: process.env.CRONOS_API_KEY || "",
       // xdai and sokol don't need an API key, but you still need
       // to specify one; any string placeholder will work
       xdai: "wagmi",
       sokol: "wagmi",
     },
+    customChains: [
+      {
+        network: "cronos",
+        chainId: 25,
+        urls: {
+          apiURL: "https://api.cronoscan.com/api",
+          browserURL: "https://cronoscan.com",
+        },
+      },
+      {
+        network: "cronosTestnet",
+        chainId: 338,
+        urls: {
+          apiURL: "https://api-testnet.cronoscan.com/api",
+          browserURL: "https://testnet.cronoscan.com",
+        },
+      },
+    ],
   },
 };
 
