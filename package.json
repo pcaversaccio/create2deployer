@@ -80,11 +80,11 @@
     "@nomiclabs/hardhat-web3": "^2.0.0",
     "@openzeppelin/contracts": "^4.6.0",
     "@openzeppelin/test-helpers": "^0.5.15",
-    "@typechain/ethers-v5": "^10.0.0",
-    "@typechain/hardhat": "^6.0.0",
+    "@typechain/ethers-v5": "^10.1.0",
+    "@typechain/hardhat": "^6.1.0",
     "@types/chai": "^4.3.1",
     "@types/mocha": "^9.1.1",
-    "@types/node": "^17.0.41",
+    "@types/node": "^17.0.42",
     "@typescript-eslint/eslint-plugin": "^5.27.1",
     "@typescript-eslint/parser": "^5.27.1",
     "chai": "^4.3.6",
@@ -101,7 +101,7 @@
     "prettier-plugin-solidity": "^1.0.0-beta.19",
     "solidity-coverage": "^0.7.21",
     "ts-node": "^10.8.1",
-    "typechain": "^8.0.0",
+    "typechain": "^8.1.0",
     "typescript": "^4.7.3"
   }
 }
