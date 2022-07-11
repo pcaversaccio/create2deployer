@@ -77,7 +77,7 @@
     "@ethersproject/providers": "^5.6.8",
     "@nomicfoundation/hardhat-chai-matchers": "^1.0.1",
     "@nomicfoundation/hardhat-network-helpers": "^1.0.2",
-    "@nomicfoundation/hardhat-toolbox": "^1.0.1",
+    "@nomicfoundation/hardhat-toolbox": "^1.0.2",
     "@nomiclabs/hardhat-ethers": "^2.1.0",
     "@nomiclabs/hardhat-etherscan": "^3.1.0",
     "@nomiclabs/hardhat-truffle5": "^2.0.6",
