@@ -238,9 +238,10 @@ const config: HardhatUserConfig = {
       // For Fantom testnet & mainnet
       opera: process.env.FANTOM_API_KEY || "",
       ftmTestnet: process.env.FANTOM_API_KEY || "",
-      // For Optimism testnet & mainnet
+      // For Optimism testnets & mainnet
       optimisticEthereum: process.env.OPTIMISM_API_KEY || "",
       optimisticKovan: process.env.OPTIMISM_API_KEY || "",
+      optimisticGoerli: "wagmi",
       // For Polygon testnet & mainnet
       polygon: process.env.POLYGON_API_KEY || "",
       polygonMumbai: process.env.POLYGON_API_KEY || "",
@@ -283,6 +284,14 @@ const config: HardhatUserConfig = {
         urls: {
           apiURL: "https://api-testnet.cronoscan.com/api",
           browserURL: "https://testnet.cronoscan.com",
+        },
+      },
+      {
+        network: "optimisticGoerli",
+        chainId: 420,
+        urls: {
+          apiURL: "https://blockscout.com/optimism/goerli/api",
+          browserURL: "https://blockscout.com/optimism/goerli",
         },
       },
     ],
