@@ -64,6 +64,8 @@
     "deploy:fuse": "npx hardhat run --network fuse scripts/deploy.ts",
     "deploy:cronostestnet": "npx hardhat run --network cronosTestnet scripts/deploy.ts",
     "deploy:cronosmain": "npx hardhat run --network cronosMain scripts/deploy.ts",
+    "deploy:evmostestnet": "npx hardhat run --network evmosTestnet scripts/deploy.ts",
+    "deploy:evmosmain": "npx hardhat run --network evmosMain scripts/deploy.ts",
     "lint:check": "npx eslint **/*.{js,ts}",
     "lint:fix": "npx eslint **/*.{js,ts} --fix",
     "prettier:check": "prettier -c **/*.{js,ts,md,sol,json,yml}",

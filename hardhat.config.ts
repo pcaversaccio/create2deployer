@@ -215,6 +215,16 @@ const config: HardhatUserConfig = {
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
+    evmosTestnet: {
+      url: "https://eth.bd.evmos.dev:8545", // Publicly known RPC
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
+    evmosMain: {
+      url: "https://eth.bd.evmos.org:8545", // Publicly known RPC
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
   },
   gasReporter: {
     enabled: process.env.REPORT_GAS !== undefined,
@@ -268,6 +278,11 @@ const config: HardhatUserConfig = {
       // to specify one; any string placeholder will work
       xdai: "wagmi",
       sokol: "wagmi",
+      // For Fuse testnet
+      spark: "wagmi",
+      // For Evmos testnet & mainnet
+      evmos: "wagmi",
+      evmosTestnet: "wagmi",
     },
     customChains: [
       {
@@ -292,6 +307,30 @@ const config: HardhatUserConfig = {
         urls: {
           apiURL: "https://blockscout.com/optimism/goerli/api",
           browserURL: "https://blockscout.com/optimism/goerli",
+        },
+      },
+      {
+        network: "spark",
+        chainId: 123,
+        urls: {
+          apiURL: "https://explorer.fusespark.io/api",
+          browserURL: "https://explorer.fusespark.io",
+        },
+      },
+      {
+        network: "evmos",
+        chainId: 9001,
+        urls: {
+          apiURL: "https://evm.evmos.org/api",
+          browserURL: "https://evm.evmos.org",
+        },
+      },
+      {
+        network: "evmosTestnet",
+        chainId: 9000,
+        urls: {
+          apiURL: "https://evm.evmos.dev/api",
+          browserURL: "https://evm.evmos.dev",
         },
       },
     ],
