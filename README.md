@@ -61,6 +61,7 @@ All files             |      100 |      100 |      100 |      100 |             
   - Fuse Network: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://explorer.fuse.io/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2/transactions)
   - Cronos: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://cronoscan.com/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - Evmos: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://evm.evmos.org/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
+  - Boba Network: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://bobascan.com/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
 - **Ethereum Test Networks:**
   - Rinkeby: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://rinkeby.etherscan.io/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - Ropsten: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://ropsten.etherscan.io/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
@@ -84,3 +85,4 @@ All files             |      100 |      100 |      100 |      100 |             
   - Fuse Network Testnet (Spark): [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://explorer.fusespark.io/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2/transactions)
   - Cronos Testnet: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://cronos.org/explorer/testnet3/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2/transactions)
   - Evmos Testnet: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://evm.evmos.dev/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
+  - Boba Network Testnet: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://testnet.bobascan.com/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)

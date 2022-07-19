@@ -66,6 +66,8 @@
     "deploy:cronosmain": "npx hardhat run --network cronosMain scripts/deploy.ts",
     "deploy:evmostestnet": "npx hardhat run --network evmosTestnet scripts/deploy.ts",
     "deploy:evmosmain": "npx hardhat run --network evmosMain scripts/deploy.ts",
+    "deploy:bobatestnet": "npx hardhat run --network bobaTestnet scripts/deploy.ts",
+    "deploy:bobamain": "npx hardhat run --network bobaMain scripts/deploy.ts",
     "lint:check": "npx eslint **/*.{js,ts}",
     "lint:fix": "npx eslint **/*.{js,ts} --fix",
     "prettier:check": "prettier -c **/*.{js,ts,md,sol,json,yml}",

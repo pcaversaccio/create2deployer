@@ -225,6 +225,16 @@ const config: HardhatUserConfig = {
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
+    bobaTestnet: {
+      url: "https://rinkeby.boba.network", // Publicly known RPC
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
+    bobaMain: {
+      url: "https://mainnet.boba.network", // Publicly known RPC
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
   },
   gasReporter: {
     enabled: process.env.REPORT_GAS !== undefined,
@@ -283,6 +293,9 @@ const config: HardhatUserConfig = {
       // For Evmos testnet & mainnet
       evmos: "wagmi",
       evmosTestnet: "wagmi",
+      // For Boba network testnet & mainnet
+      boba: process.env.BOBA_API_KEY || "",
+      bobaTestnet: process.env.BOBA_API_KEY || "",
     },
     customChains: [
       {
@@ -331,6 +344,22 @@ const config: HardhatUserConfig = {
         urls: {
           apiURL: "https://evm.evmos.dev/api",
           browserURL: "https://evm.evmos.dev",
+        },
+      },
+      {
+        network: "boba",
+        chainId: 288,
+        urls: {
+          apiURL: "https://api.bobascan.com/api",
+          browserURL: "https://bobascan.com",
+        },
+      },
+      {
+        network: "bobaTestnet",
+        chainId: 28,
+        urls: {
+          apiURL: "https://evm.evmos.dev/api",
+          browserURL: "https://api-testnet.bobascan.com/api",
         },
       },
     ],
