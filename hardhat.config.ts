@@ -10,7 +10,7 @@ import "solidity-coverage";
 
 dotenv.config();
 
-task("accounts", "Prints the list of accounts", async (taskArgs, hre) => {
+task("accounts", "Prints the list of accounts", async (_, hre) => {
   const accounts = await hre.ethers.getSigners();
 
   for (const account of accounts) {
@@ -288,9 +288,11 @@ const config: HardhatUserConfig = {
       // to specify one; any string placeholder will work
       xdai: "wagmi",
       sokol: "wagmi",
-      // For Fuse testnet
+      // For Fuse testnet; we use the same string placeholder as for
+      // xdai and sokol
       spark: "wagmi",
-      // For Evmos testnet & mainnet
+      // For Evmos testnet & mainnet; we use the same string placeholder
+      // as for xdai and sokol
       evmos: "wagmi",
       evmosTestnet: "wagmi",
       // For Boba network testnet & mainnet
