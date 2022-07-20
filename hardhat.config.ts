@@ -258,7 +258,8 @@ const config: HardhatUserConfig = {
       // For Fantom testnet & mainnet
       opera: process.env.FANTOM_API_KEY || "",
       ftmTestnet: process.env.FANTOM_API_KEY || "",
-      // For Optimism testnets & mainnet
+      // For Optimism testnets & mainnet; we use the same
+      // string placeholder for Optimism Goerli as for xdai and sokol
       optimisticEthereum: process.env.OPTIMISM_API_KEY || "",
       optimisticKovan: process.env.OPTIMISM_API_KEY || "",
       optimisticGoerli: "wagmi",
