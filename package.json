@@ -109,6 +109,7 @@
     "solidity-coverage": "^0.7.21",
     "ts-node": "^10.9.1",
     "typechain": "^8.1.0",
-    "typescript": "^4.7.4"
+    "typescript": "^4.7.4",
+    "undici": "^5.8.0"
   }
 }
