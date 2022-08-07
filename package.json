@@ -92,7 +92,7 @@
     "@typechain/hardhat": "^6.1.2",
     "@types/chai": "^4.3.1",
     "@types/mocha": "^9.1.1",
-    "@types/node": "^18.6.3",
+    "@types/node": "^18.6.4",
     "@typescript-eslint/eslint-plugin": "^5.32.0",
     "@typescript-eslint/parser": "^5.32.0",
     "chai": "^4.3.6",
@@ -105,11 +105,11 @@
     "hardhat-contract-sizer": "^2.6.1",
     "hardhat-gas-reporter": "^1.0.8",
     "prettier": "^2.7.1",
-    "prettier-plugin-solidity": "^1.0.0-dev.23",
+    "prettier-plugin-solidity": "^1.0.0-beta.24",
     "solidity-coverage": "^0.7.21",
     "ts-node": "^10.9.1",
     "typechain": "^8.1.0",
     "typescript": "^4.7.4",
-    "undici": "^5.8.0"
+    "undici": "^5.8.1"
   }
 }
