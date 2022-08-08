@@ -90,7 +90,7 @@
     "@openzeppelin/test-helpers": "^0.5.15",
     "@typechain/ethers-v5": "^10.1.0",
     "@typechain/hardhat": "^6.1.2",
-    "@types/chai": "^4.3.1",
+    "@types/chai": "^4.3.3",
     "@types/mocha": "^9.1.1",
     "@types/node": "^18.6.4",
     "@typescript-eslint/eslint-plugin": "^5.32.0",
