@@ -271,10 +271,11 @@ const config: HardhatUserConfig = {
       // For Polygon testnet & mainnet
       polygon: process.env.POLYGON_API_KEY || "",
       polygonMumbai: process.env.POLYGON_API_KEY || "",
-      // For Arbitrum testnet & mainnet
+      // For Arbitrum testnets & mainnet; we use the same
+      // string placeholder for Optimism Goerli as for xdai and sokol
       arbitrumOne: process.env.ARBITRUM_API_KEY || "",
       arbitrumTestnet: process.env.ARBITRUM_API_KEY || "",
-      arbitrumNova: process.env.ARBITRUM_API_KEY || "",
+      arbitrumNova: "wagmi",
       // For Avalanche testnet & mainnet
       avalanche: process.env.AVALANCHE_API_KEY || "",
       avalancheFujiTestnet: process.env.AVALANCHE_API_KEY || "",
