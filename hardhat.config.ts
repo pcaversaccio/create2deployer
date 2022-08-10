@@ -373,19 +373,19 @@ const config: HardhatUserConfig = {
         },
       },
       {
-        network: "arbitrumTestnet",
-        chainId: 421613,
-        urls: {
-          apiURL: "https://goerli-rollup-explorer.arbitrum.io/api",
-          browserURL: "https://goerli-rollup-explorer.arbitrum.io",
-        },
-      },
-      {
         network: "arbitrumNova",
         chainId: 42170,
         urls: {
           apiURL: "https://nova-explorer.arbitrum.io/api",
           browserURL: "https://nova-explorer.arbitrum.io",
+        },
+      },
+      {
+        network: "arbitrumTestnet",
+        chainId: 421613,
+        urls: {
+          apiURL: "https://goerli-rollup-explorer.arbitrum.io/api",
+          browserURL: "https://goerli-rollup-explorer.arbitrum.io",
         },
       },
     ],
