@@ -274,8 +274,8 @@ const config: HardhatUserConfig = {
       // For Arbitrum testnet & mainnets; we use the same
       // string placeholder for Arbitrum Nova as for xdai and sokol
       arbitrumOne: process.env.ARBITRUM_API_KEY || "",
-      arbitrumTestnet: process.env.ARBITRUM_API_KEY || "",
       arbitrumNova: "wagmi",
+      arbitrumTestnet: process.env.ARBITRUM_API_KEY || "",
       // For Avalanche testnet & mainnet
       avalanche: process.env.AVALANCHE_API_KEY || "",
       avalancheFujiTestnet: process.env.AVALANCHE_API_KEY || "",
