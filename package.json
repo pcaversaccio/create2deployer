@@ -93,7 +93,7 @@
     "@typechain/hardhat": "^6.1.2",
     "@types/chai": "^4.3.3",
     "@types/mocha": "^9.1.1",
-    "@types/node": "^18.7.4",
+    "@types/node": "^18.7.5",
     "@typescript-eslint/eslint-plugin": "^5.33.1",
     "@typescript-eslint/parser": "^5.33.1",
     "chai": "^4.3.6",
