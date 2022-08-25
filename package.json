@@ -93,9 +93,9 @@
     "@typechain/hardhat": "^6.1.2",
     "@types/chai": "^4.3.3",
     "@types/mocha": "^9.1.1",
-    "@types/node": "^18.7.11",
-    "@typescript-eslint/eslint-plugin": "^5.34.0",
-    "@typescript-eslint/parser": "^5.34.0",
+    "@types/node": "^18.7.13",
+    "@typescript-eslint/eslint-plugin": "^5.35.1",
+    "@typescript-eslint/parser": "^5.35.1",
     "chai": "^4.3.6",
     "dotenv": "^16.0.1",
     "eslint": "^8.22.0",
@@ -111,6 +111,6 @@
     "ts-node": "^10.9.1",
     "typechain": "^8.1.0",
     "typescript": "^4.7.4",
-    "undici": "^5.9.1"
+    "undici": "^5.10.0"
   }
 }
