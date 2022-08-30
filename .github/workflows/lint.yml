@@ -7,7 +7,7 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  unit:
+  lint:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
@@ -40,3 +40,17 @@ jobs:
 
       - name: Lint
         run: npm run solhint:check && npm run lint:check
+
+  codespell:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os:
+          - ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Run Codespell
+        uses: codespell-project/actions-codespell@v1.0
+        with:
+          check_filenames: true
+          skip: package-lock.json
