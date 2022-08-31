@@ -50,6 +50,7 @@
     "deploy:fuji": "npx hardhat run --network fuji scripts/deploy.ts",
     "deploy:avalanche": "npx hardhat run --network avalanche scripts/deploy.ts",
     "deploy:sokol": "npx hardhat run --network sokol scripts/deploy.ts",
+    "deploy:chiado": "npx hardhat run --network chiado scripts/deploy.ts",
     "deploy:gnosis": "npx hardhat run --network gnosis scripts/deploy.ts",
     "deploy:moonbasealpha": "npx hardhat run --network moonbaseAlpha scripts/deploy.ts",
     "deploy:moonriver": "npx hardhat run --network moonriver scripts/deploy.ts",

@@ -145,6 +145,11 @@ const config: HardhatUserConfig = {
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
+    chiado: {
+      url: "https://rpc-chiado.gnosistestnet.com", // Publicly known RPC
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
     gnosis: {
       url: "https://rpc.gnosischain.com", // Publicly known RPC
       accounts:
