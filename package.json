@@ -108,10 +108,10 @@
     "hardhat-gas-reporter": "^1.0.9",
     "prettier": "^2.7.1",
     "prettier-plugin-solidity": "^1.0.0-beta.24",
-    "solidity-coverage": "^0.7.21",
+    "solidity-coverage": "^0.7.22",
     "ts-node": "^10.9.1",
     "typechain": "^8.1.0",
-    "typescript": "^4.8.2",
+    "typescript": "^4.8.3",
     "undici": "^5.10.0"
   }
 }
