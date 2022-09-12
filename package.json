@@ -99,7 +99,7 @@
     "@typescript-eslint/parser": "^5.36.2",
     "chai": "^4.3.6",
     "dotenv": "^16.0.2",
-    "eslint": "^8.23.0",
+    "eslint": "^8.23.1",
     "eslint-config-prettier": "^8.5.0",
     "ethers": "^5.7.0",
     "hardhat": "^2.11.1",
