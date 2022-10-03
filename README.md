@@ -38,7 +38,7 @@ All files             |      100 |      100 |      100 |      100 |             
 ----------------------|----------|----------|----------|----------|----------------|
 ```
 
-> **Important:** A test coverage of 100% does not mean that there are no vulnerabilities. What really counts is the quality and spectrum of the tests themselves. This project is in beta, use at your own risk!
+> **Important:** A test coverage of 100% does not mean that there are no vulnerabilities. What really counts is the quality and spectrum of the tests themselves.
 
 ## Deployments [`Create2Deployer.sol`](https://github.com/pcaversaccio/create2deployer/blob/main/contracts/Create2Deployer.sol)
 
