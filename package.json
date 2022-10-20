@@ -80,7 +80,7 @@
   "devDependencies": {
     "@eth-sdk/utils": "^0.2.10",
     "@ethersproject/abi": "^5.7.0",
-    "@ethersproject/providers": "^5.7.1",
+    "@ethersproject/providers": "^5.7.2",
     "@nomicfoundation/hardhat-chai-matchers": "^1.0.4",
     "@nomicfoundation/hardhat-network-helpers": "^1.0.6",
     "@nomicfoundation/hardhat-toolbox": "^2.0.0",
@@ -101,7 +101,7 @@
     "dotenv": "^16.0.3",
     "eslint": "^8.25.0",
     "eslint-config-prettier": "^8.5.0",
-    "ethers": "^5.7.1",
+    "ethers": "^5.7.2",
     "hardhat": "^2.12.0",
     "hardhat-abi-exporter": "^2.10.1",
     "hardhat-contract-sizer": "^2.6.1",
