@@ -31,218 +31,271 @@ const config: HardhatUserConfig = {
   networks: {
     hardhat: {
       initialBaseFeePerGas: 0,
+      chainId: 31337,
       hardfork: "merge",
+      forking: {
+        url: process.env.ETH_MAINNET_URL || "",
+        enabled: false,
+      },
     },
     localhost: {
       url: "http://127.0.0.1:8545",
     },
+    "truffle-dashboard": {
+      url: "http://localhost:24012/rpc",
+    },
+    tenderly: {
+      url: `https://rpc.tenderly.co/fork/${process.env.TENDERLY_FORK_ID}`,
+    },
     rinkeby: {
-      url: process.env.RINKEBY_URL || "",
+      chainId: 4,
+      url: process.env.ETH_RINKEBY_TESTNET_URL || "",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
     kovan: {
-      url: process.env.KOVAN_URL || "",
+      chainId: 42,
+      url: process.env.ETH_KOVAN_TESTNET_URL || "",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
     ropsten: {
-      url: process.env.ROPSTEN_URL || "",
+      chainId: 3,
+      url: process.env.ETH_ROPSTEN_TESTNET_URL || "",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
     goerli: {
-      url: process.env.GOERLI_URL || "",
+      chainId: 5,
+      url: process.env.ETH_GOERLI_TESTNET_URL || "",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
     sepolia: {
-      url: "https://rpc.sepolia.org", // Publicly known RPC,
+      chainId: 11155111,
+      url: process.env.ETH_SEPOLIA_TESTNET_URL || "",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
     ethMain: {
-      url: process.env.MAIN_URL || "",
+      chainId: 1,
+      url: process.env.ETH_MAINNET_URL || "",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
     bscTestnet: {
-      url: "https://data-seed-prebsc-1-s1.binance.org:8545", // Publicly known RPC
+      chainId: 97,
+      url: process.env.BSC_TESTNET_URL || "",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
     bscMain: {
-      url: "https://bsc-dataseed.binance.org", // Publicly known RPC
+      chainId: 56,
+      url: process.env.BSC_MAINNET_URL || "",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
     optimismTestnet: {
+      chainId: 420,
       url: process.env.OPTIMISM_TESTNET_URL || "",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
     optimismMain: {
-      url: process.env.OPTIMISM_MAIN_URL || "",
+      chainId: 10,
+      url: process.env.OPTIMISM_MAINNET_URL || "",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
     arbitrumTestnet: {
+      chainId: 421613,
       url: process.env.ARBITRUM_TESTNET_URL || "",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
     arbitrumMain: {
-      url: process.env.ARBITRUM_MAIN_URL || "",
+      chainId: 42161,
+      url: process.env.ARBITRUM_MAINNET_URL || "",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
     arbitrumNova: {
-      url: "https://nova.arbitrum.io/rpc", // Publicly known RPC
+      chainId: 42170,
+      url: process.env.ARBITRUM_NOVA_URL || "",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
     mumbai: {
-      url: process.env.MUMBAI_URL || "",
+      chainId: 80001,
+      url: process.env.POLYGON_TESTNET_URL || "",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
     polygon: {
-      url: process.env.POLYGON_URL || "",
+      chainId: 137,
+      url: process.env.POLYGON_MAINNET_URL || "",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
     hecoTestnet: {
-      url: "https://http-testnet.hecochain.com", // Publicly known RPC
+      chainId: 256,
+      url: process.env.HECO_TESTNET_URL || "",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
     hecoMain: {
-      url: "https://http-mainnet.hecochain.com", // Publicly known RPC
+      chainId: 128,
+      url: process.env.HECO_MAINNET_URL || "",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
     fantomTestnet: {
-      url: "https://rpc.testnet.fantom.network", // Publicly known RPC
+      chainId: 4002,
+      url: process.env.FANTOM_TESTNET_URL || "",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
     fantomMain: {
-      url: "https://rpc.ftm.tools", // Publicly known RPC
+      chainId: 250,
+      url: process.env.FANTOM_MAINNET_URL || "",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
     fuji: {
-      url: "https://api.avax-test.network/ext/bc/C/rpc", // Publicly known RPC
+      chainId: 43113,
+      url: process.env.AVALANCHE_TESTNET_URL || "",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
     avalanche: {
-      url: "https://api.avax.network/ext/bc/C/rpc", // Publicly known RPC
+      chainId: 43114,
+      url: process.env.AVALANCHE_MAINNET_URL || "",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
     sokol: {
-      url: "https://sokol.poa.network", // Publicly known RPC
+      chainId: 77,
+      url: process.env.SOKOL_TESTNET_URL || "",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
     chiado: {
-      url: "https://rpc-chiado.gnosistestnet.com", // Publicly known RPC
+      chainId: 10200,
+      url: process.env.GNOSIS_TESTNET_URL || "",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
     gnosis: {
-      url: "https://rpc.gnosischain.com", // Publicly known RPC
+      chainId: 100,
+      url: process.env.GNOSIS_MAINNET_URL || "",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
     moonbaseAlpha: {
-      url: "https://rpc.api.moonbase.moonbeam.network", // Publicly known RPC
+      chainId: 1287,
+      url: process.env.MOONBEAM_TESTNET_URL || "",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
     moonriver: {
-      url: "https://rpc.moonriver.moonbeam.network", // Publicly known RPC
+      chainId: 1285,
+      url: process.env.MOONRIVER_MAINNET_URL || "",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
     moonbeam: {
-      url: "https://rpc.api.moonbeam.network", // Publicly known RPC
+      chainId: 1284,
+      url: process.env.MOONBEAM_MAINNET_URL || "",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
     alfajores: {
-      url: "https://alfajores-forno.celo-testnet.org", // Publicly known RPC
+      chainId: 44787,
+      url: process.env.CELO_TESTNET_URL || "",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
     celo: {
-      url: "https://forno.celo.org", // Publicly known RPC
+      chainId: 42220,
+      url: process.env.CELO_MAINNET_URL || "",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
     auroraTestnet: {
-      url: "https://testnet.aurora.dev", // Publicly known RPC
+      chainId: 1313161555,
+      url: process.env.AURORA_TESTNET_URL || "",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
     auroraMain: {
-      url: "https://mainnet.aurora.dev", // Publicly known RPC
+      chainId: 1313161554,
+      url: process.env.AURORA_MAINNET_URL || "",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
     harmonyTestnet: {
-      url: "https://api.s0.b.hmny.io", // Publicly known RPC
+      chainId: 1666700000,
+      url: process.env.HARMONY_TESTNET_URL || "",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
     harmonyMain: {
-      url: "https://api.harmony.one", // Publicly known RPC
+      chainId: 1666600000,
+      url: process.env.HARMONY_MAINNET_URL || "",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
     autobahn: {
-      url: "https://rpc.autobahn.network", // Publicly known RPC
+      chainId: 45000,
+      url: process.env.AUTOBAHN_MAINNET_URL || "",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
     spark: {
-      url: "https://rpc.fusespark.io", // Publicly known RPC
+      chainId: 123,
+      url: process.env.FUSE_TESTNET_URL || "",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
     fuse: {
-      url: "https://rpc.fuse.io", // Publicly known RPC
+      chainId: 122,
+      url: process.env.FUSE_MAINNET_URL || "",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
     cronosTestnet: {
-      url: "https://evm-t3.cronos.org", // Publicly known RPC
+      chainId: 338,
+      url: process.env.CRONOS_TESTNET_URL || "",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
     cronosMain: {
-      url: "https://evm.cronos.org", // Publicly known RPC
+      chainId: 25,
+      url: process.env.CRONOS_MAINNET_URL || "",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
     evmosTestnet: {
-      url: "https://eth.bd.evmos.dev:8545", // Publicly known RPC
+      chainId: 9000,
+      url: process.env.EVMOS_TESTNET_URL || "",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
     evmosMain: {
-      url: "https://eth.bd.evmos.org:8545", // Publicly known RPC
+      chainId: 9001,
+      url: process.env.EVMOS_MAINNET_URL || "",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
     bobaTestnet: {
-      url: "https://rinkeby.boba.network", // Publicly known RPC
+      chainId: 28,
+      url: process.env.BOBA_TESTNET_URL || "",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
     bobaMain: {
-      url: "https://mainnet.boba.network", // Publicly known RPC
+      chainId: 288,
+      url: process.env.BOBA_MAINNET_URL || "",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
@@ -269,17 +322,15 @@ const config: HardhatUserConfig = {
       // For Fantom testnet & mainnet
       opera: process.env.FANTOM_API_KEY || "",
       ftmTestnet: process.env.FANTOM_API_KEY || "",
-      // For Optimism testnets & mainnet
+      // For Optimism testnet & mainnet
       optimisticEthereum: process.env.OPTIMISM_API_KEY || "",
-      optimisticKovan: process.env.OPTIMISM_API_KEY || "",
       optimisticGoerli: process.env.OPTIMISM_API_KEY || "",
       // For Polygon testnet & mainnet
       polygon: process.env.POLYGON_API_KEY || "",
       polygonMumbai: process.env.POLYGON_API_KEY || "",
-      // For Arbitrum testnet & mainnets; we use the same
-      // string placeholder for Arbitrum Nova as for xdai and sokol
+      // For Arbitrum testnet & mainnets
       arbitrumOne: process.env.ARBITRUM_API_KEY || "",
-      arbitrumNova: "wagmi",
+      arbitrumNova: process.env.ARBITRUM_API_KEY || "",
       arbitrumTestnet: process.env.ARBITRUM_API_KEY || "",
       // For Avalanche testnet & mainnet
       avalanche: process.env.AVALANCHE_API_KEY || "",
@@ -291,36 +342,53 @@ const config: HardhatUserConfig = {
       // For Harmony testnet & mainnet
       harmony: process.env.HARMONY_API_KEY || "",
       harmonyTest: process.env.HARMONY_API_KEY || "",
+      // For Autobahn testnet & mainnet
+      autobahn: process.env.AUTOBAHN_API_KEY || "",
+      autobahnTestnet: process.env.AUTOBAHN_API_KEY || "",
       // For Aurora testnet & mainnet
       aurora: process.env.AURORA_API_KEY || "",
       auroraTestnet: process.env.AURORA_API_KEY || "",
       // For Cronos testnet & mainnet
       cronos: process.env.CRONOS_API_KEY || "",
       cronosTestnet: process.env.CRONOS_API_KEY || "",
-      // For Gnosis testnet & mainnet. xdai and sokol don't
-      // need an API key, but you still need to specify one;
-      // any string placeholder will work
+      // For Gnosis/xDai testnets & mainnets
       gnosis: process.env.GNOSIS_API_KEY || "",
-      xdai: "wagmi",
-      sokol: "wagmi",
-      // For Fuse testnet; we use the same string placeholder as for
-      // xdai and sokol
-      spark: "wagmi",
-      // For Evmos testnet & mainnet; we use the same string placeholder
-      // as for xdai and sokol
-      evmos: "wagmi",
-      evmosTestnet: "wagmi",
+      xdai: process.env.GNOSIS_API_KEY || "",
+      sokol: process.env.GNOSIS_API_KEY || "",
+      chiado: process.env.GNOSIS_API_KEY || "",
+      // For Fuse testnet & mainnet
+      fuse: process.env.FUSE_API_KEY || "",
+      spark: process.env.FUSE_API_KEY || "",
+      // For Evmos testnet & mainnet
+      evmos: process.env.EVMOS_API_KEY || "",
+      evmosTestnet: process.env.EVMOS_API_KEY || "",
       // For Boba network testnet & mainnet
       boba: process.env.BOBA_API_KEY || "",
       bobaTestnet: process.env.BOBA_API_KEY || "",
     },
     customChains: [
       {
-        network: "gnosis",
-        chainId: 100,
+        network: "autobahn",
+        chainId: 45000,
         urls: {
-          apiURL: "https://api.gnosisscan.io/api",
-          browserURL: "https://gnosisscan.io",
+          apiURL: "https://autobahn-explorer.com/api",
+          browserURL: "https://autobahn-explorer.com",
+        },
+      },
+      {
+        network: "autobahnTestnet",
+        chainId: 45001,
+        urls: {
+          apiURL: "https://testnet.autobahn-explorer.com/api",
+          browserURL: "https://testnet.autobahn-explorer.com",
+        },
+      },
+      {
+        network: "chiado",
+        chainId: 10200,
+        urls: {
+          apiURL: "https://blockscout.chiadochain.net/api",
+          browserURL: "https://blockscout.chiadochain.net",
         },
       },
       {
@@ -340,11 +408,11 @@ const config: HardhatUserConfig = {
         },
       },
       {
-        network: "optimisticGoerli",
-        chainId: 420,
+        network: "fuse",
+        chainId: 122,
         urls: {
-          apiURL: "https://api-goerli-optimism.etherscan.io/api",
-          browserURL: "https://goerli-optimism.etherscan.io",
+          apiURL: "https://explorer.fuse.io/api",
+          browserURL: "https://explorer.fuse.io",
         },
       },
       {
