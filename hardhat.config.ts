@@ -245,6 +245,12 @@ const config: HardhatUserConfig = {
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
+    autobahnTestnet: {
+      chainId: 45001,
+      url: process.env.AUTOBAHN_TESTNET_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
     autobahn: {
       chainId: 45000,
       url: process.env.AUTOBAHN_MAINNET_URL || "",
