@@ -465,8 +465,8 @@ const config: HardhatUserConfig = {
         network: "arbitrumNova",
         chainId: 42170,
         urls: {
-          apiURL: "https://nova-explorer.arbitrum.io/api",
-          browserURL: "https://nova-explorer.arbitrum.io",
+          apiURL: "https://api-nova.arbiscan.io/api",
+          browserURL: "https://nova.arbiscan.io",
         },
       },
       {
