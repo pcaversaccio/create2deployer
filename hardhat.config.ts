@@ -473,8 +473,8 @@ const config: HardhatUserConfig = {
         network: "arbitrumTestnet",
         chainId: 421613,
         urls: {
-          apiURL: "https://goerli-rollup-explorer.arbitrum.io/api",
-          browserURL: "https://goerli-rollup-explorer.arbitrum.io",
+          apiURL: "https://api-goerli.arbiscan.io/api",
+          browserURL: "https://goerli.arbiscan.io",
         },
       },
     ],
