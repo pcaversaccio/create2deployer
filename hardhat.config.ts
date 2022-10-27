@@ -337,7 +337,7 @@ const config: HardhatUserConfig = {
       // For Arbitrum testnet & mainnets
       arbitrumOne: process.env.ARBITRUM_API_KEY || "",
       arbitrumNova: process.env.ARBITRUM_API_KEY || "",
-      arbitrumTestnet: process.env.ARBITRUM_API_KEY || "",
+      arbitrumGoerli: process.env.ARBITRUM_API_KEY || "",
       // For Avalanche testnet & mainnet
       avalanche: process.env.AVALANCHE_API_KEY || "",
       avalancheFujiTestnet: process.env.AVALANCHE_API_KEY || "",
@@ -467,14 +467,6 @@ const config: HardhatUserConfig = {
         urls: {
           apiURL: "https://api-nova.arbiscan.io/api",
           browserURL: "https://nova.arbiscan.io",
-        },
-      },
-      {
-        network: "arbitrumTestnet",
-        chainId: 421613,
-        urls: {
-          apiURL: "https://api-goerli.arbiscan.io/api",
-          browserURL: "https://goerli.arbiscan.io",
         },
       },
     ],
