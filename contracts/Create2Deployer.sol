@@ -34,9 +34,15 @@ contract Create2Deployer is Ownable, Pausable {
     function deploy(
         uint256 value,
         bytes32 salt,
-        bytes memory code
+        bytes memory code,
+        bytes memory initCall
     ) public whenNotPaused {
-        Create2.deploy(value, salt, code);
+        address addr = Create2.deploy(value, salt, code);
+
+        if (initCall.length > 0) {
+            (bool success, bytes memory reason) = addr.call(initCall);
+            require(success, string(reason));
+        }
     }
 
     /**

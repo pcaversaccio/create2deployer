@@ -15,6 +15,7 @@ const { expect } = require("chai");
 
 const Create2Deployer = artifacts.require("Create2Deployer");
 const ERC20Mock = artifacts.require("ERC20Mock");
+const OwnableMock = artifacts.require("OwnableMock");
 const ERC1820Implementer = artifacts.require("ERC1820Implementer");
 
 contract("Create2", function (accounts) {
@@ -84,11 +85,59 @@ contract("Create2", function (accounts) {
         constructorByteCode
       );
 
-      await this.factory.deploy(0, saltHex, constructorByteCode);
+      await this.factory.deploy(0, saltHex, constructorByteCode, "0x");
 
       const erc20 = await ERC20Mock.at(offChainComputed);
       expect(await erc20.balanceOf(deployerAccount)).to.be.bignumber.equal(
         new BN(100)
+      );
+    });
+
+    it("deploy a Ownable Mock with correct initial call", async function () {
+      const offChainComputed = computeCreate2Address(
+        this.factory.address,
+        saltHex,
+        OwnableMock.bytecode
+      );
+
+      const transferOwnershipAbi = OwnableMock.abi.filter(
+        (f: any) => f.name === "transferOwnership" && f.inputs.length === 1
+      )[0];
+
+      const transferOwnershipCall = web3.eth.abi.encodeFunctionCall(
+        transferOwnershipAbi,
+        [deployerAccount]
+      );
+
+      await this.factory.deploy(
+        0,
+        saltHex,
+        OwnableMock.bytecode,
+        transferOwnershipCall
+      );
+
+      const ownable = await OwnableMock.at(offChainComputed);
+      expect(await ownable.owner()).to.be.equal(deployerAccount);
+    });
+
+    it("deploy a Ownable Mock with wrong init call", async function () {
+      const transferOwnershipAbi = OwnableMock.abi.filter(
+        (f: any) => f.name === "transferOwnership" && f.inputs.length === 1
+      )[0];
+
+      const wrongTransferOwnershipCall = web3.eth.abi.encodeFunctionCall(
+        transferOwnershipAbi,
+        ["0x0000000000000000000000000000000000000000"]
+      );
+
+      expectRevert(
+        this.factory.deploy(
+          0,
+          saltHex,
+          OwnableMock.bytecode,
+          wrongTransferOwnershipCall
+        ),
+        "Ownable: caller is not the owner"
       );
     });
 
@@ -105,18 +154,18 @@ contract("Create2", function (accounts) {
         this.factory.address
       );
 
-      await this.factory.deploy(deposit, saltHex, constructorByteCode);
+      await this.factory.deploy(deposit, saltHex, constructorByteCode, "0x");
       expect(await balance.current(onChainComputed)).to.be.bignumber.equal(
         deposit
       );
     });
 
     it("fails deploying a contract in an existent address", async function () {
-      await this.factory.deploy(0, saltHex, constructorByteCode, {
+      await this.factory.deploy(0, saltHex, constructorByteCode, "0x", {
         from: deployerAccount,
       });
       await expectRevert(
-        this.factory.deploy(0, saltHex, constructorByteCode, {
+        this.factory.deploy(0, saltHex, constructorByteCode, "0x", {
           from: deployerAccount,
         }),
         "Create2: Failed on deploy"
@@ -125,14 +174,14 @@ contract("Create2", function (accounts) {
 
     it("fails deploying a contract if the bytecode length is zero", async function () {
       await expectRevert(
-        this.factory.deploy(0, saltHex, "0x", { from: deployerAccount }),
+        this.factory.deploy(0, saltHex, "0x", "0x", { from: deployerAccount }),
         "Create2: bytecode length is zero"
       );
     });
 
     it("fails deploying a contract if factory contract does not have sufficient balance", async function () {
       await expectRevert(
-        this.factory.deploy(1, saltHex, constructorByteCode, {
+        this.factory.deploy(1, saltHex, constructorByteCode, "0x", {
           from: deployerAccount,
         }),
         "Create2: insufficient balance"
