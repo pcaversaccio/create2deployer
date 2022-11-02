@@ -235,13 +235,10 @@ contract ERC1820Implementer is IERC1820Implementer {
     /**
      * @dev See {IERC1820Implementer-canImplementInterfaceForAddress}.
      */
-    function canImplementInterfaceForAddress(bytes32 interfaceHash, address account)
-        public
-        view
-        virtual
-        override
-        returns (bytes32)
-    {
+    function canImplementInterfaceForAddress(
+        bytes32 interfaceHash,
+        address account
+    ) public view virtual override returns (bytes32) {
         return _supportedInterfaces[interfaceHash][account] ? _ERC1820_ACCEPT_MAGIC : bytes32(0x00);
     }
 
@@ -287,11 +284,7 @@ library Create2 {
      * - the factory must have a balance of at least `amount`.
      * - if `amount` is non-zero, `bytecode` must have a `payable` constructor.
      */
-    function deploy(
-        uint256 amount,
-        bytes32 salt,
-        bytes memory bytecode
-    ) internal returns (address) {
+    function deploy(uint256 amount, bytes32 salt, bytes memory bytecode) internal returns (address) {
         address addr;
         require(address(this).balance >= amount, "Create2: insufficient balance");
         require(bytecode.length != 0, "Create2: bytecode length is zero");
@@ -314,11 +307,7 @@ library Create2 {
      * @dev Returns the address where a contract will be stored if deployed via {deploy} from a contract located at
      * `deployer`. If `deployer` is this contract's address, returns the same value as {computeAddress}.
      */
-    function computeAddress(
-        bytes32 salt,
-        bytes32 bytecodeHash,
-        address deployer
-    ) internal pure returns (address) {
+    function computeAddress(bytes32 salt, bytes32 bytecodeHash, address deployer) internal pure returns (address) {
         bytes32 _data = keccak256(abi.encodePacked(bytes1(0xff), deployer, salt, bytecodeHash));
         return address(uint160(uint256(_data)));
     }
@@ -353,11 +342,7 @@ contract Create2Deployer is Ownable, Pausable {
      * - the factory must have a balance of at least `value`.
      * - if `value` is non-zero, `bytecode` must have a `payable` constructor.
      */
-    function deploy(
-        uint256 value,
-        bytes32 salt,
-        bytes memory code
-    ) public whenNotPaused {
+    function deploy(uint256 value, bytes32 salt, bytes memory code) public whenNotPaused {
         Create2.deploy(value, salt, code);
     }
 
