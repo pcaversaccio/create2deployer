@@ -294,7 +294,7 @@ const config: HardhatUserConfig = {
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
     bobaTestnet: {
-      chainId: 28,
+      chainId: 2888,
       url: process.env.BOBA_TESTNET_URL || "",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
@@ -383,7 +383,7 @@ const config: HardhatUserConfig = {
       // For Boba network testnet & mainnet
       boba: process.env.BOBA_API_KEY || "",
       bobaTestnet: process.env.BOBA_API_KEY || "",
-      // For Canto network testnet & mainnet
+      // For Canto testnet & mainnet
       canto: process.env.CANTO_API_KEY || "",
       cantoTestnet: process.env.CANTO_API_KEY || "",
     },
@@ -470,7 +470,7 @@ const config: HardhatUserConfig = {
       },
       {
         network: "bobaTestnet",
-        chainId: 28,
+        chainId: 2888,
         urls: {
           apiURL: "https://api-testnet.bobascan.com/api",
           browserURL: "https://testnet.bobascan.com",
