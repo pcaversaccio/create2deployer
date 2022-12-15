@@ -305,6 +305,18 @@ const config: HardhatUserConfig = {
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
+    cantoTestnet: {
+      chainId: 740,
+      url: process.env.CANTO_TESTNET_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
+    cantoMain: {
+      chainId: 7700,
+      url: process.env.CANTO_MAINNET_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
   },
   gasReporter: {
     enabled: process.env.REPORT_GAS !== undefined,
@@ -371,6 +383,9 @@ const config: HardhatUserConfig = {
       // For Boba network testnet & mainnet
       boba: process.env.BOBA_API_KEY || "",
       bobaTestnet: process.env.BOBA_API_KEY || "",
+      // For Canto network testnet & mainnet
+      canto: process.env.CANTO_API_KEY || "",
+      cantoTestnet: process.env.CANTO_API_KEY || "",
     },
     customChains: [
       {
@@ -467,6 +482,22 @@ const config: HardhatUserConfig = {
         urls: {
           apiURL: "https://api-nova.arbiscan.io/api",
           browserURL: "https://nova.arbiscan.io",
+        },
+      },
+      {
+        network: "canto",
+        chainId: 7700,
+        urls: {
+          apiURL: "https://evm.explorer.canto.io/api",
+          browserURL: "https://evm.explorer.canto.io",
+        },
+      },
+      {
+        network: "cantoTestnet",
+        chainId: 740,
+        urls: {
+          apiURL: "https://testnet-explorer.canto.neobase.one/api",
+          browserURL: "https://testnet-explorer.canto.neobase.one",
         },
       },
     ],
