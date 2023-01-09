@@ -110,7 +110,7 @@
     "hardhat-abi-exporter": "^2.10.1",
     "hardhat-contract-sizer": "^2.6.1",
     "hardhat-gas-reporter": "^1.0.9",
-    "prettier": "^2.8.1",
+    "prettier": "^2.8.2",
     "prettier-plugin-solidity": "^1.1.1",
     "solidity-coverage": "^0.8.2",
     "ts-node": "^10.9.1",
