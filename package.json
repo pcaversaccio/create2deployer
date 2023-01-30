@@ -104,7 +104,7 @@
     "cookiejar": ">=2.1.4",
     "decode-uri-component": ">=0.4.1",
     "dotenv": "^16.0.3",
-    "eslint": "^8.32.0",
+    "eslint": "^8.33.0",
     "eslint-config-prettier": "^8.6.0",
     "ethers": "^5.7.2",
     "hardhat": "^2.12.6",
