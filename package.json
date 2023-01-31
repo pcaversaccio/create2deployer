@@ -98,8 +98,8 @@
     "@types/chai": "^4.3.4",
     "@types/mocha": "^10.0.1",
     "@types/node": "^18.11.18",
-    "@typescript-eslint/eslint-plugin": "^5.49.0",
-    "@typescript-eslint/parser": "^5.49.0",
+    "@typescript-eslint/eslint-plugin": "^5.50.0",
+    "@typescript-eslint/parser": "^5.50.0",
     "chai": "^4.3.7",
     "cookiejar": ">=2.1.4",
     "decode-uri-component": ">=0.4.1",
@@ -116,7 +116,7 @@
     "solidity-coverage": "^0.8.2",
     "ts-node": "^10.9.1",
     "typechain": "^8.1.1",
-    "typescript": "^4.9.4",
+    "typescript": "^4.9.5",
     "undici": "^5.16.0"
   }
 }
