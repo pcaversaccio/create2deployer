@@ -317,6 +317,12 @@ const config: HardhatUserConfig = {
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
+    baseTestnet: {
+      chainId: 84531,
+      url: process.env.BASE_TESTNET_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
   },
   gasReporter: {
     enabled: process.env.REPORT_GAS !== undefined,
@@ -386,6 +392,8 @@ const config: HardhatUserConfig = {
       // For Canto testnet & mainnet
       canto: process.env.CANTO_API_KEY || "",
       cantoTestnet: process.env.CANTO_API_KEY || "",
+      // For Base testnet
+      baseTestnet: process.env.BASE_API_KEY || "",
     },
     customChains: [
       {
@@ -498,6 +506,14 @@ const config: HardhatUserConfig = {
         urls: {
           apiURL: "https://testnet-explorer.canto.neobase.one/api",
           browserURL: "https://testnet-explorer.canto.neobase.one",
+        },
+      },
+      {
+        network: "baseTestnet",
+        chainId: 84531,
+        urls: {
+          apiURL: "https://api-goerli.basescan.org/api",
+          browserURL: "https://goerli.basescan.org",
         },
       },
     ],
