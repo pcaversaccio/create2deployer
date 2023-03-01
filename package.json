@@ -107,7 +107,7 @@
     "dotenv": "^16.0.3",
     "eslint": "^8.35.0",
     "eslint-config-prettier": "^8.6.0",
-    "ethers": "^6.0.0",
+    "ethers": "^5.7.2",
     "hardhat": "^2.12.7",
     "hardhat-abi-exporter": "^2.10.1",
     "hardhat-contract-sizer": "^2.8.0",
