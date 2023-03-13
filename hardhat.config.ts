@@ -7,6 +7,7 @@ import "@nomicfoundation/hardhat-chai-matchers";
 import "@typechain/hardhat";
 // import "@matterlabs/hardhat-zksync-solc";
 // import "@matterlabs/hardhat-zksync-deploy";
+// import "@matterlabs/hardhat-zksync-verify";
 import "hardhat-gas-reporter";
 import "solidity-coverage";
 
@@ -339,6 +340,8 @@ const config: HardhatUserConfig = {
     //   url: process.env.ZKSYNC_TESTNET_URL || "",
     //   ethNetwork: "goerli",
     //   zksync: true,
+    //   verifyURL:
+    //     "https://zksync2-testnet-explorer.zksync.dev/contract_verification",
     // },
   },
   gasReporter: {
