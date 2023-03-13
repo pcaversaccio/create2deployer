@@ -5,6 +5,8 @@ import "@nomiclabs/hardhat-truffle5";
 import "@nomiclabs/hardhat-etherscan";
 import "@nomicfoundation/hardhat-chai-matchers";
 import "@typechain/hardhat";
+// import "@matterlabs/hardhat-zksync-solc";
+// import "@matterlabs/hardhat-zksync-deploy";
 import "hardhat-gas-reporter";
 import "solidity-coverage";
 
@@ -28,6 +30,14 @@ const config: HardhatUserConfig = {
       },
     },
   },
+  // zksolc: {
+  //   version: "1.3.6",
+  //   compilerSource: "binary",
+  //   settings: {
+  //     isSystem: false,
+  //     forceEvmla: false,
+  //   },
+  // },
   networks: {
     hardhat: {
       initialBaseFeePerGas: 0,
@@ -37,6 +47,7 @@ const config: HardhatUserConfig = {
         url: process.env.ETH_MAINNET_URL || "",
         enabled: false,
       },
+      // zksync: true, // Enables zksync in the Hardhat local network
     },
     localhost: {
       url: "http://127.0.0.1:8545",
@@ -323,6 +334,12 @@ const config: HardhatUserConfig = {
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
+    // zkSyncTestnet: {
+    //   chainId: 280,
+    //   url: process.env.ZKSYNC_TESTNET_URL || "",
+    //   ethNetwork: "goerli",
+    //   zksync: true,
+    // },
   },
   gasReporter: {
     enabled: process.env.REPORT_GAS !== undefined,

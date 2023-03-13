@@ -55,6 +55,10 @@ typechain-types
 coverage
 coverage.json
 
+# zkSync files
+cache-zk
+artifacts-zk
+
 # Miscellaneous files
 bin
 out

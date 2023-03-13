@@ -74,6 +74,7 @@
     "deploy:cantotestnet": "npx hardhat run --network cantoTestnet scripts/deploy.ts",
     "deploy:cantomain": "npx hardhat run --network cantoMain scripts/deploy.ts",
     "deploy:basetestnet": "npx hardhat run --network baseTestnet scripts/deploy.ts",
+    "deploy:zksynctestnet": "npx hardhat deploy-zksync --network zkSyncTestnet --script deploy-zksync.ts",
     "lint:check": "npx eslint **/*.{js,ts}",
     "lint:fix": "npx eslint **/*.{js,ts} --fix",
     "prettier:check": "prettier -c **/*.{js,ts,md,sol,json,yml}",
@@ -85,6 +86,8 @@
     "@eth-sdk/utils": "^0.2.10",
     "@ethersproject/abi": "^5.7.0",
     "@ethersproject/providers": "^5.7.2",
+    "@matterlabs/hardhat-zksync-deploy": "^0.6.2",
+    "@matterlabs/hardhat-zksync-solc": "^0.3.14",
     "@nomicfoundation/hardhat-chai-matchers": "^1.0.6",
     "@nomicfoundation/hardhat-network-helpers": "^1.0.8",
     "@nomicfoundation/hardhat-toolbox": "^2.0.2",
@@ -119,6 +122,7 @@
     "ts-node": "^10.9.1",
     "typechain": "^8.1.1",
     "typescript": "^4.9.5",
-    "undici": "^5.20.0"
+    "undici": "^5.20.0",
+    "zksync-web3": "^0.13.4"
   }
 }
