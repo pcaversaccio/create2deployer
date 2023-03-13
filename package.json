@@ -75,6 +75,8 @@
     "deploy:cantomain": "npx hardhat run --network cantoMain scripts/deploy.ts",
     "deploy:basetestnet": "npx hardhat run --network baseTestnet scripts/deploy.ts",
     "deploy:zksynctestnet": "npx hardhat deploy-zksync --network zkSyncTestnet --script deploy-zksync.ts",
+    "deploy:mantletestnet": "npx hardhat run --network mantleTestnet scripts/deploy.ts",
+    "deploy:filecointestnet": "npx hardhat run --network filecoinTestnet scripts/deploy.ts",
     "lint:check": "npx eslint **/*.{js,ts}",
     "lint:fix": "npx eslint **/*.{js,ts} --fix",
     "prettier:check": "prettier -c **/*.{js,ts,md,sol,json,yml}",

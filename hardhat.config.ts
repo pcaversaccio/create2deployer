@@ -343,6 +343,18 @@ const config: HardhatUserConfig = {
     //   verifyURL:
     //     "https://zksync2-testnet-explorer.zksync.dev/contract_verification",
     // },
+    mantleTestnet: {
+      chainId: 5001,
+      url: process.env.MANTLE_TESTNET_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
+    filecoinTestnet: {
+      chainId: 3141,
+      url: process.env.FILECOIN_TESTNET_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
   },
   gasReporter: {
     enabled: process.env.REPORT_GAS !== undefined,
@@ -414,6 +426,8 @@ const config: HardhatUserConfig = {
       cantoTestnet: process.env.CANTO_API_KEY || "",
       // For Base testnet
       baseTestnet: process.env.BASE_API_KEY || "",
+      // For Mantle testnet
+      mantleTestnet: process.env.MANTLE_API_KEY || "",
     },
     customChains: [
       {
@@ -534,6 +548,14 @@ const config: HardhatUserConfig = {
         urls: {
           apiURL: "https://api-goerli.basescan.org/api",
           browserURL: "https://goerli.basescan.org",
+        },
+      },
+      {
+        network: "mantleTestnet",
+        chainId: 5001,
+        urls: {
+          apiURL: "https://explorer.testnet.mantle.xyz/api",
+          browserURL: "https://explorer.testnet.mantle.xyz",
         },
       },
     ],

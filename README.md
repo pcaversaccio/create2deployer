@@ -93,3 +93,5 @@ All files             |      100 |      100 |      100 |      100 |             
   - Boba Network Testnet: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://testnet.bobascan.com/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - Canto Testnet: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://testnet-explorer.canto.neobase.one/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - Base Testnet: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://goerli.basescan.org/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
+  - Mantle Testnet (Wadsley): [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://explorer.testnet.mantle.xyz/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
+  - Filecoin Testnet (Hyperspace): [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://hyperspace.filfox.info/en/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)

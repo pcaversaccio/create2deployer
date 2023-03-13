@@ -3,7 +3,7 @@ import { HardhatRuntimeEnvironment } from "hardhat/types";
 import { Wallet } from "zksync-web3";
 import { Deployer } from "@matterlabs/hardhat-zksync-deploy";
 
-const PRIVATE_KEY: string = process.env.PRIVATE_KEY || "";
+const PRIVATE_KEY: string = process.env.PRIVATE_KEY_ZKS || "";
 
 export default async function main(hre: HardhatRuntimeEnvironment) {
   const wallet = new Wallet(PRIVATE_KEY);
