@@ -77,6 +77,7 @@
     "deploy:zksynctestnet": "npx hardhat deploy-zksync --network zkSyncTestnet --script deploy-zksync.ts",
     "deploy:mantletestnet": "npx hardhat run --network mantleTestnet scripts/deploy.ts",
     "deploy:filecointestnet": "npx hardhat run --network filecoinTestnet scripts/deploy.ts",
+    "deploy:scrolltestnet": "npx hardhat run --network scrollTestnet scripts/deploy.ts",
     "lint:check": "npx eslint **/*.{js,ts}",
     "lint:fix": "npx eslint **/*.{js,ts} --fix",
     "prettier:check": "prettier -c **/*.{js,ts,md,sol,json,yml}",

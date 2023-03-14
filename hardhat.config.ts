@@ -355,6 +355,12 @@ const config: HardhatUserConfig = {
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
+    scrollTestnet: {
+      chainId: 534353,
+      url: process.env.SCROLL_TESTNET_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
   },
   gasReporter: {
     enabled: process.env.REPORT_GAS !== undefined,
@@ -428,6 +434,8 @@ const config: HardhatUserConfig = {
       baseTestnet: process.env.BASE_API_KEY || "",
       // For Mantle testnet
       mantleTestnet: process.env.MANTLE_API_KEY || "",
+      // For Scroll testnet
+      scrollTestnet: process.env.SCROLL_API_KEY || "",
     },
     customChains: [
       {
@@ -556,6 +564,14 @@ const config: HardhatUserConfig = {
         urls: {
           apiURL: "https://explorer.testnet.mantle.xyz/api",
           browserURL: "https://explorer.testnet.mantle.xyz",
+        },
+      },
+      {
+        network: "scrollTestnet",
+        chainId: 534353,
+        urls: {
+          apiURL: "https://blockscout.scroll.io/api",
+          browserURL: "https://blockscout.scroll.io",
         },
       },
     ],
