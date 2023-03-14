@@ -17,7 +17,7 @@ import {Pausable} from "@openzeppelin/contracts/security/Pausable.sol";
  * @notice This contract contains the now deprecated function `killCreate2Deployer`
  * which uses the `selfdestruct` opcode.
  */
-contract Create2Deployer is Ownable, Pausable {
+contract Create2DeployerDeprecated is Ownable, Pausable {
     /**
      * @dev Deploys a contract using `CREATE2`. The address where the
      * contract will be deployed can be known in advance via {computeAddress}.
