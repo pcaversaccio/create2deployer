@@ -25,17 +25,18 @@ This project repository implements a test coverage [plugin](https://github.com/s
 npm run coverage
 ```
 
-The written tests available in the file [`Create2.test.ts`](https://github.com/pcaversaccio/create2deployer/blob/main/test/Create2.test.ts) achieve a test coverage of 100%:
+The written tests available in the file [`Create2Deployer.test.ts`](https://github.com/pcaversaccio/create2deployer/blob/main/test/Create2Deployer.test.ts) achieve a test coverage of 100%:
 
 ```bash
-----------------------|----------|----------|----------|----------|----------------|
-File                  |  % Stmts | % Branch |  % Funcs |  % Lines |Uncovered Lines |
-----------------------|----------|----------|----------|----------|----------------|
- contracts\           |      100 |      100 |      100 |      100 |                |
-  Create2Deployer.sol |      100 |      100 |      100 |      100 |                |
-----------------------|----------|----------|----------|----------|----------------|
-All files             |      100 |      100 |      100 |      100 |                |
-----------------------|----------|----------|----------|----------|----------------|
+--------------------------------|----------|----------|----------|----------|----------------|
+File                            |  % Stmts | % Branch |  % Funcs |  % Lines |Uncovered Lines |
+--------------------------------|----------|----------|----------|----------|----------------|
+ contracts\                     |      100 |      100 |      100 |      100 |                |
+  Create2Deployer.sol           |      100 |      100 |      100 |      100 |                |
+  Create2DeployerDeprecated.sol |      100 |      100 |      100 |      100 |                |
+--------------------------------|----------|----------|----------|----------|----------------|
+All files                       |      100 |      100 |      100 |      100 |                |
+--------------------------------|----------|----------|----------|----------|----------------|
 ```
 
 > **Important:** A test coverage of 100% does not mean that there are no vulnerabilities. What really counts is the quality and spectrum of the tests themselves.
