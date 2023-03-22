@@ -42,6 +42,7 @@
     "deploy:arbitrummain": "npx hardhat run --network arbitrumMain scripts/deploy.ts",
     "deploy:arbitrumnova": "npx hardhat run --network arbitrumNova scripts/deploy.ts",
     "deploy:mumbai": "npx hardhat run --network mumbai scripts/deploy.ts",
+    "deploy:polygonzkevmtestnet": "npx hardhat run --network polygonZkEVMTestnet scripts/deploy.ts",
     "deploy:polygon": "npx hardhat run --network polygon scripts/deploy.ts",
     "deploy:hecotestnet": "npx hardhat run --network hecoTestnet scripts/deploy.ts",
     "deploy:hecomain": "npx hardhat run --network hecoMain scripts/deploy.ts",

@@ -143,6 +143,12 @@ const config: HardhatUserConfig = {
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
+    polygonZkEVMTestnet: {
+      chainId: 1442,
+      url: process.env.POLYGON_ZKEVM_TESTNET_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
     polygon: {
       chainId: 137,
       url: process.env.POLYGON_MAINNET_URL || "",
@@ -387,9 +393,10 @@ const config: HardhatUserConfig = {
       // For Optimism testnet & mainnet
       optimisticEthereum: process.env.OPTIMISM_API_KEY || "",
       optimisticGoerli: process.env.OPTIMISM_API_KEY || "",
-      // For Polygon testnet & mainnet
+      // For Polygon testnets & mainnet
       polygon: process.env.POLYGON_API_KEY || "",
       polygonMumbai: process.env.POLYGON_API_KEY || "",
+      polygonZkEVMTestnet: process.env.POLYGON_API_KEY || "",
       // For Arbitrum testnet & mainnets
       arbitrumOne: process.env.ARBITRUM_API_KEY || "",
       arbitrumNova: process.env.ARBITRUM_API_KEY || "",
@@ -572,6 +579,14 @@ const config: HardhatUserConfig = {
         urls: {
           apiURL: "https://blockscout.scroll.io/api",
           browserURL: "https://blockscout.scroll.io",
+        },
+      },
+      {
+        network: "polygonZkEVMTestnet",
+        chainId: 1442,
+        urls: {
+          apiURL: "https://api-testnet-zkevm.polygonscan.com/api",
+          browserURL: "https://testnet-zkevm.polygonscan.com",
         },
       },
     ],
