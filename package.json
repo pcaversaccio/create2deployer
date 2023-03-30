@@ -80,6 +80,7 @@
     "deploy:mantletestnet": "npx hardhat run --network mantleTestnet scripts/deploy.ts",
     "deploy:filecointestnet": "npx hardhat run --network filecoinTestnet scripts/deploy.ts",
     "deploy:scrolltestnet": "npx hardhat run --network scrollTestnet scripts/deploy.ts",
+    "deploy:lineatestnet": "npx hardhat run --network lineaTestnet scripts/deploy.ts",
     "lint:check": "npx eslint **/*.{js,ts}",
     "lint:fix": "npx eslint **/*.{js,ts} --fix",
     "prettier:check": "prettier -c **/*.{js,ts,md,sol,json,yml}",
@@ -126,7 +127,7 @@
     "solidity-coverage": "^0.8.2",
     "ts-node": "^10.9.1",
     "typechain": "^8.1.1",
-    "typescript": "^5.0.2",
+    "typescript": "^5.0.3",
     "undici": "^5.21.0",
     "zksync-web3": "^0.14.3"
   }

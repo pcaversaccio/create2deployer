@@ -373,6 +373,12 @@ const config: HardhatUserConfig = {
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
+    lineaTestnet: {
+      chainId: 59140,
+      url: process.env.LINEA_TESTNET_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
   },
   gasReporter: {
     enabled: process.env.REPORT_GAS !== undefined,
@@ -450,6 +456,8 @@ const config: HardhatUserConfig = {
       mantleTestnet: process.env.MANTLE_API_KEY || "",
       // For Scroll testnet
       scrollTestnet: process.env.SCROLL_API_KEY || "",
+      // For Linea testnet
+      lineaTestnet: process.env.LINEA_API_KEY || "",
     },
     customChains: [
       {
@@ -602,6 +610,14 @@ const config: HardhatUserConfig = {
         urls: {
           apiURL: "https://api-testnet-zkevm.polygonscan.com/api",
           browserURL: "https://testnet-zkevm.polygonscan.com",
+        },
+      },
+      {
+        network: "lineaTestnet",
+        chainId: 59140,
+        urls: {
+          apiURL: "https://explorer.goerli.linea.build/api",
+          browserURL: "https://explorer.goerli.linea.build",
         },
       },
     ],
