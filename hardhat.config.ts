@@ -48,7 +48,7 @@ const config: HardhatUserConfig = {
         url: process.env.ETH_MAINNET_URL || "",
         enabled: false,
       },
-      // zksync: true, // Enables zksync in the Hardhat local network
+      // zksync: true, // Enables zkSync in the Hardhat local network
     },
     localhost: {
       url: "http://127.0.0.1:8545",
