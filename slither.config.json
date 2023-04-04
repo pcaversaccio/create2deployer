@@ -1,9 +1,10 @@
 {
+  "compile_force_framework": "hardhat",
   "hardhat_ignore_compile": false,
   "detectors_to_exclude": "pragma,solc-version",
   "exclude_informational": false,
   "exclude_low": false,
   "exclude_medium": false,
   "exclude_high": false,
-  "filter_paths": "contracts/mocks|@openzeppelin|hardhat/console.sol"
+  "filter_paths": "contracts/mocks|contracts/Create2DeployerDeprecated.sol|@openzeppelin|hardhat/console.sol"
 }

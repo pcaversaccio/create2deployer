@@ -387,6 +387,12 @@ const config: HardhatUserConfig = {
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
+    shimmerEVMTestnet: {
+      chainId: 1071,
+      url: process.env.SHIMMEREVM_TESTNET_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
   },
   gasReporter: {
     enabled: process.env.REPORT_GAS !== undefined,
@@ -466,6 +472,8 @@ const config: HardhatUserConfig = {
       scrollTestnet: process.env.SCROLL_API_KEY || "",
       // For Linea testnet
       lineaTestnet: process.env.LINEA_API_KEY || "",
+      // For ShimmerEVM testnet
+      shimmerEVMTestnet: process.env.SHIMMEREVM_API_KEY || "",
     },
     customChains: [
       {
@@ -626,6 +634,14 @@ const config: HardhatUserConfig = {
         urls: {
           apiURL: "https://explorer.goerli.linea.build/api",
           browserURL: "https://explorer.goerli.linea.build",
+        },
+      },
+      {
+        network: "shimmerEVMTestnet",
+        chainId: 1071,
+        urls: {
+          apiURL: "https://explorer.evm.testnet.shimmer.network/api",
+          browserURL: "https://explorer.evm.testnet.shimmer.network",
         },
       },
     ],
