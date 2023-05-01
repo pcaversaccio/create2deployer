@@ -330,7 +330,7 @@ const config: HardhatUserConfig = {
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
     cantoTestnet: {
-      chainId: 740,
+      chainId: 7701,
       url: process.env.CANTO_TESTNET_URL || "",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
@@ -582,7 +582,7 @@ const config: HardhatUserConfig = {
       },
       {
         network: "cantoTestnet",
-        chainId: 740,
+        chainId: 7701,
         urls: {
           apiURL: "https://testnet-explorer.canto.neobase.one/api",
           browserURL: "https://testnet-explorer.canto.neobase.one",
