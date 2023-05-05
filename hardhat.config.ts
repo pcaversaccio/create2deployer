@@ -5,9 +5,9 @@ import "@nomiclabs/hardhat-truffle5";
 import "@nomiclabs/hardhat-etherscan";
 import "@nomicfoundation/hardhat-chai-matchers";
 import "@typechain/hardhat";
-// import "@matterlabs/hardhat-zksync-solc";
-// import "@matterlabs/hardhat-zksync-deploy";
-// import "@matterlabs/hardhat-zksync-verify";
+import "@matterlabs/hardhat-zksync-solc";
+import "@matterlabs/hardhat-zksync-deploy";
+import "@matterlabs/hardhat-zksync-verify";
 import "hardhat-gas-reporter";
 import "solidity-coverage";
 
@@ -31,14 +31,18 @@ const config: HardhatUserConfig = {
       },
     },
   },
-  // zksolc: {
-  //   version: "1.3.8",
-  //   compilerSource: "binary",
-  //   settings: {
-  //     isSystem: false,
-  //     forceEvmla: false,
-  //   },
-  // },
+  zksolc: {
+    version: "1.3.10",
+    compilerSource: "binary",
+    settings: {
+      isSystem: false,
+      forceEvmla: false,
+      optimizer: {
+        enabled: true,
+        mode: "3",
+      },
+    },
+  },
   networks: {
     hardhat: {
       initialBaseFeePerGas: 0,
@@ -347,22 +351,22 @@ const config: HardhatUserConfig = {
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
-    // zkSyncTestnet: {
-    //   chainId: 280,
-    //   url: process.env.ZKSYNC_TESTNET_URL || "",
-    //   ethNetwork: process.env.ETH_GOERLI_TESTNET_URL || "",
-    //   zksync: true,
-    //   verifyURL:
-    //     "https://zksync2-testnet-explorer.zksync.dev/contract_verification",
-    // },
-    // zkSyncMain: {
-    //   chainId: 324,
-    //   url: process.env.ZKSYNC_MAINNET_URL || "",
-    //   ethNetwork: process.env.ETH_MAINNET_URL || "",
-    //   zksync: true,
-    //   verifyURL:
-    //     "https://zksync2-mainnet-explorer.zksync.io/contract_verification",
-    // },
+    zkSyncTestnet: {
+      chainId: 280,
+      url: process.env.ZKSYNC_TESTNET_URL || "",
+      ethNetwork: process.env.ETH_GOERLI_TESTNET_URL || "",
+      zksync: true,
+      verifyURL:
+        "https://zksync2-testnet-explorer.zksync.dev/contract_verification",
+    },
+    zkSyncMain: {
+      chainId: 324,
+      url: process.env.ZKSYNC_MAINNET_URL || "",
+      ethNetwork: process.env.ETH_MAINNET_URL || "",
+      zksync: true,
+      verifyURL:
+        "https://zksync2-mainnet-explorer.zksync.io/contract_verification",
+    },
     mantleTestnet: {
       chainId: 5001,
       url: process.env.MANTLE_TESTNET_URL || "",
