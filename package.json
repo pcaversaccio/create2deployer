@@ -120,7 +120,7 @@
     "eslint": "^8.42.0",
     "eslint-config-prettier": "^8.8.0",
     "ethers": "^5.7.2",
-    "hardhat": "^2.14.1",
+    "hardhat": "^2.15.0",
     "hardhat-abi-exporter": "^2.10.1",
     "hardhat-contract-sizer": "^2.9.0",
     "hardhat-gas-reporter": "^1.0.9",
