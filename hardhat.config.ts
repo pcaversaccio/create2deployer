@@ -481,8 +481,8 @@ const config: HardhatUserConfig = {
         network: "cronosTestnet",
         chainId: 338,
         urls: {
-          apiURL: "https://api-testnet.cronoscan.com/api",
-          browserURL: "https://testnet.cronoscan.com",
+          apiURL: "https://cronos.org/explorer/testnet3/api",
+          browserURL: "https://cronos.org/explorer/testnet3",
         },
       },
       {
@@ -505,8 +505,8 @@ const config: HardhatUserConfig = {
         network: "evmos",
         chainId: 9001,
         urls: {
-          apiURL: "https://evm.evmos.org/api",
-          browserURL: "https://evm.evmos.org",
+          apiURL: "https://escan.live/api",
+          browserURL: "https://escan.live",
         },
       },
       {
