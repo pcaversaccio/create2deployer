@@ -376,7 +376,7 @@ const config: HardhatUserConfig = {
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
     filecoinTestnet: {
-      chainId: 3141,
+      chainId: 314159,
       url: process.env.FILECOIN_TESTNET_URL || "",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
@@ -582,16 +582,16 @@ const config: HardhatUserConfig = {
         network: "canto",
         chainId: 7700,
         urls: {
-          apiURL: "https://evm.explorer.canto.io/api",
-          browserURL: "https://evm.explorer.canto.io",
+          apiURL: "https://tuber.build/api",
+          browserURL: "https://tuber.build",
         },
       },
       {
         network: "cantoTestnet",
         chainId: 7701,
         urls: {
-          apiURL: "https://testnet-explorer.canto.neobase.one/api",
-          browserURL: "https://testnet-explorer.canto.neobase.one",
+          apiURL: "https://testnet.tuber.build/api",
+          browserURL: "https://testnet.tuber.build",
         },
       },
       {
