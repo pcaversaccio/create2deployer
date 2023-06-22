@@ -41,7 +41,7 @@ All files                       |      100 |      100 |      100 |      100 |   
 
 > **Important:** A test coverage of 100% does not mean that there are no vulnerabilities. What really counts is the quality and spectrum of the tests themselves.
 
-## Deployments [`Create2Deployer.sol`](https://github.com/pcaversaccio/create2deployer/blob/main/contracts/Create2Deployer.sol)
+## Deployments [`Create2Deployer`](https://github.com/pcaversaccio/create2deployer/blob/main/contracts/Create2Deployer.sol)
 
 - **EVM-Based Production Networks:**
   - Ethereum: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://etherscan.io/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)

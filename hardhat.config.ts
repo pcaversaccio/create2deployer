@@ -65,24 +65,6 @@ const config: HardhatUserConfig = {
     tenderly: {
       url: `https://rpc.tenderly.co/fork/${process.env.TENDERLY_FORK_ID}`,
     },
-    rinkeby: {
-      chainId: 4,
-      url: process.env.ETH_RINKEBY_TESTNET_URL || "",
-      accounts:
-        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
-    },
-    kovan: {
-      chainId: 42,
-      url: process.env.ETH_KOVAN_TESTNET_URL || "",
-      accounts:
-        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
-    },
-    ropsten: {
-      chainId: 3,
-      url: process.env.ETH_ROPSTEN_TESTNET_URL || "",
-      accounts:
-        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
-    },
     goerli: {
       chainId: 5,
       url: process.env.ETH_GOERLI_TESTNET_URL || "",
@@ -275,18 +257,6 @@ const config: HardhatUserConfig = {
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
-    autobahnTestnet: {
-      chainId: 45001,
-      url: process.env.AUTOBAHN_TESTNET_URL || "",
-      accounts:
-        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
-    },
-    autobahn: {
-      chainId: 45000,
-      url: process.env.AUTOBAHN_MAINNET_URL || "",
-      accounts:
-        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
-    },
     spark: {
       chainId: 123,
       url: process.env.FUSE_TESTNET_URL || "",
@@ -418,12 +388,9 @@ const config: HardhatUserConfig = {
   },
   etherscan: {
     apiKey: {
-      // For Mainnet, Ropsten, Rinkeby, Goerli, Kovan, Sepolia
+      // For Ethereum testnets & mainnet
       mainnet: process.env.ETHERSCAN_API_KEY || "",
-      ropsten: process.env.ETHERSCAN_API_KEY || "",
-      rinkeby: process.env.ETHERSCAN_API_KEY || "",
       goerli: process.env.ETHERSCAN_API_KEY || "",
-      kovan: process.env.ETHERSCAN_API_KEY || "",
       sepolia: process.env.ETHERSCAN_API_KEY || "",
       // For BSC testnet & mainnet
       bsc: process.env.BSC_API_KEY || "",
@@ -456,9 +423,6 @@ const config: HardhatUserConfig = {
       // For Harmony testnet & mainnet
       harmony: process.env.HARMONY_API_KEY || "",
       harmonyTest: process.env.HARMONY_API_KEY || "",
-      // For Autobahn testnet & mainnet
-      autobahn: process.env.AUTOBAHN_API_KEY || "",
-      autobahnTestnet: process.env.AUTOBAHN_API_KEY || "",
       // For Aurora testnet & mainnet
       aurora: process.env.AURORA_API_KEY || "",
       auroraTestnet: process.env.AURORA_API_KEY || "",
@@ -497,22 +461,6 @@ const config: HardhatUserConfig = {
       zoraTestnet: process.env.ZORA_API_KEY || "",
     },
     customChains: [
-      {
-        network: "autobahn",
-        chainId: 45000,
-        urls: {
-          apiURL: "https://autobahn-explorer.com/api",
-          browserURL: "https://autobahn-explorer.com",
-        },
-      },
-      {
-        network: "autobahnTestnet",
-        chainId: 45001,
-        urls: {
-          apiURL: "https://testnet.autobahn-explorer.com/api",
-          browserURL: "https://testnet.autobahn-explorer.com",
-        },
-      },
       {
         network: "chiado",
         chainId: 10200,
