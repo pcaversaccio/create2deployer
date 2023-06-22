@@ -66,6 +66,7 @@ All files                       |      100 |      100 |      100 |      100 |   
   - Evmos: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://escan.live/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - Boba Network: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://bobascan.com/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - Canto: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://tuber.build/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
+  - Zora: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://explorer.zora.energy/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
 - **Ethereum Test Networks:**
   - Rinkeby (⚠️ Deprecated): [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://rinkeby.etherscan.io/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - Ropsten (⚠️ Deprecated): [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://ropsten.etherscan.io/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
@@ -101,3 +102,4 @@ All files                       |      100 |      100 |      100 |      100 |   
   - Filecoin Testnet (Calibration): [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://calibration.filfox.info/en/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - Scroll Testnet (Alpha): [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://blockscout.scroll.io/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - Linea Testnet: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://explorer.goerli.linea.build/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
+  - Zora Testnet: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://testnet.explorer.zora.co/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)

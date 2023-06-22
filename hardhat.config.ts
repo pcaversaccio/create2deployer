@@ -399,6 +399,18 @@ const config: HardhatUserConfig = {
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
+    zoraTestnet: {
+      chainId: 999,
+      url: process.env.ZORA_TESTNET_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
+    zoraMain: {
+      chainId: 7777777,
+      url: process.env.ZORA_MAINNET_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
   },
   gasReporter: {
     enabled: process.env.REPORT_GAS !== undefined,
@@ -480,6 +492,9 @@ const config: HardhatUserConfig = {
       lineaTestnet: process.env.LINEA_API_KEY || "",
       // For ShimmerEVM testnet
       shimmerEVMTestnet: process.env.SHIMMEREVM_API_KEY || "",
+      // For Zora testnet & mainnet
+      zora: process.env.ZORA_API_KEY || "",
+      zoraTestnet: process.env.ZORA_API_KEY || "",
     },
     customChains: [
       {
@@ -648,6 +663,22 @@ const config: HardhatUserConfig = {
         urls: {
           apiURL: "https://explorer.evm.testnet.shimmer.network/api",
           browserURL: "https://explorer.evm.testnet.shimmer.network",
+        },
+      },
+      {
+        network: "zora",
+        chainId: 7777777,
+        urls: {
+          apiURL: "https://explorer.zora.energy/api",
+          browserURL: "https://explorer.zora.energy",
+        },
+      },
+      {
+        network: "zoraTestnet",
+        chainId: 999,
+        urls: {
+          apiURL: "https://testnet.explorer.zora.co/api",
+          browserURL: "https://testnet.explorer.zora.co",
         },
       },
     ],

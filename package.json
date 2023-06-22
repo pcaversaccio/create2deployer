@@ -83,6 +83,8 @@
     "deploy:scrolltestnet": "npx hardhat run --network scrollTestnet scripts/deploy.ts",
     "deploy:lineatestnet": "npx hardhat run --network lineaTestnet scripts/deploy.ts",
     "deploy:shimmerevmtestnet": "npx hardhat run --network shimmerEVMTestnet scripts/deploy.ts",
+    "deploy:zoratestnet": "npx hardhat run --network zoraTestnet scripts/deploy.ts",
+    "deploy:zoramain": "npx hardhat run --network zoraMain scripts/deploy.ts",
     "lint:check": "npx eslint **/*.{js,ts}",
     "lint:fix": "npx eslint **/*.{js,ts} --fix",
     "prettier:check": "prettier -c **/*.{js,ts,md,sol,json,yml}",
