@@ -98,5 +98,6 @@ All files                       |      100 |      100 |      100 |      100 |   
   - Base Testnet: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://goerli.basescan.org/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - Mantle Testnet (Wadsley): [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://explorer.testnet.mantle.xyz/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - Filecoin Testnet (Hyperspace; ⚠️ Deprecated): [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://hyperspace.filfox.info/en/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
+  - Filecoin Testnet (Calibration): [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://calibration.filfox.info/en/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - Scroll Testnet (Alpha): [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://blockscout.scroll.io/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - Linea Testnet: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://explorer.goerli.linea.build/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)

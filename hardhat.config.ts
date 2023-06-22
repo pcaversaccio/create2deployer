@@ -376,7 +376,7 @@ const config: HardhatUserConfig = {
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
     filecoinTestnet: {
-      chainId: 3141,
+      chainId: 314159,
       url: process.env.FILECOIN_TESTNET_URL || "",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
