@@ -82,8 +82,8 @@
     "deploy:zoramain": "npx hardhat run --network zoraMain scripts/deploy.ts",
     "lint:check": "npx eslint **/*.{js,ts}",
     "lint:fix": "npx eslint **/*.{js,ts} --fix",
-    "prettier:check": "prettier -c **/*.{js,ts,md,sol,json,yml}",
-    "prettier:fix": "prettier -w **/*.{js,ts,md,sol,json,yml}",
+    "prettier:check": "prettier -c **/*.{js,ts,md,sol,json,yml,yaml}",
+    "prettier:fix": "prettier -w **/*.{js,ts,md,sol,json,yml,yaml}",
     "solhint:check": "npx solhint contracts/**/*.sol",
     "solhint:fix": "npx solhint contracts/**/*.sol --fix"
   },
