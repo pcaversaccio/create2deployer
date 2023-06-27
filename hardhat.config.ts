@@ -625,8 +625,8 @@ const config: HardhatUserConfig = {
         network: "zoraTestnet",
         chainId: 999,
         urls: {
-          apiURL: "https://testnet.explorer.zora.co/api",
-          browserURL: "https://testnet.explorer.zora.co",
+          apiURL: "https://testnet.explorer.zora.energy/api",
+          browserURL: "https://testnet.explorer.zora.energy",
         },
       },
     ],
