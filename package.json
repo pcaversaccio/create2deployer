@@ -92,7 +92,7 @@
     "@ethersproject/abi": "^5.7.0",
     "@ethersproject/providers": "^5.7.2",
     "@matterlabs/hardhat-zksync-deploy": "^0.6.3",
-    "@matterlabs/hardhat-zksync-solc": "^0.4.0",
+    "@matterlabs/hardhat-zksync-solc": "^0.4.1",
     "@matterlabs/hardhat-zksync-verify": "^0.1.8",
     "@nomicfoundation/hardhat-chai-matchers": "^1.0.6",
     "@nomicfoundation/hardhat-network-helpers": "^1.0.8",
@@ -127,7 +127,7 @@
     "solidity-coverage": "^0.8.3",
     "ts-node": "^10.9.1",
     "typechain": "^8.2.0",
-    "typescript": "^5.1.5",
+    "typescript": "^5.1.6",
     "undici": "^5.22.1",
     "zksync-web3": "^0.14.3"
   }
