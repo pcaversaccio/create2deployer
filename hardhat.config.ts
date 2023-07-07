@@ -513,8 +513,8 @@ const config: HardhatUserConfig = {
         network: "evmosTestnet",
         chainId: 9000,
         urls: {
-          apiURL: "https://evm.evmos.dev/api",
-          browserURL: "https://evm.evmos.dev",
+          apiURL: "https://testnet.escan.live/api",
+          browserURL: "https://testnet.escan.live",
         },
       },
       {
