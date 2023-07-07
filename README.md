@@ -27,7 +27,7 @@ npm run coverage
 
 The written tests available in the file [`Create2Deployer.test.ts`](https://github.com/pcaversaccio/create2deployer/blob/main/test/Create2Deployer.test.ts) achieve a test coverage of 100%:
 
-```bash
+```console
 --------------------------------|----------|----------|----------|----------|----------------|
 File                            |  % Stmts | % Branch |  % Funcs |  % Lines |Uncovered Lines |
 --------------------------------|----------|----------|----------|----------|----------------|
