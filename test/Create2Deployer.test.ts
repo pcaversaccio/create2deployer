@@ -15,7 +15,7 @@ const { expect } = require("chai");
 
 const Create2Deployer = artifacts.require("Create2Deployer");
 const Create2DeployerDeprecated = artifacts.require(
-  "Create2DeployerDeprecated"
+  "Create2DeployerDeprecated",
 );
 const ERC20Mock = artifacts.require("ERC20Mock");
 const ERC1820Implementer = artifacts.require("ERC1820Implementer");
@@ -29,7 +29,7 @@ contract("Create2Deployer", function (accounts) {
   const encodedParams = web3.eth.abi
     .encodeParameters(
       ["string", "string", "address", "uint256"],
-      ["MyToken", "MTKN", deployerAccount, 100]
+      ["MyToken", "MTKN", deployerAccount, 100],
     )
     .slice(2);
 
@@ -43,12 +43,12 @@ contract("Create2Deployer", function (accounts) {
     it("computes the correct contract address", async function () {
       const onChainComputed = await this.factory.computeAddress(
         saltHex,
-        web3.utils.soliditySha3(constructorByteCode)
+        web3.utils.soliditySha3(constructorByteCode),
       );
       const offChainComputed = computeCreate2Address(
         this.factory.address,
         saltHex,
-        constructorByteCode
+        constructorByteCode,
       );
       expect(onChainComputed).to.equal(offChainComputed);
     });
@@ -57,12 +57,12 @@ contract("Create2Deployer", function (accounts) {
       const onChainComputed = await this.factory.computeAddressWithDeployer(
         saltHex,
         web3.utils.soliditySha3(constructorByteCode),
-        deployerAccount
+        deployerAccount,
       );
       const offChainComputed = computeCreate2Address(
         deployerAccount,
         saltHex,
-        constructorByteCode
+        constructorByteCode,
       );
       expect(onChainComputed).to.equal(offChainComputed);
     });
@@ -73,11 +73,11 @@ contract("Create2Deployer", function (accounts) {
       const offChainComputed = computeCreate2Address(
         this.factory.address,
         saltHex,
-        ERC1820Implementer.bytecode
+        ERC1820Implementer.bytecode,
       );
       await this.factory.deployERC1820Implementer(0, saltHex);
       expect(ERC1820Implementer.bytecode).to.include(
-        (await web3.eth.getCode(offChainComputed)).slice(2)
+        (await web3.eth.getCode(offChainComputed)).slice(2),
       );
     });
 
@@ -85,12 +85,12 @@ contract("Create2Deployer", function (accounts) {
       const offChainComputed = computeCreate2Address(
         this.factory.address,
         saltHex,
-        constructorByteCode
+        constructorByteCode,
       );
       await this.factory.deploy(0, saltHex, constructorByteCode);
       const erc20 = await ERC20Mock.at(offChainComputed);
       expect(await erc20.balanceOf(deployerAccount)).to.be.bignumber.equal(
-        new BN(100)
+        new BN(100),
       );
     });
 
@@ -98,17 +98,17 @@ contract("Create2Deployer", function (accounts) {
       const deposit = ether("2");
       await send.ether(deployerAccount, this.factory.address, deposit);
       expect(await balance.current(this.factory.address)).to.be.bignumber.equal(
-        deposit
+        deposit,
       );
 
       const onChainComputed = await this.factory.computeAddressWithDeployer(
         saltHex,
         web3.utils.soliditySha3(constructorByteCode),
-        this.factory.address
+        this.factory.address,
       );
       await this.factory.deploy(deposit, saltHex, constructorByteCode);
       expect(await balance.current(onChainComputed)).to.be.bignumber.equal(
-        deposit
+        deposit,
       );
     });
 
@@ -118,7 +118,7 @@ contract("Create2Deployer", function (accounts) {
         this.factory.deployERC1820Implementer(0, saltHex, {
           from: deployerAccount,
         }),
-        "Create2: Failed on deploy"
+        "Create2: Failed on deploy",
       );
 
       await this.factory.deploy(0, saltHex, constructorByteCode, {
@@ -128,14 +128,14 @@ contract("Create2Deployer", function (accounts) {
         this.factory.deploy(0, saltHex, constructorByteCode, {
           from: deployerAccount,
         }),
-        "Create2: Failed on deploy"
+        "Create2: Failed on deploy",
       );
     });
 
     it("fails deploying a contract if the bytecode length is zero", async function () {
       await expectRevert(
         this.factory.deploy(0, saltHex, "0x", { from: deployerAccount }),
-        "Create2: bytecode length is zero"
+        "Create2: bytecode length is zero",
       );
     });
 
@@ -144,14 +144,14 @@ contract("Create2Deployer", function (accounts) {
         this.factory.deployERC1820Implementer(1, saltHex, {
           from: deployerAccount,
         }),
-        "Create2: insufficient balance"
+        "Create2: insufficient balance",
       );
 
       await expectRevert(
         this.factory.deploy(1, saltHex, constructorByteCode, {
           from: deployerAccount,
         }),
-        "Create2: insufficient balance"
+        "Create2: insufficient balance",
       );
     });
 
@@ -161,14 +161,14 @@ contract("Create2Deployer", function (accounts) {
         this.factory.deployERC1820Implementer(1, saltHex, {
           from: deployerAccount,
         }),
-        "Pausable: pause"
+        "Pausable: pause",
       );
 
       await expectRevert(
         this.factory.deploy(1, saltHex, constructorByteCode, {
           from: deployerAccount,
         }),
-        "Pausable: pause"
+        "Pausable: pause",
       );
     });
   });
@@ -181,7 +181,7 @@ contract("Create2Deployer", function (accounts) {
     it("prevents non-owners from executing", async function () {
       await expectRevert(
         this.factory.pause({ from: accounts[1] }),
-        "Ownable: caller is not the owner"
+        "Ownable: caller is not the owner",
       );
     });
   });
@@ -196,7 +196,7 @@ contract("Create2Deployer", function (accounts) {
       await this.factory.pause({ from: accounts[0] });
       await expectRevert(
         this.factory.unpause({ from: accounts[1] }),
-        "Ownable: caller is not the owner"
+        "Ownable: caller is not the owner",
       );
     });
   });
@@ -211,7 +211,7 @@ contract("Create2DeployerDeprecated", function (accounts) {
   const encodedParams = web3.eth.abi
     .encodeParameters(
       ["string", "string", "address", "uint256"],
-      ["MyToken", "MTKN", deployerAccount, 100]
+      ["MyToken", "MTKN", deployerAccount, 100],
     )
     .slice(2);
 
@@ -225,12 +225,12 @@ contract("Create2DeployerDeprecated", function (accounts) {
     it("computes the correct contract address", async function () {
       const onChainComputed = await this.factory.computeAddress(
         saltHex,
-        web3.utils.soliditySha3(constructorByteCode)
+        web3.utils.soliditySha3(constructorByteCode),
       );
       const offChainComputed = computeCreate2Address(
         this.factory.address,
         saltHex,
-        constructorByteCode
+        constructorByteCode,
       );
       expect(onChainComputed).to.equal(offChainComputed);
     });
@@ -239,12 +239,12 @@ contract("Create2DeployerDeprecated", function (accounts) {
       const onChainComputed = await this.factory.computeAddressWithDeployer(
         saltHex,
         web3.utils.soliditySha3(constructorByteCode),
-        deployerAccount
+        deployerAccount,
       );
       const offChainComputed = computeCreate2Address(
         deployerAccount,
         saltHex,
-        constructorByteCode
+        constructorByteCode,
       );
       expect(onChainComputed).to.equal(offChainComputed);
     });
@@ -255,11 +255,11 @@ contract("Create2DeployerDeprecated", function (accounts) {
       const offChainComputed = computeCreate2Address(
         this.factory.address,
         saltHex,
-        ERC1820Implementer.bytecode
+        ERC1820Implementer.bytecode,
       );
       await this.factory.deployERC1820Implementer(0, saltHex);
       expect(ERC1820Implementer.bytecode).to.include(
-        (await web3.eth.getCode(offChainComputed)).slice(2)
+        (await web3.eth.getCode(offChainComputed)).slice(2),
       );
     });
 
@@ -267,12 +267,12 @@ contract("Create2DeployerDeprecated", function (accounts) {
       const offChainComputed = computeCreate2Address(
         this.factory.address,
         saltHex,
-        constructorByteCode
+        constructorByteCode,
       );
       await this.factory.deploy(0, saltHex, constructorByteCode);
       const erc20 = await ERC20Mock.at(offChainComputed);
       expect(await erc20.balanceOf(deployerAccount)).to.be.bignumber.equal(
-        new BN(100)
+        new BN(100),
       );
     });
 
@@ -280,17 +280,17 @@ contract("Create2DeployerDeprecated", function (accounts) {
       const deposit = ether("2");
       await send.ether(deployerAccount, this.factory.address, deposit);
       expect(await balance.current(this.factory.address)).to.be.bignumber.equal(
-        deposit
+        deposit,
       );
 
       const onChainComputed = await this.factory.computeAddressWithDeployer(
         saltHex,
         web3.utils.soliditySha3(constructorByteCode),
-        this.factory.address
+        this.factory.address,
       );
       await this.factory.deploy(deposit, saltHex, constructorByteCode);
       expect(await balance.current(onChainComputed)).to.be.bignumber.equal(
-        deposit
+        deposit,
       );
     });
 
@@ -300,7 +300,7 @@ contract("Create2DeployerDeprecated", function (accounts) {
         this.factory.deployERC1820Implementer(0, saltHex, {
           from: deployerAccount,
         }),
-        "Create2: Failed on deploy"
+        "Create2: Failed on deploy",
       );
 
       await this.factory.deploy(0, saltHex, constructorByteCode, {
@@ -310,14 +310,14 @@ contract("Create2DeployerDeprecated", function (accounts) {
         this.factory.deploy(0, saltHex, constructorByteCode, {
           from: deployerAccount,
         }),
-        "Create2: Failed on deploy"
+        "Create2: Failed on deploy",
       );
     });
 
     it("fails deploying a contract if the bytecode length is zero", async function () {
       await expectRevert(
         this.factory.deploy(0, saltHex, "0x", { from: deployerAccount }),
-        "Create2: bytecode length is zero"
+        "Create2: bytecode length is zero",
       );
     });
 
@@ -326,14 +326,14 @@ contract("Create2DeployerDeprecated", function (accounts) {
         this.factory.deployERC1820Implementer(1, saltHex, {
           from: deployerAccount,
         }),
-        "Create2: insufficient balance"
+        "Create2: insufficient balance",
       );
 
       await expectRevert(
         this.factory.deploy(1, saltHex, constructorByteCode, {
           from: deployerAccount,
         }),
-        "Create2: insufficient balance"
+        "Create2: insufficient balance",
       );
     });
 
@@ -343,14 +343,14 @@ contract("Create2DeployerDeprecated", function (accounts) {
         this.factory.deployERC1820Implementer(1, saltHex, {
           from: deployerAccount,
         }),
-        "Pausable: pause"
+        "Pausable: pause",
       );
 
       await expectRevert(
         this.factory.deploy(1, saltHex, constructorByteCode, {
           from: deployerAccount,
         }),
-        "Pausable: pause"
+        "Pausable: pause",
       );
     });
   });
@@ -363,7 +363,7 @@ contract("Create2DeployerDeprecated", function (accounts) {
     it("prevents non-owners from executing", async function () {
       await expectRevert(
         this.factory.pause({ from: accounts[1] }),
-        "Ownable: caller is not the owner"
+        "Ownable: caller is not the owner",
       );
     });
   });
@@ -378,7 +378,7 @@ contract("Create2DeployerDeprecated", function (accounts) {
       await this.factory.pause({ from: accounts[0] });
       await expectRevert(
         this.factory.unpause({ from: accounts[1] }),
-        "Ownable: caller is not the owner"
+        "Ownable: caller is not the owner",
       );
     });
   });
@@ -389,7 +389,7 @@ contract("Create2DeployerDeprecated", function (accounts) {
       expect(
         await this.factory.killCreate2Deployer(accounts[0], {
           from: accounts[0],
-        })
+        }),
       );
     });
 
@@ -398,7 +398,7 @@ contract("Create2DeployerDeprecated", function (accounts) {
         this.factory.killCreate2Deployer(accounts[0], {
           from: accounts[1],
         }),
-        "Ownable: caller is not the owner"
+        "Ownable: caller is not the owner",
       );
     });
   });
