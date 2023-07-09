@@ -80,12 +80,12 @@
     "deploy:shimmerevmtestnet": "npx hardhat run --network shimmerEVMTestnet scripts/deploy.ts",
     "deploy:zoratestnet": "npx hardhat run --network zoraTestnet scripts/deploy.ts",
     "deploy:zoramain": "npx hardhat run --network zoraMain scripts/deploy.ts",
-    "lint:check": "npx eslint **/*.{js,ts}",
-    "lint:fix": "npx eslint **/*.{js,ts} --fix",
-    "prettier:check": "prettier -c **/*.{js,ts,md,sol,json,yml,yaml}",
-    "prettier:fix": "prettier -w **/*.{js,ts,md,sol,json,yml,yaml}",
-    "solhint:check": "npx solhint contracts/**/*.sol",
-    "solhint:fix": "npx solhint contracts/**/*.sol --fix"
+    "prettier:check": "npx prettier -c **/*.{js,ts,md,sol,json,yml,yaml}",
+    "prettier:fix": "npx prettier -w **/*.{js,ts,md,sol,json,yml,yaml}",
+    "solhint:check": "npx solhint 'contracts/**/*.sol'",
+    "solhint:fix": "npx solhint 'contracts/**/*.sol' --fix",
+    "lint:check": "npm run prettier:check && npm run solhint:check && npx eslint **/*.{js,ts}",
+    "lint:fix": "npm run prettier:fix && npm run solhint:fix && npx eslint **/*.{js,ts} --fix"
   },
   "devDependencies": {
     "@eth-sdk/utils": "^0.2.10",
