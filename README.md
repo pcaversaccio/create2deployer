@@ -105,3 +105,4 @@ All files                       |      100 |      100 |      100 |      100 |   
   - Scroll Testnet (Alpha): [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://blockscout.scroll.io/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - Linea Testnet: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://goerli.lineascan.build/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - Zora Testnet: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://testnet.explorer.zora.energy/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
+  - LUKSO Testnet: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://explorer.execution.testnet.lukso.network/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)

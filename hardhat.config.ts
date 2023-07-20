@@ -399,6 +399,18 @@ const config: HardhatUserConfig = {
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
+    luksoTestnet: {
+      chainId: 4201,
+      url: process.env.LUKSO_TESTNET_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
+    luksoMain: {
+      chainId: 42,
+      url: process.env.LUKSO_MAINNET_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
   },
   gasReporter: {
     enabled: process.env.REPORT_GAS !== undefined,
@@ -480,6 +492,9 @@ const config: HardhatUserConfig = {
       // For Zora testnet & mainnet
       zora: process.env.ZORA_API_KEY || "",
       zoraTestnet: process.env.ZORA_API_KEY || "",
+      // For Lukso testnet & mainnet
+      lukso: process.env.LUKSO_API_KEY || "",
+      luksoTestnet: process.env.LUKSO_API_KEY || "",
     },
     customChains: [
       {
@@ -672,6 +687,22 @@ const config: HardhatUserConfig = {
         urls: {
           apiURL: "https://testnet.explorer.zora.energy/api",
           browserURL: "https://testnet.explorer.zora.energy",
+        },
+      },
+      {
+        network: "lukso",
+        chainId: 42,
+        urls: {
+          apiURL: "https://explorer.execution.mainnet.lukso.network/api",
+          browserURL: "https://explorer.execution.mainnet.lukso.network",
+        },
+      },
+      {
+        network: "luksoTestnet",
+        chainId: 4201,
+        urls: {
+          apiURL: "https://explorer.execution.testnet.lukso.network/api",
+          browserURL: "https://explorer.execution.testnet.lukso.network",
         },
       },
     ],

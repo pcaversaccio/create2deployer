@@ -83,6 +83,8 @@
     "deploy:shimmerevmtestnet": "npx hardhat run --network shimmerEVMTestnet scripts/deploy.ts",
     "deploy:zoratestnet": "npx hardhat run --network zoraTestnet scripts/deploy.ts",
     "deploy:zoramain": "npx hardhat run --network zoraMain scripts/deploy.ts",
+    "deploy:luksotestnet": "npx hardhat run --network luksoTestnet scripts/deploy.ts",
+    "deploy:luksomain": "npx hardhat run --network luksoMain scripts/deploy.ts",
     "prettier:check": "npx prettier -c **/*.{js,ts,md,sol,json,yml,yaml}",
     "prettier:fix": "npx prettier -w **/*.{js,ts,md,sol,json,yml,yaml}",
     "solhint:check": "npx solhint 'contracts/**/*.sol'",
