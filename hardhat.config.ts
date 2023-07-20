@@ -323,6 +323,12 @@ const config: HardhatUserConfig = {
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
+    baseMain: {
+      chainId: 8453,
+      url: process.env.BASE_MAINNET_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
     zkSyncTestnet: {
       chainId: 280,
       url: process.env.ZKSYNC_TESTNET_URL || "",
@@ -458,7 +464,8 @@ const config: HardhatUserConfig = {
       // For Canto testnet & mainnet
       canto: process.env.CANTO_API_KEY || "",
       cantoTestnet: process.env.CANTO_API_KEY || "",
-      // For Base testnet
+      // For Base testnet & mainnet
+      base: process.env.BASE_API_KEY || "",
       baseTestnet: process.env.BASE_API_KEY || "",
       // For Mantle testnet & mainnet
       mantle: process.env.MANTLE_API_KEY || "",
@@ -569,6 +576,14 @@ const config: HardhatUserConfig = {
         urls: {
           apiURL: "https://testnet.tuber.build/api",
           browserURL: "https://testnet.tuber.build",
+        },
+      },
+      {
+        network: "base",
+        chainId: 8453,
+        urls: {
+          apiURL: "https://api.basescan.org/api",
+          browserURL: "https://basescan.org",
         },
       },
       {
