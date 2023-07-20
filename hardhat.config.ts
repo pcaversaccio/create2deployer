@@ -345,6 +345,12 @@ const config: HardhatUserConfig = {
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
+    mantleMain: {
+      chainId: 5000,
+      url: process.env.MANTLE_MAINNET_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
     filecoinTestnet: {
       chainId: 314159,
       url: process.env.FILECOIN_TESTNET_URL || "",
@@ -360,6 +366,12 @@ const config: HardhatUserConfig = {
     lineaTestnet: {
       chainId: 59140,
       url: process.env.LINEA_TESTNET_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
+    lineaMain: {
+      chainId: 59144,
+      url: process.env.LINEA_MAINNET_URL || "",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
@@ -448,11 +460,13 @@ const config: HardhatUserConfig = {
       cantoTestnet: process.env.CANTO_API_KEY || "",
       // For Base testnet
       baseTestnet: process.env.BASE_API_KEY || "",
-      // For Mantle testnet
+      // For Mantle testnet & mainnet
+      mantle: process.env.MANTLE_API_KEY || "",
       mantleTestnet: process.env.MANTLE_API_KEY || "",
       // For Scroll testnet
       scrollTestnet: process.env.SCROLL_API_KEY || "",
-      // For Linea testnet
+      // For Linea testnet & mainnet
+      linea: process.env.LINEA_API_KEY || "",
       lineaTestnet: process.env.LINEA_API_KEY || "",
       // For ShimmerEVM testnet
       shimmerEVMTestnet: process.env.SHIMMEREVM_API_KEY || "",
@@ -566,6 +580,14 @@ const config: HardhatUserConfig = {
         },
       },
       {
+        network: "mantle",
+        chainId: 5000,
+        urls: {
+          apiURL: "https://explorer.mantle.xyz/api",
+          browserURL: "https://explorer.mantle.xyz",
+        },
+      },
+      {
         network: "mantleTestnet",
         chainId: 5001,
         urls: {
@@ -598,11 +620,19 @@ const config: HardhatUserConfig = {
         },
       },
       {
+        network: "linea",
+        chainId: 59144,
+        urls: {
+          apiURL: "https://api.lineascan.build/api",
+          browserURL: "https://lineascan.build",
+        },
+      },
+      {
         network: "lineaTestnet",
         chainId: 59140,
         urls: {
-          apiURL: "https://explorer.goerli.linea.build/api",
-          browserURL: "https://explorer.goerli.linea.build",
+          apiURL: "https://api-testnet.lineascan.build/api",
+          browserURL: "https://goerli.lineascan.build",
         },
       },
       {
