@@ -69,6 +69,7 @@ All files                       |      100 |      100 |      100 |      100 |   
   - Mantle: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://explorer.mantle.xyz/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - Linea: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://lineascan.build/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - Zora: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://explorer.zora.energy/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
+  - LUKSO: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://explorer.execution.mainnet.lukso.network/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
 - **Ethereum Test Networks:**
   - Rinkeby (⚠️ Deprecated): [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://rinkeby.etherscan.io/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - Ropsten (⚠️ Deprecated): [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://ropsten.etherscan.io/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
