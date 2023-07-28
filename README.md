@@ -88,7 +88,7 @@ All files                       |      100 |      100 |      100 |      100 |   
   - Fantom Testnet: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://testnet.ftmscan.com/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - Avalanche Testnet (Fuji): [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://testnet.snowtrace.io/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - Sokol: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://blockscout.com/poa/sokol/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
-  - Gnosis Chain Testnet (Chiado): [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://blockscout.chiadochain.net/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
+  - Gnosis Chain Testnet (Chiado): [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://gnosis-chiado.blockscout.com/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - Moonbeam Testnet (Moonbase Alpha): [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://moonbase.moonscan.io/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - Celo Testnet (Alfajores): [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://alfajores.celoscan.io/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - Aurora Testnet: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://explorer.testnet.aurora.dev/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
