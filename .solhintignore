@@ -5,3 +5,4 @@ cache
 cache-zk
 coverage
 typechain-types
+flattened
