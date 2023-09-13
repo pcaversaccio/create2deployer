@@ -108,6 +108,6 @@ All files                       |      100 |      100 |      100 |      100 |   
   - Linea Testnet: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://goerli.lineascan.build/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - Zora Testnet: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://testnet.explorer.zora.energy/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - LUKSO Testnet: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://explorer.execution.testnet.lukso.network/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
-  - Manta Testnet: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://pacific-explorer.manta.network/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
+  - Manta Testnet: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://pacific-explorer.testnet.manta.network/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
 
 [^1]: Please refer to [this](https://github.com/pcaversaccio/create2deployer/issues/128) issue why the contract [`Create2Deployer`](https://github.com/pcaversaccio/create2deployer/blob/main/contracts/Create2Deployer.sol) was not deployed on the Base mainnet.
