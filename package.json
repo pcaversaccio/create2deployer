@@ -140,7 +140,7 @@
     "ts-node": "^10.9.1",
     "typechain": "^8.3.1",
     "typescript": "^5.2.2",
-    "undici": "^5.25.2",
+    "undici": "^5.25.3",
     "zksync-web3": "^0.14.3"
   }
 }
