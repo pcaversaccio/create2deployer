@@ -128,7 +128,7 @@
     "eslint": "^8.50.0",
     "eslint-config-prettier": "^9.0.0",
     "ethers": "^5.7.2",
-    "hardhat": "^2.17.4",
+    "hardhat": "^2.18.0",
     "hardhat-abi-exporter": "^2.10.1",
     "hardhat-contract-sizer": "^2.10.0",
     "hardhat-gas-reporter": "^1.0.9",
@@ -140,7 +140,7 @@
     "ts-node": "^10.9.1",
     "typechain": "^8.3.1",
     "typescript": "^5.2.2",
-    "undici": "^5.25.3",
+    "undici": "^5.25.4",
     "zksync-web3": "^0.14.3"
   }
 }
