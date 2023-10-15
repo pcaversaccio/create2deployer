@@ -116,9 +116,9 @@
     "@openzeppelin/test-helpers": "^0.5.16",
     "@typechain/ethers-v5": "^10.2.1",
     "@typechain/hardhat": "^6.1.6",
-    "@types/chai": "^4.3.7",
+    "@types/chai": "^4.3.8",
     "@types/mocha": "^10.0.2",
-    "@types/node": "^20.8.4",
+    "@types/node": "^20.8.6",
     "@typescript-eslint/eslint-plugin": "^6.7.5",
     "@typescript-eslint/parser": "^6.7.5",
     "chai": "^4.3.10",
@@ -128,7 +128,7 @@
     "eslint": "^8.51.0",
     "eslint-config-prettier": "^9.0.0",
     "ethers": "^5.7.2",
-    "hardhat": "^2.18.0",
+    "hardhat": "^2.18.1",
     "hardhat-abi-exporter": "^2.10.1",
     "hardhat-contract-sizer": "^2.10.0",
     "hardhat-gas-reporter": "^1.0.9",
@@ -138,9 +138,9 @@
     "solhint": "^3.6.2",
     "solidity-coverage": "^0.8.5",
     "ts-node": "^10.9.1",
-    "typechain": "^8.3.1",
+    "typechain": "^8.3.2",
     "typescript": "^5.2.2",
-    "undici": "^5.25.4",
+    "undici": "^5.26.3",
     "zksync-web3": "^0.14.3"
   }
 }
