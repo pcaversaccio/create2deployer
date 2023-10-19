@@ -67,6 +67,7 @@ All files                       |      100 |      100 |      100 |      100 |   
   - Boba Network: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://bobascan.com/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - Canto: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://tuber.build/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - Mantle: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://explorer.mantle.xyz/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
+  - Scroll: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://scrollscan.com/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - Linea: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://lineascan.build/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - Zora: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://explorer.zora.energy/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - LUKSO: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://explorer.execution.mainnet.lukso.network/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
