@@ -73,6 +73,7 @@
     "deploy:cantotestnet": "npx hardhat run --network cantoTestnet scripts/deploy.ts",
     "deploy:cantomain": "npx hardhat run --network cantoMain scripts/deploy.ts",
     "deploy:basetestnet": "npx hardhat run --network baseTestnet scripts/deploy.ts",
+    "deploy:basesepolia": "npx hardhat run --network baseSepolia scripts/deploy.ts",
     "deploy:basemain": "npx hardhat run --network baseMain scripts/deploy.ts",
     "deploy:zksynctestnet": "npx hardhat deploy-zksync --network zkSyncTestnet --script deploy-zksync.ts",
     "deploy:zksyncmain": "npx hardhat deploy-zksync --network zkSyncMain --script deploy-zksync.ts",

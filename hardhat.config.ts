@@ -335,6 +335,12 @@ const config: HardhatUserConfig = {
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
+    baseSepolia: {
+      chainId: 84532,
+      url: process.env.BASE_SEPOLIA_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
     baseMain: {
       chainId: 8453,
       url: process.env.BASE_MAINNET_URL || "",
@@ -520,9 +526,10 @@ const config: HardhatUserConfig = {
       // For Canto testnet & mainnet
       canto: process.env.CANTO_API_KEY || "",
       cantoTestnet: process.env.CANTO_API_KEY || "",
-      // For Base testnet & mainnet
+      // For Base testnets & mainnet
       base: process.env.BASE_API_KEY || "",
       baseTestnet: process.env.BASE_API_KEY || "",
+      baseSepolia: process.env.BASE_API_KEY || "",
       // For Mantle testnet & mainnet
       mantle: process.env.MANTLE_API_KEY || "",
       mantleTestnet: process.env.MANTLE_API_KEY || "",
@@ -673,6 +680,14 @@ const config: HardhatUserConfig = {
         urls: {
           apiURL: "https://api-goerli.basescan.org/api",
           browserURL: "https://goerli.basescan.org",
+        },
+      },
+      {
+        network: "baseSepolia",
+        chainId: 84532,
+        urls: {
+          apiURL: "https://base-sepolia.blockscout.com/api",
+          browserURL: "https://base-sepolia.blockscout.com",
         },
       },
       {
