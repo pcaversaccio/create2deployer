@@ -35,6 +35,7 @@
     "deploy:bsctestnet": "npx hardhat run --network bscTestnet scripts/deploy.ts",
     "deploy:bscmain": "npx hardhat run --network bscMain scripts/deploy.ts",
     "deploy:optimismtestnet": "npx hardhat run --network optimismTestnet scripts/deploy.ts",
+    "deploy:optimismsepolia": "npx hardhat run --network optimismSepolia scripts/deploy.ts",
     "deploy:optimismmain": "npx hardhat run --network optimismMain scripts/deploy.ts",
     "deploy:arbitrumtestnet": "npx hardhat run --network arbitrumTestnet scripts/deploy.ts",
     "deploy:arbitrumsepolia": "npx hardhat run --network arbitrumSepolia scripts/deploy.ts",
@@ -120,9 +121,9 @@
     "@typechain/hardhat": "^6.1.6",
     "@types/chai": "^4.3.9",
     "@types/mocha": "^10.0.3",
-    "@types/node": "^20.8.7",
-    "@typescript-eslint/eslint-plugin": "^6.8.0",
-    "@typescript-eslint/parser": "^6.8.0",
+    "@types/node": "^20.8.8",
+    "@typescript-eslint/eslint-plugin": "^6.9.0",
+    "@typescript-eslint/parser": "^6.9.0",
     "chai": "^4.3.10",
     "cookiejar": ">=2.1.4",
     "decode-uri-component": ">=0.4.1",
@@ -142,7 +143,7 @@
     "ts-node": "^10.9.1",
     "typechain": "^8.3.2",
     "typescript": "^5.2.2",
-    "undici": "^5.26.4",
+    "undici": "^5.26.5",
     "zksync-web3": "^0.14.3"
   }
 }
