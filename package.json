@@ -121,7 +121,7 @@
     "@typechain/hardhat": "^6.1.6",
     "@types/chai": "^4.3.9",
     "@types/mocha": "^10.0.3",
-    "@types/node": "^20.8.8",
+    "@types/node": "^20.8.9",
     "@typescript-eslint/eslint-plugin": "^6.9.0",
     "@typescript-eslint/parser": "^6.9.0",
     "chai": "^4.3.10",
@@ -143,7 +143,7 @@
     "ts-node": "^10.9.1",
     "typechain": "^8.3.2",
     "typescript": "^5.2.2",
-    "undici": "^5.26.5",
+    "undici": "^5.27.0",
     "zksync-web3": "^0.14.3"
   }
 }
