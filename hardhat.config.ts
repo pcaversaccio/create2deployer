@@ -23,7 +23,7 @@ task("accounts", "Prints the list of accounts", async (_, hre) => {
 
 const config: HardhatUserConfig = {
   solidity: {
-    // Only use Solidity versions `>=0.8.20` for EVM networks that support the opcode `PUSH0`
+    // Only use Solidity default versions `>=0.8.20` for EVM networks that support the opcode `PUSH0`
     // Otherwise, use the versions `<=0.8.19`
     version: "0.8.19",
     settings: {
