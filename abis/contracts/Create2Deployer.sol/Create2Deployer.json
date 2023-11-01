@@ -1,0 +1,15 @@
+[
+  "event OwnershipTransferred(address indexed,address indexed)",
+  "event Paused(address)",
+  "event Unpaused(address)",
+  "function computeAddress(bytes32,bytes32) view returns (address)",
+  "function computeAddressWithDeployer(bytes32,bytes32,address) pure returns (address)",
+  "function deploy(uint256,bytes32,bytes)",
+  "function deployERC1820Implementer(uint256,bytes32)",
+  "function owner() view returns (address)",
+  "function pause()",
+  "function paused() view returns (bool)",
+  "function renounceOwnership()",
+  "function transferOwnership(address)",
+  "function unpause()"
+]

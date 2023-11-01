@@ -1,0 +1,3 @@
+[
+  "function canImplementInterfaceForAddress(bytes32,address) view returns (bytes32)"
+]

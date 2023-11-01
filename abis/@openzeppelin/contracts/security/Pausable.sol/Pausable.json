@@ -1,0 +1,5 @@
+[
+  "event Paused(address)",
+  "event Unpaused(address)",
+  "function paused() view returns (bool)"
+]
