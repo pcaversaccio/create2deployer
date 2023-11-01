@@ -476,7 +476,7 @@ const config: HardhatUserConfig = {
     runOnCompile: true,
     clear: true,
     flat: false,
-    only: [],
+    only: ["Create2Deployer", "Create2DeployerDeprecated"],
     spacing: 2,
     pretty: true,
   },
