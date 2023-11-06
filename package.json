@@ -107,7 +107,7 @@
     "@ethersproject/abi": "^5.7.0",
     "@ethersproject/providers": "^5.7.2",
     "@matterlabs/hardhat-zksync-deploy": "^0.6.5",
-    "@matterlabs/hardhat-zksync-solc": "^0.4.2",
+    "@matterlabs/hardhat-zksync-solc": "^1.0.0",
     "@matterlabs/hardhat-zksync-verify": "^0.2.1",
     "@nomicfoundation/hardhat-chai-matchers": "^1.0.6",
     "@nomicfoundation/hardhat-network-helpers": "^1.0.9",
