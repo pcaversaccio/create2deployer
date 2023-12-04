@@ -129,7 +129,7 @@
     "cookiejar": ">=2.1.4",
     "decode-uri-component": ">=0.4.1",
     "dotenv": "^16.3.1",
-    "eslint": "^8.54.0",
+    "eslint": "^8.55.0",
     "eslint-config-prettier": "^9.0.0",
     "ethers": "^5.7.2",
     "hardhat": "^2.19.1",
