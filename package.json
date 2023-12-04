@@ -122,15 +122,15 @@
     "@typechain/hardhat": "^6.1.6",
     "@types/chai": "^4.3.11",
     "@types/mocha": "^10.0.6",
-    "@types/node": "^20.10.1",
+    "@types/node": "^20.10.3",
     "@typescript-eslint/eslint-plugin": "^6.13.1",
     "@typescript-eslint/parser": "^6.13.1",
     "chai": "^4.3.10",
     "cookiejar": ">=2.1.4",
     "decode-uri-component": ">=0.4.1",
     "dotenv": "^16.3.1",
-    "eslint": "^8.54.0",
-    "eslint-config-prettier": "^9.0.0",
+    "eslint": "^8.55.0",
+    "eslint-config-prettier": "^9.1.0",
     "ethers": "^5.7.2",
     "hardhat": "^2.19.1",
     "hardhat-abi-exporter": "^2.10.1",
@@ -144,7 +144,7 @@
     "ts-node": "^10.9.1",
     "typechain": "^8.3.2",
     "typescript": "^5.3.2",
-    "undici": "^5.28.1",
+    "undici": "^5.28.2",
     "zksync-web3": "^0.14.3"
   }
 }
