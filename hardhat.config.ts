@@ -35,7 +35,7 @@ const config: HardhatUserConfig = {
     },
   },
   zksolc: {
-    version: "1.3.17",
+    version: "1.3.18",
     compilerSource: "binary",
     settings: {
       isSystem: false,
@@ -355,12 +355,12 @@ const config: HardhatUserConfig = {
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
     zkSyncTestnet: {
-      chainId: 280,
+      chainId: 300,
       url: process.env.ZKSYNC_TESTNET_URL || "",
-      ethNetwork: process.env.ETH_GOERLI_TESTNET_URL || "",
+      ethNetwork: process.env.ETH_SEPOLIA_TESTNET_URL || "",
       zksync: true,
       verifyURL:
-        "https://zksync2-testnet-explorer.zksync.dev/contract_verification",
+        "https://explorer.sepolia.era.zksync.dev/contract_verification",
     },
     zkSyncMain: {
       chainId: 324,
