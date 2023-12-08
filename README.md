@@ -39,7 +39,7 @@ All files                       |      100 |      100 |      100 |      100 |   
 --------------------------------|----------|----------|----------|----------|----------------|
 ```
 
-> [!IMPORTANT]
+> [!NOTE]
 > A test coverage of 100% does not mean that there are no vulnerabilities. What really counts is the quality and spectrum of the tests themselves!
 
 ## Deployments [`Create2Deployer`](./contracts/Create2Deployer.sol)
