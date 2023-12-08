@@ -39,9 +39,13 @@ All files                       |      100 |      100 |      100 |      100 |   
 --------------------------------|----------|----------|----------|----------|----------------|
 ```
 
-> **Important:** A test coverage of 100% does not mean that there are no vulnerabilities. What really counts is the quality and spectrum of the tests themselves.
+> [!IMPORTANT]
+> A test coverage of 100% does not mean that there are no vulnerabilities. What really counts is the quality and spectrum of the tests themselves!
 
 ## Deployments [`Create2Deployer`](./contracts/Create2Deployer.sol)
+
+> [!IMPORTANT]
+> As of 8 December 2023, all non-deprecated [`Create2Deployer`](./contracts/Create2Deployer.sol) deployments are _permissionless_ as I have renounced the ownership accordingly.
 
 - **EVM-Based Production Networks:[^1]**
   - Ethereum: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://etherscan.io/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
@@ -92,7 +96,7 @@ All files                       |      100 |      100 |      100 |      100 |   
   - Heco Testnet (⚠️ Deprecated): [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://testnet.hecoinfo.com/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - Fantom Testnet: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://testnet.ftmscan.com/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - Avalanche Testnet (Fuji): [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://testnet.snowtrace.io/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
-  - Sokol: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://blockscout.com/poa/sokol/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
+  - Sokol (⚠️ Deprecated): [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://blockscout.com/poa/sokol/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - Gnosis Chain Testnet (Chiado): [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://gnosis-chiado.blockscout.com/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - Moonbeam Testnet (Moonbase Alpha): [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://moonbase.moonscan.io/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - Celo Testnet (Alfajores): [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://alfajores.celoscan.io/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
