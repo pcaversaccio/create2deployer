@@ -24,9 +24,10 @@ describe("Create2Deployer", function () {
   beforeEach(async function () {
     [deployerAccount, Alice] = await hre.ethers.getSigners();
 
-    create2Deployer = await hre.ethers.deployContract("Create2Deployer", {
-      from: deployerAccount,
-    });
+    create2Deployer = await hre.ethers.deployContract(
+      "Create2Deployer",
+      deployerAccount,
+    );
     create2Deployer.waitForDeployment();
     create2Addr = await create2Deployer.getAddress();
 
@@ -213,9 +214,7 @@ describe("Create2DeployerDeprecated", function () {
 
     create2DeployerDeprecated = await hre.ethers.deployContract(
       "Create2DeployerDeprecated",
-      {
-        from: deployerAccount,
-      },
+      deployerAccount,
     );
     create2DeployerDeprecated.waitForDeployment();
     create2Addr = await create2DeployerDeprecated.getAddress();
