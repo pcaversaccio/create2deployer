@@ -48,7 +48,6 @@ yarn-error.log*
 
 # Hardhat files
 cache
-cache_hardhat
 artifacts
 .deps
 
@@ -60,7 +59,7 @@ coverage
 coverage.json
 
 # zkSync files
-cache_hardhat-zk
+cache-zk
 artifacts-zk
 
 # Miscellaneous files
