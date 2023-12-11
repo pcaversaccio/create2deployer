@@ -1,7 +1,7 @@
 node_modules
+cache
+cache_hardhat-zk
 artifacts
 artifacts-zk
-cache
-cache-zk
-coverage
 typechain-types
+coverage

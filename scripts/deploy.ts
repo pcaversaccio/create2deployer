@@ -1,14 +1,14 @@
-import hre, { ethers } from "hardhat";
+import hre from "hardhat";
 
 function delay(ms: number) {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
 async function main() {
-  const create2Deployer = await ethers.deployContract("Create2Deployer");
+  const create2Deployer = await hre.ethers.deployContract("Create2Deployer");
 
-  await create2Deployer.deployed();
-  const create2DeployerAddress = create2Deployer.address;
+  await create2Deployer.waitForDeployment();
+  const create2DeployerAddress = await create2Deployer.getAddress();
 
   console.log("Create2Deployer deployed to:", create2DeployerAddress);
 

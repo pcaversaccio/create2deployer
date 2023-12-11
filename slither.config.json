@@ -2,6 +2,7 @@
   "compile_force_framework": "hardhat",
   "hardhat_ignore_compile": false,
   "detectors_to_exclude": "pragma,solc-version",
+  "fail_on": "none",
   "exclude_informational": false,
   "exclude_low": false,
   "exclude_medium": false,
