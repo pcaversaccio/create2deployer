@@ -125,16 +125,12 @@ describe("Create2Deployer", function () {
     it("fails deploying a contract in an existent address", async function () {
       await create2Deployer.deployERC1820Implementer(0, salt);
       await expect(
-        create2Deployer.deployERC1820Implementer(0, salt, {
-          from: deployerAccount,
-        }),
+        create2Deployer.deployERC1820Implementer(0, salt),
       ).to.be.revertedWith("Create2: Failed on deploy");
 
       await create2Deployer.deploy(0, salt, creationBytecode.data);
       await expect(
-        create2Deployer.deploy(0, salt, creationBytecode.data, {
-          from: deployerAccount,
-        }),
+        create2Deployer.deploy(0, salt, creationBytecode.data),
       ).to.be.revertedWith("Create2: Failed on deploy");
     });
 
@@ -324,16 +320,12 @@ describe("Create2DeployerDeprecated", function () {
     it("fails deploying a contract in an existent address", async function () {
       await create2DeployerDeprecated.deployERC1820Implementer(0, salt);
       await expect(
-        create2DeployerDeprecated.deployERC1820Implementer(0, salt, {
-          from: deployerAccount,
-        }),
+        create2DeployerDeprecated.deployERC1820Implementer(0, salt),
       ).to.be.revertedWith("Create2: Failed on deploy");
 
       await create2DeployerDeprecated.deploy(0, salt, creationBytecode.data);
       await expect(
-        create2DeployerDeprecated.deploy(0, salt, creationBytecode.data, {
-          from: deployerAccount,
-        }),
+        create2DeployerDeprecated.deploy(0, salt, creationBytecode.data),
       ).to.be.revertedWith("Create2: Failed on deploy");
     });
 
