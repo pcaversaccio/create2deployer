@@ -14,7 +14,7 @@ Helper smart contract to make easier and safer usage of the [`CREATE2`](https://
 Since [Hardhat](https://hardhat.org) implements great features for Solidity debugging like Solidity stack traces, `console.log`, and explicit error messages when transactions fail, we leverage [Hardhat](https://hardhat.org) for testing:
 
 ```console
-npm run test
+pnpm run test
 ```
 
 ### Test Coverage
@@ -22,7 +22,7 @@ npm run test
 This project repository implements a test coverage [plugin](https://github.com/sc-forks/solidity-coverage). Simply run:
 
 ```console
-npm run coverage
+pnpm run coverage
 ```
 
 The written tests available in the file [`Create2Deployer.test.ts`](./test/Create2Deployer.test.ts) achieve a test coverage of 100%:

@@ -1,13 +1,15 @@
 import * as dotenv from "dotenv";
 
 import { HardhatUserConfig, task } from "hardhat/config";
-import "@nomiclabs/hardhat-truffle5";
+import "@nomicfoundation/hardhat-ethers";
 import "@nomicfoundation/hardhat-verify";
 import "@nomicfoundation/hardhat-chai-matchers";
 import "@typechain/hardhat";
+
 import "@matterlabs/hardhat-zksync-solc";
 import "@matterlabs/hardhat-zksync-deploy";
 import "@matterlabs/hardhat-zksync-verify";
+import "@matterlabs/hardhat-zksync-ethers";
 import "hardhat-gas-reporter";
 import "solidity-coverage";
 import "hardhat-abi-exporter";
@@ -22,6 +24,22 @@ task("accounts", "Prints the list of accounts", async (_, hre) => {
   }
 });
 
+task(
+  "balances",
+  "Prints the list of accounts and their balances",
+  async (_, hre) => {
+    const accounts = await hre.ethers.getSigners();
+
+    for (const account of accounts) {
+      console.log(
+        account.address +
+          " " +
+          (await hre.ethers.provider.getBalance(account.address)),
+      );
+    }
+  },
+);
+
 const config: HardhatUserConfig = {
   solidity: {
     // Only use Solidity default versions `>=0.8.20` for EVM networks that support the opcode `PUSH0`
@@ -30,7 +48,7 @@ const config: HardhatUserConfig = {
     settings: {
       optimizer: {
         enabled: true,
-        runs: 999999,
+        runs: 999_999,
       },
     },
   },
@@ -345,7 +363,7 @@ const config: HardhatUserConfig = {
     zkSyncTestnet: {
       chainId: 300,
       url: process.env.ZKSYNC_TESTNET_URL || "",
-      ethNetwork: process.env.ETH_SEPOLIA_TESTNET_URL || "",
+      ethNetwork: "sepolia",
       zksync: true,
       verifyURL:
         "https://explorer.sepolia.era.zksync.dev/contract_verification",
@@ -353,7 +371,7 @@ const config: HardhatUserConfig = {
     zkSyncMain: {
       chainId: 324,
       url: process.env.ZKSYNC_MAINNET_URL || "",
-      ethNetwork: process.env.ETH_MAINNET_URL || "",
+      ethNetwork: "mainnet",
       zksync: true,
       verifyURL:
         "https://zksync2-mainnet-explorer.zksync.io/contract_verification",
@@ -467,6 +485,10 @@ const config: HardhatUserConfig = {
     only: ["Create2Deployer", "Create2DeployerDeprecated"],
     spacing: 2,
     pretty: true,
+  },
+  sourcify: {
+    // Enable Sourcify verification by default
+    enabled: true,
   },
   etherscan: {
     apiKey: {

@@ -1,186 +1,177 @@
-import { artifacts, contract, web3 } from "hardhat";
-import { computeCreate2Address } from "@eth-sdk/utils";
+import { expect } from "chai";
+import { ContractDeployTransaction } from "ethers";
+import hre from "hardhat";
+import { SignerWithAddress } from "@nomicfoundation/hardhat-ethers/signers";
+import { Create2Deployer, Create2DeployerDeprecated } from "../typechain-types";
 
-const {
-  balance,
-  BN,
-  ether,
-  expectRevert,
-  send,
-  // eslint-disable-next-line @typescript-eslint/no-var-requires
-} = require("@openzeppelin/test-helpers");
+describe("Create2Deployer", function () {
+  const name = "MyToken";
+  const symbol = "MTKN";
+  const initialBalance = 100;
 
-// eslint-disable-next-line @typescript-eslint/no-var-requires
-const { expect } = require("chai");
+  const salt = hre.ethers.id("WAGMI");
 
-const Create2Deployer = artifacts.require("Create2Deployer");
-const Create2DeployerDeprecated = artifacts.require(
-  "Create2DeployerDeprecated",
-);
-const ERC20Mock = artifacts.require("ERC20Mock");
-const ERC1820Implementer = artifacts.require("ERC1820Implementer");
+  let deployerAccount: SignerWithAddress;
+  let Alice: SignerWithAddress;
 
-contract("Create2Deployer", function (accounts) {
-  const [deployerAccount] = accounts;
+  let create2Deployer: Create2Deployer;
+  let create2Addr: string;
 
-  const salt = "salt message";
-  const saltHex = web3.utils.soliditySha3(salt);
-
-  const encodedParams = web3.eth.abi
-    .encodeParameters(
-      ["string", "string", "address", "uint256"],
-      ["MyToken", "MTKN", deployerAccount, 100],
-    )
-    .slice(2);
-
-  const constructorByteCode = `${ERC20Mock.bytecode}${encodedParams}`;
+  let creationBytecode: ContractDeployTransaction;
+  let initCodehash: string;
+  let creationBytecodeERC1820Implementer: ContractDeployTransaction;
 
   beforeEach(async function () {
-    this.factory = await Create2Deployer.new();
+    [deployerAccount, Alice] = await hre.ethers.getSigners();
+
+    create2Deployer = await hre.ethers.deployContract("Create2Deployer", {
+      from: deployerAccount,
+    });
+    create2Deployer.waitForDeployment();
+    create2Addr = await create2Deployer.getAddress();
+
+    const ERC20Mock = await hre.ethers.getContractFactory("ERC20Mock");
+    creationBytecode = await ERC20Mock.getDeployTransaction(
+      name,
+      symbol,
+      deployerAccount,
+      initialBalance,
+    );
+    initCodehash = hre.ethers.keccak256(creationBytecode.data);
+
+    const ERC1820Implementer =
+      await hre.ethers.getContractFactory("ERC1820Implementer");
+    creationBytecodeERC1820Implementer =
+      await ERC1820Implementer.getDeployTransaction();
   });
 
   describe("computeAddress", function () {
     it("computes the correct contract address", async function () {
-      const onChainComputed = await this.factory.computeAddress(
-        saltHex,
-        web3.utils.soliditySha3(constructorByteCode),
+      const onChainComputed = await create2Deployer.computeAddress(
+        salt,
+        initCodehash,
       );
-      const offChainComputed = computeCreate2Address(
-        this.factory.address,
-        saltHex,
-        constructorByteCode,
+      const offChainComputed = hre.ethers.getCreate2Address(
+        create2Addr,
+        salt,
+        initCodehash,
       );
       expect(onChainComputed).to.equal(offChainComputed);
     });
 
     it("computes the correct contract address with deployer", async function () {
-      const onChainComputed = await this.factory.computeAddressWithDeployer(
-        saltHex,
-        web3.utils.soliditySha3(constructorByteCode),
-        deployerAccount,
+      const onChainComputed = await create2Deployer.computeAddressWithDeployer(
+        salt,
+        initCodehash,
+        deployerAccount.address,
       );
-      const offChainComputed = computeCreate2Address(
-        deployerAccount,
-        saltHex,
-        constructorByteCode,
+      const offChainComputed = hre.ethers.getCreate2Address(
+        deployerAccount.address,
+        salt,
+        initCodehash,
       );
       expect(onChainComputed).to.equal(offChainComputed);
     });
   });
 
   describe("deploy", function () {
-    it("deploys a ERC1820Implementer from inline assembly code", async function () {
-      const offChainComputed = computeCreate2Address(
-        this.factory.address,
-        saltHex,
-        ERC1820Implementer.bytecode,
+    it("deploys an ERC1820Implementer from inline assembly code", async function () {
+      const offChainComputed = hre.ethers.getCreate2Address(
+        create2Addr,
+        salt,
+        hre.ethers.keccak256(creationBytecodeERC1820Implementer.data),
       );
-      await this.factory.deployERC1820Implementer(0, saltHex);
-      expect(ERC1820Implementer.bytecode).to.include(
-        (await web3.eth.getCode(offChainComputed)).slice(2),
+      await create2Deployer.deployERC1820Implementer(0, salt);
+      expect(creationBytecodeERC1820Implementer.data).to.include(
+        (await hre.ethers.provider.getCode(offChainComputed)).slice(2),
       );
     });
 
-    it("deploys a ERC20Mock with correct balances", async function () {
-      const offChainComputed = computeCreate2Address(
-        this.factory.address,
-        saltHex,
-        constructorByteCode,
+    it("deploys an ERC20Mock with correct balances", async function () {
+      const offChainComputed = hre.ethers.getCreate2Address(
+        create2Addr,
+        salt,
+        initCodehash,
       );
-      await this.factory.deploy(0, saltHex, constructorByteCode);
-      const erc20 = await ERC20Mock.at(offChainComputed);
-      expect(await erc20.balanceOf(deployerAccount)).to.be.bignumber.equal(
-        new BN(100),
+      await create2Deployer.deploy(0, salt, creationBytecode.data);
+      const erc20 = await hre.ethers.getContractAt(
+        "ERC20Mock",
+        offChainComputed,
+      );
+      expect(await erc20.balanceOf(deployerAccount.address)).to.equal(
+        initialBalance,
       );
     });
 
     it("deploys a contract with funds deposited in the factory", async function () {
-      const deposit = ether("2");
-      await send.ether(deployerAccount, this.factory.address, deposit);
-      expect(await balance.current(this.factory.address)).to.be.bignumber.equal(
+      const deposit = hre.ethers.parseEther("2");
+      await deployerAccount.sendTransaction({
+        to: create2Addr,
+        value: deposit,
+      });
+      expect(await hre.ethers.provider.getBalance(create2Addr)).to.equal(
         deposit,
       );
-
-      const onChainComputed = await this.factory.computeAddressWithDeployer(
-        saltHex,
-        web3.utils.soliditySha3(constructorByteCode),
-        this.factory.address,
+      const onChainComputed = await create2Deployer.computeAddress(
+        salt,
+        initCodehash,
       );
-      await this.factory.deploy(deposit, saltHex, constructorByteCode);
-      expect(await balance.current(onChainComputed)).to.be.bignumber.equal(
+      await create2Deployer.deploy(deposit, salt, creationBytecode.data);
+      expect(await hre.ethers.provider.getBalance(onChainComputed)).to.equal(
         deposit,
       );
     });
 
     it("fails deploying a contract in an existent address", async function () {
-      await this.factory.deployERC1820Implementer(0, saltHex);
-      await expectRevert(
-        this.factory.deployERC1820Implementer(0, saltHex, {
+      await create2Deployer.deployERC1820Implementer(0, salt);
+      await expect(
+        create2Deployer.deployERC1820Implementer(0, salt, {
           from: deployerAccount,
         }),
-        "Create2: Failed on deploy",
-      );
+      ).to.be.revertedWith("Create2: Failed on deploy");
 
-      await this.factory.deploy(0, saltHex, constructorByteCode, {
-        from: deployerAccount,
-      });
-      await expectRevert(
-        this.factory.deploy(0, saltHex, constructorByteCode, {
+      await create2Deployer.deploy(0, salt, creationBytecode.data);
+      await expect(
+        create2Deployer.deploy(0, salt, creationBytecode.data, {
           from: deployerAccount,
         }),
-        "Create2: Failed on deploy",
-      );
+      ).to.be.revertedWith("Create2: Failed on deploy");
     });
 
     it("fails deploying a contract if the bytecode length is zero", async function () {
-      await expectRevert(
-        this.factory.deploy(0, saltHex, "0x", { from: deployerAccount }),
-        "Create2: bytecode length is zero",
-      );
+      await expect(
+        create2Deployer.connect(deployerAccount).deploy(0, salt, "0x"),
+      ).to.be.revertedWith("Create2: bytecode length is zero");
     });
 
     it("fails deploying a contract if factory contract does not have sufficient balance", async function () {
-      await expectRevert(
-        this.factory.deployERC1820Implementer(1, saltHex, {
-          from: deployerAccount,
-        }),
-        "Create2: insufficient balance",
-      );
-
-      await expectRevert(
-        this.factory.deploy(1, saltHex, constructorByteCode, {
-          from: deployerAccount,
-        }),
-        "Create2: insufficient balance",
-      );
+      await expect(
+        create2Deployer.deployERC1820Implementer(1, salt),
+      ).to.be.revertedWith("Create2: insufficient balance");
+      await expect(
+        create2Deployer.deploy(1, salt, creationBytecode.data),
+      ).to.be.revertedWith("Create2: insufficient balance");
     });
 
     it("fails deploying when paused", async function () {
-      expect(await this.factory.pause({ from: accounts[0] }));
-      await expectRevert(
-        this.factory.deployERC1820Implementer(1, saltHex, {
-          from: deployerAccount,
-        }),
-        "Pausable: pause",
-      );
-
-      await expectRevert(
-        this.factory.deploy(1, saltHex, constructorByteCode, {
-          from: deployerAccount,
-        }),
-        "Pausable: pause",
-      );
+      await create2Deployer.connect(deployerAccount).pause();
+      await expect(
+        create2Deployer.deployERC1820Implementer(1, salt),
+      ).to.be.revertedWith("Pausable: paused");
+      await expect(
+        create2Deployer.deploy(1, salt, creationBytecode.data),
+      ).to.be.revertedWith("Pausable: paused");
     });
   });
 
   describe("pause", function () {
     it("success", async function () {
-      expect(await this.factory.pause({ from: accounts[0] }));
+      await expect(create2Deployer.connect(deployerAccount).pause()).not.to.be
+        .reverted;
     });
 
     it("prevents non-owners from executing", async function () {
-      await expectRevert(
-        this.factory.pause({ from: accounts[1] }),
+      await expect(create2Deployer.connect(Alice).pause()).to.be.revertedWith(
         "Ownable: caller is not the owner",
       );
     });
@@ -188,218 +179,252 @@ contract("Create2Deployer", function (accounts) {
 
   describe("unpause", function () {
     it("success", async function () {
-      await this.factory.pause({ from: accounts[0] });
-      expect(await this.factory.unpause({ from: accounts[0] }));
+      await expect(create2Deployer.connect(deployerAccount).pause()).not.to.be
+        .reverted;
+      await expect(create2Deployer.connect(deployerAccount).unpause()).not.to.be
+        .reverted;
     });
 
     it("prevents non-owners from executing", async function () {
-      await this.factory.pause({ from: accounts[0] });
-      await expectRevert(
-        this.factory.unpause({ from: accounts[1] }),
+      await expect(create2Deployer.connect(deployerAccount).pause()).not.to.be
+        .reverted;
+      await expect(create2Deployer.connect(Alice).unpause()).to.be.revertedWith(
         "Ownable: caller is not the owner",
       );
     });
   });
 });
 
-contract("Create2DeployerDeprecated", function (accounts) {
-  const [deployerAccount] = accounts;
+describe("Create2DeployerDeprecated", function () {
+  const name = "MyToken";
+  const symbol = "MTKN";
+  const initialBalance = 100;
 
-  const salt = "salt message";
-  const saltHex = web3.utils.soliditySha3(salt);
+  const salt = hre.ethers.id("WAGMI");
 
-  const encodedParams = web3.eth.abi
-    .encodeParameters(
-      ["string", "string", "address", "uint256"],
-      ["MyToken", "MTKN", deployerAccount, 100],
-    )
-    .slice(2);
+  let deployerAccount: SignerWithAddress;
+  let Alice: SignerWithAddress;
 
-  const constructorByteCode = `${ERC20Mock.bytecode}${encodedParams}`;
+  let create2DeployerDeprecated: Create2DeployerDeprecated;
+  let create2Addr: string;
+
+  let creationBytecode: ContractDeployTransaction;
+  let initCodehash: string;
+  let creationBytecodeERC1820Implementer: ContractDeployTransaction;
 
   beforeEach(async function () {
-    this.factory = await Create2DeployerDeprecated.new();
+    [deployerAccount, Alice] = await hre.ethers.getSigners();
+
+    create2DeployerDeprecated = await hre.ethers.deployContract(
+      "Create2DeployerDeprecated",
+      {
+        from: deployerAccount,
+      },
+    );
+    create2DeployerDeprecated.waitForDeployment();
+    create2Addr = await create2DeployerDeprecated.getAddress();
+
+    const ERC20Mock = await hre.ethers.getContractFactory("ERC20Mock");
+    creationBytecode = await ERC20Mock.getDeployTransaction(
+      name,
+      symbol,
+      deployerAccount,
+      initialBalance,
+    );
+    initCodehash = hre.ethers.keccak256(creationBytecode.data);
+
+    const ERC1820Implementer =
+      await hre.ethers.getContractFactory("ERC1820Implementer");
+    creationBytecodeERC1820Implementer =
+      await ERC1820Implementer.getDeployTransaction();
   });
 
   describe("computeAddress", function () {
     it("computes the correct contract address", async function () {
-      const onChainComputed = await this.factory.computeAddress(
-        saltHex,
-        web3.utils.soliditySha3(constructorByteCode),
+      const onChainComputed = await create2DeployerDeprecated.computeAddress(
+        salt,
+        initCodehash,
       );
-      const offChainComputed = computeCreate2Address(
-        this.factory.address,
-        saltHex,
-        constructorByteCode,
+      const offChainComputed = hre.ethers.getCreate2Address(
+        create2Addr,
+        salt,
+        initCodehash,
       );
       expect(onChainComputed).to.equal(offChainComputed);
     });
 
     it("computes the correct contract address with deployer", async function () {
-      const onChainComputed = await this.factory.computeAddressWithDeployer(
-        saltHex,
-        web3.utils.soliditySha3(constructorByteCode),
-        deployerAccount,
-      );
-      const offChainComputed = computeCreate2Address(
-        deployerAccount,
-        saltHex,
-        constructorByteCode,
+      const onChainComputed =
+        await create2DeployerDeprecated.computeAddressWithDeployer(
+          salt,
+          initCodehash,
+          deployerAccount.address,
+        );
+      const offChainComputed = hre.ethers.getCreate2Address(
+        deployerAccount.address,
+        salt,
+        initCodehash,
       );
       expect(onChainComputed).to.equal(offChainComputed);
     });
   });
 
   describe("deploy", function () {
-    it("deploys a ERC1820Implementer from inline assembly code", async function () {
-      const offChainComputed = computeCreate2Address(
-        this.factory.address,
-        saltHex,
-        ERC1820Implementer.bytecode,
+    it("deploys an ERC1820Implementer from inline assembly code", async function () {
+      const offChainComputed = hre.ethers.getCreate2Address(
+        create2Addr,
+        salt,
+        hre.ethers.keccak256(creationBytecodeERC1820Implementer.data),
       );
-      await this.factory.deployERC1820Implementer(0, saltHex);
-      expect(ERC1820Implementer.bytecode).to.include(
-        (await web3.eth.getCode(offChainComputed)).slice(2),
+      await create2DeployerDeprecated.deployERC1820Implementer(0, salt);
+      expect(creationBytecodeERC1820Implementer.data).to.include(
+        (await hre.ethers.provider.getCode(offChainComputed)).slice(2),
       );
     });
 
-    it("deploys a ERC20Mock with correct balances", async function () {
-      const offChainComputed = computeCreate2Address(
-        this.factory.address,
-        saltHex,
-        constructorByteCode,
+    it("deploys an ERC20Mock with correct balances", async function () {
+      const offChainComputed = hre.ethers.getCreate2Address(
+        create2Addr,
+        salt,
+        initCodehash,
       );
-      await this.factory.deploy(0, saltHex, constructorByteCode);
-      const erc20 = await ERC20Mock.at(offChainComputed);
-      expect(await erc20.balanceOf(deployerAccount)).to.be.bignumber.equal(
-        new BN(100),
+      await create2DeployerDeprecated.deploy(0, salt, creationBytecode.data);
+      const erc20 = await hre.ethers.getContractAt(
+        "ERC20Mock",
+        offChainComputed,
+      );
+      expect(await erc20.balanceOf(deployerAccount.address)).to.equal(
+        initialBalance,
       );
     });
 
     it("deploys a contract with funds deposited in the factory", async function () {
-      const deposit = ether("2");
-      await send.ether(deployerAccount, this.factory.address, deposit);
-      expect(await balance.current(this.factory.address)).to.be.bignumber.equal(
+      const deposit = hre.ethers.parseEther("2");
+      await deployerAccount.sendTransaction({
+        to: create2Addr,
+        value: deposit,
+      });
+      expect(await hre.ethers.provider.getBalance(create2Addr)).to.equal(
         deposit,
       );
-
-      const onChainComputed = await this.factory.computeAddressWithDeployer(
-        saltHex,
-        web3.utils.soliditySha3(constructorByteCode),
-        this.factory.address,
+      const onChainComputed = await create2DeployerDeprecated.computeAddress(
+        salt,
+        initCodehash,
       );
-      await this.factory.deploy(deposit, saltHex, constructorByteCode);
-      expect(await balance.current(onChainComputed)).to.be.bignumber.equal(
+      await create2DeployerDeprecated.deploy(
+        deposit,
+        salt,
+        creationBytecode.data,
+      );
+      expect(await hre.ethers.provider.getBalance(onChainComputed)).to.equal(
         deposit,
       );
     });
 
     it("fails deploying a contract in an existent address", async function () {
-      await this.factory.deployERC1820Implementer(0, saltHex);
-      await expectRevert(
-        this.factory.deployERC1820Implementer(0, saltHex, {
+      await create2DeployerDeprecated.deployERC1820Implementer(0, salt);
+      await expect(
+        create2DeployerDeprecated.deployERC1820Implementer(0, salt, {
           from: deployerAccount,
         }),
-        "Create2: Failed on deploy",
-      );
+      ).to.be.revertedWith("Create2: Failed on deploy");
 
-      await this.factory.deploy(0, saltHex, constructorByteCode, {
-        from: deployerAccount,
-      });
-      await expectRevert(
-        this.factory.deploy(0, saltHex, constructorByteCode, {
+      await create2DeployerDeprecated.deploy(0, salt, creationBytecode.data);
+      await expect(
+        create2DeployerDeprecated.deploy(0, salt, creationBytecode.data, {
           from: deployerAccount,
         }),
-        "Create2: Failed on deploy",
-      );
+      ).to.be.revertedWith("Create2: Failed on deploy");
     });
 
     it("fails deploying a contract if the bytecode length is zero", async function () {
-      await expectRevert(
-        this.factory.deploy(0, saltHex, "0x", { from: deployerAccount }),
-        "Create2: bytecode length is zero",
-      );
+      await expect(
+        create2DeployerDeprecated
+          .connect(deployerAccount)
+          .deploy(0, salt, "0x"),
+      ).to.be.revertedWith("Create2: bytecode length is zero");
     });
 
     it("fails deploying a contract if factory contract does not have sufficient balance", async function () {
-      await expectRevert(
-        this.factory.deployERC1820Implementer(1, saltHex, {
-          from: deployerAccount,
-        }),
-        "Create2: insufficient balance",
-      );
-
-      await expectRevert(
-        this.factory.deploy(1, saltHex, constructorByteCode, {
-          from: deployerAccount,
-        }),
-        "Create2: insufficient balance",
-      );
+      await expect(
+        create2DeployerDeprecated.deployERC1820Implementer(1, salt),
+      ).to.be.revertedWith("Create2: insufficient balance");
+      await expect(
+        create2DeployerDeprecated.deploy(1, salt, creationBytecode.data),
+      ).to.be.revertedWith("Create2: insufficient balance");
     });
 
     it("fails deploying when paused", async function () {
-      expect(await this.factory.pause({ from: accounts[0] }));
-      await expectRevert(
-        this.factory.deployERC1820Implementer(1, saltHex, {
-          from: deployerAccount,
-        }),
-        "Pausable: pause",
-      );
-
-      await expectRevert(
-        this.factory.deploy(1, saltHex, constructorByteCode, {
-          from: deployerAccount,
-        }),
-        "Pausable: pause",
-      );
+      await create2DeployerDeprecated.connect(deployerAccount).pause();
+      await expect(
+        create2DeployerDeprecated.deployERC1820Implementer(1, salt),
+      ).to.be.revertedWith("Pausable: paused");
+      await expect(
+        create2DeployerDeprecated.deploy(1, salt, creationBytecode.data),
+      ).to.be.revertedWith("Pausable: paused");
     });
   });
 
   describe("pause", function () {
     it("success", async function () {
-      expect(await this.factory.pause({ from: accounts[0] }));
+      await expect(create2DeployerDeprecated.connect(deployerAccount).pause())
+        .not.to.be.reverted;
     });
 
     it("prevents non-owners from executing", async function () {
-      await expectRevert(
-        this.factory.pause({ from: accounts[1] }),
-        "Ownable: caller is not the owner",
-      );
+      await expect(
+        create2DeployerDeprecated.connect(Alice).pause(),
+      ).to.be.revertedWith("Ownable: caller is not the owner");
     });
   });
 
   describe("unpause", function () {
     it("success", async function () {
-      await this.factory.pause({ from: accounts[0] });
-      expect(await this.factory.unpause({ from: accounts[0] }));
+      await expect(create2DeployerDeprecated.connect(deployerAccount).pause())
+        .not.to.be.reverted;
+      await expect(create2DeployerDeprecated.connect(deployerAccount).unpause())
+        .not.to.be.reverted;
     });
 
     it("prevents non-owners from executing", async function () {
-      await this.factory.pause({ from: accounts[0] });
-      await expectRevert(
-        this.factory.unpause({ from: accounts[1] }),
-        "Ownable: caller is not the owner",
-      );
+      await expect(create2DeployerDeprecated.connect(deployerAccount).pause())
+        .not.to.be.reverted;
+      await expect(
+        create2DeployerDeprecated.connect(Alice).unpause(),
+      ).to.be.revertedWith("Ownable: caller is not the owner");
     });
   });
 
   // Only relevant for the `Create2DeployerDeprecated` contract
   describe("killCreate2Deployer", function () {
     it("success", async function () {
-      expect(
-        await this.factory.killCreate2Deployer(accounts[0], {
-          from: accounts[0],
-        }),
+      const deposit = hre.ethers.parseEther("2");
+      await deployerAccount.sendTransaction({
+        to: create2Addr,
+        value: deposit,
+      });
+      expect(await hre.ethers.provider.getBalance(create2Addr)).to.equal(
+        deposit,
+      );
+      const initialBalance = await hre.ethers.provider.getBalance(
+        Alice.address,
+      );
+      await expect(
+        create2DeployerDeprecated
+          .connect(deployerAccount)
+          .killCreate2Deployer(Alice.address),
+      ).not.to.be.reverted;
+      expect(await hre.ethers.provider.getBalance(Alice.address)).to.equal(
+        deposit + initialBalance,
       );
     });
 
     it("prevents non-owners from executing", async function () {
-      await expectRevert(
-        this.factory.killCreate2Deployer(accounts[0], {
-          from: accounts[1],
-        }),
-        "Ownable: caller is not the owner",
-      );
+      await expect(
+        create2DeployerDeprecated
+          .connect(Alice)
+          .killCreate2Deployer(Alice.address),
+      ).to.be.revertedWith("Ownable: caller is not the owner");
     });
   });
 });
