@@ -28,7 +28,7 @@ describe("Create2Deployer", function () {
       "Create2Deployer",
       deployerAccount,
     );
-    create2Deployer.waitForDeployment();
+    await create2Deployer.waitForDeployment();
     create2Addr = await create2Deployer.getAddress();
 
     const ERC20Mock = await hre.ethers.getContractFactory("ERC20Mock");
@@ -216,7 +216,7 @@ describe("Create2DeployerDeprecated", function () {
       "Create2DeployerDeprecated",
       deployerAccount,
     );
-    create2DeployerDeprecated.waitForDeployment();
+    await create2DeployerDeprecated.waitForDeployment();
     create2Addr = await create2DeployerDeprecated.getAddress();
 
     const ERC20Mock = await hre.ethers.getContractFactory("ERC20Mock");
