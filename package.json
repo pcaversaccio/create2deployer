@@ -29,6 +29,7 @@
     "compile": "npx hardhat compile",
     "size": "npx hardhat size-contracts",
     "abi": "npx hardhat export-abi",
+    "evm": "npx hardhat evm",
     "deploy:hh": "npx hardhat run --network hardhat scripts/deploy.ts",
     "deploy:goerli": "npx hardhat run --network goerli scripts/deploy.ts",
     "deploy:sepolia": "npx hardhat run --network sepolia scripts/deploy.ts",

@@ -91,5 +91,5 @@ jobs:
 
       - name: Validate URLs
         run: |
-          awesome_bot ./*.md contracts/**/*.sol --request-delay 0.4 \
+          awesome_bot ./*.md contracts/*.sol contracts/**/*.sol --request-delay 0.4 \
           --white-list https://hardhat.org,https://explorer.autobahn.network,https://testnet.autobahn-explorer.com,https://rinkeby.etherscan.io,https://ropsten.etherscan.io,https://kovan.etherscan.io,https://kovan-optimistic.etherscan.io,https://hyperspace.filfox.info,https://testnet.hecoinfo.com

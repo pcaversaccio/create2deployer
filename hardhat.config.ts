@@ -24,6 +24,10 @@ task("accounts", "Prints the list of accounts", async (_, hre) => {
   }
 });
 
+task("evm", "Prints the configured EVM version", async (_, hre) => {
+  console.log(hre.config.solidity.compilers[0].settings.evmVersion);
+});
+
 task(
   "balances",
   "Prints the list of accounts and their balances",
