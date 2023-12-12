@@ -15,8 +15,8 @@ devDependencies:
     specifier: ^1.0.3
     version: 1.0.3(hardhat@2.19.2)
   "@matterlabs/hardhat-zksync-verify":
-    specifier: ^1.2.0
-    version: 1.2.0(@nomicfoundation/hardhat-verify@2.0.2)(ethers@6.9.0)(hardhat@2.19.2)
+    specifier: ^1.2.1
+    version: 1.2.1(@nomicfoundation/hardhat-verify@2.0.2)(ethers@6.9.0)(hardhat@2.19.2)
   "@nomicfoundation/hardhat-chai-matchers":
     specifier: ^2.0.2
     version: 2.0.2(@nomicfoundation/hardhat-ethers@3.0.5)(chai@4.3.10)(ethers@6.9.0)(hardhat@2.19.2)
@@ -820,10 +820,10 @@ packages:
       - supports-color
     dev: true
 
-  /@matterlabs/hardhat-zksync-verify@1.2.0(@nomicfoundation/hardhat-verify@2.0.2)(ethers@6.9.0)(hardhat@2.19.2):
+  /@matterlabs/hardhat-zksync-verify@1.2.1(@nomicfoundation/hardhat-verify@2.0.2)(ethers@6.9.0)(hardhat@2.19.2):
     resolution:
       {
-        integrity: sha512-KVOKTeAeyu9zYZD+GdxSgHbmlwlKrNW7STycNGGkAAa4FaOioSaHJ6B214hVcRsWlH76sI7hFNHczMrozcoJPA==,
+        integrity: sha512-kysWVNi07dgqTbesuQUnIUXNJBKWpMfTOAFErV9C69KUNIZg776em5hosdINIConAbwnnLrVa1/4g//Zpltk5g==,
       }
     peerDependencies:
       "@nomicfoundation/hardhat-verify": ^2.0.0
