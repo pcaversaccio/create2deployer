@@ -40,7 +40,6 @@
     "deploy:optimismtestnet": "npx hardhat run --network optimismTestnet scripts/deploy.ts",
     "deploy:optimismsepolia": "npx hardhat run --network optimismSepolia scripts/deploy.ts",
     "deploy:optimismmain": "npx hardhat run --network optimismMain scripts/deploy.ts",
-    "deploy:arbitrumtestnet": "npx hardhat run --network arbitrumTestnet scripts/deploy.ts",
     "deploy:arbitrumsepolia": "npx hardhat run --network arbitrumSepolia scripts/deploy.ts",
     "deploy:arbitrummain": "npx hardhat run --network arbitrumMain scripts/deploy.ts",
     "deploy:arbitrumnova": "npx hardhat run --network arbitrumNova scripts/deploy.ts",
