@@ -103,7 +103,7 @@
     "lint:fix": "pnpm run prettier:fix && pnpm run solhint:fix && npx eslint **/*.{js,ts} --fix"
   },
   "devDependencies": {
-    "@matterlabs/hardhat-zksync-deploy": "^1.1.0",
+    "@matterlabs/hardhat-zksync-deploy": "^1.1.1",
     "@matterlabs/hardhat-zksync-ethers": "0.0.1-beta.1",
     "@matterlabs/hardhat-zksync-solc": "^1.0.3",
     "@matterlabs/hardhat-zksync-verify": "^1.2.1",
