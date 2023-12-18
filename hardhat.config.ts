@@ -142,12 +142,6 @@ const config: HardhatUserConfig = {
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
-    arbitrumTestnet: {
-      chainId: 421613,
-      url: process.env.ARBITRUM_TESTNET_URL || "",
-      accounts:
-        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
-    },
     arbitrumSepolia: {
       chainId: 421614,
       url: process.env.ARBITRUM_SEPOLIA_URL || "",
@@ -518,10 +512,9 @@ const config: HardhatUserConfig = {
       polygonZkEVM: process.env.POLYGON_ZKEVM_API_KEY || "",
       polygonMumbai: process.env.POLYGON_API_KEY || "",
       polygonZkEVMTestnet: process.env.POLYGON_ZKEVM_API_KEY || "",
-      // For Arbitrum testnets & mainnets
+      // For Arbitrum testnet & mainnets
       arbitrumOne: process.env.ARBITRUM_API_KEY || "",
       arbitrumNova: process.env.ARBITRUM_API_KEY || "",
-      arbitrumGoerli: process.env.ARBITRUM_API_KEY || "",
       arbitrumSepolia: process.env.ARBITRUM_API_KEY || "",
       // For Avalanche testnet & mainnet
       avalanche: process.env.AVALANCHE_API_KEY || "",
