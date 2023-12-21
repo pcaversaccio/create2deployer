@@ -3,6 +3,9 @@
 [![🕵️‍♂️ Test smart contracts](https://github.com/pcaversaccio/create2deployer/actions/workflows/test-contracts.yml/badge.svg)](https://github.com/pcaversaccio/create2deployer/actions/workflows/test-contracts.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/license/mit/)
 
+> [!TIP]
+> I have built a versatile, trustless, and stateless successor to `Create2Deployer`: [`CreateX`](https://github.com/pcaversaccio/createx). Check it out! 🫡
+
 Helper smart contract to make easier and safer usage of the [`CREATE2`](https://eips.ethereum.org/EIPS/eip-1014) Ethereum Virtual Machine (EVM) opcode. `CREATE2` can be used to compute in advance the address where a smart contract will be deployed, which allows for interesting new mechanisms known as _counterfactual interactions_.
 
 <div align="center">
