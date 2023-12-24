@@ -104,10 +104,10 @@
     "lint:fix": "pnpm run prettier:fix && pnpm run solhint:fix && npx eslint **/*.{js,ts} --fix"
   },
   "devDependencies": {
-    "@matterlabs/hardhat-zksync-deploy": "^1.1.1",
-    "@matterlabs/hardhat-zksync-ethers": "0.0.1-beta.1",
-    "@matterlabs/hardhat-zksync-solc": "^1.0.5",
-    "@matterlabs/hardhat-zksync-verify": "^1.2.1",
+    "@matterlabs/hardhat-zksync-deploy": "^1.1.2",
+    "@matterlabs/hardhat-zksync-ethers": "0.0.1-beta.2",
+    "@matterlabs/hardhat-zksync-solc": "^1.0.6",
+    "@matterlabs/hardhat-zksync-verify": "^1.2.2",
     "@nomicfoundation/hardhat-chai-matchers": "^2.0.2",
     "@nomicfoundation/hardhat-ethers": "^3.0.5",
     "@nomicfoundation/hardhat-network-helpers": "^1.0.10",
@@ -131,7 +131,7 @@
     "hardhat-contract-sizer": "^2.10.0",
     "hardhat-gas-reporter": "^1.0.9",
     "prettier": "^3.1.1",
-    "prettier-plugin-solidity": "^1.2.0",
+    "prettier-plugin-solidity": "^1.3.1",
     "solhint": "^4.0.0",
     "solidity-coverage": "^0.8.5",
     "ts-node": "^10.9.2",
