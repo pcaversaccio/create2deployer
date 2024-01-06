@@ -19,7 +19,7 @@ devDependencies:
     version: 1.2.2(@nomicfoundation/hardhat-verify@2.0.3)(ethers@6.9.2)(hardhat@2.19.4)
   "@nomicfoundation/hardhat-chai-matchers":
     specifier: ^2.0.3
-    version: 2.0.3(@nomicfoundation/hardhat-ethers@3.0.5)(chai@4.3.10)(ethers@6.9.2)(hardhat@2.19.4)
+    version: 2.0.3(@nomicfoundation/hardhat-ethers@3.0.5)(chai@4.4.0)(ethers@6.9.2)(hardhat@2.19.4)
   "@nomicfoundation/hardhat-ethers":
     specifier: ^3.0.5
     version: 3.0.5(ethers@6.9.2)(hardhat@2.19.4)
@@ -28,7 +28,7 @@ devDependencies:
     version: 1.0.10(hardhat@2.19.4)
   "@nomicfoundation/hardhat-toolbox":
     specifier: ^4.0.0
-    version: 4.0.0(@nomicfoundation/hardhat-chai-matchers@2.0.3)(@nomicfoundation/hardhat-ethers@3.0.5)(@nomicfoundation/hardhat-network-helpers@1.0.10)(@nomicfoundation/hardhat-verify@2.0.3)(@typechain/ethers-v6@0.5.1)(@typechain/hardhat@9.1.0)(@types/chai@4.3.11)(@types/mocha@10.0.6)(@types/node@20.10.6)(chai@4.3.10)(ethers@6.9.2)(hardhat-gas-reporter@1.0.9)(hardhat@2.19.4)(solidity-coverage@0.8.5)(ts-node@10.9.2)(typechain@8.3.2)(typescript@5.3.3)
+    version: 4.0.0(@nomicfoundation/hardhat-chai-matchers@2.0.3)(@nomicfoundation/hardhat-ethers@3.0.5)(@nomicfoundation/hardhat-network-helpers@1.0.10)(@nomicfoundation/hardhat-verify@2.0.3)(@typechain/ethers-v6@0.5.1)(@typechain/hardhat@9.1.0)(@types/chai@4.3.11)(@types/mocha@10.0.6)(@types/node@20.10.6)(chai@4.4.0)(ethers@6.9.2)(hardhat-gas-reporter@1.0.9)(hardhat@2.19.4)(solidity-coverage@0.8.5)(ts-node@10.9.2)(typechain@8.3.2)(typescript@5.3.3)
   "@nomicfoundation/hardhat-verify":
     specifier: ^2.0.3
     version: 2.0.3(hardhat@2.19.4)
@@ -51,14 +51,14 @@ devDependencies:
     specifier: ^20.10.6
     version: 20.10.6
   "@typescript-eslint/eslint-plugin":
-    specifier: ^6.17.0
-    version: 6.17.0(@typescript-eslint/parser@6.17.0)(eslint@8.56.0)(typescript@5.3.3)
+    specifier: ^6.18.0
+    version: 6.18.0(@typescript-eslint/parser@6.18.0)(eslint@8.56.0)(typescript@5.3.3)
   "@typescript-eslint/parser":
-    specifier: ^6.17.0
-    version: 6.17.0(eslint@8.56.0)(typescript@5.3.3)
+    specifier: ^6.18.0
+    version: 6.18.0(eslint@8.56.0)(typescript@5.3.3)
   chai:
-    specifier: ^4.3.10
-    version: 4.3.10
+    specifier: ^4.4.0
+    version: 4.4.0
   dotenv:
     specifier: ^16.3.1
     version: 16.3.1
@@ -830,7 +830,7 @@ packages:
     dependencies:
       "@matterlabs/hardhat-zksync-solc": 1.0.6(hardhat@2.19.4)
       "@nomicfoundation/hardhat-verify": 2.0.3(hardhat@2.19.4)
-      axios: 1.6.3
+      axios: 1.6.5
       chalk: 4.1.2
       zksync-ethers: 6.0.0(ethers@6.9.2)
     transitivePeerDependencies:
@@ -1124,7 +1124,7 @@ packages:
       - utf-8-validate
     dev: true
 
-  /@nomicfoundation/hardhat-chai-matchers@2.0.3(@nomicfoundation/hardhat-ethers@3.0.5)(chai@4.3.10)(ethers@6.9.2)(hardhat@2.19.4):
+  /@nomicfoundation/hardhat-chai-matchers@2.0.3(@nomicfoundation/hardhat-ethers@3.0.5)(chai@4.4.0)(ethers@6.9.2)(hardhat@2.19.4):
     resolution:
       {
         integrity: sha512-A40s7EAK4Acr8UP1Yudgi9GGD9Cca/K3LHt3DzmRIje14lBfHtg9atGQ7qK56vdPcTwKmeaGn30FzxMUfPGEMw==,
@@ -1137,8 +1137,8 @@ packages:
     dependencies:
       "@nomicfoundation/hardhat-ethers": 3.0.5(ethers@6.9.2)(hardhat@2.19.4)
       "@types/chai-as-promised": 7.1.8
-      chai: 4.3.10
-      chai-as-promised: 7.1.1(chai@4.3.10)
+      chai: 4.4.0
+      chai-as-promised: 7.1.1(chai@4.4.0)
       deep-eql: 4.1.3
       ethers: 6.9.2
       hardhat: 2.19.4(ts-node@10.9.2)(typescript@5.3.3)
@@ -1174,7 +1174,7 @@ packages:
       hardhat: 2.19.4(ts-node@10.9.2)(typescript@5.3.3)
     dev: true
 
-  /@nomicfoundation/hardhat-toolbox@4.0.0(@nomicfoundation/hardhat-chai-matchers@2.0.3)(@nomicfoundation/hardhat-ethers@3.0.5)(@nomicfoundation/hardhat-network-helpers@1.0.10)(@nomicfoundation/hardhat-verify@2.0.3)(@typechain/ethers-v6@0.5.1)(@typechain/hardhat@9.1.0)(@types/chai@4.3.11)(@types/mocha@10.0.6)(@types/node@20.10.6)(chai@4.3.10)(ethers@6.9.2)(hardhat-gas-reporter@1.0.9)(hardhat@2.19.4)(solidity-coverage@0.8.5)(ts-node@10.9.2)(typechain@8.3.2)(typescript@5.3.3):
+  /@nomicfoundation/hardhat-toolbox@4.0.0(@nomicfoundation/hardhat-chai-matchers@2.0.3)(@nomicfoundation/hardhat-ethers@3.0.5)(@nomicfoundation/hardhat-network-helpers@1.0.10)(@nomicfoundation/hardhat-verify@2.0.3)(@typechain/ethers-v6@0.5.1)(@typechain/hardhat@9.1.0)(@types/chai@4.3.11)(@types/mocha@10.0.6)(@types/node@20.10.6)(chai@4.4.0)(ethers@6.9.2)(hardhat-gas-reporter@1.0.9)(hardhat@2.19.4)(solidity-coverage@0.8.5)(ts-node@10.9.2)(typechain@8.3.2)(typescript@5.3.3):
     resolution:
       {
         integrity: sha512-jhcWHp0aHaL0aDYj8IJl80v4SZXWMS1A2XxXa1CA6pBiFfJKuZinCkO6wb+POAt0LIfXB3gA3AgdcOccrcwBwA==,
@@ -1198,7 +1198,7 @@ packages:
       typechain: ^8.3.0
       typescript: ">=4.5.0"
     dependencies:
-      "@nomicfoundation/hardhat-chai-matchers": 2.0.3(@nomicfoundation/hardhat-ethers@3.0.5)(chai@4.3.10)(ethers@6.9.2)(hardhat@2.19.4)
+      "@nomicfoundation/hardhat-chai-matchers": 2.0.3(@nomicfoundation/hardhat-ethers@3.0.5)(chai@4.4.0)(ethers@6.9.2)(hardhat@2.19.4)
       "@nomicfoundation/hardhat-ethers": 3.0.5(ethers@6.9.2)(hardhat@2.19.4)
       "@nomicfoundation/hardhat-network-helpers": 1.0.10(hardhat@2.19.4)
       "@nomicfoundation/hardhat-verify": 2.0.3(hardhat@2.19.4)
@@ -1207,7 +1207,7 @@ packages:
       "@types/chai": 4.3.11
       "@types/mocha": 10.0.6
       "@types/node": 20.10.6
-      chai: 4.3.10
+      chai: 4.4.0
       ethers: 6.9.2
       hardhat: 2.19.4(ts-node@10.9.2)(typescript@5.3.3)
       hardhat-gas-reporter: 1.0.9(hardhat@2.19.4)
@@ -1454,7 +1454,7 @@ packages:
       }
     dependencies:
       "@noble/curves": 1.1.0
-      "@noble/hashes": 1.3.2
+      "@noble/hashes": 1.3.1
       "@scure/base": 1.1.5
     dev: true
 
@@ -1474,7 +1474,7 @@ packages:
         integrity: sha512-Z3/Fsz1yr904dduJD0NpiyRHhRYHdcnyh73FZWiV+/qhWi83wNJ3NWolYqCEN+ZWsUz2TWwajJggcRE9r1zUYg==,
       }
     dependencies:
-      "@noble/hashes": 1.3.2
+      "@noble/hashes": 1.3.1
       "@scure/base": 1.1.5
     dev: true
 
@@ -1863,10 +1863,10 @@ packages:
       }
     dev: true
 
-  /@typescript-eslint/eslint-plugin@6.17.0(@typescript-eslint/parser@6.17.0)(eslint@8.56.0)(typescript@5.3.3):
+  /@typescript-eslint/eslint-plugin@6.18.0(@typescript-eslint/parser@6.18.0)(eslint@8.56.0)(typescript@5.3.3):
     resolution:
       {
-        integrity: sha512-Vih/4xLXmY7V490dGwBQJTpIZxH4ZFH6eCVmQ4RFkB+wmaCTDAx4dtgoWwMNGKLkqRY1L6rPqzEbjorRnDo4rQ==,
+        integrity: sha512-3lqEvQUdCozi6d1mddWqd+kf8KxmGq2Plzx36BlkjuQe3rSTm/O98cLf0A4uDO+a5N1KD2SeEEl6fW97YHY+6w==,
       }
     engines: { node: ^16.0.0 || >=18.0.0 }
     peerDependencies:
@@ -1878,11 +1878,11 @@ packages:
         optional: true
     dependencies:
       "@eslint-community/regexpp": 4.10.0
-      "@typescript-eslint/parser": 6.17.0(eslint@8.56.0)(typescript@5.3.3)
-      "@typescript-eslint/scope-manager": 6.17.0
-      "@typescript-eslint/type-utils": 6.17.0(eslint@8.56.0)(typescript@5.3.3)
-      "@typescript-eslint/utils": 6.17.0(eslint@8.56.0)(typescript@5.3.3)
-      "@typescript-eslint/visitor-keys": 6.17.0
+      "@typescript-eslint/parser": 6.18.0(eslint@8.56.0)(typescript@5.3.3)
+      "@typescript-eslint/scope-manager": 6.18.0
+      "@typescript-eslint/type-utils": 6.18.0(eslint@8.56.0)(typescript@5.3.3)
+      "@typescript-eslint/utils": 6.18.0(eslint@8.56.0)(typescript@5.3.3)
+      "@typescript-eslint/visitor-keys": 6.18.0
       debug: 4.3.4(supports-color@8.1.1)
       eslint: 8.56.0
       graphemer: 1.4.0
@@ -1895,10 +1895,10 @@ packages:
       - supports-color
     dev: true
 
-  /@typescript-eslint/parser@6.17.0(eslint@8.56.0)(typescript@5.3.3):
+  /@typescript-eslint/parser@6.18.0(eslint@8.56.0)(typescript@5.3.3):
     resolution:
       {
-        integrity: sha512-C4bBaX2orvhK+LlwrY8oWGmSl4WolCfYm513gEccdWZj0CwGadbIADb0FtVEcI+WzUyjyoBj2JRP8g25E6IB8A==,
+        integrity: sha512-v6uR68SFvqhNQT41frCMCQpsP+5vySy6IdgjlzUWoo7ALCnpaWYcz/Ij2k4L8cEsL0wkvOviCMpjmtRtHNOKzA==,
       }
     engines: { node: ^16.0.0 || >=18.0.0 }
     peerDependencies:
@@ -1908,10 +1908,10 @@ packages:
       typescript:
         optional: true
     dependencies:
-      "@typescript-eslint/scope-manager": 6.17.0
-      "@typescript-eslint/types": 6.17.0
-      "@typescript-eslint/typescript-estree": 6.17.0(typescript@5.3.3)
-      "@typescript-eslint/visitor-keys": 6.17.0
+      "@typescript-eslint/scope-manager": 6.18.0
+      "@typescript-eslint/types": 6.18.0
+      "@typescript-eslint/typescript-estree": 6.18.0(typescript@5.3.3)
+      "@typescript-eslint/visitor-keys": 6.18.0
       debug: 4.3.4(supports-color@8.1.1)
       eslint: 8.56.0
       typescript: 5.3.3
@@ -1919,21 +1919,21 @@ packages:
       - supports-color
     dev: true
 
-  /@typescript-eslint/scope-manager@6.17.0:
+  /@typescript-eslint/scope-manager@6.18.0:
     resolution:
       {
-        integrity: sha512-RX7a8lwgOi7am0k17NUO0+ZmMOX4PpjLtLRgLmT1d3lBYdWH4ssBUbwdmc5pdRX8rXon8v9x8vaoOSpkHfcXGA==,
+        integrity: sha512-o/UoDT2NgOJ2VfHpfr+KBY2ErWvCySNUIX/X7O9g8Zzt/tXdpfEU43qbNk8LVuWUT2E0ptzTWXh79i74PP0twA==,
       }
     engines: { node: ^16.0.0 || >=18.0.0 }
     dependencies:
-      "@typescript-eslint/types": 6.17.0
-      "@typescript-eslint/visitor-keys": 6.17.0
+      "@typescript-eslint/types": 6.18.0
+      "@typescript-eslint/visitor-keys": 6.18.0
     dev: true
 
-  /@typescript-eslint/type-utils@6.17.0(eslint@8.56.0)(typescript@5.3.3):
+  /@typescript-eslint/type-utils@6.18.0(eslint@8.56.0)(typescript@5.3.3):
     resolution:
       {
-        integrity: sha512-hDXcWmnbtn4P2B37ka3nil3yi3VCQO2QEB9gBiHJmQp5wmyQWqnjA85+ZcE8c4FqnaB6lBwMrPkgd4aBYz3iNg==,
+        integrity: sha512-ZeMtrXnGmTcHciJN1+u2CigWEEXgy1ufoxtWcHORt5kGvpjjIlK9MUhzHm4RM8iVy6dqSaZA/6PVkX6+r+ChjQ==,
       }
     engines: { node: ^16.0.0 || >=18.0.0 }
     peerDependencies:
@@ -1943,8 +1943,8 @@ packages:
       typescript:
         optional: true
     dependencies:
-      "@typescript-eslint/typescript-estree": 6.17.0(typescript@5.3.3)
-      "@typescript-eslint/utils": 6.17.0(eslint@8.56.0)(typescript@5.3.3)
+      "@typescript-eslint/typescript-estree": 6.18.0(typescript@5.3.3)
+      "@typescript-eslint/utils": 6.18.0(eslint@8.56.0)(typescript@5.3.3)
       debug: 4.3.4(supports-color@8.1.1)
       eslint: 8.56.0
       ts-api-utils: 1.0.3(typescript@5.3.3)
@@ -1953,18 +1953,18 @@ packages:
       - supports-color
     dev: true
 
-  /@typescript-eslint/types@6.17.0:
+  /@typescript-eslint/types@6.18.0:
     resolution:
       {
-        integrity: sha512-qRKs9tvc3a4RBcL/9PXtKSehI/q8wuU9xYJxe97WFxnzH8NWWtcW3ffNS+EWg8uPvIerhjsEZ+rHtDqOCiH57A==,
+        integrity: sha512-/RFVIccwkwSdW/1zeMx3hADShWbgBxBnV/qSrex6607isYjj05t36P6LyONgqdUrNLl5TYU8NIKdHUYpFvExkA==,
       }
     engines: { node: ^16.0.0 || >=18.0.0 }
     dev: true
 
-  /@typescript-eslint/typescript-estree@6.17.0(typescript@5.3.3):
+  /@typescript-eslint/typescript-estree@6.18.0(typescript@5.3.3):
     resolution:
       {
-        integrity: sha512-gVQe+SLdNPfjlJn5VNGhlOhrXz4cajwFd5kAgWtZ9dCZf4XJf8xmgCTLIqec7aha3JwgLI2CK6GY1043FRxZwg==,
+        integrity: sha512-klNvl+Ql4NsBNGB4W9TZ2Od03lm7aGvTbs0wYaFYsplVPhr+oeXjlPZCDI4U9jgJIDK38W1FKhacCFzCC+nbIg==,
       }
     engines: { node: ^16.0.0 || >=18.0.0 }
     peerDependencies:
@@ -1973,8 +1973,8 @@ packages:
       typescript:
         optional: true
     dependencies:
-      "@typescript-eslint/types": 6.17.0
-      "@typescript-eslint/visitor-keys": 6.17.0
+      "@typescript-eslint/types": 6.18.0
+      "@typescript-eslint/visitor-keys": 6.18.0
       debug: 4.3.4(supports-color@8.1.1)
       globby: 11.1.0
       is-glob: 4.0.3
@@ -1986,10 +1986,10 @@ packages:
       - supports-color
     dev: true
 
-  /@typescript-eslint/utils@6.17.0(eslint@8.56.0)(typescript@5.3.3):
+  /@typescript-eslint/utils@6.18.0(eslint@8.56.0)(typescript@5.3.3):
     resolution:
       {
-        integrity: sha512-LofsSPjN/ITNkzV47hxas2JCsNCEnGhVvocfyOcLzT9c/tSZE7SfhS/iWtzP1lKNOEfLhRTZz6xqI8N2RzweSQ==,
+        integrity: sha512-wiKKCbUeDPGaYEYQh1S580dGxJ/V9HI7K5sbGAVklyf+o5g3O+adnS4UNJajplF4e7z2q0uVBaTdT/yLb4XAVA==,
       }
     engines: { node: ^16.0.0 || >=18.0.0 }
     peerDependencies:
@@ -1998,9 +1998,9 @@ packages:
       "@eslint-community/eslint-utils": 4.4.0(eslint@8.56.0)
       "@types/json-schema": 7.0.15
       "@types/semver": 7.5.6
-      "@typescript-eslint/scope-manager": 6.17.0
-      "@typescript-eslint/types": 6.17.0
-      "@typescript-eslint/typescript-estree": 6.17.0(typescript@5.3.3)
+      "@typescript-eslint/scope-manager": 6.18.0
+      "@typescript-eslint/types": 6.18.0
+      "@typescript-eslint/typescript-estree": 6.18.0(typescript@5.3.3)
       eslint: 8.56.0
       semver: 7.5.4
     transitivePeerDependencies:
@@ -2008,14 +2008,14 @@ packages:
       - typescript
     dev: true
 
-  /@typescript-eslint/visitor-keys@6.17.0:
+  /@typescript-eslint/visitor-keys@6.18.0:
     resolution:
       {
-        integrity: sha512-H6VwB/k3IuIeQOyYczyyKN8wH6ed8EwliaYHLxOIhyF0dYEIsN8+Bk3GE19qafeMKyZJJHP8+O1HiFhFLUNKSg==,
+        integrity: sha512-1wetAlSZpewRDb2h9p/Q8kRjdGuqdTAQbkJIOUMLug2LBLG+QOjiWoSj6/3B/hA9/tVTFFdtiKvAYoYnSRW/RA==,
       }
     engines: { node: ^16.0.0 || >=18.0.0 }
     dependencies:
-      "@typescript-eslint/types": 6.17.0
+      "@typescript-eslint/types": 6.18.0
       eslint-visitor-keys: 3.4.3
     dev: true
 
@@ -2378,10 +2378,10 @@ packages:
     engines: { node: ">= 4.0.0" }
     dev: true
 
-  /axios@1.6.3:
+  /axios@1.6.5:
     resolution:
       {
-        integrity: sha512-fWyNdeawGam70jXSVlKl+SUNVcL6j6W79CuSIPfi6HnDUmSCH6gyUys/HrqHeA/wU0Az41rRgean494d0Jb+ww==,
+        integrity: sha512-Ii012v05KEVuUoFWmMW/UQv9aRIc3ZwkWDcM+h5Il8izZCtRVpDUfwpoFf7eOtajT3QiGR4yDUx7lPqHJULgbg==,
       }
     dependencies:
       follow-redirects: 1.15.4(debug@4.3.4)
@@ -2744,7 +2744,7 @@ packages:
       nofilter: 3.1.0
     dev: true
 
-  /chai-as-promised@7.1.1(chai@4.3.10):
+  /chai-as-promised@7.1.1(chai@4.4.0):
     resolution:
       {
         integrity: sha512-azL6xMoi+uxu6z4rhWQ1jbdUhOMhis2PvscD/xjLqNMkv3BPPp2JyyuTHOrf9BOosGpNQ11v6BKv/g57RXbiaA==,
@@ -2752,14 +2752,14 @@ packages:
     peerDependencies:
       chai: ">= 2.1.2 < 5"
     dependencies:
-      chai: 4.3.10
+      chai: 4.4.0
       check-error: 1.0.3
     dev: true
 
-  /chai@4.3.10:
+  /chai@4.4.0:
     resolution:
       {
-        integrity: sha512-0UXG04VuVbruMUYbJ6JctvH0YnC/4q3/AkT18q4NaITo91CUm0liMS9VqzT9vZhVQ/1eqPanMWjBM+Juhfb/9g==,
+        integrity: sha512-x9cHNq1uvkCdU+5xTkNh5WtgD4e4yDFCsp9jVc7N7qVeKeftv3gO/ZrviX5d+3ZfxdYnZXZYujjRInu1RogU6A==,
       }
     engines: { node: ">=4" }
     dependencies:
@@ -3685,7 +3685,7 @@ packages:
         optional: true
     dependencies:
       "@solidity-parser/parser": 0.14.5
-      axios: 1.6.3
+      axios: 1.6.5
       cli-table3: 0.5.1
       colors: 1.4.0
       ethereum-cryptography: 1.2.0
@@ -3879,7 +3879,6 @@ packages:
       is-hex-prefixed: 1.0.0
       strip-hex-prefix: 1.0.0
     dev: true
-    bundledDependencies: false
 
   /evp_bytestokey@1.0.3:
     resolution:
