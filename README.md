@@ -50,7 +50,7 @@ All files                       |      100 |      100 |      100 |      100 |   
 > [!IMPORTANT]
 > As of 8 December 2023, all non-deprecated [`Create2Deployer`](./contracts/Create2Deployer.sol) deployments are _permissionless_ as I have renounced the ownership accordingly.
 
-- **EVM-Based Production Networks:[^1]**
+- **EVM-Based Production Networks:**
   - Ethereum: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://etherscan.io/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - Binance Smart Chain: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://bscscan.com/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - Optimism: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://optimistic.etherscan.io/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
@@ -73,6 +73,7 @@ All files                       |      100 |      100 |      100 |      100 |   
   - Evmos: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://escan.live/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - Boba Network: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://bobascan.com/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - Canto: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://tuber.build/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
+  - Base: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://basescan.org/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - Mantle: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://explorer.mantle.xyz/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - Scroll: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://scrollscan.com/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - Linea: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://lineascan.build/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
@@ -124,5 +125,3 @@ All files                       |      100 |      100 |      100 |      100 |   
   - Manta Pacific Testnet: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://pacific-explorer.testnet.manta.network/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - Shardeum Testnet: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://explorer-dapps.shardeum.org/account/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - Arthera Testnet: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://explorer-test.arthera.net/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
-
-[^1]: Please refer to [this](https://github.com/pcaversaccio/create2deployer/issues/128) issue why the contract [`Create2Deployer`](https://github.com/pcaversaccio/create2deployer/blob/main/contracts/Create2Deployer.sol) was not deployed on the Base mainnet.
