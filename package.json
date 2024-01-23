@@ -96,12 +96,12 @@
     "deploy:shardeumtestnet": "npx hardhat run --network shardeumTestnet scripts/deploy.ts",
     "deploy:artheratestnet": "npx hardhat run --network artheraTestnet scripts/deploy.ts",
     "deploy:frametestnet": "npx hardhat run --network frameTestnet scripts/deploy.ts",
-    "prettier:check": "npx prettier -c **/*.{js,ts,md,sol,json,yml,yaml}",
-    "prettier:fix": "npx prettier -w **/*.{js,ts,md,sol,json,yml,yaml}",
-    "solhint:check": "npx solhint 'contracts/**/*.sol'",
-    "solhint:fix": "npx solhint 'contracts/**/*.sol' --fix",
-    "lint:check": "pnpm run prettier:check && pnpm run solhint:check && npx eslint **/*.{js,ts}",
-    "lint:fix": "pnpm run prettier:fix && pnpm run solhint:fix && npx eslint **/*.{js,ts} --fix"
+    "prettier:check": "npx prettier -c \"**/*.{js,ts,md,sol,json,yml,yaml}\"",
+    "prettier:fix": "npx prettier -w \"**/*.{js,ts,md,sol,json,yml,yaml}\"",
+    "solhint:check": "npx solhint \"contracts/**/*.sol\"",
+    "solhint:fix": "npx solhint \"contracts/**/*.sol\" --fix",
+    "lint:check": "pnpm run prettier:check && pnpm run solhint:check && npx eslint \"**/*.{js,ts}\"",
+    "lint:fix": "pnpm run prettier:fix && pnpm run solhint:fix && npx eslint \"**/*.{js,ts}\" --fix"
   },
   "devDependencies": {
     "@matterlabs/hardhat-zksync-deploy": "^1.1.2",
