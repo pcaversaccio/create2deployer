@@ -65,6 +65,7 @@ const config: HardhatUserConfig = {
       optimizer: {
         enabled: true,
         mode: "3",
+        fallback_to_optimizing_for_size: false,
       },
     },
   },
