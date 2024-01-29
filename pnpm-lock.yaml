@@ -28,7 +28,7 @@ devDependencies:
     version: 1.0.10(hardhat@2.19.4)
   "@nomicfoundation/hardhat-toolbox":
     specifier: ^4.0.0
-    version: 4.0.0(@nomicfoundation/hardhat-chai-matchers@2.0.3)(@nomicfoundation/hardhat-ethers@3.0.5)(@nomicfoundation/hardhat-network-helpers@1.0.10)(@nomicfoundation/hardhat-verify@2.0.3)(@typechain/ethers-v6@0.5.1)(@typechain/hardhat@9.1.0)(@types/chai@4.3.11)(@types/mocha@10.0.6)(@types/node@20.11.9)(chai@4.4.1)(ethers@6.10.0)(hardhat-gas-reporter@1.0.9)(hardhat@2.19.4)(solidity-coverage@0.8.5)(ts-node@10.9.2)(typechain@8.3.2)(typescript@5.3.3)
+    version: 4.0.0(@nomicfoundation/hardhat-chai-matchers@2.0.3)(@nomicfoundation/hardhat-ethers@3.0.5)(@nomicfoundation/hardhat-network-helpers@1.0.10)(@nomicfoundation/hardhat-verify@2.0.3)(@typechain/ethers-v6@0.5.1)(@typechain/hardhat@9.1.0)(@types/chai@4.3.11)(@types/mocha@10.0.6)(@types/node@20.11.10)(chai@4.4.1)(ethers@6.10.0)(hardhat-gas-reporter@1.0.9)(hardhat@2.19.4)(solidity-coverage@0.8.6)(ts-node@10.9.2)(typechain@8.3.2)(typescript@5.3.3)
   "@nomicfoundation/hardhat-verify":
     specifier: ^2.0.3
     version: 2.0.3(hardhat@2.19.4)
@@ -48,8 +48,8 @@ devDependencies:
     specifier: ^10.0.6
     version: 10.0.6
   "@types/node":
-    specifier: ^20.11.9
-    version: 20.11.9
+    specifier: ^20.11.10
+    version: 20.11.10
   "@typescript-eslint/eslint-plugin":
     specifier: ^6.19.1
     version: 6.19.1(@typescript-eslint/parser@6.19.1)(eslint@8.56.0)(typescript@5.3.3)
@@ -93,11 +93,11 @@ devDependencies:
     specifier: ^4.1.1
     version: 4.1.1(typescript@5.3.3)
   solidity-coverage:
-    specifier: ^0.8.5
-    version: 0.8.5(hardhat@2.19.4)
+    specifier: ^0.8.6
+    version: 0.8.6(hardhat@2.19.4)
   ts-node:
     specifier: ^10.9.2
-    version: 10.9.2(@types/node@20.11.9)(typescript@5.3.3)
+    version: 10.9.2(@types/node@20.11.10)(typescript@5.3.3)
   typechain:
     specifier: ^8.3.2
     version: 8.3.2(typescript@5.3.3)
@@ -1201,7 +1201,7 @@ packages:
       hardhat: 2.19.4(ts-node@10.9.2)(typescript@5.3.3)
     dev: true
 
-  /@nomicfoundation/hardhat-toolbox@4.0.0(@nomicfoundation/hardhat-chai-matchers@2.0.3)(@nomicfoundation/hardhat-ethers@3.0.5)(@nomicfoundation/hardhat-network-helpers@1.0.10)(@nomicfoundation/hardhat-verify@2.0.3)(@typechain/ethers-v6@0.5.1)(@typechain/hardhat@9.1.0)(@types/chai@4.3.11)(@types/mocha@10.0.6)(@types/node@20.11.9)(chai@4.4.1)(ethers@6.10.0)(hardhat-gas-reporter@1.0.9)(hardhat@2.19.4)(solidity-coverage@0.8.5)(ts-node@10.9.2)(typechain@8.3.2)(typescript@5.3.3):
+  /@nomicfoundation/hardhat-toolbox@4.0.0(@nomicfoundation/hardhat-chai-matchers@2.0.3)(@nomicfoundation/hardhat-ethers@3.0.5)(@nomicfoundation/hardhat-network-helpers@1.0.10)(@nomicfoundation/hardhat-verify@2.0.3)(@typechain/ethers-v6@0.5.1)(@typechain/hardhat@9.1.0)(@types/chai@4.3.11)(@types/mocha@10.0.6)(@types/node@20.11.10)(chai@4.4.1)(ethers@6.10.0)(hardhat-gas-reporter@1.0.9)(hardhat@2.19.4)(solidity-coverage@0.8.6)(ts-node@10.9.2)(typechain@8.3.2)(typescript@5.3.3):
     resolution:
       {
         integrity: sha512-jhcWHp0aHaL0aDYj8IJl80v4SZXWMS1A2XxXa1CA6pBiFfJKuZinCkO6wb+POAt0LIfXB3gA3AgdcOccrcwBwA==,
@@ -1233,13 +1233,13 @@ packages:
       "@typechain/hardhat": 9.1.0(@typechain/ethers-v6@0.5.1)(ethers@6.10.0)(hardhat@2.19.4)(typechain@8.3.2)
       "@types/chai": 4.3.11
       "@types/mocha": 10.0.6
-      "@types/node": 20.11.9
+      "@types/node": 20.11.10
       chai: 4.4.1
       ethers: 6.10.0
       hardhat: 2.19.4(ts-node@10.9.2)(typescript@5.3.3)
       hardhat-gas-reporter: 1.0.9(hardhat@2.19.4)
-      solidity-coverage: 0.8.5(hardhat@2.19.4)
-      ts-node: 10.9.2(@types/node@20.11.9)(typescript@5.3.3)
+      solidity-coverage: 0.8.6(hardhat@2.19.4)
+      ts-node: 10.9.2(@types/node@20.11.10)(typescript@5.3.3)
       typechain: 8.3.2(typescript@5.3.3)
       typescript: 5.3.3
     dev: true
@@ -1683,6 +1683,13 @@ packages:
       }
     dev: true
 
+  /@solidity-parser/parser@0.18.0:
+    resolution:
+      {
+        integrity: sha512-yfORGUIPgLck41qyN7nbwJRAx17/jAIXCTanHOJZhB6PJ1iAk/84b/xlsVKFSyNyLXIj0dhppoE0+CRws7wlzA==,
+      }
+    dev: true
+
   /@szmarczak/http-timer@5.0.1:
     resolution:
       {
@@ -1774,7 +1781,7 @@ packages:
         integrity: sha512-pqr857jrp2kPuO9uRjZ3PwnJTjoQy+fcdxvBTvHm6dkmEL9q+hDD/2j/0ELOBPtPnS8LjCX0gI9nbl8lVkadpg==,
       }
     dependencies:
-      "@types/node": 20.11.9
+      "@types/node": 20.11.10
     dev: true
 
   /@types/bn.js@5.1.5:
@@ -1783,7 +1790,7 @@ packages:
         integrity: sha512-V46N0zwKRF5Q00AZ6hWtN0T8gGmDUaUzLWQvHFo5yThtVwK/VCenFY3wXVbOvNfajEpsTfQM4IN9k/d6gUVX3A==,
       }
     dependencies:
-      "@types/node": 20.11.9
+      "@types/node": 20.11.10
     dev: true
 
   /@types/chai-as-promised@7.1.8:
@@ -1808,7 +1815,7 @@ packages:
         integrity: sha512-eHE4cQPoj6ngxBZMvVf6Hw7Mh4jMW4U9lpGmS5GBPB9RYxlFg+CHaVN7ErNY4W9XfLIEn20b4VDYaIrbq0q4uA==,
       }
     dependencies:
-      "@types/node": 20.11.9
+      "@types/node": 20.11.10
     dev: true
 
   /@types/form-data@0.0.33:
@@ -1817,7 +1824,7 @@ packages:
         integrity: sha512-8BSvG1kGm83cyJITQMZSulnl6QV8jqAGreJsc5tPu1Jq0vTSOiY/k24Wx82JRpWwZSqrala6sd5rWi6aNXvqcw==,
       }
     dependencies:
-      "@types/node": 20.11.9
+      "@types/node": 20.11.10
     dev: true
 
   /@types/glob@7.2.0:
@@ -1827,7 +1834,7 @@ packages:
       }
     dependencies:
       "@types/minimatch": 5.1.2
-      "@types/node": 20.11.9
+      "@types/node": 20.11.10
     dev: true
 
   /@types/http-cache-semantics@4.0.4:
@@ -1879,10 +1886,10 @@ packages:
       }
     dev: true
 
-  /@types/node@20.11.9:
+  /@types/node@20.11.10:
     resolution:
       {
-        integrity: sha512-CQXNuMoS/VcoAMISe5pm4JnEd1Br5jildbQEToEMQvutmv+EaQr90ry9raiudgpyDuqFiV9e4rnjSfLNq12M5w==,
+        integrity: sha512-rZEfe/hJSGYmdfX9tvcPMYeYPW2sNl50nsw4jZmRcaG0HIAb0WYEpsB05GOb53vjqpyE9GUhlDQ4jLSoB5q9kg==,
       }
     dependencies:
       undici-types: 5.26.5
@@ -1901,7 +1908,7 @@ packages:
         integrity: sha512-uRwJqmiXmh9++aSu1VNEn3iIxWOhd8AHXNSdlaLfdAAdSTY9jYVeGWnzejM3dvrkbqE3/hyQkQQ29IFATEGlew==,
       }
     dependencies:
-      "@types/node": 20.11.9
+      "@types/node": 20.11.10
     dev: true
 
   /@types/prettier@2.7.3:
@@ -1924,7 +1931,7 @@ packages:
         integrity: sha512-oM5JSKQCcICF1wvGgmecmHldZ48OZamtMxcGGVICOJA8o8cahXC1zEVAif8iwoc5j8etxFaRFnf095+CDsuoFQ==,
       }
     dependencies:
-      "@types/node": 20.11.9
+      "@types/node": 20.11.10
       safe-buffer: 5.1.2
     dev: true
 
@@ -1934,7 +1941,7 @@ packages:
         integrity: sha512-hHxJU6PAEUn0TP4S/ZOzuTUvJWuZ6eIKeNKb5RBpODvSl6hp1Wrw4s7ATY50rklRCScUDpHzVA/DQdSjJ3UoYQ==,
       }
     dependencies:
-      "@types/node": 20.11.9
+      "@types/node": 20.11.10
     dev: true
 
   /@types/semver@7.5.6:
@@ -4649,7 +4656,7 @@ packages:
       solc: 0.7.3(debug@4.3.4)
       source-map-support: 0.5.21
       stacktrace-parser: 0.1.10
-      ts-node: 10.9.2(@types/node@20.11.9)(typescript@5.3.3)
+      ts-node: 10.9.2(@types/node@20.11.10)(typescript@5.3.3)
       tsort: 0.0.1
       typescript: 5.3.3
       undici: 5.28.2
@@ -6887,17 +6894,17 @@ packages:
       }
     dev: true
 
-  /solidity-coverage@0.8.5(hardhat@2.19.4):
+  /solidity-coverage@0.8.6(hardhat@2.19.4):
     resolution:
       {
-        integrity: sha512-6C6N6OV2O8FQA0FWA95FdzVH+L16HU94iFgg5wAFZ29UpLFkgNI/DRR2HotG1bC0F4gAc/OMs2BJI44Q/DYlKQ==,
+        integrity: sha512-vV03mA/0nNMskOdVwNarUcqk0N/aYdelxAbf6RZ5l84FcYHbqDTr2JXyeYMp4bT48qHtAQjnKrygW1FrECyWNw==,
       }
     hasBin: true
     peerDependencies:
       hardhat: ^2.11.0
     dependencies:
       "@ethersproject/abi": 5.7.0
-      "@solidity-parser/parser": 0.16.2
+      "@solidity-parser/parser": 0.18.0
       chalk: 2.4.2
       death: 1.1.0
       detect-port: 1.5.1
@@ -7371,7 +7378,7 @@ packages:
       code-block-writer: 12.0.0
     dev: true
 
-  /ts-node@10.9.2(@types/node@20.11.9)(typescript@5.3.3):
+  /ts-node@10.9.2(@types/node@20.11.10)(typescript@5.3.3):
     resolution:
       {
         integrity: sha512-f0FFpIdcHgn8zcPSbf1dRevwt047YMnaiJM3u2w2RewrB+fob/zePZcrOyQoLMMO7aBIddLcQIEK5dYjkLnGrQ==,
@@ -7393,7 +7400,7 @@ packages:
       "@tsconfig/node12": 1.0.11
       "@tsconfig/node14": 1.0.3
       "@tsconfig/node16": 1.0.4
-      "@types/node": 20.11.9
+      "@types/node": 20.11.10
       acorn: 8.11.3
       acorn-walk: 8.3.2
       arg: 4.1.3
