@@ -60,8 +60,8 @@ devDependencies:
     specifier: ^4.4.1
     version: 4.4.1
   dotenv:
-    specifier: ^16.4.1
-    version: 16.4.1
+    specifier: ^16.4.2
+    version: 16.4.2
   eslint:
     specifier: ^8.56.0
     version: 8.56.0
@@ -1944,10 +1944,10 @@ packages:
       "@types/node": 20.11.17
     dev: true
 
-  /@types/semver@7.5.6:
+  /@types/semver@7.5.7:
     resolution:
       {
-        integrity: sha512-dn1l8LaMea/IjDoHNd9J52uBbInB796CDffS6VdIxvqYCPSG0V0DzHp76GpaWnlhg88uYyPbXCDIowa86ybd5A==,
+        integrity: sha512-/wdoPq1QqkSj9/QOeKkFquEuPzQbHTWAMPH/PaUMB+JuR31lXhlWXRZ52IpfDYVlDOUBvX09uBrPwxGT1hjNBg==,
       }
     dev: true
 
@@ -2085,7 +2085,7 @@ packages:
     dependencies:
       "@eslint-community/eslint-utils": 4.4.0(eslint@8.56.0)
       "@types/json-schema": 7.0.15
-      "@types/semver": 7.5.6
+      "@types/semver": 7.5.7
       "@typescript-eslint/scope-manager": 6.21.0
       "@typescript-eslint/types": 6.21.0
       "@typescript-eslint/typescript-estree": 6.21.0(typescript@5.3.3)
@@ -3541,10 +3541,10 @@ packages:
       esutils: 2.0.3
     dev: true
 
-  /dotenv@16.4.1:
+  /dotenv@16.4.2:
     resolution:
       {
-        integrity: sha512-CjA3y+Dr3FyFDOAMnxZEGtnW9KBR2M0JvvUtXNW+dYJL5ROWxP9DUHCwgFqpMk0OXCc0ljhaNTr2w/kutYIcHQ==,
+        integrity: sha512-rZSSFxke7d9nYQ5NeMIwp5PP+f8wXgKNljpOb7KtH6SKW1cEqcXAz9VSJYVLKe7Jhup/gUYOkaeSVyK8GJ+nBg==,
       }
     engines: { node: ">=12" }
     dev: true
@@ -4345,7 +4345,7 @@ packages:
       function-bind: 1.1.2
       has-proto: 1.0.1
       has-symbols: 1.0.3
-      hasown: 2.0.0
+      hasown: 2.0.1
     dev: true
 
   /get-port@3.2.0:
@@ -4784,10 +4784,10 @@ packages:
       minimalistic-assert: 1.0.1
     dev: true
 
-  /hasown@2.0.0:
+  /hasown@2.0.1:
     resolution:
       {
-        integrity: sha512-vUptKVTpIJhcczKBbgnS+RtcuYMB8+oNzPK2/Hp3hanz8JmpATdmmgLgSaadVREkDm+e2giHwY3ZRkyjSIDDFA==,
+        integrity: sha512-1/th4MHjnwncwXsIW6QMzlvYL9kG5e/CpVvLRZe4XPa8TOUNbCELqmvhDmnkNsAjwaG4+I8gJJL0JBvTTLO9qA==,
       }
     engines: { node: ">= 0.4" }
     dependencies:
@@ -5018,7 +5018,7 @@ packages:
         integrity: sha512-hHrIjvZsftOsvKSn2TRYl63zvxsgE0K+0mYMoH6gD4omR5IWB2KynivBQczo3+wF1cCkjzvptnI9Q0sPU66ilw==,
       }
     dependencies:
-      hasown: 2.0.0
+      hasown: 2.0.1
     dev: true
 
   /is-extglob@2.1.1:
