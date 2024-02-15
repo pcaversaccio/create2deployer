@@ -124,4 +124,4 @@ All files                       |      100 |      100 |      100 |      100 |   
   - LUKSO Testnet: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://explorer.execution.testnet.lukso.network/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - Manta Pacific Testnet: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://pacific-explorer.testnet.manta.network/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - Shardeum Testnet (⚠️ Deprecated): [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://explorer-dapps.shardeum.org/account/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
-  - Arthera Testnet: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://explorer-test.arthera.net/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
+  - Arthera Testnet (⚠️ Deprecated): [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://explorer-test.arthera.net/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
