@@ -483,6 +483,24 @@ const config: HardhatUserConfig = {
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
+    blastTestnet: {
+      chainId: 168587773,
+      url: process.env.BLAST_TESTNET_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
+    kromaTestnet: {
+      chainId: 2358,
+      url: process.env.KROMA_TESTNET_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
+    kromaMain: {
+      chainId: 255,
+      url: process.env.KROMA_MAINNET_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
   },
   gasReporter: {
     enabled: process.env.REPORT_GAS !== undefined,
@@ -595,6 +613,11 @@ const config: HardhatUserConfig = {
       mantaTestnet: process.env.MANTA_API_KEY || "",
       // For Arthera testnet
       artheraTestnet: process.env.ARTHERA_API_KEY || "",
+      // For Blast testnet
+      blastTestnet: process.env.BLAST_API_KEY || "",
+      // For Kroma testnet & mainnet
+      kroma: process.env.KROMA_API_KEY || "",
+      kromaTestnet: process.env.KROMA_API_KEY || "",
     },
     customChains: [
       {
@@ -901,6 +924,31 @@ const config: HardhatUserConfig = {
         urls: {
           apiURL: "https://explorer-test.arthera.net/api",
           browserURL: "https://explorer-test.arthera.net",
+        },
+      },
+      {
+        network: "blastTestnet",
+        chainId: 168587773,
+        urls: {
+          apiURL:
+            "https://api.routescan.io/v2/network/testnet/evm/168587773/etherscan",
+          browserURL: "https://testnet.blastscan.io",
+        },
+      },
+      {
+        network: "kroma",
+        chainId: 255,
+        urls: {
+          apiURL: "https://api.kromascan.com/api",
+          browserURL: "https://kromascan.com",
+        },
+      },
+      {
+        network: "kromaTestnet",
+        chainId: 2358,
+        urls: {
+          apiURL: "https://api-sepolia.kromascan.com",
+          browserURL: "https://sepolia.kromascan.com",
         },
       },
     ],
