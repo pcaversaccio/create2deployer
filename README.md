@@ -1,7 +1,7 @@
 # `CREATE2` Deployer
 
 [![🕵️‍♂️ Test smart contracts](https://github.com/pcaversaccio/create2deployer/actions/workflows/test-contracts.yml/badge.svg)](https://github.com/pcaversaccio/create2deployer/actions/workflows/test-contracts.yml)
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/license/mit/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/license/mit)
 
 > [!TIP]
 > I have built a versatile, trustless, and stateless successor to `Create2Deployer`: [`CreateX`](https://github.com/pcaversaccio/createx). Check it out! 🫡
