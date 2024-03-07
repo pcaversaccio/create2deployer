@@ -97,6 +97,7 @@
     "deploy:artheratestnet": "npx hardhat run --network artheraTestnet scripts/deploy.ts",
     "deploy:frametestnet": "npx hardhat run --network frameTestnet scripts/deploy.ts",
     "deploy:blasttestnet": "npx hardhat run --network blastTestnet scripts/deploy.ts",
+    "deploy:blastmain": "npx hardhat run --network blastMain scripts/deploy.ts",
     "deploy:kromatestnet": "npx hardhat run --network kromaTestnet scripts/deploy.ts",
     "deploy:kromamain": "npx hardhat run --network kromaMain scripts/deploy.ts",
     "prettier:check": "npx prettier -c \"**/*.{js,ts,md,sol,json,yml,yaml}\"",
@@ -122,7 +123,7 @@
     "@typechain/hardhat": "^9.1.0",
     "@types/chai": "^4.3.12",
     "@types/mocha": "^10.0.6",
-    "@types/node": "^20.11.24",
+    "@types/node": "^20.11.25",
     "chai": "^4.4.1",
     "dotenv": "^16.4.5",
     "eslint": "^8.57.0",
@@ -138,8 +139,8 @@
     "solidity-coverage": "^0.8.10",
     "ts-node": "^10.9.2",
     "typechain": "^8.3.2",
-    "typescript": "^5.3.3",
+    "typescript": "^5.4.2",
     "typescript-eslint": "^7.1.1",
-    "zksync-ethers": "^6.4.0"
+    "zksync-ethers": "^6.5.0"
   }
 }

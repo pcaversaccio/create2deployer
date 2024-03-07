@@ -489,6 +489,12 @@ const config: HardhatUserConfig = {
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
+    blastMain: {
+      chainId: 81457,
+      url: process.env.BLAST_MAINNET_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
     kromaTestnet: {
       chainId: 2358,
       url: process.env.KROMA_TESTNET_URL || "",
@@ -613,7 +619,8 @@ const config: HardhatUserConfig = {
       mantaTestnet: process.env.MANTA_API_KEY || "",
       // For Arthera testnet
       artheraTestnet: process.env.ARTHERA_API_KEY || "",
-      // For Blast testnet
+      // For Blast testnet & mainnet
+      blast: process.env.BLAST_API_KEY || "",
       blastTestnet: process.env.BLAST_API_KEY || "",
       // For Kroma testnet & mainnet
       kroma: process.env.KROMA_API_KEY || "",
@@ -927,12 +934,19 @@ const config: HardhatUserConfig = {
         },
       },
       {
+        network: "blast",
+        chainId: 81457,
+        urls: {
+          apiURL: "https://api.blastscan.io/api",
+          browserURL: "https://blastscan.io",
+        },
+      },
+      {
         network: "blastTestnet",
         chainId: 168587773,
         urls: {
-          apiURL:
-            "https://api.routescan.io/v2/network/testnet/evm/168587773/etherscan",
-          browserURL: "https://testnet.blastscan.io",
+          apiURL: "https://api-sepolia.blastscan.io/api",
+          browserURL: "https://sepolia.blastscan.io",
         },
       },
       {
