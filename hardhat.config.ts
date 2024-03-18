@@ -483,6 +483,24 @@ const config: HardhatUserConfig = {
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
+    enduranceTestnet: {
+      chainId: 6480,
+      url: process.env.ENDURANCE_TESTNET_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
+    openduranceTestnet: {
+      chainId: 6480001001,
+      url: process.env.OPENDURANCE_TESTNET_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
+    enduranceMain: {
+      chainId: 648,
+      url: process.env.ENDURANCE_MAINNET_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
     blastTestnet: {
       chainId: 168587773,
       url: process.env.BLAST_TESTNET_URL || "",
@@ -637,6 +655,10 @@ const config: HardhatUserConfig = {
       mantaTestnet: process.env.MANTA_API_KEY || "",
       // For Arthera testnet
       artheraTestnet: process.env.ARTHERA_API_KEY || "",
+      // For Endurance testnets & mainnet
+      endurance: process.env.ENDURANCE_API_KEY || "",
+      enduranceTestnet: process.env.ENDURANCE_API_KEY || "",
+      openduranceTestnet: process.env.OPENDURANCE_API_KEY || "",
       // For Blast testnet & mainnet
       blast: process.env.BLAST_API_KEY || "",
       blastTestnet: process.env.BLAST_API_KEY || "",
@@ -954,6 +976,30 @@ const config: HardhatUserConfig = {
         urls: {
           apiURL: "https://explorer-test.arthera.net/api",
           browserURL: "https://explorer-test.arthera.net",
+        },
+      },
+      {
+        network: "endurance",
+        chainId: 648,
+        urls: {
+          apiURL: "https://explorer-endurance.fusionist.io/api",
+          browserURL: "https://explorer-endurance.fusionist.io",
+        },
+      },
+      {
+        network: "enduranceTestnet",
+        chainId: 6480,
+        urls: {
+          apiURL: "https://myexplorertestnet.fusionist.io/api",
+          browserURL: "https://myexplorertestnet.fusionist.io",
+        },
+      },
+      {
+        network: "openduranceTestnet",
+        chainId: 6480001001,
+        urls: {
+          apiURL: "https://explorer-l2-testnet.fusionist.io/api",
+          browserURL: "https://explorer-l2-testnet.fusionist.io",
         },
       },
       {
