@@ -48,8 +48,8 @@ devDependencies:
     specifier: ^10.0.6
     version: 10.0.6
   "@types/node":
-    specifier: ^20.12.2
-    version: 20.12.2
+    specifier: ^20.12.3
+    version: 20.12.3
   chai:
     specifier: ^4.4.1
     version: 4.4.1
@@ -75,8 +75,8 @@ devDependencies:
     specifier: ^2.10.0
     version: 2.10.0(hardhat@2.22.2)
   hardhat-gas-reporter:
-    specifier: ^2.0.2
-    version: 2.0.2(hardhat@2.22.2)(typescript@5.4.3)
+    specifier: ^2.1.0
+    version: 2.1.0(hardhat@2.22.2)(typescript@5.4.3)
   prettier:
     specifier: ^3.2.5
     version: 3.2.5
@@ -91,7 +91,7 @@ devDependencies:
     version: 0.8.11(hardhat@2.22.2)
   ts-node:
     specifier: ^10.9.2
-    version: 10.9.2(@types/node@20.12.2)(typescript@5.4.3)
+    version: 10.9.2(@types/node@20.12.3)(typescript@5.4.3)
   typechain:
     specifier: ^8.3.2
     version: 8.3.2(typescript@5.4.3)
@@ -630,7 +630,7 @@ packages:
       semver: 7.6.0
       sinon: 17.0.1
       sinon-chai: 3.7.0(chai@4.4.1)(sinon@17.0.1)
-      undici: 5.28.3
+      undici: 5.28.4
     transitivePeerDependencies:
       - encoding
       - supports-color
@@ -1008,7 +1008,7 @@ packages:
       lodash.clonedeep: 4.5.0
       semver: 6.3.1
       table: 6.8.2
-      undici: 5.28.3
+      undici: 5.28.4
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -1532,7 +1532,7 @@ packages:
         integrity: sha512-pqr857jrp2kPuO9uRjZ3PwnJTjoQy+fcdxvBTvHm6dkmEL9q+hDD/2j/0ELOBPtPnS8LjCX0gI9nbl8lVkadpg==,
       }
     dependencies:
-      "@types/node": 20.12.2
+      "@types/node": 20.12.3
     dev: true
 
   /@types/bn.js@5.1.5:
@@ -1541,7 +1541,7 @@ packages:
         integrity: sha512-V46N0zwKRF5Q00AZ6hWtN0T8gGmDUaUzLWQvHFo5yThtVwK/VCenFY3wXVbOvNfajEpsTfQM4IN9k/d6gUVX3A==,
       }
     dependencies:
-      "@types/node": 20.12.2
+      "@types/node": 20.12.3
     dev: true
 
   /@types/chai-as-promised@7.1.8:
@@ -1567,7 +1567,7 @@ packages:
       }
     dependencies:
       "@types/minimatch": 5.1.2
-      "@types/node": 20.12.2
+      "@types/node": 20.12.3
     dev: true
 
   /@types/http-cache-semantics@4.0.4:
@@ -1612,10 +1612,10 @@ packages:
       }
     dev: true
 
-  /@types/node@20.12.2:
+  /@types/node@20.12.3:
     resolution:
       {
-        integrity: sha512-zQ0NYO87hyN6Xrclcqp7f8ZbXNbRfoGWNcMvHTPQp9UUrwI0mI7XBz+cu7/W6/VClYo2g63B0cjull/srU7LgQ==,
+        integrity: sha512-sD+ia2ubTeWrOu+YMF+MTAB7E+O7qsMqAbMfW7DG3K1URwhZ5hN1pLlRVGbf4wDFzSfikL05M17EyorS86jShw==,
       }
     dependencies:
       undici-types: 5.26.5
@@ -1627,7 +1627,7 @@ packages:
         integrity: sha512-uRwJqmiXmh9++aSu1VNEn3iIxWOhd8AHXNSdlaLfdAAdSTY9jYVeGWnzejM3dvrkbqE3/hyQkQQ29IFATEGlew==,
       }
     dependencies:
-      "@types/node": 20.12.2
+      "@types/node": 20.12.3
     dev: true
 
   /@types/prettier@2.7.3:
@@ -1643,7 +1643,7 @@ packages:
         integrity: sha512-hHxJU6PAEUn0TP4S/ZOzuTUvJWuZ6eIKeNKb5RBpODvSl6hp1Wrw4s7ATY50rklRCScUDpHzVA/DQdSjJ3UoYQ==,
       }
     dependencies:
-      "@types/node": 20.12.2
+      "@types/node": 20.12.3
     dev: true
 
   /@types/semver@7.5.8:
@@ -2301,6 +2301,13 @@ packages:
     resolution:
       {
         integrity: sha512-cKV8tMCEpQs4hK/ik71d6LrPOnpkpGBR0wzxqr68g2m/LB2GxVYQroAjMJZRVM1Y4BCjCKc3vAamxSzOY2RP+w==,
+      }
+    dev: true
+
+  /brotli-wasm@2.0.1:
+    resolution:
+      {
+        integrity: sha512-+3USgYsC7bzb5yU0/p2HnnynZl0ak0E6uoIm4UW4Aby/8s8HFCq6NCfrrf1E9c3O8OCSzq3oYO1tUVqIi61Nww==,
       }
     dev: true
 
@@ -4092,10 +4099,10 @@ packages:
       strip-ansi: 6.0.1
     dev: true
 
-  /hardhat-gas-reporter@2.0.2(hardhat@2.22.2)(typescript@5.4.3):
+  /hardhat-gas-reporter@2.1.0(hardhat@2.22.2)(typescript@5.4.3):
     resolution:
       {
-        integrity: sha512-i/+g+dX+/+MZ7L4M5NE78TgjDgnE3dINhsNUJmjwbqR3cLSMPrsEyiee+/1c5w32JSD08SKyDf+8W9Q5iC+zLw==,
+        integrity: sha512-d/WU/qHhBFnbweAm2fAAjcaaE0M7BKZ4r+/bqcFlfP6um28BXtlv2FrJ6oyQUGSFD0ttbmB7sH4ZFDzkYw5GzA==,
       }
     peerDependencies:
       hardhat: ^2.16.0
@@ -4105,6 +4112,7 @@ packages:
       "@ethersproject/units": 5.7.0
       "@solidity-parser/parser": 0.18.0
       axios: 1.6.8(debug@4.3.4)
+      brotli-wasm: 2.0.1
       chalk: 4.1.2
       cli-table3: 0.6.4
       ethereum-cryptography: 2.1.3
@@ -4177,10 +4185,10 @@ packages:
       solc: 0.7.3(debug@4.3.4)
       source-map-support: 0.5.21
       stacktrace-parser: 0.1.10
-      ts-node: 10.9.2(@types/node@20.12.2)(typescript@5.4.3)
+      ts-node: 10.9.2(@types/node@20.12.3)(typescript@5.4.3)
       tsort: 0.0.1
       typescript: 5.4.3
-      undici: 5.28.3
+      undici: 5.28.4
       uuid: 8.3.2
       ws: 7.5.9
     transitivePeerDependencies:
@@ -6677,7 +6685,7 @@ packages:
       code-block-writer: 12.0.0
     dev: true
 
-  /ts-node@10.9.2(@types/node@20.12.2)(typescript@5.4.3):
+  /ts-node@10.9.2(@types/node@20.12.3)(typescript@5.4.3):
     resolution:
       {
         integrity: sha512-f0FFpIdcHgn8zcPSbf1dRevwt047YMnaiJM3u2w2RewrB+fob/zePZcrOyQoLMMO7aBIddLcQIEK5dYjkLnGrQ==,
@@ -6699,7 +6707,7 @@ packages:
       "@tsconfig/node12": 1.0.11
       "@tsconfig/node14": 1.0.3
       "@tsconfig/node16": 1.0.4
-      "@types/node": 20.12.2
+      "@types/node": 20.12.3
       acorn: 8.11.3
       acorn-walk: 8.3.2
       arg: 4.1.3
@@ -6901,10 +6909,10 @@ packages:
       }
     dev: true
 
-  /undici@5.28.3:
+  /undici@5.28.4:
     resolution:
       {
-        integrity: sha512-3ItfzbrhDlINjaP0duwnNsKpDQk3acHI3gVJ1z4fmwMK31k5G9OVIAMLSIaP6w4FaGkaAkN6zaQO9LUvZ1t7VA==,
+        integrity: sha512-72RFADWFqKmUb2hmmvNODKL3p9hcB6Gt2DOQMis1SEBaV6a4MH8soBvzg+95CYhCKPFedut2JY9bMfrDl9D23g==,
       }
     engines: { node: ">=14.0" }
     dependencies:
