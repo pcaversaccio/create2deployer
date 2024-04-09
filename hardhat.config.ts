@@ -376,7 +376,7 @@ const config: HardhatUserConfig = {
         "https://zksync2-mainnet-explorer.zksync.io/contract_verification",
     },
     mantleTestnet: {
-      chainId: 5001,
+      chainId: 5003,
       url: process.env.MANTLE_TESTNET_URL || "",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
@@ -852,10 +852,10 @@ const config: HardhatUserConfig = {
       },
       {
         network: "mantleTestnet",
-        chainId: 5001,
+        chainId: 5003,
         urls: {
-          apiURL: "https://explorer.testnet.mantle.xyz/api",
-          browserURL: "https://explorer.testnet.mantle.xyz",
+          apiURL: "https://explorer.sepolia.mantle.xyz/api",
+          browserURL: "https://explorer.sepolia.mantle.xyz",
         },
       },
       {
