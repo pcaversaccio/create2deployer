@@ -81,6 +81,7 @@ All files                       |      100 |      100 |      100 |      100 |   
   - LUKSO: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://explorer.execution.mainnet.lukso.network/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - Manta Pacific: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://pacific-explorer.manta.network/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - Kroma: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://kromascan.com/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
+  - Kava: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://kavascan.com/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
 - **Ethereum Test Networks:**
   - Rinkeby (⚠️ Deprecated): [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://rinkeby.etherscan.io/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - Ropsten (⚠️ Deprecated): [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://ropsten.etherscan.io/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)

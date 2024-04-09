@@ -543,6 +543,12 @@ const config: HardhatUserConfig = {
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
+    kavaMain: {
+      chainId: 2222,
+      url: process.env.KAVA_MAINNET_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
   },
   gasReporter: {
     enabled: process.env.REPORT_GAS !== undefined,
@@ -670,6 +676,8 @@ const config: HardhatUserConfig = {
       dosTestnet: process.env.DOS_API_KEY || "",
       // For Fraxtal testnet
       fraxtalTestnet: process.env.FRAXTAL_API_KEY || "",
+      // For Kava mainnet
+      kava: process.env.KAVA_API_KEY || "",
     },
     customChains: [
       {
@@ -1056,6 +1064,14 @@ const config: HardhatUserConfig = {
         urls: {
           apiURL: "https://api-holesky.fraxscan.com/api",
           browserURL: "https://holesky.fraxscan.com",
+        },
+      },
+      {
+        network: "kava",
+        chainId: 2222,
+        urls: {
+          apiURL: "https://kavascan.com/api",
+          browserURL: "https://kavascan.com",
         },
       },
     ],
