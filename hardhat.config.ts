@@ -161,8 +161,8 @@ const config: HardhatUserConfig = {
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
-    mumbai: {
-      chainId: 80001,
+    amoy: {
+      chainId: 80002,
       url: process.env.POLYGON_TESTNET_URL || "",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
@@ -412,7 +412,7 @@ const config: HardhatUserConfig = {
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
     lineaTestnet: {
-      chainId: 59140,
+      chainId: 59141,
       url: process.env.LINEA_TESTNET_URL || "",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
@@ -591,7 +591,7 @@ const config: HardhatUserConfig = {
       // For Polygon testnets & mainnets
       polygon: process.env.POLYGON_API_KEY || "",
       polygonZkEVM: process.env.POLYGON_ZKEVM_API_KEY || "",
-      polygonMumbai: process.env.POLYGON_API_KEY || "",
+      polygonAmoy: process.env.POLYGON_AMOY_API_KEY || "",
       polygonZkEVMTestnet: process.env.POLYGON_ZKEVM_API_KEY || "",
       // For Arbitrum testnet & mainnets
       arbitrumOne: process.env.ARBITRUM_API_KEY || "",
@@ -907,6 +907,15 @@ const config: HardhatUserConfig = {
         },
       },
       {
+        network: "polygonAmoy",
+        chainId: 80002,
+        urls: {
+          apiURL:
+            "https://www.oklink.com/api/explorer/v1/contract/verify/async/api/polygonAmoy",
+          browserURL: "https://www.oklink.com/amoy",
+        },
+      },
+      {
         network: "linea",
         chainId: 59144,
         urls: {
@@ -916,10 +925,10 @@ const config: HardhatUserConfig = {
       },
       {
         network: "lineaTestnet",
-        chainId: 59140,
+        chainId: 59141,
         urls: {
-          apiURL: "https://api-testnet.lineascan.build/api",
-          browserURL: "https://goerli.lineascan.build",
+          apiURL: "https://api-sepolia.lineascan.build/api",
+          browserURL: "https://sepolia.lineascan.build",
         },
       },
       {
