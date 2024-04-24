@@ -549,6 +549,18 @@ const config: HardhatUserConfig = {
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
+    metisTestnet: {
+      chainId: 59902,
+      url: process.env.METIS_TESTNET_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
+    metisMain: {
+      chainId: 1088,
+      url: process.env.METIS_MAINNET_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
   },
   gasReporter: {
     enabled: process.env.REPORT_GAS !== undefined,
@@ -678,6 +690,9 @@ const config: HardhatUserConfig = {
       fraxtalTestnet: process.env.FRAXTAL_API_KEY || "",
       // For Kava mainnet
       kava: process.env.KAVA_API_KEY || "",
+      // For Metis testnet & mainnet
+      metis: process.env.METIS_API_KEY || "",
+      metisTestnet: process.env.METIS_API_KEY || "",
     },
     customChains: [
       {
@@ -1080,6 +1095,22 @@ const config: HardhatUserConfig = {
         urls: {
           apiURL: "https://kavascan.com/api",
           browserURL: "https://kavascan.com",
+        },
+      },
+      {
+        network: "metis",
+        chainId: 1088,
+        urls: {
+          apiURL: "https://andromeda-explorer.metis.io/api",
+          browserURL: "https://andromeda-explorer.metis.io",
+        },
+      },
+      {
+        network: "metisTestnet",
+        chainId: 59902,
+        urls: {
+          apiURL: "https://sepolia-explorer.metisdevops.link/api",
+          browserURL: "https://sepolia-explorer.metisdevops.link",
         },
       },
     ],
