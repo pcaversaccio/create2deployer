@@ -57,7 +57,7 @@ const config: HardhatUserConfig = {
     },
   },
   zksolc: {
-    version: "1.4.0",
+    version: "1.4.1",
     compilerSource: "binary",
     settings: {
       isSystem: false,
@@ -561,6 +561,18 @@ const config: HardhatUserConfig = {
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
+    modeTestnet: {
+      chainId: 919,
+      url: process.env.MODE_TESTNET_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
+    modeMain: {
+      chainId: 34443,
+      url: process.env.MODE_MAINNET_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
   },
   gasReporter: {
     enabled: process.env.REPORT_GAS !== undefined,
@@ -693,6 +705,9 @@ const config: HardhatUserConfig = {
       // For Metis testnet & mainnet
       metis: process.env.METIS_API_KEY || "",
       metisTestnet: process.env.METIS_API_KEY || "",
+      // For Mode testnet & mainnet
+      mode: process.env.MODE_API_KEY || "",
+      modeTestnet: process.env.MODE_API_KEY || "",
     },
     customChains: [
       {
@@ -1111,6 +1126,22 @@ const config: HardhatUserConfig = {
         urls: {
           apiURL: "https://sepolia-explorer.metisdevops.link/api",
           browserURL: "https://sepolia-explorer.metisdevops.link",
+        },
+      },
+      {
+        network: "mode",
+        chainId: 34443,
+        urls: {
+          apiURL: "https://explorer.mode.network/api",
+          browserURL: "https://explorer.mode.network",
+        },
+      },
+      {
+        network: "modeTestnet",
+        chainId: 919,
+        urls: {
+          apiURL: "https://sepolia.explorer.mode.network/api",
+          browserURL: "https://sepolia.explorer.mode.network",
         },
       },
     ],
