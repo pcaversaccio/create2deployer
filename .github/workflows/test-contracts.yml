@@ -54,7 +54,7 @@ jobs:
         run: pnpm test
 
       - name: Slither static analyser
-        uses: crytic/slither-action@v0.3.1
+        uses: crytic/slither-action@v0.3.2
         id: slither
         with:
           node-version: ${{ matrix.node_version }}
