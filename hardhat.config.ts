@@ -573,6 +573,18 @@ const config: HardhatUserConfig = {
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
+    xlayerTestnet: {
+      chainId: 195,
+      url: process.env.XLAYER_TESTNET_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
+    xlayermain: {
+      chainId: 196,
+      url: process.env.XLAYER_MAINNET_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
   },
   gasReporter: {
     enabled: process.env.REPORT_GAS !== undefined,
@@ -708,6 +720,9 @@ const config: HardhatUserConfig = {
       // For Mode testnet & mainnet
       mode: process.env.MODE_API_KEY || "",
       modeTestnet: process.env.MODE_API_KEY || "",
+      // For X Layer testnet & mainnet
+      xlayer: process.env.OKLINK_API_KEY || "",
+      xlayerTestnet: process.env.OKLINK_API_KEY || "",
     },
     customChains: [
       {
@@ -1142,6 +1157,24 @@ const config: HardhatUserConfig = {
         urls: {
           apiURL: "https://sepolia.explorer.mode.network/api",
           browserURL: "https://sepolia.explorer.mode.network",
+        },
+      },
+      {
+        network: "xlayer",
+        chainId: 196,
+        urls: {
+          apiURL:
+            "https://www.oklink.com/api/v5/explorer/contract/verify-source-code-plugin/XLAYER",
+          browserURL: "https://www.oklink.com/xlayer",
+        },
+      },
+      {
+        network: "xlayerTestnet",
+        chainId: 195,
+        urls: {
+          apiURL:
+            "https://www.oklink.com/api/v5/explorer/contract/verify-source-code-plugin/XLAYER_TESTNET",
+          browserURL: "https://www.oklink.com/xlayer-test",
         },
       },
     ],

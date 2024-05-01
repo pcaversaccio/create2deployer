@@ -111,6 +111,8 @@
     "deploy:metismain": "npx hardhat run --network metisMain scripts/deploy.ts",
     "deploy:modetestnet": "npx hardhat run --network modeTestnet scripts/deploy.ts",
     "deploy:modemain": "npx hardhat run --network modeMain scripts/deploy.ts",
+    "deploy:xlayertestnet": "npx hardhat run --network xlayerTestnet scripts/deploy.ts",
+    "deploy:xlayermain": "npx hardhat run --network xlayerMain scripts/deploy.ts",
     "prettier:check": "npx prettier -c \"**/*.{js,ts,md,sol,json,yml,yaml}\"",
     "prettier:fix": "npx prettier -w \"**/*.{js,ts,md,sol,json,yml,yaml}\"",
     "solhint:check": "npx solhint \"contracts/**/*.sol\"",

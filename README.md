@@ -82,6 +82,7 @@ All files                       |      100 |      100 |      100 |      100 |   
   - Manta Pacific: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://pacific-explorer.manta.network/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - Kroma: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://kromascan.com/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - Kava: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://kavascan.com/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
+  - X Layer: [``]()
 - **Ethereum Test Networks:**
   - Rinkeby (⚠️ Deprecated): [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://rinkeby.etherscan.io/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - Ropsten (⚠️ Deprecated): [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://ropsten.etherscan.io/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
@@ -132,3 +133,4 @@ All files                       |      100 |      100 |      100 |      100 |   
   - Arthera Testnet (⚠️ Deprecated): [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://explorer-test.arthera.net/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - Blast Testnet (Sepolia): [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://testnet.blastscan.io/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - Kroma Testnet (Sepolia): [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://sepolia.kromascan.com/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
+  - X Layer (Sepolia): [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://www.oklink.com/xlayer-test/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
