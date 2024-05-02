@@ -579,7 +579,7 @@ const config: HardhatUserConfig = {
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
-    xlayermain: {
+    xlayerMain: {
       chainId: 196,
       url: process.env.XLAYER_MAINNET_URL || "",
       accounts:
