@@ -5,3 +5,4 @@ artifacts
 artifacts-zk
 typechain-types
 coverage
+deployments-zk

@@ -585,6 +585,18 @@ const config: HardhatUserConfig = {
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
+    bobTestnet: {
+      chainId: 111,
+      url: process.env.BOB_TESTNET_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
+    bobMain: {
+      chainId: 60808,
+      url: process.env.BOB_MAINNET_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
   },
   gasReporter: {
     enabled: process.env.REPORT_GAS !== undefined,
@@ -723,6 +735,9 @@ const config: HardhatUserConfig = {
       // For X Layer testnet & mainnet
       xlayer: process.env.OKLINK_API_KEY || "",
       xlayerTestnet: process.env.OKLINK_API_KEY || "",
+      // For BOB testnet & mainnet
+      bob: process.env.BOB_API_KEY || "",
+      bobTestnet: process.env.BOB_API_KEY || "",
     },
     customChains: [
       {
@@ -1175,6 +1190,22 @@ const config: HardhatUserConfig = {
           apiURL:
             "https://www.oklink.com/api/v5/explorer/contract/verify-source-code-plugin/XLAYER_TESTNET",
           browserURL: "https://www.oklink.com/xlayer-test",
+        },
+      },
+      {
+        network: "bob",
+        chainId: 60808,
+        urls: {
+          apiURL: "https://explorer.gobob.xyz/api",
+          browserURL: "https://explorer.gobob.xyz",
+        },
+      },
+      {
+        network: "bobTestnet",
+        chainId: 111,
+        urls: {
+          apiURL: "https://testnet-explorer.gobob.xyz/api",
+          browserURL: "https://testnet-explorer.gobob.xyz",
         },
       },
     ],

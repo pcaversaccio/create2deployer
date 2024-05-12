@@ -33,6 +33,7 @@ module.exports = tseslint.config(
       "artifacts-zk/**",
       "typechain-types/**",
       "coverage/**",
+      "deployments-zk/**",
     ],
   },
 );

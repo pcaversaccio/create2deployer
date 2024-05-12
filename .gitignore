@@ -61,6 +61,7 @@ coverage.json
 # zkSync files
 cache-zk
 artifacts-zk
+deployments-zk
 
 # Miscellaneous files
 bin
