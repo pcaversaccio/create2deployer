@@ -133,4 +133,5 @@ All files                       |      100 |      100 |      100 |      100 |   
   - Arthera Testnet (⚠️ Deprecated): [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://explorer-test.arthera.net/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - Blast Testnet (Sepolia): [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://testnet.blastscan.io/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - Kroma Testnet (Sepolia): [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://sepolia.kromascan.com/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
+  - Sei Arctic Testnet: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://seistream.app/account/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - X Layer (Sepolia): [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://www.oklink.com/xlayer-test/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
