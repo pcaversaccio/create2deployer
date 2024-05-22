@@ -46,6 +46,8 @@ task(
 
 const config: HardhatUserConfig = {
   solidity: {
+    // Only use Solidity default versions `>=0.8.25` for EVM networks that support the new `cancun` opcodes:
+    // https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/cancun.md
     // Only use Solidity default versions `>=0.8.20` for EVM networks that support the opcode `PUSH0`
     // Otherwise, use the versions `<=0.8.19`
     version: "0.8.19",
@@ -54,6 +56,7 @@ const config: HardhatUserConfig = {
         enabled: true,
         runs: 999_999,
       },
+      evmVersion: "paris", // Prevent using the `PUSH0` and `cancun` opcodes
     },
   },
   zksolc: {
@@ -543,6 +546,12 @@ const config: HardhatUserConfig = {
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
+    fraxtalMain: {
+      chainId: 252,
+      url: process.env.FRAXTAL_MAINNET_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
     kavaMain: {
       chainId: 2222,
       url: process.env.KAVA_MAINNET_URL || "",
@@ -722,7 +731,8 @@ const config: HardhatUserConfig = {
       // For DOS Chain testnet & mainnet
       dos: process.env.DOS_API_KEY || "",
       dosTestnet: process.env.DOS_API_KEY || "",
-      // For Fraxtal testnet
+      // For Fraxtal testnet & mainnet
+      fraxtal: process.env.FRAXTAL_API_KEY || "",
       fraxtalTestnet: process.env.FRAXTAL_API_KEY || "",
       // For Kava mainnet
       kava: process.env.KAVA_API_KEY || "",
@@ -1124,6 +1134,14 @@ const config: HardhatUserConfig = {
         urls: {
           apiURL: "https://test.doscan.io/api",
           browserURL: "https://test.doscan.io",
+        },
+      },
+      {
+        network: "fraxtal",
+        chainId: 252,
+        urls: {
+          apiURL: "https://api.fraxscan.com/api",
+          browserURL: "https://fraxscan.com",
         },
       },
       {
