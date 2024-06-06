@@ -605,6 +605,42 @@ const config: HardhatUserConfig = {
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
+    coreTestnet: {
+      chainId: 1115,
+      url: process.env.CORE_TESTNET_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
+    coreMain: {
+      chainId: 1116,
+      url: process.env.CORE_MAINNET_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
+    telosTestnet: {
+      chainId: 41,
+      url: process.env.TELOS_TESTNET_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
+    telosMain: {
+      chainId: 40,
+      url: process.env.TELOS_MAINNET_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
+    rootstockTestnet: {
+      chainId: 31,
+      url: process.env.ROOTSTOCK_TESTNET_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
+    rootstockMain: {
+      chainId: 30,
+      url: process.env.ROOTSTOCK_MAINNET_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
   },
   gasReporter: {
     enabled: process.env.REPORT_GAS !== undefined,
@@ -747,6 +783,15 @@ const config: HardhatUserConfig = {
       // For BOB testnet & mainnet
       bob: process.env.BOB_API_KEY || "",
       bobTestnet: process.env.BOB_API_KEY || "",
+      // For Core testnet & mainnet
+      core: process.env.CORE_MAINNET_API_KEY || "",
+      coreTestnet: process.env.CORE_TESTNET_API_KEY || "",
+      // For Telos testnet & mainnet
+      telos: process.env.TELOS_API_KEY || "",
+      telosTestnet: process.env.TELOS_API_KEY || "",
+      // For Rootstock testnet & mainnet
+      rootstock: process.env.ROOTSTOCK_API_KEY || "",
+      rootstockTestnet: process.env.ROOTSTOCK_API_KEY || "",
     },
     customChains: [
       {
@@ -1223,6 +1268,54 @@ const config: HardhatUserConfig = {
         urls: {
           apiURL: "https://testnet-explorer.gobob.xyz/api",
           browserURL: "https://testnet-explorer.gobob.xyz",
+        },
+      },
+      {
+        network: "core",
+        chainId: 1116,
+        urls: {
+          apiURL: "https://openapi.coredao.org/api",
+          browserURL: "https://scan.coredao.org",
+        },
+      },
+      {
+        network: "coreTestnet",
+        chainId: 1115,
+        urls: {
+          apiURL: "https://api.test.btcs.network/api",
+          browserURL: "https://scan.test.btcs.network",
+        },
+      },
+      {
+        network: "telos",
+        chainId: 40,
+        urls: {
+          apiURL: "https://api.teloscan.io/api",
+          browserURL: "https://www.teloscan.io",
+        },
+      },
+      {
+        network: "telosTestnet",
+        chainId: 41,
+        urls: {
+          apiURL: "https://api.testnet.teloscan.io/api",
+          browserURL: "https://testnet.teloscan.io",
+        },
+      },
+      {
+        network: "rootstock",
+        chainId: 30,
+        urls: {
+          apiURL: "https://rootstock.blockscout.com/api",
+          browserURL: "https://rootstock.blockscout.com",
+        },
+      },
+      {
+        network: "rootstockTestnet",
+        chainId: 31,
+        urls: {
+          apiURL: "https://rootstock-testnet.blockscout.com/api",
+          browserURL: "https://rootstock-testnet.blockscout.com",
         },
       },
     ],
