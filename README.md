@@ -139,5 +139,5 @@ All files                       |      100 |      100 |      100 |      100 |   
   - Sei Arctic Testnet: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://seistream.app/account/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - X Layer (Sepolia): [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://www.oklink.com/xlayer-test/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - Core Testnet: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://scan.test.btcs.network/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
-  - Telos Testnet: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://www.teloscan.io/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
+  - Telos Testnet: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://testnet.teloscan.io/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - Rootstock Testnet: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://rootstock-testnet.blockscout.com/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
