@@ -59,11 +59,11 @@ const config: HardhatUserConfig = {
     },
   },
   zksolc: {
-    version: "1.4.1",
+    version: "1.5.0",
     compilerSource: "binary",
     settings: {
-      isSystem: false,
-      forceEvmla: false,
+      enableEraVMExtensions: false,
+      forceEVMLA: false,
       optimizer: {
         enabled: true,
         mode: "3",
@@ -80,7 +80,7 @@ const config: HardhatUserConfig = {
         url: process.env.ETH_MAINNET_URL || "",
         enabled: false,
       },
-      // zksync: true, // Enables zkSync in the Hardhat local network
+      // zksync: true, // Enables ZKsync in the Hardhat local network
     },
     localhost: {
       url: "http://127.0.0.1:8545",

@@ -58,7 +58,7 @@ typechain-types
 coverage
 coverage.json
 
-# zkSync files
+# ZKsync files
 cache-zk
 artifacts-zk
 deployments-zk
