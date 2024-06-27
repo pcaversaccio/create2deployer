@@ -641,6 +641,12 @@ const config: HardhatUserConfig = {
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
+    chilizTestnet: {
+      chainId: 88882,
+      url: process.env.CHILIZ_TESTNET_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
   },
   gasReporter: {
     enabled: process.env.REPORT_GAS !== undefined,
@@ -792,6 +798,8 @@ const config: HardhatUserConfig = {
       // For Rootstock testnet & mainnet
       rootstock: process.env.ROOTSTOCK_API_KEY || "",
       rootstockTestnet: process.env.ROOTSTOCK_API_KEY || "",
+      // For Chiliz testnet
+      chilizTestnet: process.env.CHILIZ_API_KEY || "",
     },
     customChains: [
       {
@@ -1316,6 +1324,15 @@ const config: HardhatUserConfig = {
         urls: {
           apiURL: "https://rootstock-testnet.blockscout.com/api",
           browserURL: "https://rootstock-testnet.blockscout.com",
+        },
+      },
+      {
+        network: "chilizTestnet",
+        chainId: 88882,
+        urls: {
+          apiURL:
+            "https://api.routescan.io/v2/network/testnet/evm/88882/etherscan/api",
+          browserURL: "https://testnet.chiliscan.com",
         },
       },
     ],
