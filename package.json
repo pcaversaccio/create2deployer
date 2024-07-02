@@ -123,6 +123,8 @@
     "deploy:rootstocktestnet": "npx hardhat run --network rootstockTestnet scripts/deploy.ts",
     "deploy:rootstockmain": "npx hardhat run --network rootstockMain scripts/deploy.ts",
     "deploy:chiliztestnet": "npx hardhat run --network chilizTestnet scripts/deploy.ts",
+    "deploy:taraxatestnet": "npx hardhat run --network taraxaTestnet scripts/deploy.ts",
+    "deploy:taraxamain": "npx hardhat run --network taraxaMain scripts/deploy.ts",
     "prettier:check": "npx prettier -c \"**/*.{js,ts,md,sol,json,yml,yaml}\"",
     "prettier:fix": "npx prettier -w \"**/*.{js,ts,md,sol,json,yml,yaml}\"",
     "solhint:check": "npx solhint \"contracts/**/*.sol\"",
@@ -151,7 +153,7 @@
     "eslint": "^8.57.0",
     "eslint-config-prettier": "^9.1.0",
     "ethers": "^6.13.1",
-    "hardhat": "^2.22.5",
+    "hardhat": "^2.22.6",
     "hardhat-abi-exporter": "^2.10.1",
     "hardhat-contract-sizer": "^2.10.0",
     "hardhat-gas-reporter": "^2.2.0",
@@ -161,8 +163,8 @@
     "solidity-coverage": "^0.8.12",
     "ts-node": "^10.9.2",
     "typechain": "^8.3.2",
-    "typescript": "^5.5.2",
-    "typescript-eslint": "^7.14.1",
+    "typescript": "^5.5.3",
+    "typescript-eslint": "^7.15.0",
     "zksync-ethers": "^6.9.0"
   }
 }
