@@ -119,7 +119,7 @@ All files                       |      100 |      100 |      100 |      100 |   
   - Evmos Testnet: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://www.mintscan.io/evmos-testnet/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - Boba Network Testnet: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://testnet.bobascan.com/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - Canto Testnet: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://testnet.tuber.build/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
-  - Base Testnet (Goerli): [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://goerli.basescan.org/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
+  - Base Testnet (Goerli; ⚠️ Deprecated): [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://goerli.basescan.org/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - Base Testnet (Sepolia): [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://sepolia.basescan.org/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - Mantle Testnet (Wadsley; ⚠️ Deprecated): [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://explorer.testnet.mantle.xyz/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - Mantle Testnet (Sepolia): [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://explorer.sepolia.mantle.xyz/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
