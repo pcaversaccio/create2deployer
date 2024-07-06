@@ -131,7 +131,7 @@ All files                       |      100 |      100 |      100 |      100 |   
   - Linea Testnet (Sepolia): [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://sepolia.lineascan.build/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - Zora Testnet (⚠️ Deprecated): [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://testnet.explorer.zora.energy/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - LUKSO Testnet: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://explorer.execution.testnet.lukso.network/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
-  - Manta Pacific Testnet: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://pacific-explorer.testnet.manta.network/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
+  - Manta Pacific Testnet (⚠️ Deprecated): [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://pacific-explorer.testnet.manta.network/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - Shardeum Testnet (⚠️ Deprecated): [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://explorer-dapps.shardeum.org/account/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - Arthera Testnet (⚠️ Deprecated): [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://explorer-test.arthera.net/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - Blast Testnet (Sepolia): [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://testnet.blastscan.io/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)

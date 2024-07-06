@@ -456,7 +456,7 @@ const config: HardhatUserConfig = {
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
     mantaTestnet: {
-      chainId: 3441005,
+      chainId: 3441006,
       url: process.env.MANTA_TESTNET_URL || "",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
@@ -1114,10 +1114,10 @@ const config: HardhatUserConfig = {
       },
       {
         network: "mantaTestnet",
-        chainId: 3441005,
+        chainId: 3441006,
         urls: {
-          apiURL: "https://pacific-explorer.testnet.manta.network/api",
-          browserURL: "https://pacific-explorer.testnet.manta.network",
+          apiURL: "https://pacific-explorer.sepolia-testnet.manta.network/api",
+          browserURL: "https://pacific-explorer.sepolia-testnet.manta.network",
         },
       },
       {
