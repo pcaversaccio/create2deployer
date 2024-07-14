@@ -123,6 +123,7 @@
     "deploy:rootstocktestnet": "npx hardhat run --network rootstockTestnet scripts/deploy.ts",
     "deploy:rootstockmain": "npx hardhat run --network rootstockMain scripts/deploy.ts",
     "deploy:chiliztestnet": "npx hardhat run --network chilizTestnet scripts/deploy.ts",
+    "deploy:chilizmain": "npx hardhat run --network chilizMain scripts/deploy.ts",
     "deploy:taraxatestnet": "npx hardhat run --network taraxaTestnet scripts/deploy.ts",
     "deploy:taraxamain": "npx hardhat run --network taraxaMain scripts/deploy.ts",
     "prettier:check": "npx prettier -c \"**/*.{js,ts,md,sol,json,yml,yaml}\"",
@@ -133,7 +134,7 @@
     "lint:fix": "pnpm run prettier:fix && pnpm run solhint:fix && npx eslint . --fix"
   },
   "devDependencies": {
-    "@eslint/js": "^9.6.0",
+    "@eslint/js": "^9.7.0",
     "@matterlabs/hardhat-zksync-deploy": "^1.5.0",
     "@matterlabs/hardhat-zksync-ethers": "1.1.0",
     "@matterlabs/hardhat-zksync-solc": "^1.2.1",
@@ -157,7 +158,7 @@
     "hardhat-abi-exporter": "^2.10.1",
     "hardhat-contract-sizer": "^2.10.0",
     "hardhat-gas-reporter": "^2.2.0",
-    "prettier": "^3.3.2",
+    "prettier": "^3.3.3",
     "prettier-plugin-solidity": "^1.3.1",
     "solhint": "^5.0.1",
     "solidity-coverage": "^0.8.12",
@@ -165,6 +166,6 @@
     "typechain": "^8.3.2",
     "typescript": "^5.5.3",
     "typescript-eslint": "^7.16.0",
-    "zksync-ethers": "^6.9.0"
+    "zksync-ethers": "^6.10.0"
   }
 }
