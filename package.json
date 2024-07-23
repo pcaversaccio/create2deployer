@@ -164,8 +164,8 @@
     "solidity-coverage": "^0.8.12",
     "ts-node": "^10.9.2",
     "typechain": "^8.3.2",
-    "typescript": "^5.5.3",
-    "typescript-eslint": "^7.16.1",
+    "typescript": "^5.5.4",
+    "typescript-eslint": "^7.17.0",
     "zksync-ethers": "^6.10.0"
   }
 }
