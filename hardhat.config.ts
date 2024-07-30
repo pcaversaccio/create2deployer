@@ -665,6 +665,12 @@ const config: HardhatUserConfig = {
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
+    artheraMain: {
+      chainId: 10242,
+      url: process.env.ARTHERA_MAINNET_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
   },
   gasReporter: {
     enabled: process.env.REPORT_GAS !== undefined,
@@ -819,6 +825,8 @@ const config: HardhatUserConfig = {
       // For Chiliz testnet & mainnet
       chiliz: process.env.CHILIZ_API_KEY || "",
       chilizTestnet: process.env.CHILIZ_API_KEY || "",
+      // For Arthera mainnet
+      arthera: process.env.ARTHERA_API_KEY || "",
     },
     customChains: [
       {
@@ -1377,6 +1385,14 @@ const config: HardhatUserConfig = {
         urls: {
           apiURL: "https://explorer.testnet.harmony.one/api",
           browserURL: "https://explorer.testnet.harmony.one",
+        },
+      },
+      {
+        network: "arthera",
+        chainId: 10242,
+        urls: {
+          apiURL: "https://explorer.arthera.net/api",
+          browserURL: "https://explorer.arthera.net",
         },
       },
     ],

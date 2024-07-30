@@ -86,6 +86,7 @@ All files                       |      100 |      100 |      100 |      100 |   
   - Core: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://scan.coredao.org/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - Telos: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://www.teloscan.io/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - Rootstock: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://rootstock.blockscout.com/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
+  - Arthera: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://explorer.arthera.net/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
 - **Ethereum Test Networks:**
   - Rinkeby (⚠️ Deprecated): [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://rinkeby.etherscan.io/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - Ropsten (⚠️ Deprecated): [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://ropsten.etherscan.io/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
