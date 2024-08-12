@@ -77,8 +77,8 @@ importers:
         specifier: ^2.10.0
         version: 2.10.0(hardhat@2.22.8(ts-node@10.9.2(@types/node@22.2.0)(typescript@5.5.4))(typescript@5.5.4))
       hardhat-gas-reporter:
-        specifier: ^2.2.0
-        version: 2.2.0(hardhat@2.22.8(ts-node@10.9.2(@types/node@22.2.0)(typescript@5.5.4))(typescript@5.5.4))(typescript@5.5.4)
+        specifier: ^2.2.1
+        version: 2.2.1(hardhat@2.22.8(ts-node@10.9.2(@types/node@22.2.0)(typescript@5.5.4))(typescript@5.5.4))(typescript@5.5.4)
       prettier:
         specifier: ^3.3.3
         version: 3.3.3
@@ -2564,10 +2564,10 @@ packages:
     peerDependencies:
       hardhat: ^2.0.0
 
-  hardhat-gas-reporter@2.2.0:
+  hardhat-gas-reporter@2.2.1:
     resolution:
       {
-        integrity: sha512-eAlLWnyDpQ+wJXgSCZsM0yt+rQm3ryJia1I1Hoi94LzlIfuSPcsMQM12VO6UHmAFLvXvoKxXPJ3ZYk0Kz+7CDQ==,
+        integrity: sha512-3AfPDGBn6VPmRKU65W28qVvG5x+qYL2gH9PAivd31oGj/ZHpZTutqXh6wq46993Vz35rnPDnrGo028U4/NP/Vw==,
       }
     peerDependencies:
       hardhat: ^2.16.0
@@ -2687,10 +2687,10 @@ packages:
         integrity: sha512-dcyqhDvX1C46lXZcVqCpK+FtMRQVdIMN6/Df5js2zouUsqG7I6sFxitIC+7KYK29KdXOLHdu9zL4sFnoVQnqaA==,
       }
 
-  ignore@5.3.1:
+  ignore@5.3.2:
     resolution:
       {
-        integrity: sha512-5Fytz/IraMjqpwfd34ke28PTVMjZjJG2MPn5t7OE4eUCUNf8BAa7b5WUS9/Qvr6mwOQS7Mk6vdsMno5he+T8Xw==,
+        integrity: sha512-hsBTNUqQTDwkWtcdYI2i06Y/nUBEsNEDJKjWdigLvegy8kDuJAS8uRlpkkcQpyEXL0Z/pjDy5HBmMjRCJ2gq+g==,
       }
     engines: { node: ">= 4" }
 
@@ -4457,10 +4457,10 @@ packages:
       }
     engines: { node: ">=8" }
 
-  uglify-js@3.19.1:
+  uglify-js@3.19.2:
     resolution:
       {
-        integrity: sha512-y/2wiW+ceTYR2TSSptAhfnEtpLaQ4Ups5zrjB2d3kuVxHj16j/QJwPl5PvuGy9uARb39J0+iKxcRPvtpsx4A4A==,
+        integrity: sha512-S8KA6DDI47nQXJSi2ctQ629YzwOVs+bQML6DAtvy0wgNdpi+0ySpQK0g2pxBq2xfF2z3YCscu7NNA8nXT9PlIQ==,
       }
     engines: { node: ">=0.8.0" }
     hasBin: true
@@ -4787,7 +4787,7 @@ snapshots:
       debug: 4.3.6(supports-color@8.1.1)
       espree: 10.1.0
       globals: 14.0.0
-      ignore: 5.3.1
+      ignore: 5.3.2
       import-fresh: 3.3.0
       js-yaml: 4.1.0
       minimatch: 3.1.2
@@ -5408,7 +5408,7 @@ snapshots:
       "@typescript-eslint/visitor-keys": 8.0.1
       eslint: 9.9.0
       graphemer: 1.4.0
-      ignore: 5.3.1
+      ignore: 5.3.2
       natural-compare: 1.4.0
       ts-api-utils: 1.3.0(typescript@5.5.4)
     optionalDependencies:
@@ -6077,7 +6077,7 @@ snapshots:
       file-entry-cache: 8.0.0
       find-up: 5.0.0
       glob-parent: 6.0.2
-      ignore: 5.3.1
+      ignore: 5.3.2
       imurmurhash: 0.1.4
       is-glob: 4.0.3
       is-path-inside: 3.0.3
@@ -6398,7 +6398,7 @@ snapshots:
       dir-glob: 3.0.1
       fast-glob: 3.3.2
       glob: 7.2.3
-      ignore: 5.3.1
+      ignore: 5.3.2
       merge2: 1.4.1
       slash: 3.0.0
 
@@ -6407,7 +6407,7 @@ snapshots:
       array-union: 2.1.0
       dir-glob: 3.0.1
       fast-glob: 3.3.2
-      ignore: 5.3.1
+      ignore: 5.3.2
       merge2: 1.4.1
       slash: 3.0.0
 
@@ -6438,7 +6438,7 @@ snapshots:
       source-map: 0.6.1
       wordwrap: 1.0.0
     optionalDependencies:
-      uglify-js: 3.19.1
+      uglify-js: 3.19.2
 
   hardhat-abi-exporter@2.10.1(hardhat@2.22.8(ts-node@10.9.2(@types/node@22.2.0)(typescript@5.5.4))(typescript@5.5.4)):
     dependencies:
@@ -6453,7 +6453,7 @@ snapshots:
       hardhat: 2.22.8(ts-node@10.9.2(@types/node@22.2.0)(typescript@5.5.4))(typescript@5.5.4)
       strip-ansi: 6.0.1
 
-  hardhat-gas-reporter@2.2.0(hardhat@2.22.8(ts-node@10.9.2(@types/node@22.2.0)(typescript@5.5.4))(typescript@5.5.4))(typescript@5.5.4):
+  hardhat-gas-reporter@2.2.1(hardhat@2.22.8(ts-node@10.9.2(@types/node@22.2.0)(typescript@5.5.4))(typescript@5.5.4))(typescript@5.5.4):
     dependencies:
       "@ethersproject/abi": 5.7.0
       "@ethersproject/bytes": 5.7.0
@@ -6591,7 +6591,7 @@ snapshots:
 
   ieee754@1.2.1: {}
 
-  ignore@5.3.1: {}
+  ignore@5.3.2: {}
 
   immutable@4.3.7: {}
 
@@ -7286,7 +7286,7 @@ snapshots:
       cosmiconfig: 8.3.6(typescript@5.5.4)
       fast-diff: 1.3.0
       glob: 8.1.0
-      ignore: 5.3.1
+      ignore: 5.3.2
       js-yaml: 4.1.0
       latest-version: 7.0.0
       lodash: 4.17.21
@@ -7581,7 +7581,7 @@ snapshots:
 
   typical@5.2.0: {}
 
-  uglify-js@3.19.1:
+  uglify-js@3.19.2:
     optional: true
 
   undici-types@6.13.0: {}
