@@ -671,6 +671,30 @@ const config: HardhatUserConfig = {
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
+    gravityAlphaTestnet: {
+      chainId: 13505,
+      url: process.env.GRAVITY_ALPHA_TESTNET_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
+    gravityAlphaMain: {
+      chainId: 1625,
+      url: process.env.GRAVITY_ALPHA_MAINNET_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
+    taikoTestnet: {
+      chainId: 167009,
+      url: process.env.TAIKO_TESTNET_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
+    taikoMain: {
+      chainId: 167000,
+      url: process.env.TAIKO_MAINNET_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
   },
   gasReporter: {
     enabled: process.env.REPORT_GAS !== undefined,
@@ -827,6 +851,12 @@ const config: HardhatUserConfig = {
       chilizTestnet: process.env.CHILIZ_API_KEY || "",
       // For Arthera mainnet
       arthera: process.env.ARTHERA_API_KEY || "",
+      // For Gravity Alpha testnet & mainnet
+      gravityAlpha: process.env.GRAVITY_ALPHA_API_KEY || "",
+      gravityAlphaTestnet: process.env.GRAVITY_ALPHA_API_KEY || "",
+      // For Taiko testnet & mainnet
+      taiko: process.env.TAIKO_API_KEY || "",
+      taikoTestnet: process.env.TAIKO_API_KEY || "",
     },
     customChains: [
       {
@@ -1393,6 +1423,38 @@ const config: HardhatUserConfig = {
         urls: {
           apiURL: "https://explorer.arthera.net/api",
           browserURL: "https://explorer.arthera.net",
+        },
+      },
+      {
+        network: "gravityAlpha",
+        chainId: 1625,
+        urls: {
+          apiURL: "https://explorer.gravity.xyz/api",
+          browserURL: "https://explorer.gravity.xyz",
+        },
+      },
+      {
+        network: "gravityAlphaTestnet",
+        chainId: 13505,
+        urls: {
+          apiURL: "https://explorer-sepolia.gravity.xyz/api",
+          browserURL: "https://explorer-sepolia.gravity.xyz",
+        },
+      },
+      {
+        network: "taiko",
+        chainId: 167000,
+        urls: {
+          apiURL: "https://api.taikoscan.io/api",
+          browserURL: "https://taikoscan.io",
+        },
+      },
+      {
+        network: "taikoTestnet",
+        chainId: 167009,
+        urls: {
+          apiURL: "https://api-hekla.taikoscan.io/api",
+          browserURL: "https://hekla.taikoscan.io",
         },
       },
     ],

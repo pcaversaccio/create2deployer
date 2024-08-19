@@ -144,3 +144,4 @@ All files                       |      100 |      100 |      100 |      100 |   
   - Telos Testnet: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://testnet.teloscan.io/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - Rootstock Testnet: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://rootstock-testnet.blockscout.com/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - Metis Testnet (Sepolia): [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://sepolia-explorer.metisdevops.link/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
+  - Taiko Testnet (Holešky): [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://hekla.taikoscan.io/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
