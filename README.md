@@ -88,6 +88,7 @@ All files                       |      100 |      100 |      100 |      100 |   
   - Rootstock: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://rootstock.blockscout.com/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - Arthera: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://explorer.arthera.net/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - Metis Andromeda: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://andromeda-explorer.metis.io/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
+  - Taiko: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://taikoscan.io/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
 - **Ethereum Test Networks:**
   - Rinkeby (⚠️ Deprecated): [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://rinkeby.etherscan.io/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - Ropsten (⚠️ Deprecated): [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://ropsten.etherscan.io/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
