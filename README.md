@@ -149,4 +149,4 @@ All files                       |      100 |      100 |      100 |      100 |   
   - Metis Testnet (Sepolia): [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://sepolia-explorer.metisdevops.link/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - Taiko Testnet (Holešky): [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://hekla.taikoscan.io/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - Mode Testnet (Sepolia): [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://sepolia.explorer.mode.network/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
-  - ZetaChain Testnet: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://athens.explorer.zetachain.com/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
+  - ZetaChain Testnet (Athens-3): [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://athens.explorer.zetachain.com/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
