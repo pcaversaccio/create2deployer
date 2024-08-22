@@ -869,6 +869,9 @@ const config: HardhatUserConfig = {
       // For Taiko testnet & mainnet
       taiko: process.env.TAIKO_API_KEY || "",
       taikoTestnet: process.env.TAIKO_API_KEY || "",
+      // For ZetaChain testnet & mainnet
+      zetaChain: process.env.ZETA_CHAIN_API_KEY || "",
+      zetaChainTestnet: process.env.ZETA_CHAIN_API_KEY || "",
     },
     customChains: [
       {
@@ -1467,6 +1470,22 @@ const config: HardhatUserConfig = {
         urls: {
           apiURL: "https://api-hekla.taikoscan.io/api",
           browserURL: "https://hekla.taikoscan.io",
+        },
+      },
+      {
+        network: "zetaChain",
+        chainId: 7000,
+        urls: {
+          apiURL: "https://zetachain.blockscout.com/api",
+          browserURL: "https://zetachain.blockscout.com",
+        },
+      },
+      {
+        network: "zetaChainTestnet",
+        chainId: 7001,
+        urls: {
+          apiURL: "https://zetachain-athens-3.blockscout.com/api",
+          browserURL: "https://zetachain-athens-3.blockscout.com",
         },
       },
     ],
