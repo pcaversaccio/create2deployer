@@ -89,6 +89,8 @@ All files                       |      100 |      100 |      100 |      100 |   
   - Arthera: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://explorer.arthera.net/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - Metis Andromeda: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://andromeda-explorer.metis.io/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - Taiko: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://taikoscan.io/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
+  - Mode: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://explorer.mode.network/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
+  - ZetaChain: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://explorer.zetachain.com/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
 - **Ethereum Test Networks:**
   - Rinkeby (⚠️ Deprecated): [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://rinkeby.etherscan.io/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - Ropsten (⚠️ Deprecated): [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://ropsten.etherscan.io/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
@@ -96,8 +98,6 @@ All files                       |      100 |      100 |      100 |      100 |   
   - Goerli (⚠️ Deprecated): [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://goerli.etherscan.io/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - Sepolia: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://sepolia.etherscan.io/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - Holešky (Holešovice): [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://holesky.etherscan.io/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
-  - Mode: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://explorer.mode.network/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
-  - ZetaChain: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://explorer.zetachain.com/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
 - **Additional EVM-Based Test Networks:**
   - Binance Smart Chain Testnet: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://testnet.bscscan.com/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - Optimism Testnet (Kovan; ⚠️ Deprecated): [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://kovan-optimistic.etherscan.io/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
