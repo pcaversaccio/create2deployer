@@ -144,7 +144,7 @@
     "@eslint/js": "^9.9.1",
     "@matterlabs/hardhat-zksync-deploy": "^1.5.0",
     "@matterlabs/hardhat-zksync-ethers": "1.1.0",
-    "@matterlabs/hardhat-zksync-solc": "^1.2.2",
+    "@matterlabs/hardhat-zksync-solc": "^1.2.3",
     "@matterlabs/hardhat-zksync-verify": "^1.6.0",
     "@nomicfoundation/hardhat-chai-matchers": "^2.0.7",
     "@nomicfoundation/hardhat-ethers": "^3.0.7",
@@ -153,7 +153,7 @@
     "@openzeppelin/contracts": "^4.9.6",
     "@typechain/ethers-v6": "^0.5.1",
     "@typechain/hardhat": "^9.1.0",
-    "@types/chai": "^4.3.17",
+    "@types/chai": "^4.3.18",
     "@types/mocha": "^10.0.7",
     "@types/node": "^22.5.0",
     "chai": "^4.5.0",
@@ -172,7 +172,7 @@
     "ts-node": "^10.9.2",
     "typechain": "^8.3.2",
     "typescript": "^5.5.4",
-    "typescript-eslint": "^8.2.0",
+    "typescript-eslint": "^8.3.0",
     "zksync-ethers": "^6.11.2"
   }
 }
