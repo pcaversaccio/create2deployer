@@ -153,9 +153,9 @@
     "@openzeppelin/contracts": "^4.9.6",
     "@typechain/ethers-v6": "^0.5.1",
     "@typechain/hardhat": "^9.1.0",
-    "@types/chai": "^4.3.18",
+    "@types/chai": "^4.3.19",
     "@types/mocha": "^10.0.7",
-    "@types/node": "^22.5.0",
+    "@types/node": "^22.5.1",
     "chai": "^4.5.0",
     "dotenv": "^16.4.5",
     "eslint": "^9.9.1",
@@ -173,6 +173,6 @@
     "typechain": "^8.3.2",
     "typescript": "^5.5.4",
     "typescript-eslint": "^8.3.0",
-    "zksync-ethers": "^6.11.2"
+    "zksync-ethers": "^6.12.0"
   }
 }
