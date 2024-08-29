@@ -90,8 +90,8 @@ importers:
         specifier: ^5.0.3
         version: 5.0.3(typescript@5.5.4)
       solidity-coverage:
-        specifier: ^0.8.12
-        version: 0.8.12(hardhat@2.22.9(ts-node@10.9.2(@types/node@22.5.1)(typescript@5.5.4))(typescript@5.5.4))
+        specifier: ^0.8.13
+        version: 0.8.13(hardhat@2.22.9(ts-node@10.9.2(@types/node@22.5.1)(typescript@5.5.4))(typescript@5.5.4))
       ts-node:
         specifier: ^10.9.2
         version: 10.9.2(@types/node@22.5.1)(typescript@5.5.4)
@@ -2291,8 +2291,8 @@ packages:
     resolution: {integrity: sha512-OLCH6qm/mZTCpplTXzXTJGId1zrtNuDYP5c2e6snIv/hdRVxPfBBz/bAlL91bY/Accavkayp2Zp2BaDSrLVXTQ==}
     hasBin: true
 
-  solidity-coverage@0.8.12:
-    resolution: {integrity: sha512-8cOB1PtjnjFRqOgwFiD8DaUsYJtVJ6+YdXQtSZDrLGf8cdhhh8xzTtGzVTGeBf15kTv0v7lYPJlV/az7zLEPJw==}
+  solidity-coverage@0.8.13:
+    resolution: {integrity: sha512-RiBoI+kF94V3Rv0+iwOj3HQVSqNzA9qm/qDP1ZDXK5IX0Cvho1qiz8hAXTsAo6KOIUeP73jfscq0KlLqVxzGWA==}
     hasBin: true
     peerDependencies:
       hardhat: ^2.11.0
@@ -5262,7 +5262,7 @@ snapshots:
     transitivePeerDependencies:
       - typescript
 
-  solidity-coverage@0.8.12(hardhat@2.22.9(ts-node@10.9.2(@types/node@22.5.1)(typescript@5.5.4))(typescript@5.5.4)):
+  solidity-coverage@0.8.13(hardhat@2.22.9(ts-node@10.9.2(@types/node@22.5.1)(typescript@5.5.4))(typescript@5.5.4)):
     dependencies:
       '@ethersproject/abi': 5.7.0
       '@solidity-parser/parser': 0.18.0
