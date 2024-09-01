@@ -155,7 +155,7 @@
     "@typechain/hardhat": "^9.1.0",
     "@types/chai": "^4.3.19",
     "@types/mocha": "^10.0.7",
-    "@types/node": "^22.5.1",
+    "@types/node": "^22.5.2",
     "chai": "^4.5.0",
     "dotenv": "^16.4.5",
     "eslint": "^9.9.1",
