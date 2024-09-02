@@ -707,6 +707,18 @@ const config: HardhatUserConfig = {
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
+    "5ireChainTestnet": {
+      chainId: 997,
+      url: process.env["5IRE_CHAIN_TESTNET_URL"] || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
+    "5ireChainMain": {
+      chainId: 995,
+      url: process.env["5IRE_CHAIN_MAINNET_URL"] || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
   },
   gasReporter: {
     enabled: process.env.REPORT_GAS !== undefined,
@@ -872,6 +884,9 @@ const config: HardhatUserConfig = {
       // For ZetaChain testnet & mainnet
       zetaChain: process.env.ZETA_CHAIN_API_KEY || "",
       zetaChainTestnet: process.env.ZETA_CHAIN_API_KEY || "",
+      // For 5ireChain testnet & mainnet
+      "5ireChain": process.env["5IRE_CHAIN_API_KEY"] || "",
+      "5ireChainTestnet": process.env["5IRE_CHAIN_API_KEY"] || "",
     },
     customChains: [
       {
@@ -1486,6 +1501,22 @@ const config: HardhatUserConfig = {
         urls: {
           apiURL: "https://zetachain-athens-3.blockscout.com/api",
           browserURL: "https://zetachain-athens-3.blockscout.com",
+        },
+      },
+      {
+        network: "5ireChain",
+        chainId: 995,
+        urls: {
+          apiURL: "https://5irescan.io/api",
+          browserURL: "https://5irescan.io",
+        },
+      },
+      {
+        network: "5ireChainTestnet",
+        chainId: 997,
+        urls: {
+          apiURL: "https://testnet.5irescan.io/api",
+          browserURL: "https://testnet.5irescan.io",
         },
       },
     ],

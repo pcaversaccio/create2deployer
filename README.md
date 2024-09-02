@@ -91,6 +91,7 @@ All files                       |      100 |      100 |      100 |      100 |   
   - Taiko: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://taikoscan.io/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - Mode: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://explorer.mode.network/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - ZetaChain: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://explorer.zetachain.com/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
+  - 5ireChain: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://5irescan.io/contract/evm/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
 - **Ethereum Test Networks:**
   - Rinkeby (⚠️ Deprecated): [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://rinkeby.etherscan.io/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - Ropsten (⚠️ Deprecated): [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://ropsten.etherscan.io/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
@@ -150,3 +151,4 @@ All files                       |      100 |      100 |      100 |      100 |   
   - Taiko Testnet (Holešky): [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://hekla.taikoscan.io/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - Mode Testnet (Sepolia): [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://sepolia.explorer.mode.network/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - ZetaChain Testnet (Athens-3): [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://athens.explorer.zetachain.com/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
+  - 5ireChain Testnet: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://testnet.5irescan.io/contract/evm/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
