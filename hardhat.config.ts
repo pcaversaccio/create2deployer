@@ -719,6 +719,18 @@ const config: HardhatUserConfig = {
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
+    sapphireTestnet: {
+      chainId: 23295,
+      url: process.env.SAPPHIRE_TESTNET_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
+    sapphireMain: {
+      chainId: 23294,
+      url: process.env.SAPPHIRE_MAINNET_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
   },
   gasReporter: {
     enabled: process.env.REPORT_GAS !== undefined,
@@ -887,6 +899,9 @@ const config: HardhatUserConfig = {
       // For 5ireChain testnet & mainnet
       "5ireChain": process.env["5IRE_CHAIN_API_KEY"] || "",
       "5ireChainTestnet": process.env["5IRE_CHAIN_API_KEY"] || "",
+      // For Oasis Sapphire testnet & mainnet
+      sapphire: process.env.SAPPHIRE_API_KEY || "",
+      sapphireTestnet: process.env.SAPPHIRE_API_KEY || "",
     },
     customChains: [
       {
@@ -1517,6 +1532,22 @@ const config: HardhatUserConfig = {
         urls: {
           apiURL: "https://testnet.5irescan.io/api",
           browserURL: "https://testnet.5irescan.io",
+        },
+      },
+      {
+        network: "sapphire",
+        chainId: 23294,
+        urls: {
+          apiURL: "https://explorer.oasis.io/mainnet/sapphire/api",
+          browserURL: "https://explorer.oasis.io/mainnet/sapphire",
+        },
+      },
+      {
+        network: "sapphireTestnet",
+        chainId: 23295,
+        urls: {
+          apiURL: "https://explorer.oasis.io/testnet/sapphire/api",
+          browserURL: "https://explorer.oasis.io/testnet/sapphire",
         },
       },
     ],
