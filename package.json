@@ -137,6 +137,8 @@
     "deploy:5irechainmain": "npx hardhat run --network 5ireChainMain scripts/deploy.ts",
     "deploy:sapphiretestnet": "npx hardhat run --network sapphireTestnet scripts/deploy.ts",
     "deploy:sapphiremain": "npx hardhat run --network sapphireMain scripts/deploy.ts",
+    "deploy:worldchaintestnet": "npx hardhat run --network worldChainTestnet scripts/deploy.ts",
+    "deploy:worldchainmain": "npx hardhat run --network worldChainMain scripts/deploy.ts",
     "prettier:check": "npx prettier -c \"**/*.{js,ts,md,sol,json,yml,yaml}\"",
     "prettier:fix": "npx prettier -w \"**/*.{js,ts,md,sol,json,yml,yaml}\"",
     "solhint:check": "npx solhint \"contracts/**/*.sol\"",
@@ -159,7 +161,7 @@
     "@typechain/hardhat": "^9.1.0",
     "@types/chai": "^4.3.20",
     "@types/mocha": "^10.0.8",
-    "@types/node": "^22.7.1",
+    "@types/node": "^22.7.4",
     "chai": "^4.5.0",
     "dotenv": "^16.4.5",
     "eslint": "^9.11.1",
@@ -177,6 +179,6 @@
     "typechain": "^8.3.2",
     "typescript": "^5.6.2",
     "typescript-eslint": "^8.7.0",
-    "zksync-ethers": "^6.12.1"
+    "zksync-ethers": "^6.13.0"
   }
 }

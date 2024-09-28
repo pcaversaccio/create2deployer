@@ -731,6 +731,18 @@ const config: HardhatUserConfig = {
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
+    worldChainTestnet: {
+      chainId: 4801,
+      url: process.env.WORLD_CHAIN_TESTNET_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
+    worldChainMain: {
+      chainId: 480,
+      url: process.env.WORLD_CHAIN_MAINNET_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
   },
   gasReporter: {
     enabled: process.env.REPORT_GAS !== undefined,
@@ -902,6 +914,9 @@ const config: HardhatUserConfig = {
       // For Oasis Sapphire testnet & mainnet
       sapphire: process.env.SAPPHIRE_API_KEY || "",
       sapphireTestnet: process.env.SAPPHIRE_API_KEY || "",
+      // For World Chain testnet & mainnet
+      worldChain: process.env.WORLD_CHAIN_API_KEY || "",
+      worldChainTestnet: process.env.WORLD_CHAIN_API_KEY || "",
     },
     customChains: [
       {
@@ -1548,6 +1563,22 @@ const config: HardhatUserConfig = {
         urls: {
           apiURL: "https://explorer.oasis.io/testnet/sapphire/api",
           browserURL: "https://explorer.oasis.io/testnet/sapphire",
+        },
+      },
+      {
+        network: "worldChain",
+        chainId: 480,
+        urls: {
+          apiURL: "https://worldchain-mainnet.explorer.alchemy.com/api",
+          browserURL: "https://worldchain-mainnet.explorer.alchemy.com",
+        },
+      },
+      {
+        network: "worldChainTestnet",
+        chainId: 4801,
+        urls: {
+          apiURL: "https://worldchain-sepolia.explorer.alchemy.com/api",
+          browserURL: "https://worldchain-sepolia.explorer.alchemy.com",
         },
       },
     ],
