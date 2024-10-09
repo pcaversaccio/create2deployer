@@ -59,7 +59,7 @@ const config: HardhatUserConfig = {
     },
   },
   zksolc: {
-    version: "1.5.3",
+    version: "1.5.4",
     compilerSource: "binary",
     settings: {
       enableEraVMExtensions: false,
@@ -743,6 +743,12 @@ const config: HardhatUserConfig = {
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
+    plumeTestnet: {
+      chainId: 98864,
+      url: process.env.PLUME_TESTNET_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
   },
   gasReporter: {
     enabled: process.env.REPORT_GAS !== undefined,
@@ -917,6 +923,8 @@ const config: HardhatUserConfig = {
       // For World Chain testnet & mainnet
       worldChain: process.env.WORLD_CHAIN_API_KEY || "",
       worldChainTestnet: process.env.WORLD_CHAIN_API_KEY || "",
+      // For Plume testnet
+      plumeTestnet: process.env.PLUME_API_KEY || "",
     },
     customChains: [
       {
@@ -1579,6 +1587,14 @@ const config: HardhatUserConfig = {
         urls: {
           apiURL: "https://worldchain-sepolia.explorer.alchemy.com/api",
           browserURL: "https://worldchain-sepolia.explorer.alchemy.com",
+        },
+      },
+      {
+        network: "plumeTestnet",
+        chainId: 98864,
+        urls: {
+          apiURL: "https://test-explorer.plumenetwork.xyz/api",
+          browserURL: "https://test-explorer.plumenetwork.xyz",
         },
       },
     ],
