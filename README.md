@@ -154,3 +154,4 @@ All files                       |      100 |      100 |      100 |      100 |   
   - ZetaChain Testnet (Athens-3): [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://athens.explorer.zetachain.com/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - 5ireChain Testnet: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://testnet.5irescan.io/contract/evm/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - Gravity Alpha Testnet (Sepolia): [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://explorer-sepolia.gravity.xyz/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
+  - Unichain Testnet (Sepolia): [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://sepolia.uniscan.xyz/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)

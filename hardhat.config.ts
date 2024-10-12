@@ -749,6 +749,12 @@ const config: HardhatUserConfig = {
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
+    unichainTestnet: {
+      chainId: 1301,
+      url: process.env.UNICHAIN_TESTNET_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
   },
   gasReporter: {
     enabled: process.env.REPORT_GAS !== undefined,
@@ -925,6 +931,8 @@ const config: HardhatUserConfig = {
       worldChainTestnet: process.env.WORLD_CHAIN_API_KEY || "",
       // For Plume testnet
       plumeTestnet: process.env.PLUME_API_KEY || "",
+      // For Unichain testnet
+      unichainTestnet: process.env.UNICHAIN_API_KEY || "",
     },
     customChains: [
       {
@@ -1595,6 +1603,14 @@ const config: HardhatUserConfig = {
         urls: {
           apiURL: "https://test-explorer.plumenetwork.xyz/api",
           browserURL: "https://test-explorer.plumenetwork.xyz",
+        },
+      },
+      {
+        network: "unichainTestnet",
+        chainId: 1301,
+        urls: {
+          apiURL: "https://api-sepolia.uniscan.xyz/api",
+          browserURL: "https://sepolia.uniscan.xyz",
         },
       },
     ],
