@@ -59,7 +59,7 @@ const config: HardhatUserConfig = {
     },
   },
   zksolc: {
-    version: "1.5.4",
+    version: "1.5.6",
     compilerSource: "binary",
     settings: {
       enableEraVMExtensions: false,
@@ -755,6 +755,18 @@ const config: HardhatUserConfig = {
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
+    xdcTestnet: {
+      chainId: 51,
+      url: process.env.XDC_TESTNET_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
+    xdcMain: {
+      chainId: 50,
+      url: process.env.XDC_MAINNET_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
   },
   gasReporter: {
     enabled: process.env.REPORT_GAS !== undefined,
@@ -933,6 +945,9 @@ const config: HardhatUserConfig = {
       plumeTestnet: process.env.PLUME_API_KEY || "",
       // For Unichain testnet
       unichainTestnet: process.env.UNICHAIN_API_KEY || "",
+      // For XDC testnet & mainnet
+      xdc: process.env.XDC_API_KEY || "",
+      xdcTestnet: process.env.XDC_API_KEY || "",
     },
     customChains: [
       {
@@ -1611,6 +1626,22 @@ const config: HardhatUserConfig = {
         urls: {
           apiURL: "https://api-sepolia.uniscan.xyz/api",
           browserURL: "https://sepolia.uniscan.xyz",
+        },
+      },
+      {
+        network: "xdc",
+        chainId: 50,
+        urls: {
+          apiURL: "https://bapi.blocksscan.io",
+          browserURL: "https://xdcscan.io",
+        },
+      },
+      {
+        network: "xdcTestnet",
+        chainId: 51,
+        urls: {
+          apiURL: "https://abapi.blocksscan.io",
+          browserURL: "https://apothem.xdcscan.io",
         },
       },
     ],
