@@ -767,6 +767,18 @@ const config: HardhatUserConfig = {
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
+    sxTestnet: {
+      chainId: 79479957,
+      url: process.env.SX_TESTNET_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
+    sxMain: {
+      chainId: 4162,
+      url: process.env.SX_MAINNET_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
   },
   gasReporter: {
     enabled: process.env.REPORT_GAS !== undefined,
@@ -948,6 +960,9 @@ const config: HardhatUserConfig = {
       // For XDC testnet & mainnet
       xdc: process.env.XDC_API_KEY || "",
       xdcTestnet: process.env.XDC_API_KEY || "",
+      // For SX testnet & mainnet
+      sx: process.env.SX_API_KEY || "",
+      sxTestnet: process.env.SX_API_KEY || "",
     },
     customChains: [
       {
@@ -1642,6 +1657,22 @@ const config: HardhatUserConfig = {
         urls: {
           apiURL: "https://api-testnet.xdcscan.com/api",
           browserURL: "https://testnet.xdcscan.com",
+        },
+      },
+      {
+        network: "sx",
+        chainId: 4162,
+        urls: {
+          apiURL: "https://explorerl2.sx.technology/api",
+          browserURL: "https://explorerl2.sx.technology",
+        },
+      },
+      {
+        network: "sxTestnet",
+        chainId: 79479957,
+        urls: {
+          apiURL: "https://explorerl2.toronto.sx.technology/api",
+          browserURL: "https://explorerl2.toronto.sx.technology",
         },
       },
     ],
