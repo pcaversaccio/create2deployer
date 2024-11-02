@@ -153,11 +153,11 @@
     "lint:fix": "pnpm run prettier:fix && pnpm run solhint:fix && npx eslint . --fix"
   },
   "devDependencies": {
-    "@eslint/js": "^9.13.0",
+    "@eslint/js": "^9.14.0",
     "@matterlabs/hardhat-zksync-deploy": "^1.6.0",
     "@matterlabs/hardhat-zksync-ethers": "1.2.1",
     "@matterlabs/hardhat-zksync-solc": "^1.2.5",
-    "@matterlabs/hardhat-zksync-verify": "^1.6.0",
+    "@matterlabs/hardhat-zksync-verify": "^1.7.0",
     "@nomicfoundation/hardhat-chai-matchers": "^2.0.8",
     "@nomicfoundation/hardhat-ethers": "^3.0.8",
     "@nomicfoundation/hardhat-network-helpers": "^1.0.12",
@@ -167,10 +167,10 @@
     "@typechain/hardhat": "^9.1.0",
     "@types/chai": "^4.3.20",
     "@types/mocha": "^10.0.9",
-    "@types/node": "^22.8.2",
+    "@types/node": "^22.8.6",
     "chai": "^4.5.0",
     "dotenv": "^16.4.5",
-    "eslint": "^9.13.0",
+    "eslint": "^9.14.0",
     "eslint-config-prettier": "^9.1.0",
     "ethers": "^6.13.4",
     "hardhat": "^2.22.15",
@@ -184,7 +184,7 @@
     "ts-node": "^10.9.2",
     "typechain": "^8.3.2",
     "typescript": "^5.6.3",
-    "typescript-eslint": "^8.12.1",
-    "zksync-ethers": "^6.14.0"
+    "typescript-eslint": "^8.12.2",
+    "zksync-ethers": "^6.14.2"
   }
 }

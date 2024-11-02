@@ -59,7 +59,7 @@ const config: HardhatUserConfig = {
     },
   },
   zksolc: {
-    version: "1.5.6",
+    version: "1.5.7",
     compilerSource: "binary",
     settings: {
       enableEraVMExtensions: false,
@@ -368,6 +368,8 @@ const config: HardhatUserConfig = {
       zksync: true,
       verifyURL:
         "https://explorer.sepolia.era.zksync.dev/contract_verification",
+      browserVerifyURL: "https://sepolia.explorer.zksync.io",
+      enableVerifyURL: true,
     },
     zkSyncMain: {
       chainId: 324,
@@ -376,6 +378,8 @@ const config: HardhatUserConfig = {
       zksync: true,
       verifyURL:
         "https://zksync2-mainnet-explorer.zksync.io/contract_verification",
+      browserVerifyURL: "https://explorer.zksync.io",
+      enableVerifyURL: true,
     },
     mantleTestnet: {
       chainId: 5003,
@@ -963,6 +967,9 @@ const config: HardhatUserConfig = {
       // For SX testnet & mainnet
       sx: process.env.SX_API_KEY || "",
       sxTestnet: process.env.SX_API_KEY || "",
+      // For ZKsync testnet & mainnet
+      zkSync: process.env.ZKSYNC_API_KEY || "",
+      zkSyncTestnet: process.env.ZKSYNC_API_KEY || "",
     },
     customChains: [
       {
@@ -1673,6 +1680,22 @@ const config: HardhatUserConfig = {
         urls: {
           apiURL: "https://explorerl2.toronto.sx.technology/api",
           browserURL: "https://explorerl2.toronto.sx.technology",
+        },
+      },
+      {
+        network: "zkSync",
+        chainId: 324,
+        urls: {
+          apiURL: "https://api-era.zksync.network/api",
+          browserURL: "https://era.zksync.network",
+        },
+      },
+      {
+        network: "zkSyncTestnet",
+        chainId: 300,
+        urls: {
+          apiURL: "https://api-sepolia-era.zksync.network/api",
+          browserURL: "https://sepolia-era.zksync.network",
         },
       },
     ],
