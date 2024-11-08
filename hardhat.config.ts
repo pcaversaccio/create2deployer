@@ -783,6 +783,36 @@ const config: HardhatUserConfig = {
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
+    liskTestnet: {
+      chainId: 4202,
+      url: process.env.LISK_TESTNET_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
+    liskMain: {
+      chainId: 1135,
+      url: process.env.LISK_MAINNET_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
+    metalL2Testnet: {
+      chainId: 1740,
+      url: process.env.METALL2_TESTNET_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
+    metalL2Main: {
+      chainId: 1750,
+      url: process.env.METALL2_MAINNET_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
+    superseedTestnet: {
+      chainId: 53302,
+      url: process.env.SUPERSEED_TESTNET_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
   },
   gasReporter: {
     enabled: process.env.REPORT_GAS !== undefined,
@@ -970,6 +1000,14 @@ const config: HardhatUserConfig = {
       // For ZKsync testnet & mainnet
       zkSync: process.env.ZKSYNC_API_KEY || "",
       zkSyncTestnet: process.env.ZKSYNC_API_KEY || "",
+      // For Lisk testnet & mainnet
+      lisk: process.env.LISK_API_KEY || "",
+      liskTestnet: process.env.LISK_API_KEY || "",
+      // For Metal L2 testnet & mainnet
+      metalL2: process.env.METALL2_API_KEY || "",
+      metalL2Testnet: process.env.METALL2_API_KEY || "",
+      // For Superseed testnet
+      superseedTestnet: process.env.SUPERSEED_API_KEY || "",
     },
     customChains: [
       {
@@ -1696,6 +1734,46 @@ const config: HardhatUserConfig = {
         urls: {
           apiURL: "https://api-sepolia-era.zksync.network/api",
           browserURL: "https://sepolia-era.zksync.network",
+        },
+      },
+      {
+        network: "lisk",
+        chainId: 1135,
+        urls: {
+          apiURL: "https://blockscout.lisk.com/api",
+          browserURL: "https://blockscout.lisk.com",
+        },
+      },
+      {
+        network: "liskTestnet",
+        chainId: 4202,
+        urls: {
+          apiURL: "https://sepolia-blockscout.lisk.com/api",
+          browserURL: "https://sepolia-blockscout.lisk.com",
+        },
+      },
+      {
+        network: "metalL2",
+        chainId: 1750,
+        urls: {
+          apiURL: "https://explorer.metall2.com/api",
+          browserURL: "https://explorer.metall2.com",
+        },
+      },
+      {
+        network: "metalL2Testnet",
+        chainId: 1740,
+        urls: {
+          apiURL: "https://testnet.explorer.metall2.com/api",
+          browserURL: "https://testnet.explorer.metall2.com",
+        },
+      },
+      {
+        network: "superseedTestnet",
+        chainId: 53302,
+        urls: {
+          apiURL: "https://sepolia-explorer.superseed.xyz/api",
+          browserURL: "https://sepolia-explorer.superseed.xyz",
         },
       },
     ],

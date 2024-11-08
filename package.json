@@ -145,6 +145,11 @@
     "deploy:xdcmain": "npx hardhat run --network xdcMain scripts/deploy.ts",
     "deploy:sxtestnet": "npx hardhat run --network sxTestnet scripts/deploy.ts",
     "deploy:sxmain": "npx hardhat run --network sxMain scripts/deploy.ts",
+    "deploy:lisktestnet": "npx hardhat run --network liskTestnet scripts/deploy.ts",
+    "deploy:liskmain": "npx hardhat run --network liskMain scripts/deploy.ts",
+    "deploy:metall2testnet": "npx hardhat run --network metalL2Testnet scripts/deploy.ts",
+    "deploy:metall2main": "npx hardhat run --network metalL2Main scripts/deploy.ts",
+    "deploy:superseedtestnet": "npx hardhat run --network superseedTestnet scripts/deploy.ts",
     "prettier:check": "npx prettier -c \"**/*.{js,ts,md,sol,json,yml,yaml}\"",
     "prettier:fix": "npx prettier -w \"**/*.{js,ts,md,sol,json,yml,yaml}\"",
     "solhint:check": "npx solhint \"contracts/**/*.sol\"",
@@ -167,7 +172,7 @@
     "@typechain/hardhat": "^9.1.0",
     "@types/chai": "^4.3.20",
     "@types/mocha": "^10.0.9",
-    "@types/node": "^22.8.7",
+    "@types/node": "^22.9.0",
     "chai": "^4.5.0",
     "dotenv": "^16.4.5",
     "eslint": "^9.14.0",
@@ -184,7 +189,7 @@
     "ts-node": "^10.9.2",
     "typechain": "^8.3.2",
     "typescript": "^5.6.3",
-    "typescript-eslint": "^8.12.2",
-    "zksync-ethers": "^6.14.2"
+    "typescript-eslint": "^8.13.0",
+    "zksync-ethers": "^6.15.0"
   }
 }
