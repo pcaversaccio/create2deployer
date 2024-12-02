@@ -189,7 +189,7 @@
     "ts-node": "^10.9.2",
     "typechain": "^8.3.2",
     "typescript": "^5.7.2",
-    "typescript-eslint": "^8.16.0",
-    "zksync-ethers": "^6.15.1"
+    "typescript-eslint": "^8.17.0",
+    "zksync-ethers": "^6.15.2"
   }
 }
