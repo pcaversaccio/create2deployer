@@ -813,6 +813,18 @@ const config: HardhatUserConfig = {
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
+    superseedMain: {
+      chainId: 5330,
+      url: process.env.SUPERSEED_MAINNET_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
+    storyTestnet: {
+      chainId: 1516,
+      url: process.env.STORY_TESTNET_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
   },
   gasReporter: {
     enabled: process.env.REPORT_GAS !== undefined,
@@ -1006,8 +1018,11 @@ const config: HardhatUserConfig = {
       // For Metal L2 testnet & mainnet
       metalL2: process.env.METALL2_API_KEY || "",
       metalL2Testnet: process.env.METALL2_API_KEY || "",
-      // For Superseed testnet
+      // For Superseed testnet & mainnet
+      superseed: process.env.SUPERSEED_API_KEY || "",
       superseedTestnet: process.env.SUPERSEED_API_KEY || "",
+      // For Story testnet
+      storyTestnet: process.env.STORY_API_KEY || "",
     },
     customChains: [
       {
@@ -1769,11 +1784,27 @@ const config: HardhatUserConfig = {
         },
       },
       {
+        network: "superseed",
+        chainId: 5330,
+        urls: {
+          apiURL: "https://explorer.superseed.xyz/api",
+          browserURL: "https://explorer.superseed.xyz",
+        },
+      },
+      {
         network: "superseedTestnet",
         chainId: 53302,
         urls: {
           apiURL: "https://sepolia-explorer.superseed.xyz/api",
           browserURL: "https://sepolia-explorer.superseed.xyz",
+        },
+      },
+      {
+        network: "storyTestnet",
+        chainId: 1516,
+        urls: {
+          apiURL: "https://odyssey.storyscan.xyz/api",
+          browserURL: "https://odyssey.storyscan.xyz",
         },
       },
     ],
