@@ -59,7 +59,7 @@ const config: HardhatUserConfig = {
     },
   },
   zksolc: {
-    version: "1.5.7",
+    version: "1.5.8",
     compilerSource: "binary",
     settings: {
       enableEraVMExtensions: false,
@@ -825,6 +825,18 @@ const config: HardhatUserConfig = {
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
+    sonicTestnet: {
+      chainId: 57054,
+      url: process.env.SONIC_TESTNET_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
+    sonicMain: {
+      chainId: 146,
+      url: process.env.SONIC_MAINNET_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
   },
   gasReporter: {
     enabled: process.env.REPORT_GAS !== undefined,
@@ -1023,6 +1035,9 @@ const config: HardhatUserConfig = {
       superseedTestnet: process.env.SUPERSEED_API_KEY || "",
       // For Story testnet
       storyTestnet: process.env.STORY_API_KEY || "",
+      // For Sonic testnet & mainnet
+      sonic: process.env.SONIC_API_KEY || "",
+      sonicTestnet: process.env.SONIC_API_KEY || "",
     },
     customChains: [
       {
@@ -1805,6 +1820,22 @@ const config: HardhatUserConfig = {
         urls: {
           apiURL: "https://odyssey.storyscan.xyz/api",
           browserURL: "https://odyssey.storyscan.xyz",
+        },
+      },
+      {
+        network: "sonic",
+        chainId: 146,
+        urls: {
+          apiURL: "https://api.sonicscan.org/api",
+          browserURL: "https://sonicscan.org",
+        },
+      },
+      {
+        network: "sonicTestnet",
+        chainId: 57054,
+        urls: {
+          apiURL: "https://api-testnet.sonicscan.org/api",
+          browserURL: "https://testnet.sonicscan.org",
         },
       },
     ],
