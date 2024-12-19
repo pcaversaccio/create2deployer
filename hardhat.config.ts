@@ -753,6 +753,12 @@ const config: HardhatUserConfig = {
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
+    plumeMain: {
+      chainId: 98865,
+      url: process.env.PLUME_MAINNET_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
     unichainTestnet: {
       chainId: 1301,
       url: process.env.UNICHAIN_TESTNET_URL || "",
@@ -1011,7 +1017,8 @@ const config: HardhatUserConfig = {
       // For World Chain testnet & mainnet
       worldChain: process.env.WORLD_CHAIN_API_KEY || "",
       worldChainTestnet: process.env.WORLD_CHAIN_API_KEY || "",
-      // For Plume testnet
+      // For Plume testnet & mainnet
+      plume: process.env.PLUME_API_KEY || "",
       plumeTestnet: process.env.PLUME_API_KEY || "",
       // For Unichain testnet
       unichainTestnet: process.env.UNICHAIN_API_KEY || "",
@@ -1700,6 +1707,14 @@ const config: HardhatUserConfig = {
         urls: {
           apiURL: "https://worldchain-sepolia.explorer.alchemy.com/api",
           browserURL: "https://worldchain-sepolia.explorer.alchemy.com",
+        },
+      },
+      {
+        network: "plume",
+        chainId: 98865,
+        urls: {
+          apiURL: "https://explorer.plumenetwork.xyz/api",
+          browserURL: "https://explorer.plumenetwork.xyz",
         },
       },
       {

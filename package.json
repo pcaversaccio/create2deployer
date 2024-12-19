@@ -140,6 +140,7 @@
     "deploy:worldchaintestnet": "npx hardhat run --network worldChainTestnet scripts/deploy.ts",
     "deploy:worldchainmain": "npx hardhat run --network worldChainMain scripts/deploy.ts",
     "deploy:plumetestnet": "npx hardhat run --network plumeTestnet scripts/deploy.ts",
+    "deploy:plumemain": "npx hardhat run --network plumeMain scripts/deploy.ts",
     "deploy:unichaintestnet": "npx hardhat run --network unichainTestnet scripts/deploy.ts",
     "deploy:xdctestnet": "npx hardhat run --network xdcTestnet scripts/deploy.ts",
     "deploy:xdcmain": "npx hardhat run --network xdcMain scripts/deploy.ts",
