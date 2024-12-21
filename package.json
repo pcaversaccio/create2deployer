@@ -155,6 +155,8 @@
     "deploy:storytestnet": "npx hardhat run --network storyTestnet scripts/deploy.ts",
     "deploy:sonictestnet": "npx hardhat run --network sonicTestnet scripts/deploy.ts",
     "deploy:sonicmain": "npx hardhat run --network sonicMain scripts/deploy.ts",
+    "deploy:flowtestnet": "npx hardhat run --network flowTestnet scripts/deploy.ts",
+    "deploy:flowmain": "npx hardhat run --network flowMain scripts/deploy.ts",
     "prettier:check": "npx prettier -c \"**/*.{js,ts,md,sol,json,yml,yaml}\"",
     "prettier:fix": "npx prettier -w \"**/*.{js,ts,md,sol,json,yml,yaml}\"",
     "solhint:check": "npx solhint \"contracts/**/*.sol\"",

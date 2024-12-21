@@ -843,6 +843,18 @@ const config: HardhatUserConfig = {
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
+    flowTestnet: {
+      chainId: 545,
+      url: process.env.FLOW_TESTNET_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
+    flowMain: {
+      chainId: 747,
+      url: process.env.FLOW_MAINNET_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
   },
   gasReporter: {
     enabled: process.env.REPORT_GAS !== undefined,
@@ -1045,6 +1057,9 @@ const config: HardhatUserConfig = {
       // For Sonic testnet & mainnet
       sonic: process.env.SONIC_API_KEY || "",
       sonicTestnet: process.env.SONIC_API_KEY || "",
+      // For EVM on Flow testnet & mainnet
+      flow: process.env.FLOW_API_KEY || "",
+      flowTestnet: process.env.FLOW_API_KEY || "",
     },
     customChains: [
       {
@@ -1851,6 +1866,22 @@ const config: HardhatUserConfig = {
         urls: {
           apiURL: "https://api-testnet.sonicscan.org/api",
           browserURL: "https://testnet.sonicscan.org",
+        },
+      },
+      {
+        network: "flow",
+        chainId: 747,
+        urls: {
+          apiURL: "https://evm.flowscan.io/api",
+          browserURL: "https://evm.flowscan.io",
+        },
+      },
+      {
+        network: "flowTestnet",
+        chainId: 545,
+        urls: {
+          apiURL: "https://evm-testnet.flowscan.io/api",
+          browserURL: "https://evm-testnet.flowscan.io",
         },
       },
     ],
