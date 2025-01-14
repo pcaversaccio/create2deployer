@@ -855,6 +855,66 @@ const config: HardhatUserConfig = {
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
+    inkTestnet: {
+      chainId: 763373,
+      url: process.env.INK_TESTNET_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
+    inkMain: {
+      chainId: 57073,
+      url: process.env.INK_MAINNET_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
+    morphTestnet: {
+      chainId: 2810,
+      url: process.env.MORPH_TESTNET_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
+    morphMain: {
+      chainId: 2818,
+      url: process.env.MORPH_MAINNET_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
+    shapeTestnet: {
+      chainId: 11011,
+      url: process.env.SHAPE_TESTNET_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
+    shapeMain: {
+      chainId: 360,
+      url: process.env.SHAPE_MAINNET_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
+    etherlinkTestnet: {
+      chainId: 128123,
+      url: process.env.ETHERLINK_TESTNET_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
+    etherlinkMain: {
+      chainId: 42793,
+      url: process.env.ETHERLINK_MAINNET_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
+    soneiumTestnet: {
+      chainId: 1946,
+      url: process.env.SONEIUM_TESTNET_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
+    soneiumMain: {
+      chainId: 1868,
+      url: process.env.SONEIUM_MAINNET_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
   },
   gasReporter: {
     enabled: process.env.REPORT_GAS !== undefined,
@@ -1060,6 +1120,21 @@ const config: HardhatUserConfig = {
       // For EVM on Flow testnet & mainnet
       flow: process.env.FLOW_API_KEY || "",
       flowTestnet: process.env.FLOW_API_KEY || "",
+      // For Ink testnet & mainnet
+      ink: process.env.INK_API_KEY || "",
+      inkTestnet: process.env.INK_API_KEY || "",
+      // For Morph testnet & mainnet
+      morph: process.env.MORPH_API_KEY || "",
+      morphTestnet: process.env.MORPH_API_KEY || "",
+      // For Shape testnet & mainnet
+      shape: process.env.SHAPE_API_KEY || "",
+      shapeTestnet: process.env.SHAPE_API_KEY || "",
+      // For Etherlink testnet & mainnet
+      etherlink: process.env.ETHERLINK_API_KEY || "",
+      etherlinkTestnet: process.env.ETHERLINK_API_KEY || "",
+      // For Soneium testnet & mainnet
+      soneium: process.env.SONEIUM_API_KEY || "",
+      soneiumTestnet: process.env.SONEIUM_API_KEY || "",
     },
     customChains: [
       {
@@ -1882,6 +1957,86 @@ const config: HardhatUserConfig = {
         urls: {
           apiURL: "https://evm-testnet.flowscan.io/api",
           browserURL: "https://evm-testnet.flowscan.io",
+        },
+      },
+      {
+        network: "ink",
+        chainId: 57073,
+        urls: {
+          apiURL: "https://explorer.inkonchain.com/api",
+          browserURL: "https://explorer.inkonchain.com",
+        },
+      },
+      {
+        network: "inkTestnet",
+        chainId: 763373,
+        urls: {
+          apiURL: "https://explorer-sepolia.inkonchain.com/api",
+          browserURL: "https://explorer-sepolia.inkonchain.com",
+        },
+      },
+      {
+        network: "morph",
+        chainId: 2818,
+        urls: {
+          apiURL: "https://explorer.morphl2.io/api",
+          browserURL: "https://explorer.morphl2.io",
+        },
+      },
+      {
+        network: "morphTestnet",
+        chainId: 2810,
+        urls: {
+          apiURL: "https://explorer-holesky.morphl2.io/api",
+          browserURL: "https://explorer-holesky.morphl2.io",
+        },
+      },
+      {
+        network: "shape",
+        chainId: 360,
+        urls: {
+          apiURL: "https://shapescan.xyz/api",
+          browserURL: "https://shapescan.xyz",
+        },
+      },
+      {
+        network: "shapeTestnet",
+        chainId: 11011,
+        urls: {
+          apiURL: "https://explorer-sepolia.shape.network/api",
+          browserURL: "https://explorer-sepolia.shape.network",
+        },
+      },
+      {
+        network: "etherlink",
+        chainId: 42793,
+        urls: {
+          apiURL: "https://explorer.etherlink.com/api",
+          browserURL: "https://explorer.etherlink.com",
+        },
+      },
+      {
+        network: "etherlinkTestnet",
+        chainId: 128123,
+        urls: {
+          apiURL: "https://testnet.explorer.etherlink.com/api",
+          browserURL: "https://testnet.explorer.etherlink.com",
+        },
+      },
+      {
+        network: "soneium",
+        chainId: 1868,
+        urls: {
+          apiURL: "https://soneium.blockscout.com/api",
+          browserURL: "https://soneium.blockscout.com",
+        },
+      },
+      {
+        network: "soneiumTestnet",
+        chainId: 1946,
+        urls: {
+          apiURL: "https://soneium-minato.blockscout.com/api",
+          browserURL: "https://soneium-minato.blockscout.com",
         },
       },
     ],
