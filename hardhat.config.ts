@@ -915,6 +915,18 @@ const config: HardhatUserConfig = {
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
+    swellTestnet: {
+      chainId: 1924,
+      url: process.env.SWELL_TESTNET_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
+    swellMain: {
+      chainId: 1923,
+      url: process.env.SWELL_MAINNET_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
   },
   gasReporter: {
     enabled: process.env.REPORT_GAS !== undefined,
@@ -1135,6 +1147,9 @@ const config: HardhatUserConfig = {
       // For Soneium testnet & mainnet
       soneium: process.env.SONEIUM_API_KEY || "",
       soneiumTestnet: process.env.SONEIUM_API_KEY || "",
+      // For Swellchain testnet & mainnet
+      swell: process.env.SWELL_API_KEY || "",
+      swellTestnet: process.env.SWELL_API_KEY || "",
     },
     customChains: [
       {
@@ -2037,6 +2052,22 @@ const config: HardhatUserConfig = {
         urls: {
           apiURL: "https://soneium-minato.blockscout.com/api",
           browserURL: "https://soneium-minato.blockscout.com",
+        },
+      },
+      {
+        network: "swell",
+        chainId: 1923,
+        urls: {
+          apiURL: "https://explorer.swellnetwork.io/api",
+          browserURL: "https://explorer.swellnetwork.io",
+        },
+      },
+      {
+        network: "swellTestnet",
+        chainId: 1924,
+        urls: {
+          apiURL: "https://swell-testnet-explorer.alt.technology/api",
+          browserURL: "https://swell-testnet-explorer.alt.technology",
         },
       },
     ],
