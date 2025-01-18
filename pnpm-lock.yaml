@@ -13,10 +13,10 @@ importers:
         version: 9.18.0
       '@matterlabs/hardhat-zksync-deploy':
         specifier: ^1.6.0
-        version: 1.6.0(ethers@6.13.5)(hardhat@2.22.18(ts-node@10.9.2(@types/node@22.10.7)(typescript@5.7.3))(typescript@5.7.3))(zksync-ethers@6.15.3(ethers@6.13.5))
+        version: 1.6.0(ethers@6.13.5)(hardhat@2.22.18(ts-node@10.9.2(@types/node@22.10.7)(typescript@5.7.3))(typescript@5.7.3))(zksync-ethers@6.15.4(ethers@6.13.5))
       '@matterlabs/hardhat-zksync-ethers':
         specifier: 1.2.1
-        version: 1.2.1(ethers@6.13.5)(ts-node@10.9.2(@types/node@22.10.7)(typescript@5.7.3))(typescript@5.7.3)(zksync-ethers@6.15.3(ethers@6.13.5))
+        version: 1.2.1(ethers@6.13.5)(ts-node@10.9.2(@types/node@22.10.7)(typescript@5.7.3))(typescript@5.7.3)(zksync-ethers@6.15.4(ethers@6.13.5))
       '@matterlabs/hardhat-zksync-solc':
         specifier: ^1.2.5
         version: 1.2.5(hardhat@2.22.18(ts-node@10.9.2(@types/node@22.10.7)(typescript@5.7.3))(typescript@5.7.3))
@@ -105,8 +105,8 @@ importers:
         specifier: ^8.20.0
         version: 8.20.0(eslint@9.18.0)(typescript@5.7.3)
       zksync-ethers:
-        specifier: ^6.15.3
-        version: 6.15.3(ethers@6.13.5)
+        specifier: ^6.15.4
+        version: 6.15.4(ethers@6.13.5)
 
 packages:
 
@@ -330,8 +330,8 @@ packages:
     resolution: {integrity: sha512-V1JJ1WTRUqHHrOSh597hURcMqVKVGL/ea3kv0gSnEdsEZ0/+VyPghM1lMNGc00z7CIQorSvbKpuJkxvuHbvdbg==}
     engines: {node: '>= 16'}
 
-  '@noble/hashes@1.7.0':
-    resolution: {integrity: sha512-HXydb0DgzTpDPwbVeDGCG1gIu7X6+AuU6Zl6av/E/KG8LMsvPntvq+w17CHRpKBmN6Ybdrt1eP3k4cj8DJa78w==}
+  '@noble/hashes@1.7.1':
+    resolution: {integrity: sha512-B8XBPsn4vT/KJAGqDzbwztd+6Yte3P4V7iafm24bxgDe/mlRuK6xmWPuCNrKt2vDafZ8MfJLlchDG/vYafQEjQ==}
     engines: {node: ^14.21.3 || >=16}
 
   '@noble/secp256k1@1.7.1':
@@ -1202,8 +1202,8 @@ packages:
     resolution: {integrity: sha512-+7iOUYBeDTScmOmQqpUYQaE7F4vvIt6+gIZNHWhqAQEI887tiPFB9OvXI/HzQYqfUNvukMK+9myLW63oTJPZpw==}
     engines: {node: '>= 0.8'}
 
-  dockerode@4.0.3:
-    resolution: {integrity: sha512-QSXJFcBQNaGZO6U3qWW4B7p8yRIJn/dWmvL2AQWfO/bjptBBO6QYdVkYSYFz9qoivP2jsOHZfmXMAfrK0BMKyg==}
+  dockerode@4.0.4:
+    resolution: {integrity: sha512-6GYP/EdzEY50HaOxTVTJ2p+mB5xDHTMJhS+UoGrVyS6VC+iQRh7kZ4FRpUYq6nziby7hPqWhOrFFUFTMUZJJ5w==}
     engines: {node: '>= 8.0'}
 
   dotenv@16.4.7:
@@ -2787,8 +2787,8 @@ packages:
     resolution: {integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==}
     engines: {node: '>=10'}
 
-  zksync-ethers@6.15.3:
-    resolution: {integrity: sha512-AAFf5HKlkGpLRSE1CB8gBIlswbnWBPHD2ex4bcFG8GJFr1iQuq+LbMrisDm17jNR4Msi1WkNgIartS7nXcOrTg==}
+  zksync-ethers@6.15.4:
+    resolution: {integrity: sha512-HyxuIfSs+axbk5gB+Nd7fjlVU1+c2IuZ5eJKNG1HLLRhJZsHLigR3AVS3FjTN/9fO/tToIeadxpZbu5M6NNb5A==}
     engines: {node: '>=18.9.0'}
     peerDependencies:
       ethers: ^6.7.1
@@ -3042,7 +3042,7 @@ snapshots:
 
   '@js-sdsl/ordered-map@4.4.2': {}
 
-  '@matterlabs/hardhat-zksync-deploy@1.6.0(ethers@6.13.5)(hardhat@2.22.18(ts-node@10.9.2(@types/node@22.10.7)(typescript@5.7.3))(typescript@5.7.3))(zksync-ethers@6.15.3(ethers@6.13.5))':
+  '@matterlabs/hardhat-zksync-deploy@1.6.0(ethers@6.13.5)(hardhat@2.22.18(ts-node@10.9.2(@types/node@22.10.7)(typescript@5.7.3))(typescript@5.7.3))(zksync-ethers@6.15.4(ethers@6.13.5))':
     dependencies:
       '@matterlabs/hardhat-zksync-solc': 1.2.5(hardhat@2.22.18(ts-node@10.9.2(@types/node@22.10.7)(typescript@5.7.3))(typescript@5.7.3))
       chai: 4.5.0
@@ -3055,21 +3055,21 @@ snapshots:
       sinon: 18.0.1
       sinon-chai: 3.7.0(chai@4.5.0)(sinon@18.0.1)
       ts-morph: 22.0.0
-      zksync-ethers: 6.15.3(ethers@6.13.5)
+      zksync-ethers: 6.15.4(ethers@6.13.5)
     transitivePeerDependencies:
       - encoding
       - supports-color
 
-  '@matterlabs/hardhat-zksync-ethers@1.2.1(ethers@6.13.5)(ts-node@10.9.2(@types/node@22.10.7)(typescript@5.7.3))(typescript@5.7.3)(zksync-ethers@6.15.3(ethers@6.13.5))':
+  '@matterlabs/hardhat-zksync-ethers@1.2.1(ethers@6.13.5)(ts-node@10.9.2(@types/node@22.10.7)(typescript@5.7.3))(typescript@5.7.3)(zksync-ethers@6.15.4(ethers@6.13.5))':
     dependencies:
-      '@matterlabs/hardhat-zksync-deploy': 1.6.0(ethers@6.13.5)(hardhat@2.22.18(ts-node@10.9.2(@types/node@22.10.7)(typescript@5.7.3))(typescript@5.7.3))(zksync-ethers@6.15.3(ethers@6.13.5))
+      '@matterlabs/hardhat-zksync-deploy': 1.6.0(ethers@6.13.5)(hardhat@2.22.18(ts-node@10.9.2(@types/node@22.10.7)(typescript@5.7.3))(typescript@5.7.3))(zksync-ethers@6.15.4(ethers@6.13.5))
       '@matterlabs/hardhat-zksync-solc': 1.2.5(hardhat@2.22.18(ts-node@10.9.2(@types/node@22.10.7)(typescript@5.7.3))(typescript@5.7.3))
       '@nomicfoundation/hardhat-ethers': 3.0.8(ethers@6.13.5)(hardhat@2.22.18(ts-node@10.9.2(@types/node@22.10.7)(typescript@5.7.3))(typescript@5.7.3))
       chai: 4.5.0
       chalk: 4.1.2
       ethers: 6.13.5
       hardhat: 2.22.18(ts-node@10.9.2(@types/node@22.10.7)(typescript@5.7.3))(typescript@5.7.3)
-      zksync-ethers: 6.15.3(ethers@6.13.5)
+      zksync-ethers: 6.15.4(ethers@6.13.5)
     transitivePeerDependencies:
       - bufferutil
       - c-kzg
@@ -3085,7 +3085,7 @@ snapshots:
       chai: 4.5.0
       chalk: 4.1.2
       debug: 4.4.0(supports-color@8.1.1)
-      dockerode: 4.0.3
+      dockerode: 4.0.4
       fs-extra: 11.3.0
       hardhat: 2.22.18(ts-node@10.9.2(@types/node@22.10.7)(typescript@5.7.3))(typescript@5.7.3)
       proper-lockfile: 4.1.2
@@ -3138,7 +3138,7 @@ snapshots:
 
   '@noble/hashes@1.4.0': {}
 
-  '@noble/hashes@1.7.0': {}
+  '@noble/hashes@1.7.1': {}
 
   '@noble/secp256k1@1.7.1': {}
 
@@ -4092,7 +4092,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  dockerode@4.0.3:
+  dockerode@4.0.4:
     dependencies:
       '@balena/dockerignore': 1.0.2
       '@grpc/grpc-js': 1.12.5
@@ -4240,7 +4240,7 @@ snapshots:
 
   ethereum-bloom-filters@1.2.0:
     dependencies:
-      '@noble/hashes': 1.7.0
+      '@noble/hashes': 1.7.1
 
   ethereum-cryptography@0.1.3:
     dependencies:
@@ -5841,6 +5841,6 @@ snapshots:
 
   yocto-queue@0.1.0: {}
 
-  zksync-ethers@6.15.3(ethers@6.13.5):
+  zksync-ethers@6.15.4(ethers@6.13.5):
     dependencies:
       ethers: 6.13.5

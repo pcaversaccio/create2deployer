@@ -209,6 +209,6 @@
     "typechain": "^8.3.2",
     "typescript": "^5.7.3",
     "typescript-eslint": "^8.20.0",
-    "zksync-ethers": "^6.15.3"
+    "zksync-ethers": "^6.15.4"
   }
 }
