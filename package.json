@@ -177,7 +177,7 @@
     "lint:fix": "pnpm run prettier:fix && pnpm run solhint:fix && npx eslint . --fix"
   },
   "devDependencies": {
-    "@eslint/js": "^9.18.0",
+    "@eslint/js": "^9.19.0",
     "@matterlabs/hardhat-zksync-deploy": "^1.6.0",
     "@matterlabs/hardhat-zksync-ethers": "1.2.1",
     "@matterlabs/hardhat-zksync-solc": "^1.2.5",
@@ -194,7 +194,7 @@
     "@types/node": "^22.10.10",
     "chai": "^4.5.0",
     "dotenv": "^16.4.7",
-    "eslint": "^9.18.0",
+    "eslint": "^9.19.0",
     "eslint-config-prettier": "^10.0.1",
     "ethers": "^6.13.5",
     "hardhat": "^2.22.18",
