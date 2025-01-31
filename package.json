@@ -169,6 +169,8 @@
     "deploy:soneiummain": "npx hardhat run --network soneiumMain scripts/deploy.ts",
     "deploy:swelltestnet": "npx hardhat run --network swellTestnet scripts/deploy.ts",
     "deploy:swellmain": "npx hardhat run --network swellMain scripts/deploy.ts",
+    "deploy:hemitestnet": "npx hardhat run --network hemiTestnet scripts/deploy.ts",
+    "deploy:hemimain": "npx hardhat run --network hemiMain scripts/deploy.ts",
     "prettier:check": "npx prettier -c \"**/*.{js,ts,md,sol,json,yml,yaml}\"",
     "prettier:fix": "npx prettier -w \"**/*.{js,ts,md,sol,json,yml,yaml}\"",
     "solhint:check": "npx solhint \"contracts/**/*.sol\"",

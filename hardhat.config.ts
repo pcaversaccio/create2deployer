@@ -927,6 +927,18 @@ const config: HardhatUserConfig = {
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
+    hemiTestnet: {
+      chainId: 743111,
+      url: process.env.HEMI_TESTNET_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
+    hemiMain: {
+      chainId: 43111,
+      url: process.env.HEMI_MAINNET_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
   },
   gasReporter: {
     enabled: process.env.REPORT_GAS !== undefined,
@@ -1150,6 +1162,9 @@ const config: HardhatUserConfig = {
       // For Swellchain testnet & mainnet
       swell: process.env.SWELL_API_KEY || "",
       swellTestnet: process.env.SWELL_API_KEY || "",
+      // For Hemi testnet & mainnet
+      hemi: process.env.HEMI_API_KEY || "",
+      hemiTestnet: process.env.HEMI_API_KEY || "",
     },
     customChains: [
       {
@@ -2068,6 +2083,22 @@ const config: HardhatUserConfig = {
         urls: {
           apiURL: "https://swell-testnet-explorer.alt.technology/api",
           browserURL: "https://swell-testnet-explorer.alt.technology",
+        },
+      },
+      {
+        network: "hemi",
+        chainId: 43111,
+        urls: {
+          apiURL: "https://explorer.hemi.xyz/api",
+          browserURL: "https://explorer.hemi.xyz",
+        },
+      },
+      {
+        network: "hemiTestnet",
+        chainId: 743111,
+        urls: {
+          apiURL: "https://testnet.explorer.hemi.xyz/api",
+          browserURL: "https://testnet.explorer.hemi.xyz",
         },
       },
     ],
