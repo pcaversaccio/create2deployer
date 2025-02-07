@@ -2,8 +2,6 @@
   "name": "create2deployer",
   "version": "1.0.0",
   "description": "Helper smart contract to make easier and safer usage of the `CREATE2` EVM opcode.",
-  "author": "Pascal Marco Caversaccio <pascal.caversaccio@hotmail.ch>",
-  "license": "MIT",
   "keywords": [
     "create2",
     "smart-contracts",
@@ -19,6 +17,9 @@
   "bugs": {
     "url": "https://github.com/pcaversaccio/create2deployer/issues"
   },
+  "author": "pcaversaccio (https://pcaversaccio.com)",
+  "license": "MIT",
+  "packageManager": "pnpm@10.2.1",
   "scripts": {
     "help": "npx hardhat help",
     "accounts": "npx hardhat accounts",
@@ -171,6 +172,8 @@
     "deploy:swellmain": "npx hardhat run --network swellMain scripts/deploy.ts",
     "deploy:hemitestnet": "npx hardhat run --network hemiTestnet scripts/deploy.ts",
     "deploy:hemimain": "npx hardhat run --network hemiMain scripts/deploy.ts",
+    "deploy:berachaintestnet": "npx hardhat run --network berachainTestnet scripts/deploy.ts",
+    "deploy:berachainmain": "npx hardhat run --network berachainMain scripts/deploy.ts",
     "prettier:check": "npx prettier -c \"**/*.{js,ts,md,sol,json,yml,yaml}\"",
     "prettier:fix": "npx prettier -w \"**/*.{js,ts,md,sol,json,yml,yaml}\"",
     "solhint:check": "npx solhint \"contracts/**/*.sol\"",
@@ -212,5 +215,14 @@
     "typescript": "^5.7.3",
     "typescript-eslint": "^8.23.0",
     "zksync-ethers": "^6.16.0"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "cpu-features",
+      "keccak",
+      "protobufjs",
+      "secp256k1",
+      "ssh2"
+    ]
   }
 }

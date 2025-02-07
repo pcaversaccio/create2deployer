@@ -939,6 +939,18 @@ const config: HardhatUserConfig = {
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
+    berachainTestnet: {
+      chainId: 80084,
+      url: process.env.BERACHAIN_TESTNET_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
+    berachainMain: {
+      chainId: 80094,
+      url: process.env.BERACHAIN_MAINNET_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
   },
   gasReporter: {
     enabled: process.env.REPORT_GAS !== undefined,
@@ -1165,6 +1177,9 @@ const config: HardhatUserConfig = {
       // For Hemi testnet & mainnet
       hemi: process.env.HEMI_API_KEY || "",
       hemiTestnet: process.env.HEMI_API_KEY || "",
+      // For Berachain testnet & mainnet
+      berachain: process.env.BERACHAIN_API_KEY || "",
+      berachainTestnet: process.env.BERACHAIN_API_KEY || "",
     },
     customChains: [
       {
@@ -2099,6 +2114,23 @@ const config: HardhatUserConfig = {
         urls: {
           apiURL: "https://testnet.explorer.hemi.xyz/api",
           browserURL: "https://testnet.explorer.hemi.xyz",
+        },
+      },
+      {
+        network: "berachain",
+        chainId: 80094,
+        urls: {
+          apiURL: "https://api.berascan.com/api",
+          browserURL: "https://berascan.com",
+        },
+      },
+      {
+        network: "berachainTestnet",
+        chainId: 80084,
+        urls: {
+          apiURL:
+            "https://api.routescan.io/v2/network/mainnet/evm/80084/etherscan",
+          browserURL: "https://bartio.beratrail.io",
         },
       },
     ],
