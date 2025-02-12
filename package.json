@@ -143,6 +143,7 @@
     "deploy:plumetestnet": "npx hardhat run --network plumeTestnet scripts/deploy.ts",
     "deploy:plumemain": "npx hardhat run --network plumeMain scripts/deploy.ts",
     "deploy:unichaintestnet": "npx hardhat run --network unichainTestnet scripts/deploy.ts",
+    "deploy:unichainmain": "npx hardhat run --network unichainMain scripts/deploy.ts",
     "deploy:xdctestnet": "npx hardhat run --network xdcTestnet scripts/deploy.ts",
     "deploy:xdcmain": "npx hardhat run --network xdcMain scripts/deploy.ts",
     "deploy:sxtestnet": "npx hardhat run --network sxTestnet scripts/deploy.ts",
@@ -174,6 +175,9 @@
     "deploy:hemimain": "npx hardhat run --network hemiMain scripts/deploy.ts",
     "deploy:berachaintestnet": "npx hardhat run --network berachainTestnet scripts/deploy.ts",
     "deploy:berachainmain": "npx hardhat run --network berachainMain scripts/deploy.ts",
+    "deploy:monadtestnet": "npx hardhat run --network monadTestnet scripts/deploy.ts",
+    "deploy:corntestnet": "npx hardhat run --network cornTestnet scripts/deploy.ts",
+    "deploy:cornmain": "npx hardhat run --network cornMain scripts/deploy.ts",
     "prettier:check": "npx prettier -c \"**/*.{js,ts,md,sol,json,yml,yaml}\"",
     "prettier:fix": "npx prettier -w \"**/*.{js,ts,md,sol,json,yml,yaml}\"",
     "solhint:check": "npx solhint \"contracts/**/*.sol\"",
@@ -199,7 +203,7 @@
     "@types/node": "^22.13.1",
     "chai": "^4.5.0",
     "dotenv": "^16.4.7",
-    "eslint": "^9.20.0",
+    "eslint": "^9.20.1",
     "eslint-config-prettier": "^10.0.1",
     "ethers": "^6.13.5",
     "hardhat": "^2.22.18",
@@ -214,7 +218,7 @@
     "typechain": "^8.3.2",
     "typescript": "^5.7.3",
     "typescript-eslint": "^8.24.0",
-    "zksync-ethers": "^6.16.0"
+    "zksync-ethers": "^6.16.1"
   },
   "pnpm": {
     "onlyBuiltDependencies": [

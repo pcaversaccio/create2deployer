@@ -93,6 +93,7 @@ All files                       |      100 |      100 |      100 |      100 |   
   - ZetaChain: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://explorer.zetachain.com/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - 5ireChain: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://5irescan.io/contract/evm/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - Gravity Alpha: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://explorer.gravity.xyz/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
+  - Unichain: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://uniscan.xyz/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
 - **Ethereum Test Networks:**
   - Rinkeby (⚠️ Deprecated): [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://rinkeby.etherscan.io/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - Ropsten (⚠️ Deprecated): [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://ropsten.etherscan.io/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)

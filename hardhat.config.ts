@@ -765,6 +765,12 @@ const config: HardhatUserConfig = {
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
+    unichainMain: {
+      chainId: 130,
+      url: process.env.UNICHAIN_MAINNET_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
     xdcTestnet: {
       chainId: 51,
       url: process.env.XDC_TESTNET_URL || "",
@@ -951,6 +957,24 @@ const config: HardhatUserConfig = {
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
+    monadTestnet: {
+      chainId: 10143,
+      url: process.env.MONAD_TESTNET_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
+    cornTestnet: {
+      chainId: 21000001,
+      url: process.env.CORN_TESTNET_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
+    cornMain: {
+      chainId: 21000000,
+      url: process.env.CORN_MAINNET_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
   },
   gasReporter: {
     enabled: process.env.REPORT_GAS !== undefined,
@@ -1128,7 +1152,8 @@ const config: HardhatUserConfig = {
       // For Plume testnet & mainnet
       plume: process.env.PLUME_API_KEY || "",
       plumeTestnet: process.env.PLUME_API_KEY || "",
-      // For Unichain testnet
+      // For Unichain testnet & mainnet
+      unichain: process.env.UNICHAIN_API_KEY || "",
       unichainTestnet: process.env.UNICHAIN_API_KEY || "",
       // For XDC testnet & mainnet
       xdc: process.env.XDC_API_KEY || "",
@@ -1180,6 +1205,9 @@ const config: HardhatUserConfig = {
       // For Berachain testnet & mainnet
       berachain: process.env.BERACHAIN_API_KEY || "",
       berachainTestnet: process.env.BERACHAIN_API_KEY || "",
+      // For Corn testnet & mainnet
+      corn: process.env.CORN_API_KEY || "",
+      cornTestnet: process.env.CORN_API_KEY || "",
     },
     customChains: [
       {
@@ -1861,6 +1889,14 @@ const config: HardhatUserConfig = {
         },
       },
       {
+        network: "unichain",
+        chainId: 130,
+        urls: {
+          apiURL: "https://api.uniscan.xyz/api",
+          browserURL: "https://uniscan.xyz",
+        },
+      },
+      {
         network: "unichainTestnet",
         chainId: 1301,
         urls: {
@@ -2129,8 +2165,26 @@ const config: HardhatUserConfig = {
         chainId: 80084,
         urls: {
           apiURL:
-            "https://api.routescan.io/v2/network/mainnet/evm/80084/etherscan",
+            "https://api.routescan.io/v2/network/testnet/evm/80084/etherscan",
           browserURL: "https://bartio.beratrail.io",
+        },
+      },
+      {
+        network: "corn",
+        chainId: 21000000,
+        urls: {
+          apiURL:
+            "https://api.routescan.io/v2/network/mainnet/evm/21000000/etherscan",
+          browserURL: "https://cornscan.io",
+        },
+      },
+      {
+        network: "cornTestnet",
+        chainId: 21000001,
+        urls: {
+          apiURL:
+            "https://api.routescan.io/v2/network/testnet/evm/21000001/etherscan",
+          browserURL: "https://testnet.cornscan.io",
         },
       },
     ],
