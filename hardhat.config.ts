@@ -832,7 +832,7 @@ const config: HardhatUserConfig = {
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
     storyTestnet: {
-      chainId: 1516,
+      chainId: 1315,
       url: process.env.STORY_TESTNET_URL || "",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
@@ -972,6 +972,18 @@ const config: HardhatUserConfig = {
     cornMain: {
       chainId: 21000000,
       url: process.env.CORN_MAINNET_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
+    arenazTestnet: {
+      chainId: 9897,
+      url: process.env.ARENAZ_TESTNET_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
+    arenazMain: {
+      chainId: 7897,
+      url: process.env.ARENAZ_MAINNET_URL || "",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
@@ -2002,10 +2014,10 @@ const config: HardhatUserConfig = {
       },
       {
         network: "storyTestnet",
-        chainId: 1516,
+        chainId: 1315,
         urls: {
-          apiURL: "https://odyssey.storyscan.xyz/api",
-          browserURL: "https://odyssey.storyscan.xyz",
+          apiURL: "https://aeneid.storyscan.xyz/api",
+          browserURL: "https://aeneid.storyscan.xyz",
         },
       },
       {
@@ -2185,6 +2197,22 @@ const config: HardhatUserConfig = {
           apiURL:
             "https://api.routescan.io/v2/network/testnet/evm/21000001/etherscan",
           browserURL: "https://testnet.cornscan.io",
+        },
+      },
+      {
+        network: "arenaz",
+        chainId: 7897,
+        urls: {
+          apiURL: "https://explorer.arena-z.gg/api",
+          browserURL: "https://explorer.arena-z.gg",
+        },
+      },
+      {
+        network: "arenazTestnet",
+        chainId: 9897,
+        urls: {
+          apiURL: "https://arena-z.blockscout.com/api",
+          browserURL: "https://arena-z.blockscout.com",
         },
       },
     ],
