@@ -19,7 +19,7 @@
   },
   "author": "pcaversaccio (https://pcaversaccio.com)",
   "license": "MIT",
-  "packageManager": "pnpm@10.5.0",
+  "packageManager": "pnpm@10.5.2",
   "scripts": {
     "help": "npx hardhat help",
     "accounts": "npx hardhat accounts",
@@ -206,7 +206,7 @@
     "chai": "^4.5.0",
     "dotenv": "^16.4.7",
     "eslint": "^9.21.0",
-    "eslint-config-prettier": "^10.0.1",
+    "eslint-config-prettier": "^10.0.2",
     "ethers": "^6.13.5",
     "hardhat": "^2.22.19",
     "hardhat-abi-exporter": "^2.10.1",
