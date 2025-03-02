@@ -202,7 +202,7 @@
     "@typechain/hardhat": "^9.1.0",
     "@types/chai": "^4.3.20",
     "@types/mocha": "^10.0.10",
-    "@types/node": "^22.13.5",
+    "@types/node": "^22.13.8",
     "chai": "^4.5.0",
     "dotenv": "^16.4.7",
     "eslint": "^9.21.0",
@@ -218,7 +218,7 @@
     "solidity-coverage": "^0.8.14",
     "ts-node": "^10.9.2",
     "typechain": "^8.3.2",
-    "typescript": "^5.7.3",
+    "typescript": "^5.8.2",
     "typescript-eslint": "^8.25.0",
     "zksync-ethers": "^6.16.1"
   },
