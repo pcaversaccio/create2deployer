@@ -109,6 +109,12 @@ const config: HardhatUserConfig = {
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
+    hoodi: {
+      chainId: 560048,
+      url: process.env.ETH_HOODI_TESTNET_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
     ethMain: {
       chainId: 1,
       url: process.env.ETH_MAINNET_URL || "",
@@ -748,13 +754,13 @@ const config: HardhatUserConfig = {
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
     plumeTestnet: {
-      chainId: 98864,
+      chainId: 98867,
       url: process.env.PLUME_TESTNET_URL || "",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
     plumeMain: {
-      chainId: 98865,
+      chainId: 98866,
       url: process.env.PLUME_MAINNET_URL || "",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
@@ -1014,6 +1020,7 @@ const config: HardhatUserConfig = {
       goerli: process.env.ETHERSCAN_API_KEY || "",
       sepolia: process.env.ETHERSCAN_API_KEY || "",
       holesky: process.env.ETHERSCAN_API_KEY || "",
+      hoodi: process.env.ETHERSCAN_API_KEY || "",
       // For BSC testnet & mainnet
       bsc: process.env.BSC_API_KEY || "",
       bscTestnet: process.env.BSC_API_KEY || "",
@@ -1228,6 +1235,14 @@ const config: HardhatUserConfig = {
         urls: {
           apiURL: "https://api-holesky.etherscan.io/api",
           browserURL: "https://holesky.etherscan.io",
+        },
+      },
+      {
+        network: "hoodi",
+        chainId: 560048,
+        urls: {
+          apiURL: "https://hoodi.cloud.blockscout.com/api",
+          browserURL: "https://hoodi.cloud.blockscout.com",
         },
       },
       {
@@ -1886,18 +1901,18 @@ const config: HardhatUserConfig = {
       },
       {
         network: "plume",
-        chainId: 98865,
+        chainId: 98866,
         urls: {
-          apiURL: "https://explorer.plumenetwork.xyz/api",
-          browserURL: "https://explorer.plumenetwork.xyz",
+          apiURL: "https://phoenix-explorer.plumenetwork.xyz/api",
+          browserURL: "https://phoenix-explorer.plumenetwork.xyz",
         },
       },
       {
         network: "plumeTestnet",
-        chainId: 98864,
+        chainId: 98867,
         urls: {
-          apiURL: "https://test-explorer.plumenetwork.xyz/api",
-          browserURL: "https://test-explorer.plumenetwork.xyz",
+          apiURL: "https://testnet-explorer.plumenetwork.xyz/api",
+          browserURL: "https://testnet-explorer.plumenetwork.xyz",
         },
       },
       {

@@ -19,7 +19,7 @@
   },
   "author": "pcaversaccio (https://pcaversaccio.com)",
   "license": "MIT",
-  "packageManager": "pnpm@10.6.4",
+  "packageManager": "pnpm@10.6.5",
   "scripts": {
     "help": "npx hardhat help",
     "accounts": "npx hardhat accounts",
@@ -35,6 +35,7 @@
     "deploy:goerli": "npx hardhat run --network goerli scripts/deploy.ts",
     "deploy:sepolia": "npx hardhat run --network sepolia scripts/deploy.ts",
     "deploy:holesky": "npx hardhat run --network holesky scripts/deploy.ts",
+    "deploy:hoodi": "npx hardhat run --network hoodi scripts/deploy.ts",
     "deploy:ethmain": "npx hardhat run --network ethMain scripts/deploy.ts",
     "deploy:bsctestnet": "npx hardhat run --network bscTestnet scripts/deploy.ts",
     "deploy:bscmain": "npx hardhat run --network bscMain scripts/deploy.ts",
