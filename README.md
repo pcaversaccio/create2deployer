@@ -102,7 +102,7 @@ All files                       |      100 |      100 |      100 |      100 |   
   - Goerli (⚠️ Deprecated): [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://goerli.etherscan.io/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - Sepolia: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://sepolia.etherscan.io/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - Holešky (Holešovice): [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://holesky.etherscan.io/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
-  - Hoodi: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://hoodi.cloud.blockscout.com/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
+  - Hoodi: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://hoodi.etherscan.io/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
 - **Additional EVM-Based Test Networks:**
   - BNB Smart Chain Testnet: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://testnet.bscscan.com/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - Optimism Testnet (Kovan; ⚠️ Deprecated): [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://kovan-optimistic.etherscan.io/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
