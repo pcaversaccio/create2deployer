@@ -15,8 +15,8 @@ importers:
         specifier: ^1.7.0
         version: 1.7.0(ethers@6.13.5)(hardhat@2.22.19(ts-node@10.9.2(@types/node@22.13.14)(typescript@5.8.2))(typescript@5.8.2))(zksync-ethers@6.16.2(ethers@6.13.5))
       '@matterlabs/hardhat-zksync-ethers':
-        specifier: 1.2.1
-        version: 1.2.1(ethers@6.13.5)(ts-node@10.9.2(@types/node@22.13.14)(typescript@5.8.2))(typescript@5.8.2)(zksync-ethers@6.16.2(ethers@6.13.5))
+        specifier: ^1.3.0
+        version: 1.3.0(ethers@6.13.5)(ts-node@10.9.2(@types/node@22.13.14)(typescript@5.8.2))(typescript@5.8.2)(zksync-ethers@6.16.2(ethers@6.13.5))
       '@matterlabs/hardhat-zksync-solc':
         specifier: ^1.3.0
         version: 1.3.0(hardhat@2.22.19(ts-node@10.9.2(@types/node@22.13.14)(typescript@5.8.2))(typescript@5.8.2))
@@ -299,11 +299,11 @@ packages:
       hardhat: ^2.22.5
       zksync-ethers: ^6.15.0
 
-  '@matterlabs/hardhat-zksync-ethers@1.2.1':
-    resolution: {integrity: sha512-J/ZpGx2Ig9AUxsKbE4IqpQ6hetqO7RPRFaSrdIcEWzurSYWb40Ih/HkQD03f5cSAjzhQEKaNlyVofefqLGkdZg==}
+  '@matterlabs/hardhat-zksync-ethers@1.3.0':
+    resolution: {integrity: sha512-/wXb/InfXGyPD1/Tk4BdwMsCUSL3TqY/Crecy+aSGYudRZ4JsaPcsjjcc/HSMzX+j5Se6QINJ3uf9TabRd2loQ==}
     peerDependencies:
       ethers: ^6.12.2
-      zksync-ethers: ^6.11.2
+      zksync-ethers: ^6.15.0
 
   '@matterlabs/hardhat-zksync-solc@1.3.0':
     resolution: {integrity: sha512-n2WBdxyt5ZwF+bgyBOFwaMWB/QwyRd51FonvtClBSUxAuLyZHvPB7XApQg58SONiafT1uUVKgr+ajiSr3HB/8w==}
@@ -2465,8 +2465,8 @@ packages:
     resolution: {integrity: sha512-9ZhXKM/rw350N1ovuWHbGxnGh/SNJ4cnxHiM0rxE4VN41wsg8P8zWn9hv/buK00RP4WvlOyr/RBDiptyxVbkZQ==}
     engines: {node: '>=0.10.0'}
 
-  posthog-node@4.10.2:
-    resolution: {integrity: sha512-mylSjhI3R69FF+2T/HT5ZcFnS0q22/U/JrvfkI4vEr+BLwjSOE8a3CvbXJEDzDXw44wg5iJuXBZYAEu15rvERg==}
+  posthog-node@4.11.1:
+    resolution: {integrity: sha512-Hdby0Rq2K1rzjHxQdUmFBEP2UqAR/tY4d0WbNp7GxkYUK0YZvAD15MkeorSo4b8X7zgosHfQJVRxGx0HWSYPBA==}
     engines: {node: '>=15.0.0'}
 
   prelude-ls@1.1.2:
@@ -3462,10 +3462,11 @@ snapshots:
       - encoding
       - supports-color
 
-  '@matterlabs/hardhat-zksync-ethers@1.2.1(ethers@6.13.5)(ts-node@10.9.2(@types/node@22.13.14)(typescript@5.8.2))(typescript@5.8.2)(zksync-ethers@6.16.2(ethers@6.13.5))':
+  '@matterlabs/hardhat-zksync-ethers@1.3.0(ethers@6.13.5)(ts-node@10.9.2(@types/node@22.13.14)(typescript@5.8.2))(typescript@5.8.2)(zksync-ethers@6.16.2(ethers@6.13.5))':
     dependencies:
       '@matterlabs/hardhat-zksync-deploy': 1.7.0(ethers@6.13.5)(hardhat@2.22.19(ts-node@10.9.2(@types/node@22.13.14)(typescript@5.8.2))(typescript@5.8.2))(zksync-ethers@6.16.2(ethers@6.13.5))
       '@matterlabs/hardhat-zksync-solc': 1.3.0(hardhat@2.22.19(ts-node@10.9.2(@types/node@22.13.14)(typescript@5.8.2))(typescript@5.8.2))
+      '@matterlabs/hardhat-zksync-telemetry': 1.1.0(debug@4.4.0)(hardhat@2.22.19(ts-node@10.9.2(@types/node@22.13.14)(typescript@5.8.2))(typescript@5.8.2))
       '@nomicfoundation/hardhat-ethers': 3.0.8(ethers@6.13.5)(hardhat@2.22.19(ts-node@10.9.2(@types/node@22.13.14)(typescript@5.8.2))(typescript@5.8.2))
       chai: 4.5.0
       chalk: 4.1.2
@@ -5984,7 +5985,7 @@ snapshots:
     dependencies:
       xtend: 4.0.2
 
-  posthog-node@4.10.2(debug@4.4.0):
+  posthog-node@4.11.1(debug@4.4.0):
     dependencies:
       axios: 1.8.4(debug@4.4.0)
     transitivePeerDependencies:
@@ -6744,7 +6745,7 @@ snapshots:
     dependencies:
       '@sentry/node': 8.55.0
       env-paths: 2.2.1
-      posthog-node: 4.10.2(debug@4.4.0)
+      posthog-node: 4.11.1(debug@4.4.0)
       readline-sync: 1.4.10
       uuid: 11.1.0
     transitivePeerDependencies:
