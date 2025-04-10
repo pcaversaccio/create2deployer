@@ -993,6 +993,72 @@ const config: HardhatUserConfig = {
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
+    iotexTestnet: {
+      chainId: 4690,
+      url: process.env.IOTEX_TESTNET_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
+    iotexMain: {
+      chainId: 4689,
+      url: process.env.IOTEX_MAINNET_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
+    hychainTestnet: {
+      chainId: 29112,
+      url: process.env.HYCHAIN_TESTNET_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
+    hychainMain: {
+      chainId: 2911,
+      url: process.env.HYCHAIN_MAINNET_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
+    zircuitTestnet: {
+      chainId: 48898,
+      url: process.env.ZIRCUIT_TESTNET_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
+    zircuitMain: {
+      chainId: 48900,
+      url: process.env.ZIRCUIT_MAINNET_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
+    megaETHTestnet: {
+      chainId: 6342,
+      url: process.env.MEGAETH_TESTNET_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
+    bitlayerTestnet: {
+      chainId: 200810,
+      url: process.env.BITLAYER_TESTNET_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
+    bitlayerMain: {
+      chainId: 200901,
+      url: process.env.BITLAYER_MAINNET_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
+    roninTestnet: {
+      chainId: 2021,
+      url: process.env.RONIN_TESTNET_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
+    roninMain: {
+      chainId: 2020,
+      url: process.env.RONIN_MAINNET_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
   },
   gasReporter: {
     enabled: process.env.REPORT_GAS !== undefined,
@@ -1227,6 +1293,21 @@ const config: HardhatUserConfig = {
       // For Corn testnet & mainnet
       corn: process.env.CORN_API_KEY || "",
       cornTestnet: process.env.CORN_API_KEY || "",
+      // For Arena-Z testnet & mainnet
+      arenaz: process.env.ARENAZ_API_KEY || "",
+      arenazTestnet: process.env.ARENAZ_API_KEY || "",
+      // For IoTeX testnet & mainnet
+      iotex: process.env.IOTEX_API_KEY || "",
+      iotexTestnet: process.env.IOTEX_API_KEY || "",
+      // For HYCHAIN testnet & mainnet
+      hychain: process.env.HYCHAIN_API_KEY || "",
+      hychainTestnet: process.env.HYCHAIN_API_KEY || "",
+      // For Zircuit testnet & mainnet
+      zircuit: process.env.ZIRCUIT_API_KEY || "",
+      zircuitTestnet: process.env.ZIRCUIT_API_KEY || "",
+      // For Bitlayer testnet & mainnet
+      bitlayer: process.env.BITLAYER_API_KEY || "",
+      bitlayerTestnet: process.env.BITLAYER_API_KEY || "",
     },
     customChains: [
       {
@@ -1456,19 +1537,19 @@ const config: HardhatUserConfig = {
         },
       },
       {
-        network: "polygonZkEVMTestnet",
-        chainId: 1442,
-        urls: {
-          apiURL: "https://api-cardona-zkevm.polygonscan.com/api",
-          browserURL: "https://cardona-zkevm.polygonscan.com",
-        },
-      },
-      {
         network: "polygonAmoy",
         chainId: 80002,
         urls: {
           apiURL: "https://api-amoy.polygonscan.com/api",
           browserURL: "https://amoy.polygonscan.com",
+        },
+      },
+      {
+        network: "polygonZkEVMTestnet",
+        chainId: 2442,
+        urls: {
+          apiURL: "https://api-cardona-zkevm.polygonscan.com/api",
+          browserURL: "https://cardona-zkevm.polygonscan.com",
         },
       },
       {
@@ -2031,8 +2112,8 @@ const config: HardhatUserConfig = {
         network: "storyTestnet",
         chainId: 1315,
         urls: {
-          apiURL: "https://aeneid.storyscan.xyz/api",
-          browserURL: "https://aeneid.storyscan.xyz",
+          apiURL: "https://aeneid.storyscan.io/api",
+          browserURL: "https://aeneid.storyscan.io",
         },
       },
       {
@@ -2111,8 +2192,8 @@ const config: HardhatUserConfig = {
         network: "shapeTestnet",
         chainId: 11011,
         urls: {
-          apiURL: "https://explorer-sepolia.shape.network/api",
-          browserURL: "https://explorer-sepolia.shape.network",
+          apiURL: "https://sepolia.shapescan.xyz/api",
+          browserURL: "https://sepolia.shapescan.xyz",
         },
       },
       {
@@ -2228,6 +2309,71 @@ const config: HardhatUserConfig = {
         urls: {
           apiURL: "https://arena-z.blockscout.com/api",
           browserURL: "https://arena-z.blockscout.com",
+        },
+      },
+      {
+        network: "iotex",
+        chainId: 4689,
+        urls: {
+          apiURL: "https://iotexscout.io/api",
+          browserURL: "https://iotexscan.io",
+        },
+      },
+      {
+        network: "iotexTestnet",
+        chainId: 4690,
+        urls: {
+          apiURL: "https://testnet.iotexscan.io/api",
+          browserURL: "https://testnet.iotexscan.io",
+        },
+      },
+      {
+        network: "hychain",
+        chainId: 2911,
+        urls: {
+          apiURL: "https://explorer.hychain.com/api",
+          browserURL: "https://explorer.hychain.com",
+        },
+      },
+      {
+        network: "hychainTestnet",
+        chainId: 29112,
+        urls: {
+          apiURL: "https://testnet.explorer.hychain.com/api",
+          browserURL: "https://testnet.explorer.hychain.com",
+        },
+      },
+      {
+        network: "zircuit",
+        chainId: 48900,
+        urls: {
+          apiURL: "https://explorer.zircuit.com/api/contractVerifyHardhat",
+          browserURL: "https://explorer.zircuit.com",
+        },
+      },
+      {
+        network: "zircuitTestnet",
+        chainId: 48898,
+        urls: {
+          apiURL:
+            "https://explorer.garfield-testnet.zircuit.com/api/contractVerifyHardhat",
+          browserURL: "https://explorer.garfield-testnet.zircuit.com",
+        },
+      },
+      {
+        network: "bitlayer",
+        chainId: 200901,
+        urls: {
+          apiURL: "https://api.btrscan.com/scan/api",
+          browserURL: "https://www.btrscan.com",
+        },
+      },
+      {
+        network: "bitlayerTestnet",
+        chainId: 200810,
+        urls: {
+          apiURL: "https://api-testnet.btrscan.com/scan/api",
+          browserURL: "https://testnet.btrscan.com",
         },
       },
     ],
