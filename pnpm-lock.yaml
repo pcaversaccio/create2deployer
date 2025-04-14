@@ -36,8 +36,8 @@ importers:
         specifier: ^2.0.13
         version: 2.0.13(hardhat@2.23.0(ts-node@10.9.2(@types/node@22.14.1)(typescript@5.8.3))(typescript@5.8.3))
       '@openzeppelin/contracts':
-        specifier: ^4.9.6
-        version: 4.9.6
+        specifier: ^5.3.0
+        version: 5.3.0
       '@typechain/ethers-v6':
         specifier: ^0.5.1
         version: 0.5.1(ethers@6.13.5)(typechain@8.3.2(typescript@5.8.3))(typescript@5.8.3)
@@ -689,8 +689,8 @@ packages:
     peerDependencies:
       '@opentelemetry/api': ^1.1.0
 
-  '@openzeppelin/contracts@4.9.6':
-    resolution: {integrity: sha512-xSmezSupL+y9VkHZJGDoCBpmnB2ogM13ccaYDWqJTfS3dbuHkgjuwDFUmaFauBCboQMGB/S5UqUl2y54X99BmA==}
+  '@openzeppelin/contracts@5.3.0':
+    resolution: {integrity: sha512-zj/KGoW7zxWUE8qOI++rUM18v+VeLTTzKs/DJFkSzHpQFPD/jKKF0TrMxBfGLl3kpdELCNccvB3zmofSzm4nlA==}
 
   '@pkgjs/parseargs@0.11.0':
     resolution: {integrity: sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg==}
@@ -3947,7 +3947,7 @@ snapshots:
       '@opentelemetry/api': 1.9.0
       '@opentelemetry/core': 1.30.1(@opentelemetry/api@1.9.0)
 
-  '@openzeppelin/contracts@4.9.6': {}
+  '@openzeppelin/contracts@5.3.0': {}
 
   '@pkgjs/parseargs@0.11.0':
     optional: true
