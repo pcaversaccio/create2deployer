@@ -1481,8 +1481,8 @@ packages:
     resolution: {integrity: sha512-+7iOUYBeDTScmOmQqpUYQaE7F4vvIt6+gIZNHWhqAQEI887tiPFB9OvXI/HzQYqfUNvukMK+9myLW63oTJPZpw==}
     engines: {node: '>= 0.8'}
 
-  dockerode@4.0.5:
-    resolution: {integrity: sha512-ZPmKSr1k1571Mrh7oIBS/j0AqAccoecY2yH420ni5j1KyNMgnoTh4Nu4FWunh0HZIJmRSmSysJjBIpa/zyWUEA==}
+  dockerode@4.0.6:
+    resolution: {integrity: sha512-FbVf3Z8fY/kALB9s+P9epCpWhfi/r0N2DgYYcYpsAUlaTxPjdsitsFobnltb+lyCgAIvf9C+4PSWlTnHlJMf1w==}
     engines: {node: '>= 8.0'}
 
   dotenv@16.5.0:
@@ -2858,8 +2858,8 @@ packages:
   through@2.3.8:
     resolution: {integrity: sha512-w89qg7PI8wAdvX60bMDP+bFoD5Dvhm9oLheFp5O4a2QF0cSBGsBX4qZmadPMvVqlLJBBci+WqGGOAPvcDeNSVg==}
 
-  tinyglobby@0.2.12:
-    resolution: {integrity: sha512-qkf4trmKSIiMTs/E63cxH+ojC2unam7rJ0WrauAzpT3ECNTxGRMlaXxVbfxMUC/w0LaYk6jQ4y/nGR9uBO3tww==}
+  tinyglobby@0.2.13:
+    resolution: {integrity: sha512-mEwzpUgrLySlveBwEVDMKk5B57bhLPYovRfPAXD5gA/98Opn0rCDj3GtLwFvCvH5RK9uPCExUROW5NjDwvqkxw==}
     engines: {node: '>=12.0.0'}
 
   tmp@0.0.33:
@@ -3487,7 +3487,7 @@ snapshots:
       chai: 4.5.0
       chalk: 4.1.2
       debug: 4.4.0(supports-color@8.1.1)
-      dockerode: 4.0.5
+      dockerode: 4.0.6
       fs-extra: 11.3.0
       hardhat: 2.23.0(ts-node@10.9.2(@types/node@22.14.1)(typescript@5.8.3))(typescript@5.8.3)
       proper-lockfile: 4.1.2
@@ -4871,7 +4871,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  dockerode@4.0.5:
+  dockerode@4.0.6:
     dependencies:
       '@balena/dockerignore': 1.0.2
       '@grpc/grpc-js': 1.13.3
@@ -5416,7 +5416,7 @@ snapshots:
       solc: 0.8.26(debug@4.4.0)
       source-map-support: 0.5.21
       stacktrace-parser: 0.1.11
-      tinyglobby: 0.2.12
+      tinyglobby: 0.2.13
       tsort: 0.0.1
       undici: 5.29.0
       uuid: 8.3.2
@@ -6443,7 +6443,7 @@ snapshots:
 
   through@2.3.8: {}
 
-  tinyglobby@0.2.12:
+  tinyglobby@0.2.13:
     dependencies:
       fdir: 6.4.4(picomatch@4.0.2)
       picomatch: 4.0.2
