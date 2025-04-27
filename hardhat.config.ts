@@ -591,6 +591,24 @@ const config: HardhatUserConfig = {
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
+    seiDevnet: {
+      chainId: 713715,
+      url: process.env.SEI_DEVNET_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
+    seiTestnet: {
+      chainId: 1328,
+      url: process.env.SEI_TESTNET_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
+    seiMain: {
+      chainId: 1329,
+      url: process.env.SEI_MAINNET_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
     xlayerTestnet: {
       chainId: 195,
       url: process.env.XLAYER_TESTNET_URL || "",
