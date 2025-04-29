@@ -19,7 +19,7 @@
   },
   "author": "pcaversaccio (https://pcaversaccio.com)",
   "license": "MIT",
-  "packageManager": "pnpm@10.9.0",
+  "packageManager": "pnpm@10.10.0",
   "scripts": {
     "help": "npx hardhat help",
     "accounts": "npx hardhat accounts",
@@ -217,7 +217,7 @@
     "@typechain/hardhat": "^9.1.0",
     "@types/chai": "^4.3.20",
     "@types/mocha": "^10.0.10",
-    "@types/node": "^22.15.2",
+    "@types/node": "^22.15.3",
     "chai": "^4.5.0",
     "dotenv": "^16.5.0",
     "eslint": "^9.25.1",
@@ -234,7 +234,7 @@
     "ts-node": "^10.9.2",
     "typechain": "^8.3.2",
     "typescript": "^5.8.3",
-    "typescript-eslint": "^8.31.0",
+    "typescript-eslint": "^8.31.1",
     "zksync-ethers": "^6.17.0"
   },
   "pnpm": {
