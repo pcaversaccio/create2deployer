@@ -84,8 +84,8 @@ importers:
         specifier: ^3.5.3
         version: 3.5.3
       prettier-plugin-solidity:
-        specifier: ^1.4.3
-        version: 1.4.3(prettier@3.5.3)
+        specifier: ^2.0.0
+        version: 2.0.0(prettier@3.5.3)
       solhint:
         specifier: ^5.0.5
         version: 5.0.5(typescript@5.8.3)
@@ -126,6 +126,9 @@ packages:
 
   '@balena/dockerignore@1.0.2':
     resolution: {integrity: sha512-wMue2Sy4GAVTk6Ic4tJVcnfdau+gx2EnG7S+uAEe+TWJFqE4YoWN4/H8MSLj4eYJKxGg26lZwboEniNiNwZQ6Q==}
+
+  '@bytecodealliance/preview2-shim@0.17.2':
+    resolution: {integrity: sha512-mNm/lblgES8UkVle8rGImXOz4TtL3eU3inHay/7TVchkKrb/lgcVvTK0+VAw8p5zQ0rgQsXm1j5dOlAAd+MeoA==}
 
   '@colors/colors@1.5.0':
     resolution: {integrity: sha512-ooWCrlZP11i8GImSjTHYHLkvFDP48nS4+204nGb1RiX/WXYHmJA2III9/e2DWVabCESdW7hBAEzHRqUn9OUVvQ==}
@@ -429,6 +432,9 @@ packages:
     resolution: {integrity: sha512-i57GX1sC0kYGyRVnbQrjjyBTpWTKgrvKC+jH8CMKV6gHp959Upb8lKaZ58WRHIU0espkulTxLnacYeUDirwJ2g==}
     peerDependencies:
       hardhat: ^2.0.4
+
+  '@nomicfoundation/slang@1.1.0':
+    resolution: {integrity: sha512-g2BofMUq1qCP22L/ksOftScrCxjdHTxgg8ch5PYon2zfSSKGCMwE4TgIC64CuorMcSsvCmqNNFEWR/fwFcMeTw==}
 
   '@nomicfoundation/solidity-analyzer-darwin-arm64@0.1.2':
     resolution: {integrity: sha512-JaqcWPDZENCvm++lFFGjrDd8mxtf+CtLd2MiXvMNTBD33dContTZ9TWETwNFwg7JTJT5Q9HEecH7FA+HTSsIUw==}
@@ -2254,8 +2260,8 @@ packages:
     engines: {node: '>= 14.0.0'}
     hasBin: true
 
-  module-details-from-path@1.0.3:
-    resolution: {integrity: sha512-ySViT69/76t8VhE1xXHK6Ch4NcDd26gx0MzKXLO+F7NOtnqH68d9zF94nT8ZWSxXh8ELOERsnJO/sWt1xZYw5A==}
+  module-details-from-path@1.0.4:
+    resolution: {integrity: sha512-EGWKgxALGMgzvxYF1UyGTy0HXX/2vHLkw6+NvDKW2jypWbHpjQuj4UMcqQWXHERJhVGKikolT06G3bcKe4fi7w==}
 
   ms@2.1.3:
     resolution: {integrity: sha512-6FlzubTLZG3J2a/NVCAleEhjzq5oxgHyaCU9yYXvcLsvoVaHJq/s5xXI6/XXP6tz7R9xAOtHnSO/tXtF3WRTlA==}
@@ -2461,8 +2467,8 @@ packages:
     resolution: {integrity: sha512-9ZhXKM/rw350N1ovuWHbGxnGh/SNJ4cnxHiM0rxE4VN41wsg8P8zWn9hv/buK00RP4WvlOyr/RBDiptyxVbkZQ==}
     engines: {node: '>=0.10.0'}
 
-  posthog-node@4.14.0:
-    resolution: {integrity: sha512-PitSiuxGiVFl0ItuhIfi3Sq1tcaMU4vlbPu1wv0qufTJGDjWthOOr4vYfFIs1xkbJFOQcfGczMXkr44kX5TDDg==}
+  posthog-node@4.15.0:
+    resolution: {integrity: sha512-wn9mtxjsp789vtr+5D4M8fIuiol/83u5LV87TJAya0Efr4ScMZGQC+OjTlc2/YFqt3RZTjCQXhDWy15KPMsonA==}
     engines: {node: '>=15.0.0'}
 
   prelude-ls@1.1.2:
@@ -2473,11 +2479,11 @@ packages:
     resolution: {integrity: sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==}
     engines: {node: '>= 0.8.0'}
 
-  prettier-plugin-solidity@1.4.3:
-    resolution: {integrity: sha512-Mrr/iiR9f9IaeGRMZY2ApumXcn/C5Gs3S7B7hWB3gigBFML06C0yEyW86oLp0eqiA0qg+46FaChgLPJCj/pIlg==}
+  prettier-plugin-solidity@2.0.0:
+    resolution: {integrity: sha512-tis3SwLSrYKDzzRFle48fjPM4GQKBtkVBUajAkt4b75/cc6zojFP7qjz6fDxKfup+34q0jKeSM3QeP9flJFXWw==}
     engines: {node: '>=18'}
     peerDependencies:
-      prettier: '>=2.3.0'
+      prettier: '>=3.0.0'
 
   prettier@2.8.8:
     resolution: {integrity: sha512-tdN8qQGvNjw4CHbY+XXk0JgCXn9QiF21a55rBe5LJAU+kDyC4WQn4+awm2Xfk2lQMk5fKup9XgzTZtGkjBdP9Q==}
@@ -3189,6 +3195,8 @@ snapshots:
 
   '@balena/dockerignore@1.0.2': {}
 
+  '@bytecodealliance/preview2-shim@0.17.2': {}
+
   '@colors/colors@1.5.0':
     optional: true
 
@@ -3625,6 +3633,10 @@ snapshots:
       undici: 5.29.0
     transitivePeerDependencies:
       - supports-color
+
+  '@nomicfoundation/slang@1.1.0':
+    dependencies:
+      '@bytecodealliance/preview2-shim': 0.17.2
 
   '@nomicfoundation/solidity-analyzer-darwin-arm64@0.1.2':
     optional: true
@@ -5505,7 +5517,7 @@ snapshots:
       acorn: 8.14.1
       acorn-import-attributes: 1.9.5(acorn@8.14.1)
       cjs-module-lexer: 1.4.3
-      module-details-from-path: 1.0.3
+      module-details-from-path: 1.0.4
 
   imurmurhash@0.1.4: {}
 
@@ -5774,7 +5786,7 @@ snapshots:
       yargs-parser: 20.2.9
       yargs-unparser: 2.0.0
 
-  module-details-from-path@1.0.3: {}
+  module-details-from-path@1.0.4: {}
 
   ms@2.1.3: {}
 
@@ -5961,7 +5973,7 @@ snapshots:
     dependencies:
       xtend: 4.0.2
 
-  posthog-node@4.14.0(debug@4.4.0):
+  posthog-node@4.15.0(debug@4.4.0):
     dependencies:
       axios: 1.9.0(debug@4.4.0)
     transitivePeerDependencies:
@@ -5971,8 +5983,9 @@ snapshots:
 
   prelude-ls@1.2.1: {}
 
-  prettier-plugin-solidity@1.4.3(prettier@3.5.3):
+  prettier-plugin-solidity@2.0.0(prettier@3.5.3):
     dependencies:
+      '@nomicfoundation/slang': 1.1.0
       '@solidity-parser/parser': 0.20.1
       prettier: 3.5.3
       semver: 7.7.1
@@ -6100,7 +6113,7 @@ snapshots:
   require-in-the-middle@7.5.2:
     dependencies:
       debug: 4.4.0(supports-color@8.1.1)
-      module-details-from-path: 1.0.3
+      module-details-from-path: 1.0.4
       resolve: 1.22.10
     transitivePeerDependencies:
       - supports-color
@@ -6717,7 +6730,7 @@ snapshots:
     dependencies:
       '@sentry/node': 8.55.0
       env-paths: 2.2.1
-      posthog-node: 4.14.0(debug@4.4.0)
+      posthog-node: 4.15.0(debug@4.4.0)
       readline-sync: 1.4.10
       uuid: 11.1.0
     transitivePeerDependencies:
