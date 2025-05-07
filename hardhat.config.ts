@@ -2002,16 +2002,16 @@ const config: HardhatUserConfig = {
         network: "plume",
         chainId: 98866,
         urls: {
-          apiURL: "https://testnet-explorer.plume.org/api",
-          browserURL: "https://testnet-explorer.plume.org",
+          apiURL: "https://explorer.plume.org/api",
+          browserURL: "https://explorer.plume.org",
         },
       },
       {
         network: "plumeTestnet",
         chainId: 98867,
         urls: {
-          apiURL: "https://explorer.plume.org/api",
-          browserURL: "https://explorer.plume.org",
+          apiURL: "https://testnet-explorer.plume.org/api",
+          browserURL: "https://testnet-explorer.plume.org",
         },
       },
       {
