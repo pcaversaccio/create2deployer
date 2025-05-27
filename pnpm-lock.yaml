@@ -13,37 +13,37 @@ importers:
         version: 9.27.0
       '@matterlabs/hardhat-zksync-deploy':
         specifier: ^1.7.0
-        version: 1.7.0(ethers@6.14.1)(hardhat@2.24.0(ts-node@10.9.2(@types/node@22.15.21)(typescript@5.8.3))(typescript@5.8.3))(zksync-ethers@6.17.0(ethers@6.14.1))
+        version: 1.7.0(ethers@6.14.3)(hardhat@2.24.1(ts-node@10.9.2(@types/node@22.15.21)(typescript@5.8.3))(typescript@5.8.3))(zksync-ethers@6.17.0(ethers@6.14.3))
       '@matterlabs/hardhat-zksync-ethers':
         specifier: ^1.3.0
-        version: 1.3.0(ethers@6.14.1)(ts-node@10.9.2(@types/node@22.15.21)(typescript@5.8.3))(typescript@5.8.3)(zksync-ethers@6.17.0(ethers@6.14.1))
+        version: 1.3.0(ethers@6.14.3)(ts-node@10.9.2(@types/node@22.15.21)(typescript@5.8.3))(typescript@5.8.3)(zksync-ethers@6.17.0(ethers@6.14.3))
       '@matterlabs/hardhat-zksync-solc':
         specifier: ^1.3.2
-        version: 1.3.2(hardhat@2.24.0(ts-node@10.9.2(@types/node@22.15.21)(typescript@5.8.3))(typescript@5.8.3))
+        version: 1.3.2(hardhat@2.24.1(ts-node@10.9.2(@types/node@22.15.21)(typescript@5.8.3))(typescript@5.8.3))
       '@matterlabs/hardhat-zksync-verify':
         specifier: ^1.8.0
-        version: 1.8.0(@nomicfoundation/hardhat-verify@2.0.13(hardhat@2.24.0(ts-node@10.9.2(@types/node@22.15.21)(typescript@5.8.3))(typescript@5.8.3)))(hardhat@2.24.0(ts-node@10.9.2(@types/node@22.15.21)(typescript@5.8.3))(typescript@5.8.3))
+        version: 1.8.0(@nomicfoundation/hardhat-verify@2.0.14(hardhat@2.24.1(ts-node@10.9.2(@types/node@22.15.21)(typescript@5.8.3))(typescript@5.8.3)))(hardhat@2.24.1(ts-node@10.9.2(@types/node@22.15.21)(typescript@5.8.3))(typescript@5.8.3))
       '@nomicfoundation/hardhat-chai-matchers':
         specifier: ^2.0.8
-        version: 2.0.8(@nomicfoundation/hardhat-ethers@3.0.8(ethers@6.14.1)(hardhat@2.24.0(ts-node@10.9.2(@types/node@22.15.21)(typescript@5.8.3))(typescript@5.8.3)))(chai@4.5.0)(ethers@6.14.1)(hardhat@2.24.0(ts-node@10.9.2(@types/node@22.15.21)(typescript@5.8.3))(typescript@5.8.3))
+        version: 2.0.8(@nomicfoundation/hardhat-ethers@3.0.8(ethers@6.14.3)(hardhat@2.24.1(ts-node@10.9.2(@types/node@22.15.21)(typescript@5.8.3))(typescript@5.8.3)))(chai@4.5.0)(ethers@6.14.3)(hardhat@2.24.1(ts-node@10.9.2(@types/node@22.15.21)(typescript@5.8.3))(typescript@5.8.3))
       '@nomicfoundation/hardhat-ethers':
         specifier: ^3.0.8
-        version: 3.0.8(ethers@6.14.1)(hardhat@2.24.0(ts-node@10.9.2(@types/node@22.15.21)(typescript@5.8.3))(typescript@5.8.3))
+        version: 3.0.8(ethers@6.14.3)(hardhat@2.24.1(ts-node@10.9.2(@types/node@22.15.21)(typescript@5.8.3))(typescript@5.8.3))
       '@nomicfoundation/hardhat-network-helpers':
         specifier: ^1.0.12
-        version: 1.0.12(hardhat@2.24.0(ts-node@10.9.2(@types/node@22.15.21)(typescript@5.8.3))(typescript@5.8.3))
+        version: 1.0.12(hardhat@2.24.1(ts-node@10.9.2(@types/node@22.15.21)(typescript@5.8.3))(typescript@5.8.3))
       '@nomicfoundation/hardhat-verify':
-        specifier: ^2.0.13
-        version: 2.0.13(hardhat@2.24.0(ts-node@10.9.2(@types/node@22.15.21)(typescript@5.8.3))(typescript@5.8.3))
+        specifier: ^2.0.14
+        version: 2.0.14(hardhat@2.24.1(ts-node@10.9.2(@types/node@22.15.21)(typescript@5.8.3))(typescript@5.8.3))
       '@openzeppelin/contracts':
         specifier: ^4.9.6
         version: 4.9.6
       '@typechain/ethers-v6':
         specifier: ^0.5.1
-        version: 0.5.1(ethers@6.14.1)(typechain@8.3.2(typescript@5.8.3))(typescript@5.8.3)
+        version: 0.5.1(ethers@6.14.3)(typechain@8.3.2(typescript@5.8.3))(typescript@5.8.3)
       '@typechain/hardhat':
         specifier: ^9.1.0
-        version: 9.1.0(@typechain/ethers-v6@0.5.1(ethers@6.14.1)(typechain@8.3.2(typescript@5.8.3))(typescript@5.8.3))(ethers@6.14.1)(hardhat@2.24.0(ts-node@10.9.2(@types/node@22.15.21)(typescript@5.8.3))(typescript@5.8.3))(typechain@8.3.2(typescript@5.8.3))
+        version: 9.1.0(@typechain/ethers-v6@0.5.1(ethers@6.14.3)(typechain@8.3.2(typescript@5.8.3))(typescript@5.8.3))(ethers@6.14.3)(hardhat@2.24.1(ts-node@10.9.2(@types/node@22.15.21)(typescript@5.8.3))(typescript@5.8.3))(typechain@8.3.2(typescript@5.8.3))
       '@types/chai':
         specifier: ^4.3.20
         version: 4.3.20
@@ -66,20 +66,20 @@ importers:
         specifier: ^10.1.5
         version: 10.1.5(eslint@9.27.0)
       ethers:
-        specifier: ^6.14.1
-        version: 6.14.1
+        specifier: ^6.14.3
+        version: 6.14.3
       hardhat:
-        specifier: ^2.24.0
-        version: 2.24.0(ts-node@10.9.2(@types/node@22.15.21)(typescript@5.8.3))(typescript@5.8.3)
+        specifier: ^2.24.1
+        version: 2.24.1(ts-node@10.9.2(@types/node@22.15.21)(typescript@5.8.3))(typescript@5.8.3)
       hardhat-abi-exporter:
         specifier: ^2.11.0
-        version: 2.11.0(hardhat@2.24.0(ts-node@10.9.2(@types/node@22.15.21)(typescript@5.8.3))(typescript@5.8.3))
+        version: 2.11.0(hardhat@2.24.1(ts-node@10.9.2(@types/node@22.15.21)(typescript@5.8.3))(typescript@5.8.3))
       hardhat-contract-sizer:
         specifier: ^2.10.0
-        version: 2.10.0(hardhat@2.24.0(ts-node@10.9.2(@types/node@22.15.21)(typescript@5.8.3))(typescript@5.8.3))
+        version: 2.10.0(hardhat@2.24.1(ts-node@10.9.2(@types/node@22.15.21)(typescript@5.8.3))(typescript@5.8.3))
       hardhat-gas-reporter:
         specifier: ^2.2.3
-        version: 2.2.3(hardhat@2.24.0(ts-node@10.9.2(@types/node@22.15.21)(typescript@5.8.3))(typescript@5.8.3))(typescript@5.8.3)(zod@3.24.4)
+        version: 2.2.3(hardhat@2.24.1(ts-node@10.9.2(@types/node@22.15.21)(typescript@5.8.3))(typescript@5.8.3))(typescript@5.8.3)(zod@3.24.4)
       prettier:
         specifier: ^3.5.3
         version: 3.5.3
@@ -91,7 +91,7 @@ importers:
         version: 5.1.0(typescript@5.8.3)
       solidity-coverage:
         specifier: ^0.8.16
-        version: 0.8.16(hardhat@2.24.0(ts-node@10.9.2(@types/node@22.15.21)(typescript@5.8.3))(typescript@5.8.3))
+        version: 0.8.16(hardhat@2.24.1(ts-node@10.9.2(@types/node@22.15.21)(typescript@5.8.3))(typescript@5.8.3))
       ts-node:
         specifier: ^10.9.2
         version: 10.9.2(@types/node@22.15.21)(typescript@5.8.3)
@@ -106,7 +106,7 @@ importers:
         version: 8.32.1(eslint@9.27.0)(typescript@5.8.3)
       zksync-ethers:
         specifier: ^6.17.0
-        version: 6.17.0(ethers@6.14.1)
+        version: 6.17.0(ethers@6.14.3)
 
 packages:
 
@@ -258,8 +258,8 @@ packages:
     resolution: {integrity: sha512-vBZP4NlzfOlerQTnba4aqZoMhE/a9HY7HRqoOPaETQcSQuWEIyZMHGfVu6w9wGtGK5fED5qRs2DteVCjOH60sA==}
     engines: {node: '>=14'}
 
-  '@grpc/grpc-js@1.13.3':
-    resolution: {integrity: sha512-FTXHdOoPbZrBjlVLHuKbDZnsTxXv2BlHF57xw6LuThXacXvtkahEPED0CKMk6obZDf65Hv4k3z62eyPNpvinIg==}
+  '@grpc/grpc-js@1.13.4':
+    resolution: {integrity: sha512-GsFaMXCkMqkKIvwCQjCrwH+GHbPKBjhwo/8ZuUkWHqbI73Kky9I+pQltrlT0+MWpedCoosda53lgjYfyEPgxBg==}
     engines: {node: '>=12.10.0'}
 
   '@grpc/proto-loader@0.7.15':
@@ -333,6 +333,10 @@ packages:
       '@nomicfoundation/hardhat-verify': ^2.0.8
       hardhat: ^2.22.5
 
+  '@noble/ciphers@1.3.0':
+    resolution: {integrity: sha512-2I0gnIVPtfnMw9ee9h1dJG7tp81+8Ob3OJb3Mv37rx5L40/b0i7djjCVvGOVqc9AEIQyvyu1i6ypKdFw8R8gQw==}
+    engines: {node: ^14.21.3 || >=16}
+
   '@noble/curves@1.2.0':
     resolution: {integrity: sha512-oYclrNgRaM9SsBUBVbb8M6DTV7ZHRTKugureoYEncY5c65HOmRzvSiTE3y5CYaPYJA/GVkrhXEoF0M3Ya9PMnw==}
 
@@ -341,6 +345,10 @@ packages:
 
   '@noble/curves@1.8.2':
     resolution: {integrity: sha512-vnI7V6lFNe0tLAuJMu+2sX+FcL14TaCWy1qiczg1VwRmPrpQCdq5ESXQMqUc2tluRNf6irBXrWbl1mGN8uaU/g==}
+    engines: {node: ^14.21.3 || >=16}
+
+  '@noble/curves@1.9.1':
+    resolution: {integrity: sha512-k11yZxZg+t+gWvBbIswW0yoJlu8cHOC7dhunwOzoWH/mXGBiYyR4YY6hAEK/3EUs4UpB8la1RfdRpeGsFHkWsA==}
     engines: {node: ^14.21.3 || >=16}
 
   '@noble/hashes@1.2.0':
@@ -428,10 +436,10 @@ packages:
     peerDependencies:
       hardhat: ^2.9.5
 
-  '@nomicfoundation/hardhat-verify@2.0.13':
-    resolution: {integrity: sha512-i57GX1sC0kYGyRVnbQrjjyBTpWTKgrvKC+jH8CMKV6gHp959Upb8lKaZ58WRHIU0espkulTxLnacYeUDirwJ2g==}
+  '@nomicfoundation/hardhat-verify@2.0.14':
+    resolution: {integrity: sha512-z3iVF1WYZHzcdMMUuureFpSAfcnlfJbJx3faOnGrOYg6PRTki1Ut9JAuRccnFzMHf1AmTEoSUpWcyvBCoxL5Rg==}
     peerDependencies:
-      hardhat: ^2.0.4
+      hardhat: ^2.24.1
 
   '@nomicfoundation/slang@1.1.0':
     resolution: {integrity: sha512-g2BofMUq1qCP22L/ksOftScrCxjdHTxgg8ch5PYon2zfSSKGCMwE4TgIC64CuorMcSsvCmqNNFEWR/fwFcMeTw==}
@@ -685,8 +693,8 @@ packages:
     resolution: {integrity: sha512-lp4qAiMTD4sNWW4DbKLBkfiMZ4jbAboJIGOQr5DvciMRI494OapieI9qiODpOt0XBr1LjIDy1xAGAnVs5supTA==}
     engines: {node: '>=14'}
 
-  '@opentelemetry/semantic-conventions@1.33.1':
-    resolution: {integrity: sha512-tBco+nVMoGqJ0LHPKOWlN9o1PX2AA9zxDMgvL210YYXlG9UkMXpiXhsWvvQriZrjOzTXXEpH6jleCgAuVGg3EQ==}
+  '@opentelemetry/semantic-conventions@1.34.0':
+    resolution: {integrity: sha512-aKcOkyrorBGlajjRdVoJWHTxfxO1vCNHLJVlSDaRHDIdjU+pX8IYQPvPDkYiujKLbRnWU+1TBwEt0QRgSm4SGA==}
     engines: {node: '>=14'}
 
   '@opentelemetry/sql-common@0.40.1':
@@ -759,8 +767,8 @@ packages:
   '@scure/bip32@1.4.0':
     resolution: {integrity: sha512-sVUpc0Vq3tXCkDGYVWGIZTRfnvu8LoTDaev7vbwh0omSvVORONr960MQWdKqJDCReIEmTj3PAr73O3aoxz7OPg==}
 
-  '@scure/bip32@1.6.2':
-    resolution: {integrity: sha512-t96EPDMbtGgtb7onKKqxRLfE5g05k7uHnHRM2xdE6BP/ZmxaLtPek4J4KfVn/90IQNrU1IOAqMgiDtUdtbe3nw==}
+  '@scure/bip32@1.7.0':
+    resolution: {integrity: sha512-E4FFX/N3f4B80AKWp5dP6ow+flD1LQZo/w8UnLGYZO674jS6YnYeepycOOksv+vLPSpgN35wgKgy+ybfTb2SMw==}
 
   '@scure/bip39@1.1.1':
     resolution: {integrity: sha512-t+wDck2rVkh65Hmv280fYdVdY25J9YeEUIgn2LG1WM6gxFkGzcksoDiUkWVpVp3Oex9xGC68JU2dSbUfwZ2jPg==}
@@ -768,8 +776,8 @@ packages:
   '@scure/bip39@1.3.0':
     resolution: {integrity: sha512-disdg7gHuTDZtY+ZdkmLpPCk7fxZSu3gBiEGuoC1XYxv9cGx3Z6cpTggCgW6odSOOIXCiDjuGejW+aJKCY/pIQ==}
 
-  '@scure/bip39@1.5.4':
-    resolution: {integrity: sha512-TFM4ni0vKvCfBpohoh+/lY05i9gRbSwXWngAsF4CABQxoaOHijxuaZ2R6cStDQ5CHtHO9aGJTr4ksVJASRRyMA==}
+  '@scure/bip39@1.6.0':
+    resolution: {integrity: sha512-+lF0BbLiJNwVlev4eKelw1WWLaiKXw7sSl8T6FvBlWkdX+94aGJ4o8XjUdlyhTCjd8c+B3KT3JfS8P0bLRNU6A==}
 
   '@sentry/core@5.30.0':
     resolution: {integrity: sha512-TmfrII8w1PQZSZgPpUESqjB+jC6MvZJZdLtE/0hZ+SrnKhW3x5WlYLvTXZpcWePYBku7rl2wn1RZu6uT0qCTeg==}
@@ -1635,8 +1643,8 @@ packages:
     resolution: {integrity: sha512-SDl5kKrQAudFBUe5OJM9Ac6WmMyYmXX/6sTmLZ3ffG2eY6ZIGBes3pEDxNN6V72WyOw4CPD5RomKdsa8DAAwLg==}
     engines: {node: '>=10.0.0'}
 
-  ethers@6.14.1:
-    resolution: {integrity: sha512-JnFiPFi3sK2Z6y7jZ3qrafDMwiXmU+6cNZ0M+kPq+mTy9skqEzwqAdFW3nb/em2xjlIVXX6Lz8ID6i3LmS4+fQ==}
+  ethers@6.14.3:
+    resolution: {integrity: sha512-qq7ft/oCJohoTcsNPFaXSQUm457MA5iWqkf1Mb11ujONdg7jBI6sAOrHaTi3j0CBqIGFSCeR/RMc+qwRRub7IA==}
     engines: {node: '>=14.0.0'}
 
   ethjs-unit@0.1.6:
@@ -1869,8 +1877,8 @@ packages:
     peerDependencies:
       hardhat: ^2.16.0
 
-  hardhat@2.24.0:
-    resolution: {integrity: sha512-wDkD5GPmttYv21MR7tGDkyQ22tO2V86OEV8pA7NcXWYUpibe8XZ2EanXCeRHO61vwEx0f7/M+NqrhJwasaNMJg==}
+  hardhat@2.24.1:
+    resolution: {integrity: sha512-3iwrO2liEGCw1rz/l/mlB1rSNexCc4CFcMj0DlvjXGChzmD3sGUgLwWDOZPf+ya8MEm5ZhO1oprRVmb/wVi0YA==}
     hasBin: true
     peerDependencies:
       ts-node: '*'
@@ -2345,8 +2353,8 @@ packages:
     resolution: {integrity: sha512-D2FR03Vir7FIu45XBY20mTb+/ZSWB00sjU9jdQXt83gDrI4Ztz5Fs7/yy74g2N5SVQY4xY1qDr4rNddwYRVX0g==}
     engines: {node: '>=0.10.0'}
 
-  ox@0.6.9:
-    resolution: {integrity: sha512-wi5ShvzE4eOcTwQVsIPdFr+8ycyX+5le/96iAJutaZAvCes1J0+RvpEPg5QDPDiaR0XQQAvZVl7AwqQcINuUug==}
+  ox@0.7.1:
+    resolution: {integrity: sha512-+k9fY9PRNuAMHRFIUbiK9Nt5seYHHzSQs9Bj+iMETcGtlpS7SmBzcGSVUQO3+nqGLEiNK4598pHNFlVRaZbRsg==}
     peerDependencies:
       typescript: '>=5.4.0'
     peerDependenciesMeta:
@@ -2471,8 +2479,8 @@ packages:
     resolution: {integrity: sha512-9ZhXKM/rw350N1ovuWHbGxnGh/SNJ4cnxHiM0rxE4VN41wsg8P8zWn9hv/buK00RP4WvlOyr/RBDiptyxVbkZQ==}
     engines: {node: '>=0.10.0'}
 
-  posthog-node@4.17.1:
-    resolution: {integrity: sha512-cVlQPOwOPjakUnrueKRCQe1m2Ku+XzKaOos7Tn/zDZkkZFeBT/byP7tbNf7LiwhaBRWFBRowZZb/MsTtSRaorg==}
+  posthog-node@4.17.2:
+    resolution: {integrity: sha512-bFmwOTk4QdYavopeHVXtyFGQ9vyLMVaNWkWocwjix+0n6sQgv7Zq5nYjYulz7ThmK18zsvNJ337ahuMLv3ulow==}
     engines: {node: '>=15.0.0'}
 
   prelude-ls@1.1.2:
@@ -2847,11 +2855,11 @@ packages:
     resolution: {integrity: sha512-9kY+CygyYM6j02t5YFHbNz2FN5QmYGv9zAjVp4lCDjlCw7amdckXlEt/bjMhUIfj4ThGRE4gCUH5+yGnNuPo5A==}
     engines: {node: '>=10.0.0'}
 
-  tar-fs@1.16.4:
-    resolution: {integrity: sha512-u3XczWoYAIVXe5GOKK6+VeWaHjtc47W7hyuTo3+4cNakcCcuDmlkYiiHEsECwTkcI3h1VUgtwBQ54+RvY6cM4w==}
+  tar-fs@1.16.5:
+    resolution: {integrity: sha512-1ergVCCysmwHQNrOS+Pjm4DQ4nrGp43+Xnu4MRGjCnQu/m3hEgLNS78d5z+B8OJ1hN5EejJdCSFZE1oM6AQXAQ==}
 
-  tar-fs@2.1.2:
-    resolution: {integrity: sha512-EsaAXwxmx8UB7FRKqeozqEPop69DXcmYwTQwXvyAPF352HJsPdkVhvTaDPYqfNgruveJIJy3TA2l+2zj8LJIJA==}
+  tar-fs@2.1.3:
+    resolution: {integrity: sha512-090nwYJDmlhwFwEW3QQl+vaNnxsO2yVsd45eTKRBzSzu+hlb1w2K9inVq5b0ngXuLVqQ4ApvsUHHnu/zQNkWAg==}
 
   tar-stream@1.6.2:
     resolution: {integrity: sha512-rzS0heiNf8Xn7/mpdSVVSMAWAoy9bfb1WOTYC78Z0UQKeKa/CWS8FOq0lKGNa8DWKAn9gxjCvMLYc5PGXYlK2A==}
@@ -2867,8 +2875,8 @@ packages:
   through@2.3.8:
     resolution: {integrity: sha512-w89qg7PI8wAdvX60bMDP+bFoD5Dvhm9oLheFp5O4a2QF0cSBGsBX4qZmadPMvVqlLJBBci+WqGGOAPvcDeNSVg==}
 
-  tinyglobby@0.2.13:
-    resolution: {integrity: sha512-mEwzpUgrLySlveBwEVDMKk5B57bhLPYovRfPAXD5gA/98Opn0rCDj3GtLwFvCvH5RK9uPCExUROW5NjDwvqkxw==}
+  tinyglobby@0.2.14:
+    resolution: {integrity: sha512-tX5e7OM1HnYr2+a2C/4V0htOcSQcoSTH9KgJnVvNm5zm/cyEWKJ7j7YutsH9CxMdtOkkLFy2AHrMci9IM8IPZQ==}
     engines: {node: '>=12.0.0'}
 
   tmp@0.0.33:
@@ -3045,8 +3053,8 @@ packages:
   v8-compile-cache-lib@3.0.1:
     resolution: {integrity: sha512-wa7YjyUGfNZngI/vtK0UHAN+lgDCxBPCylVXGp0zu59Fz5aiGtNXaq3DhIov063MorB+VfufLh3JlF2KdTK3xg==}
 
-  viem@2.30.0:
-    resolution: {integrity: sha512-hvO4l5JIOnYPL8imULoFQiVTSkebIqzGHmIfsdMfIHpAgBaCx8rJJH9cXAxQeWCqsFuTmjEj1cX912N7HSCgpQ==}
+  viem@2.30.1:
+    resolution: {integrity: sha512-CkoS5Vv6kiRGmRF2xO2z275Gu90vTrKZHf/ckYXxP2J94UvCnFvUcbRdfit6uebj1I8nFwkGlkkOMuOZDHyO4w==}
     peerDependencies:
       typescript: '>=5.0.4'
     peerDependenciesMeta:
@@ -3125,8 +3133,8 @@ packages:
       utf-8-validate:
         optional: true
 
-  ws@8.18.1:
-    resolution: {integrity: sha512-RKW2aJZMXeMxVpnZ6bck+RswznaxmzdULiBr6KY7XkTnW8uvt0iT9H5DkHUChXrc+uurzwa0rVI16n/Xzjdz1w==}
+  ws@8.18.2:
+    resolution: {integrity: sha512-DMricUmwGZUVr++AEAe2uiVM7UoO9MAVZMDu05UQOaUII0lp+zOzLLU4Xqh/JvTqklB1T4uELaaPBKyjE1r4fQ==}
     engines: {node: '>=10.0.0'}
     peerDependencies:
       bufferutil: ^4.0.1
@@ -3409,7 +3417,7 @@ snapshots:
 
   '@fastify/busboy@2.1.1': {}
 
-  '@grpc/grpc-js@1.13.3':
+  '@grpc/grpc-js@1.13.4':
     dependencies:
       '@grpc/proto-loader': 0.7.15
       '@js-sdsl/ordered-map': 4.4.2
@@ -3454,37 +3462,37 @@ snapshots:
 
   '@js-sdsl/ordered-map@4.4.2': {}
 
-  '@matterlabs/hardhat-zksync-deploy@1.7.0(ethers@6.14.1)(hardhat@2.24.0(ts-node@10.9.2(@types/node@22.15.21)(typescript@5.8.3))(typescript@5.8.3))(zksync-ethers@6.17.0(ethers@6.14.1))':
+  '@matterlabs/hardhat-zksync-deploy@1.7.0(ethers@6.14.3)(hardhat@2.24.1(ts-node@10.9.2(@types/node@22.15.21)(typescript@5.8.3))(typescript@5.8.3))(zksync-ethers@6.17.0(ethers@6.14.3))':
     dependencies:
-      '@matterlabs/hardhat-zksync-solc': 1.3.2(hardhat@2.24.0(ts-node@10.9.2(@types/node@22.15.21)(typescript@5.8.3))(typescript@5.8.3))
-      '@matterlabs/hardhat-zksync-telemetry': 1.1.1(debug@4.4.1)(hardhat@2.24.0(ts-node@10.9.2(@types/node@22.15.21)(typescript@5.8.3))(typescript@5.8.3))
+      '@matterlabs/hardhat-zksync-solc': 1.3.2(hardhat@2.24.1(ts-node@10.9.2(@types/node@22.15.21)(typescript@5.8.3))(typescript@5.8.3))
+      '@matterlabs/hardhat-zksync-telemetry': 1.1.1(debug@4.4.1)(hardhat@2.24.1(ts-node@10.9.2(@types/node@22.15.21)(typescript@5.8.3))(typescript@5.8.3))
       chai: 4.5.0
       chalk: 4.1.2
-      ethers: 6.14.1
+      ethers: 6.14.3
       fs-extra: 11.3.0
       glob: 10.4.5
-      hardhat: 2.24.0(ts-node@10.9.2(@types/node@22.15.21)(typescript@5.8.3))(typescript@5.8.3)
+      hardhat: 2.24.1(ts-node@10.9.2(@types/node@22.15.21)(typescript@5.8.3))(typescript@5.8.3)
       lodash: 4.17.21
       sinon: 18.0.1
       sinon-chai: 3.7.0(chai@4.5.0)(sinon@18.0.1)
       ts-morph: 22.0.0
-      zksync-ethers: 6.17.0(ethers@6.14.1)
+      zksync-ethers: 6.17.0(ethers@6.14.3)
     transitivePeerDependencies:
       - debug
       - encoding
       - supports-color
 
-  '@matterlabs/hardhat-zksync-ethers@1.3.0(ethers@6.14.1)(ts-node@10.9.2(@types/node@22.15.21)(typescript@5.8.3))(typescript@5.8.3)(zksync-ethers@6.17.0(ethers@6.14.1))':
+  '@matterlabs/hardhat-zksync-ethers@1.3.0(ethers@6.14.3)(ts-node@10.9.2(@types/node@22.15.21)(typescript@5.8.3))(typescript@5.8.3)(zksync-ethers@6.17.0(ethers@6.14.3))':
     dependencies:
-      '@matterlabs/hardhat-zksync-deploy': 1.7.0(ethers@6.14.1)(hardhat@2.24.0(ts-node@10.9.2(@types/node@22.15.21)(typescript@5.8.3))(typescript@5.8.3))(zksync-ethers@6.17.0(ethers@6.14.1))
-      '@matterlabs/hardhat-zksync-solc': 1.3.2(hardhat@2.24.0(ts-node@10.9.2(@types/node@22.15.21)(typescript@5.8.3))(typescript@5.8.3))
-      '@matterlabs/hardhat-zksync-telemetry': 1.1.1(debug@4.4.1)(hardhat@2.24.0(ts-node@10.9.2(@types/node@22.15.21)(typescript@5.8.3))(typescript@5.8.3))
-      '@nomicfoundation/hardhat-ethers': 3.0.8(ethers@6.14.1)(hardhat@2.24.0(ts-node@10.9.2(@types/node@22.15.21)(typescript@5.8.3))(typescript@5.8.3))
+      '@matterlabs/hardhat-zksync-deploy': 1.7.0(ethers@6.14.3)(hardhat@2.24.1(ts-node@10.9.2(@types/node@22.15.21)(typescript@5.8.3))(typescript@5.8.3))(zksync-ethers@6.17.0(ethers@6.14.3))
+      '@matterlabs/hardhat-zksync-solc': 1.3.2(hardhat@2.24.1(ts-node@10.9.2(@types/node@22.15.21)(typescript@5.8.3))(typescript@5.8.3))
+      '@matterlabs/hardhat-zksync-telemetry': 1.1.1(debug@4.4.1)(hardhat@2.24.1(ts-node@10.9.2(@types/node@22.15.21)(typescript@5.8.3))(typescript@5.8.3))
+      '@nomicfoundation/hardhat-ethers': 3.0.8(ethers@6.14.3)(hardhat@2.24.1(ts-node@10.9.2(@types/node@22.15.21)(typescript@5.8.3))(typescript@5.8.3))
       chai: 4.5.0
       chalk: 4.1.2
-      ethers: 6.14.1
-      hardhat: 2.24.0(ts-node@10.9.2(@types/node@22.15.21)(typescript@5.8.3))(typescript@5.8.3)
-      zksync-ethers: 6.17.0(ethers@6.14.1)
+      ethers: 6.14.3
+      hardhat: 2.24.1(ts-node@10.9.2(@types/node@22.15.21)(typescript@5.8.3))(typescript@5.8.3)
+      zksync-ethers: 6.17.0(ethers@6.14.3)
     transitivePeerDependencies:
       - bufferutil
       - debug
@@ -3494,16 +3502,16 @@ snapshots:
       - typescript
       - utf-8-validate
 
-  '@matterlabs/hardhat-zksync-solc@1.3.2(hardhat@2.24.0(ts-node@10.9.2(@types/node@22.15.21)(typescript@5.8.3))(typescript@5.8.3))':
+  '@matterlabs/hardhat-zksync-solc@1.3.2(hardhat@2.24.1(ts-node@10.9.2(@types/node@22.15.21)(typescript@5.8.3))(typescript@5.8.3))':
     dependencies:
-      '@matterlabs/hardhat-zksync-telemetry': 1.1.1(debug@4.4.1)(hardhat@2.24.0(ts-node@10.9.2(@types/node@22.15.21)(typescript@5.8.3))(typescript@5.8.3))
+      '@matterlabs/hardhat-zksync-telemetry': 1.1.1(debug@4.4.1)(hardhat@2.24.1(ts-node@10.9.2(@types/node@22.15.21)(typescript@5.8.3))(typescript@5.8.3))
       '@nomiclabs/hardhat-docker': 2.0.2
       chai: 4.5.0
       chalk: 4.1.2
       debug: 4.4.1(supports-color@8.1.1)
       dockerode: 4.0.6
       fs-extra: 11.3.0
-      hardhat: 2.24.0(ts-node@10.9.2(@types/node@22.15.21)(typescript@5.8.3))(typescript@5.8.3)
+      hardhat: 2.24.1(ts-node@10.9.2(@types/node@22.15.21)(typescript@5.8.3))(typescript@5.8.3)
       proper-lockfile: 4.1.2
       semver: 7.7.2
       sinon: 18.0.1
@@ -3513,33 +3521,35 @@ snapshots:
       - encoding
       - supports-color
 
-  '@matterlabs/hardhat-zksync-telemetry@1.1.1(debug@4.4.1)(hardhat@2.24.0(ts-node@10.9.2(@types/node@22.15.21)(typescript@5.8.3))(typescript@5.8.3))':
+  '@matterlabs/hardhat-zksync-telemetry@1.1.1(debug@4.4.1)(hardhat@2.24.1(ts-node@10.9.2(@types/node@22.15.21)(typescript@5.8.3))(typescript@5.8.3))':
     dependencies:
       '@matterlabs/zksync-telemetry-js': zksync-telemetry@https://codeload.github.com/matter-labs/zksync-telemetry-js/tar.gz/2fd9edbe6b9a5e0c2caeda4b04dd5631d7546a11(debug@4.4.1)
-      hardhat: 2.24.0(ts-node@10.9.2(@types/node@22.15.21)(typescript@5.8.3))(typescript@5.8.3)
+      hardhat: 2.24.1(ts-node@10.9.2(@types/node@22.15.21)(typescript@5.8.3))(typescript@5.8.3)
     transitivePeerDependencies:
       - debug
       - supports-color
 
-  '@matterlabs/hardhat-zksync-verify@1.8.0(@nomicfoundation/hardhat-verify@2.0.13(hardhat@2.24.0(ts-node@10.9.2(@types/node@22.15.21)(typescript@5.8.3))(typescript@5.8.3)))(hardhat@2.24.0(ts-node@10.9.2(@types/node@22.15.21)(typescript@5.8.3))(typescript@5.8.3))':
+  '@matterlabs/hardhat-zksync-verify@1.8.0(@nomicfoundation/hardhat-verify@2.0.14(hardhat@2.24.1(ts-node@10.9.2(@types/node@22.15.21)(typescript@5.8.3))(typescript@5.8.3)))(hardhat@2.24.1(ts-node@10.9.2(@types/node@22.15.21)(typescript@5.8.3))(typescript@5.8.3))':
     dependencies:
       '@ethersproject/abi': 5.8.0
       '@ethersproject/address': 5.7.0
-      '@matterlabs/hardhat-zksync-solc': 1.3.2(hardhat@2.24.0(ts-node@10.9.2(@types/node@22.15.21)(typescript@5.8.3))(typescript@5.8.3))
-      '@matterlabs/hardhat-zksync-telemetry': 1.1.1(debug@4.4.1)(hardhat@2.24.0(ts-node@10.9.2(@types/node@22.15.21)(typescript@5.8.3))(typescript@5.8.3))
-      '@nomicfoundation/hardhat-verify': 2.0.13(hardhat@2.24.0(ts-node@10.9.2(@types/node@22.15.21)(typescript@5.8.3))(typescript@5.8.3))
+      '@matterlabs/hardhat-zksync-solc': 1.3.2(hardhat@2.24.1(ts-node@10.9.2(@types/node@22.15.21)(typescript@5.8.3))(typescript@5.8.3))
+      '@matterlabs/hardhat-zksync-telemetry': 1.1.1(debug@4.4.1)(hardhat@2.24.1(ts-node@10.9.2(@types/node@22.15.21)(typescript@5.8.3))(typescript@5.8.3))
+      '@nomicfoundation/hardhat-verify': 2.0.14(hardhat@2.24.1(ts-node@10.9.2(@types/node@22.15.21)(typescript@5.8.3))(typescript@5.8.3))
       axios: 1.9.0(debug@4.4.1)
       cbor: 9.0.2
       chai: 4.5.0
       chalk: 4.1.2
       debug: 4.4.1(supports-color@8.1.1)
-      hardhat: 2.24.0(ts-node@10.9.2(@types/node@22.15.21)(typescript@5.8.3))(typescript@5.8.3)
+      hardhat: 2.24.1(ts-node@10.9.2(@types/node@22.15.21)(typescript@5.8.3))(typescript@5.8.3)
       semver: 7.7.2
       sinon: 18.0.1
       sinon-chai: 3.7.0(chai@4.5.0)(sinon@18.0.1)
     transitivePeerDependencies:
       - encoding
       - supports-color
+
+  '@noble/ciphers@1.3.0': {}
 
   '@noble/curves@1.2.0':
     dependencies:
@@ -3552,6 +3562,10 @@ snapshots:
   '@noble/curves@1.8.2':
     dependencies:
       '@noble/hashes': 1.7.2
+
+  '@noble/curves@1.9.1':
+    dependencies:
+      '@noble/hashes': 1.8.0
 
   '@noble/hashes@1.2.0': {}
 
@@ -3601,38 +3615,38 @@ snapshots:
       '@nomicfoundation/edr-linux-x64-musl': 0.11.0
       '@nomicfoundation/edr-win32-x64-msvc': 0.11.0
 
-  '@nomicfoundation/hardhat-chai-matchers@2.0.8(@nomicfoundation/hardhat-ethers@3.0.8(ethers@6.14.1)(hardhat@2.24.0(ts-node@10.9.2(@types/node@22.15.21)(typescript@5.8.3))(typescript@5.8.3)))(chai@4.5.0)(ethers@6.14.1)(hardhat@2.24.0(ts-node@10.9.2(@types/node@22.15.21)(typescript@5.8.3))(typescript@5.8.3))':
+  '@nomicfoundation/hardhat-chai-matchers@2.0.8(@nomicfoundation/hardhat-ethers@3.0.8(ethers@6.14.3)(hardhat@2.24.1(ts-node@10.9.2(@types/node@22.15.21)(typescript@5.8.3))(typescript@5.8.3)))(chai@4.5.0)(ethers@6.14.3)(hardhat@2.24.1(ts-node@10.9.2(@types/node@22.15.21)(typescript@5.8.3))(typescript@5.8.3))':
     dependencies:
-      '@nomicfoundation/hardhat-ethers': 3.0.8(ethers@6.14.1)(hardhat@2.24.0(ts-node@10.9.2(@types/node@22.15.21)(typescript@5.8.3))(typescript@5.8.3))
+      '@nomicfoundation/hardhat-ethers': 3.0.8(ethers@6.14.3)(hardhat@2.24.1(ts-node@10.9.2(@types/node@22.15.21)(typescript@5.8.3))(typescript@5.8.3))
       '@types/chai-as-promised': 7.1.8
       chai: 4.5.0
       chai-as-promised: 7.1.2(chai@4.5.0)
       deep-eql: 4.1.4
-      ethers: 6.14.1
-      hardhat: 2.24.0(ts-node@10.9.2(@types/node@22.15.21)(typescript@5.8.3))(typescript@5.8.3)
+      ethers: 6.14.3
+      hardhat: 2.24.1(ts-node@10.9.2(@types/node@22.15.21)(typescript@5.8.3))(typescript@5.8.3)
       ordinal: 1.0.3
 
-  '@nomicfoundation/hardhat-ethers@3.0.8(ethers@6.14.1)(hardhat@2.24.0(ts-node@10.9.2(@types/node@22.15.21)(typescript@5.8.3))(typescript@5.8.3))':
+  '@nomicfoundation/hardhat-ethers@3.0.8(ethers@6.14.3)(hardhat@2.24.1(ts-node@10.9.2(@types/node@22.15.21)(typescript@5.8.3))(typescript@5.8.3))':
     dependencies:
       debug: 4.4.1(supports-color@8.1.1)
-      ethers: 6.14.1
-      hardhat: 2.24.0(ts-node@10.9.2(@types/node@22.15.21)(typescript@5.8.3))(typescript@5.8.3)
+      ethers: 6.14.3
+      hardhat: 2.24.1(ts-node@10.9.2(@types/node@22.15.21)(typescript@5.8.3))(typescript@5.8.3)
       lodash.isequal: 4.5.0
     transitivePeerDependencies:
       - supports-color
 
-  '@nomicfoundation/hardhat-network-helpers@1.0.12(hardhat@2.24.0(ts-node@10.9.2(@types/node@22.15.21)(typescript@5.8.3))(typescript@5.8.3))':
+  '@nomicfoundation/hardhat-network-helpers@1.0.12(hardhat@2.24.1(ts-node@10.9.2(@types/node@22.15.21)(typescript@5.8.3))(typescript@5.8.3))':
     dependencies:
       ethereumjs-util: 7.1.5
-      hardhat: 2.24.0(ts-node@10.9.2(@types/node@22.15.21)(typescript@5.8.3))(typescript@5.8.3)
+      hardhat: 2.24.1(ts-node@10.9.2(@types/node@22.15.21)(typescript@5.8.3))(typescript@5.8.3)
 
-  '@nomicfoundation/hardhat-verify@2.0.13(hardhat@2.24.0(ts-node@10.9.2(@types/node@22.15.21)(typescript@5.8.3))(typescript@5.8.3))':
+  '@nomicfoundation/hardhat-verify@2.0.14(hardhat@2.24.1(ts-node@10.9.2(@types/node@22.15.21)(typescript@5.8.3))(typescript@5.8.3))':
     dependencies:
       '@ethersproject/abi': 5.8.0
       '@ethersproject/address': 5.8.0
       cbor: 8.1.0
       debug: 4.4.1(supports-color@8.1.1)
-      hardhat: 2.24.0(ts-node@10.9.2(@types/node@22.15.21)(typescript@5.8.3))(typescript@5.8.3)
+      hardhat: 2.24.1(ts-node@10.9.2(@types/node@22.15.21)(typescript@5.8.3))(typescript@5.8.3)
       lodash.clonedeep: 4.5.0
       picocolors: 1.1.1
       semver: 6.3.1
@@ -3713,7 +3727,7 @@ snapshots:
       '@opentelemetry/api': 1.9.0
       '@opentelemetry/core': 1.30.1(@opentelemetry/api@1.9.0)
       '@opentelemetry/instrumentation': 0.57.2(@opentelemetry/api@1.9.0)
-      '@opentelemetry/semantic-conventions': 1.33.1
+      '@opentelemetry/semantic-conventions': 1.34.0
     transitivePeerDependencies:
       - supports-color
 
@@ -3722,7 +3736,7 @@ snapshots:
       '@opentelemetry/api': 1.9.0
       '@opentelemetry/core': 1.30.1(@opentelemetry/api@1.9.0)
       '@opentelemetry/instrumentation': 0.57.2(@opentelemetry/api@1.9.0)
-      '@opentelemetry/semantic-conventions': 1.33.1
+      '@opentelemetry/semantic-conventions': 1.34.0
       '@types/connect': 3.4.36
     transitivePeerDependencies:
       - supports-color
@@ -3739,7 +3753,7 @@ snapshots:
       '@opentelemetry/api': 1.9.0
       '@opentelemetry/core': 1.30.1(@opentelemetry/api@1.9.0)
       '@opentelemetry/instrumentation': 0.57.2(@opentelemetry/api@1.9.0)
-      '@opentelemetry/semantic-conventions': 1.33.1
+      '@opentelemetry/semantic-conventions': 1.34.0
     transitivePeerDependencies:
       - supports-color
 
@@ -3748,7 +3762,7 @@ snapshots:
       '@opentelemetry/api': 1.9.0
       '@opentelemetry/core': 1.30.1(@opentelemetry/api@1.9.0)
       '@opentelemetry/instrumentation': 0.57.2(@opentelemetry/api@1.9.0)
-      '@opentelemetry/semantic-conventions': 1.33.1
+      '@opentelemetry/semantic-conventions': 1.34.0
     transitivePeerDependencies:
       - supports-color
 
@@ -3779,7 +3793,7 @@ snapshots:
       '@opentelemetry/api': 1.9.0
       '@opentelemetry/core': 1.30.1(@opentelemetry/api@1.9.0)
       '@opentelemetry/instrumentation': 0.57.2(@opentelemetry/api@1.9.0)
-      '@opentelemetry/semantic-conventions': 1.33.1
+      '@opentelemetry/semantic-conventions': 1.34.0
     transitivePeerDependencies:
       - supports-color
 
@@ -3799,7 +3813,7 @@ snapshots:
       '@opentelemetry/api': 1.9.0
       '@opentelemetry/instrumentation': 0.57.2(@opentelemetry/api@1.9.0)
       '@opentelemetry/redis-common': 0.36.2
-      '@opentelemetry/semantic-conventions': 1.33.1
+      '@opentelemetry/semantic-conventions': 1.34.0
     transitivePeerDependencies:
       - supports-color
 
@@ -3807,7 +3821,7 @@ snapshots:
     dependencies:
       '@opentelemetry/api': 1.9.0
       '@opentelemetry/instrumentation': 0.57.2(@opentelemetry/api@1.9.0)
-      '@opentelemetry/semantic-conventions': 1.33.1
+      '@opentelemetry/semantic-conventions': 1.34.0
     transitivePeerDependencies:
       - supports-color
 
@@ -3815,7 +3829,7 @@ snapshots:
     dependencies:
       '@opentelemetry/api': 1.9.0
       '@opentelemetry/instrumentation': 0.57.2(@opentelemetry/api@1.9.0)
-      '@opentelemetry/semantic-conventions': 1.33.1
+      '@opentelemetry/semantic-conventions': 1.34.0
     transitivePeerDependencies:
       - supports-color
 
@@ -3824,7 +3838,7 @@ snapshots:
       '@opentelemetry/api': 1.9.0
       '@opentelemetry/core': 1.30.1(@opentelemetry/api@1.9.0)
       '@opentelemetry/instrumentation': 0.57.2(@opentelemetry/api@1.9.0)
-      '@opentelemetry/semantic-conventions': 1.33.1
+      '@opentelemetry/semantic-conventions': 1.34.0
     transitivePeerDependencies:
       - supports-color
 
@@ -3839,7 +3853,7 @@ snapshots:
     dependencies:
       '@opentelemetry/api': 1.9.0
       '@opentelemetry/instrumentation': 0.57.2(@opentelemetry/api@1.9.0)
-      '@opentelemetry/semantic-conventions': 1.33.1
+      '@opentelemetry/semantic-conventions': 1.34.0
     transitivePeerDependencies:
       - supports-color
 
@@ -3848,7 +3862,7 @@ snapshots:
       '@opentelemetry/api': 1.9.0
       '@opentelemetry/core': 1.30.1(@opentelemetry/api@1.9.0)
       '@opentelemetry/instrumentation': 0.57.2(@opentelemetry/api@1.9.0)
-      '@opentelemetry/semantic-conventions': 1.33.1
+      '@opentelemetry/semantic-conventions': 1.34.0
     transitivePeerDependencies:
       - supports-color
 
@@ -3856,7 +3870,7 @@ snapshots:
     dependencies:
       '@opentelemetry/api': 1.9.0
       '@opentelemetry/instrumentation': 0.57.2(@opentelemetry/api@1.9.0)
-      '@opentelemetry/semantic-conventions': 1.33.1
+      '@opentelemetry/semantic-conventions': 1.34.0
       '@opentelemetry/sql-common': 0.40.1(@opentelemetry/api@1.9.0)
     transitivePeerDependencies:
       - supports-color
@@ -3865,7 +3879,7 @@ snapshots:
     dependencies:
       '@opentelemetry/api': 1.9.0
       '@opentelemetry/instrumentation': 0.57.2(@opentelemetry/api@1.9.0)
-      '@opentelemetry/semantic-conventions': 1.33.1
+      '@opentelemetry/semantic-conventions': 1.34.0
       '@types/mysql': 2.15.26
     transitivePeerDependencies:
       - supports-color
@@ -3874,7 +3888,7 @@ snapshots:
     dependencies:
       '@opentelemetry/api': 1.9.0
       '@opentelemetry/instrumentation': 0.57.2(@opentelemetry/api@1.9.0)
-      '@opentelemetry/semantic-conventions': 1.33.1
+      '@opentelemetry/semantic-conventions': 1.34.0
     transitivePeerDependencies:
       - supports-color
 
@@ -3895,7 +3909,7 @@ snapshots:
       '@opentelemetry/api': 1.9.0
       '@opentelemetry/instrumentation': 0.57.2(@opentelemetry/api@1.9.0)
       '@opentelemetry/redis-common': 0.36.2
-      '@opentelemetry/semantic-conventions': 1.33.1
+      '@opentelemetry/semantic-conventions': 1.34.0
     transitivePeerDependencies:
       - supports-color
 
@@ -3903,7 +3917,7 @@ snapshots:
     dependencies:
       '@opentelemetry/api': 1.9.0
       '@opentelemetry/instrumentation': 0.57.2(@opentelemetry/api@1.9.0)
-      '@opentelemetry/semantic-conventions': 1.33.1
+      '@opentelemetry/semantic-conventions': 1.34.0
       '@types/tedious': 4.0.14
     transitivePeerDependencies:
       - supports-color
@@ -3971,7 +3985,7 @@ snapshots:
 
   '@opentelemetry/semantic-conventions@1.28.0': {}
 
-  '@opentelemetry/semantic-conventions@1.33.1': {}
+  '@opentelemetry/semantic-conventions@1.34.0': {}
 
   '@opentelemetry/sql-common@0.40.1(@opentelemetry/api@1.9.0)':
     dependencies:
@@ -4042,10 +4056,10 @@ snapshots:
       '@noble/hashes': 1.4.0
       '@scure/base': 1.1.9
 
-  '@scure/bip32@1.6.2':
+  '@scure/bip32@1.7.0':
     dependencies:
-      '@noble/curves': 1.8.2
-      '@noble/hashes': 1.7.2
+      '@noble/curves': 1.9.1
+      '@noble/hashes': 1.8.0
       '@scure/base': 1.2.5
 
   '@scure/bip39@1.1.1':
@@ -4058,9 +4072,9 @@ snapshots:
       '@noble/hashes': 1.4.0
       '@scure/base': 1.1.9
 
-  '@scure/bip39@1.5.4':
+  '@scure/bip39@1.6.0':
     dependencies:
-      '@noble/hashes': 1.7.2
+      '@noble/hashes': 1.8.0
       '@scure/base': 1.2.5
 
   '@sentry/core@5.30.0':
@@ -4131,22 +4145,22 @@ snapshots:
       '@opentelemetry/instrumentation-undici': 0.10.0(@opentelemetry/api@1.9.0)
       '@opentelemetry/resources': 1.30.1(@opentelemetry/api@1.9.0)
       '@opentelemetry/sdk-trace-base': 1.30.1(@opentelemetry/api@1.9.0)
-      '@opentelemetry/semantic-conventions': 1.33.1
+      '@opentelemetry/semantic-conventions': 1.34.0
       '@prisma/instrumentation': 5.22.0
       '@sentry/core': 8.55.0
-      '@sentry/opentelemetry': 8.55.0(@opentelemetry/api@1.9.0)(@opentelemetry/context-async-hooks@1.30.1(@opentelemetry/api@1.9.0))(@opentelemetry/core@1.30.1(@opentelemetry/api@1.9.0))(@opentelemetry/instrumentation@0.57.2(@opentelemetry/api@1.9.0))(@opentelemetry/sdk-trace-base@1.30.1(@opentelemetry/api@1.9.0))(@opentelemetry/semantic-conventions@1.33.1)
+      '@sentry/opentelemetry': 8.55.0(@opentelemetry/api@1.9.0)(@opentelemetry/context-async-hooks@1.30.1(@opentelemetry/api@1.9.0))(@opentelemetry/core@1.30.1(@opentelemetry/api@1.9.0))(@opentelemetry/instrumentation@0.57.2(@opentelemetry/api@1.9.0))(@opentelemetry/sdk-trace-base@1.30.1(@opentelemetry/api@1.9.0))(@opentelemetry/semantic-conventions@1.34.0)
       import-in-the-middle: 1.13.2
     transitivePeerDependencies:
       - supports-color
 
-  '@sentry/opentelemetry@8.55.0(@opentelemetry/api@1.9.0)(@opentelemetry/context-async-hooks@1.30.1(@opentelemetry/api@1.9.0))(@opentelemetry/core@1.30.1(@opentelemetry/api@1.9.0))(@opentelemetry/instrumentation@0.57.2(@opentelemetry/api@1.9.0))(@opentelemetry/sdk-trace-base@1.30.1(@opentelemetry/api@1.9.0))(@opentelemetry/semantic-conventions@1.33.1)':
+  '@sentry/opentelemetry@8.55.0(@opentelemetry/api@1.9.0)(@opentelemetry/context-async-hooks@1.30.1(@opentelemetry/api@1.9.0))(@opentelemetry/core@1.30.1(@opentelemetry/api@1.9.0))(@opentelemetry/instrumentation@0.57.2(@opentelemetry/api@1.9.0))(@opentelemetry/sdk-trace-base@1.30.1(@opentelemetry/api@1.9.0))(@opentelemetry/semantic-conventions@1.34.0)':
     dependencies:
       '@opentelemetry/api': 1.9.0
       '@opentelemetry/context-async-hooks': 1.30.1(@opentelemetry/api@1.9.0)
       '@opentelemetry/core': 1.30.1(@opentelemetry/api@1.9.0)
       '@opentelemetry/instrumentation': 0.57.2(@opentelemetry/api@1.9.0)
       '@opentelemetry/sdk-trace-base': 1.30.1(@opentelemetry/api@1.9.0)
-      '@opentelemetry/semantic-conventions': 1.33.1
+      '@opentelemetry/semantic-conventions': 1.34.0
       '@sentry/core': 8.55.0
 
   '@sentry/tracing@5.30.0':
@@ -4209,20 +4223,20 @@ snapshots:
 
   '@tsconfig/node16@1.0.4': {}
 
-  '@typechain/ethers-v6@0.5.1(ethers@6.14.1)(typechain@8.3.2(typescript@5.8.3))(typescript@5.8.3)':
+  '@typechain/ethers-v6@0.5.1(ethers@6.14.3)(typechain@8.3.2(typescript@5.8.3))(typescript@5.8.3)':
     dependencies:
-      ethers: 6.14.1
+      ethers: 6.14.3
       lodash: 4.17.21
       ts-essentials: 7.0.3(typescript@5.8.3)
       typechain: 8.3.2(typescript@5.8.3)
       typescript: 5.8.3
 
-  '@typechain/hardhat@9.1.0(@typechain/ethers-v6@0.5.1(ethers@6.14.1)(typechain@8.3.2(typescript@5.8.3))(typescript@5.8.3))(ethers@6.14.1)(hardhat@2.24.0(ts-node@10.9.2(@types/node@22.15.21)(typescript@5.8.3))(typescript@5.8.3))(typechain@8.3.2(typescript@5.8.3))':
+  '@typechain/hardhat@9.1.0(@typechain/ethers-v6@0.5.1(ethers@6.14.3)(typechain@8.3.2(typescript@5.8.3))(typescript@5.8.3))(ethers@6.14.3)(hardhat@2.24.1(ts-node@10.9.2(@types/node@22.15.21)(typescript@5.8.3))(typescript@5.8.3))(typechain@8.3.2(typescript@5.8.3))':
     dependencies:
-      '@typechain/ethers-v6': 0.5.1(ethers@6.14.1)(typechain@8.3.2(typescript@5.8.3))(typescript@5.8.3)
-      ethers: 6.14.1
+      '@typechain/ethers-v6': 0.5.1(ethers@6.14.3)(typechain@8.3.2(typescript@5.8.3))(typescript@5.8.3)
+      ethers: 6.14.3
       fs-extra: 9.1.0
-      hardhat: 2.24.0(ts-node@10.9.2(@types/node@22.15.21)(typescript@5.8.3))(typescript@5.8.3)
+      hardhat: 2.24.1(ts-node@10.9.2(@types/node@22.15.21)(typescript@5.8.3))(typescript@5.8.3)
       typechain: 8.3.2(typescript@5.8.3)
 
   '@types/bn.js@5.1.6':
@@ -4884,18 +4898,18 @@ snapshots:
     dependencies:
       concat-stream: 1.6.2
       docker-modem: 1.0.9
-      tar-fs: 1.16.4
+      tar-fs: 1.16.5
     transitivePeerDependencies:
       - supports-color
 
   dockerode@4.0.6:
     dependencies:
       '@balena/dockerignore': 1.0.2
-      '@grpc/grpc-js': 1.13.3
+      '@grpc/grpc-js': 1.13.4
       '@grpc/proto-loader': 0.7.15
       docker-modem: 5.0.6
       protobufjs: 7.4.0
-      tar-fs: 2.1.2
+      tar-fs: 2.1.3
       uuid: 10.0.0
     transitivePeerDependencies:
       - supports-color
@@ -5090,7 +5104,7 @@ snapshots:
       ethereum-cryptography: 0.1.3
       rlp: 2.2.7
 
-  ethers@6.14.1:
+  ethers@6.14.3:
     dependencies:
       '@adraffy/ens-normalize': 1.10.1
       '@noble/curves': 1.2.0
@@ -5357,20 +5371,20 @@ snapshots:
     optionalDependencies:
       uglify-js: 3.19.3
 
-  hardhat-abi-exporter@2.11.0(hardhat@2.24.0(ts-node@10.9.2(@types/node@22.15.21)(typescript@5.8.3))(typescript@5.8.3)):
+  hardhat-abi-exporter@2.11.0(hardhat@2.24.1(ts-node@10.9.2(@types/node@22.15.21)(typescript@5.8.3))(typescript@5.8.3)):
     dependencies:
       '@ethersproject/abi': 5.8.0
       delete-empty: 3.0.0
-      hardhat: 2.24.0(ts-node@10.9.2(@types/node@22.15.21)(typescript@5.8.3))(typescript@5.8.3)
+      hardhat: 2.24.1(ts-node@10.9.2(@types/node@22.15.21)(typescript@5.8.3))(typescript@5.8.3)
 
-  hardhat-contract-sizer@2.10.0(hardhat@2.24.0(ts-node@10.9.2(@types/node@22.15.21)(typescript@5.8.3))(typescript@5.8.3)):
+  hardhat-contract-sizer@2.10.0(hardhat@2.24.1(ts-node@10.9.2(@types/node@22.15.21)(typescript@5.8.3))(typescript@5.8.3)):
     dependencies:
       chalk: 4.1.2
       cli-table3: 0.6.5
-      hardhat: 2.24.0(ts-node@10.9.2(@types/node@22.15.21)(typescript@5.8.3))(typescript@5.8.3)
+      hardhat: 2.24.1(ts-node@10.9.2(@types/node@22.15.21)(typescript@5.8.3))(typescript@5.8.3)
       strip-ansi: 6.0.1
 
-  hardhat-gas-reporter@2.2.3(hardhat@2.24.0(ts-node@10.9.2(@types/node@22.15.21)(typescript@5.8.3))(typescript@5.8.3))(typescript@5.8.3)(zod@3.24.4):
+  hardhat-gas-reporter@2.2.3(hardhat@2.24.1(ts-node@10.9.2(@types/node@22.15.21)(typescript@5.8.3))(typescript@5.8.3))(typescript@5.8.3)(zod@3.24.4):
     dependencies:
       '@ethersproject/abi': 5.8.0
       '@ethersproject/bytes': 5.8.0
@@ -5382,12 +5396,12 @@ snapshots:
       cli-table3: 0.6.5
       ethereum-cryptography: 2.2.1
       glob: 10.4.5
-      hardhat: 2.24.0(ts-node@10.9.2(@types/node@22.15.21)(typescript@5.8.3))(typescript@5.8.3)
+      hardhat: 2.24.1(ts-node@10.9.2(@types/node@22.15.21)(typescript@5.8.3))(typescript@5.8.3)
       jsonschema: 1.5.0
       lodash: 4.17.21
       markdown-table: 2.0.0
       sha1: 1.1.1
-      viem: 2.30.0(typescript@5.8.3)(zod@3.24.4)
+      viem: 2.30.1(typescript@5.8.3)(zod@3.24.4)
     transitivePeerDependencies:
       - bufferutil
       - debug
@@ -5395,7 +5409,7 @@ snapshots:
       - utf-8-validate
       - zod
 
-  hardhat@2.24.0(ts-node@10.9.2(@types/node@22.15.21)(typescript@5.8.3))(typescript@5.8.3):
+  hardhat@2.24.1(ts-node@10.9.2(@types/node@22.15.21)(typescript@5.8.3))(typescript@5.8.3):
     dependencies:
       '@ethereumjs/util': 9.1.0
       '@ethersproject/abi': 5.8.0
@@ -5433,7 +5447,7 @@ snapshots:
       solc: 0.8.26(debug@4.4.1)
       source-map-support: 0.5.21
       stacktrace-parser: 0.1.11
-      tinyglobby: 0.2.13
+      tinyglobby: 0.2.14
       tsort: 0.0.1
       undici: 5.29.0
       uuid: 8.3.2
@@ -5580,9 +5594,9 @@ snapshots:
 
   isexe@2.0.0: {}
 
-  isows@1.0.7(ws@8.18.1):
+  isows@1.0.7(ws@8.18.2):
     dependencies:
-      ws: 8.18.1
+      ws: 8.18.2
 
   jackspeak@3.4.3:
     dependencies:
@@ -5872,13 +5886,14 @@ snapshots:
 
   os-tmpdir@1.0.2: {}
 
-  ox@0.6.9(typescript@5.8.3)(zod@3.24.4):
+  ox@0.7.1(typescript@5.8.3)(zod@3.24.4):
     dependencies:
       '@adraffy/ens-normalize': 1.11.0
-      '@noble/curves': 1.8.2
-      '@noble/hashes': 1.7.2
-      '@scure/bip32': 1.6.2
-      '@scure/bip39': 1.5.4
+      '@noble/ciphers': 1.3.0
+      '@noble/curves': 1.9.1
+      '@noble/hashes': 1.8.0
+      '@scure/bip32': 1.7.0
+      '@scure/bip39': 1.6.0
       abitype: 1.0.8(typescript@5.8.3)(zod@3.24.4)
       eventemitter3: 5.0.1
     optionalDependencies:
@@ -5983,7 +5998,7 @@ snapshots:
     dependencies:
       xtend: 4.0.2
 
-  posthog-node@4.17.1(debug@4.4.1):
+  posthog-node@4.17.2(debug@4.4.1):
     dependencies:
       axios: 1.9.0(debug@4.4.1)
     transitivePeerDependencies:
@@ -6301,7 +6316,7 @@ snapshots:
     transitivePeerDependencies:
       - typescript
 
-  solidity-coverage@0.8.16(hardhat@2.24.0(ts-node@10.9.2(@types/node@22.15.21)(typescript@5.8.3))(typescript@5.8.3)):
+  solidity-coverage@0.8.16(hardhat@2.24.1(ts-node@10.9.2(@types/node@22.15.21)(typescript@5.8.3))(typescript@5.8.3)):
     dependencies:
       '@ethersproject/abi': 5.8.0
       '@solidity-parser/parser': 0.20.1
@@ -6312,7 +6327,7 @@ snapshots:
       ghost-testrpc: 0.0.2
       global-modules: 2.0.0
       globby: 10.0.2
-      hardhat: 2.24.0(ts-node@10.9.2(@types/node@22.15.21)(typescript@5.8.3))(typescript@5.8.3)
+      hardhat: 2.24.1(ts-node@10.9.2(@types/node@22.15.21)(typescript@5.8.3))(typescript@5.8.3)
       jsonschema: 1.5.0
       lodash: 4.17.21
       mocha: 10.8.2
@@ -6427,14 +6442,14 @@ snapshots:
       string-width: 4.2.3
       strip-ansi: 6.0.1
 
-  tar-fs@1.16.4:
+  tar-fs@1.16.5:
     dependencies:
       chownr: 1.1.4
       mkdirp: 0.5.6
       pump: 1.0.3
       tar-stream: 1.6.2
 
-  tar-fs@2.1.2:
+  tar-fs@2.1.3:
     dependencies:
       chownr: 1.1.4
       mkdirp-classic: 0.5.3
@@ -6463,7 +6478,7 @@ snapshots:
 
   through@2.3.8: {}
 
-  tinyglobby@0.2.13:
+  tinyglobby@0.2.14:
     dependencies:
       fdir: 6.4.4(picomatch@4.0.2)
       picomatch: 4.0.2
@@ -6615,16 +6630,16 @@ snapshots:
 
   v8-compile-cache-lib@3.0.1: {}
 
-  viem@2.30.0(typescript@5.8.3)(zod@3.24.4):
+  viem@2.30.1(typescript@5.8.3)(zod@3.24.4):
     dependencies:
-      '@noble/curves': 1.8.2
-      '@noble/hashes': 1.7.2
-      '@scure/bip32': 1.6.2
-      '@scure/bip39': 1.5.4
+      '@noble/curves': 1.9.1
+      '@noble/hashes': 1.8.0
+      '@scure/bip32': 1.7.0
+      '@scure/bip39': 1.6.0
       abitype: 1.0.8(typescript@5.8.3)(zod@3.24.4)
-      isows: 1.0.7(ws@8.18.1)
-      ox: 0.6.9(typescript@5.8.3)(zod@3.24.4)
-      ws: 8.18.1
+      isows: 1.0.7(ws@8.18.2)
+      ox: 0.7.1(typescript@5.8.3)(zod@3.24.4)
+      ws: 8.18.2
     optionalDependencies:
       typescript: 5.8.3
     transitivePeerDependencies:
@@ -6691,7 +6706,7 @@ snapshots:
 
   ws@8.17.1: {}
 
-  ws@8.18.1: {}
+  ws@8.18.2: {}
 
   xtend@4.0.2: {}
 
@@ -6732,15 +6747,15 @@ snapshots:
 
   yocto-queue@0.1.0: {}
 
-  zksync-ethers@6.17.0(ethers@6.14.1):
+  zksync-ethers@6.17.0(ethers@6.14.3):
     dependencies:
-      ethers: 6.14.1
+      ethers: 6.14.3
 
   zksync-telemetry@https://codeload.github.com/matter-labs/zksync-telemetry-js/tar.gz/2fd9edbe6b9a5e0c2caeda4b04dd5631d7546a11(debug@4.4.1):
     dependencies:
       '@sentry/node': 8.55.0
       env-paths: 2.2.1
-      posthog-node: 4.17.1(debug@4.4.1)
+      posthog-node: 4.17.2(debug@4.4.1)
       readline-sync: 1.4.10
       uuid: 11.1.0
     transitivePeerDependencies:
