@@ -21,8 +21,8 @@ importers:
         specifier: ^1.3.2
         version: 1.3.2(hardhat@2.24.2(ts-node@10.9.2(@types/node@22.15.29)(typescript@5.8.3))(typescript@5.8.3))
       '@matterlabs/hardhat-zksync-verify':
-        specifier: ^1.8.0
-        version: 1.8.0(@nomicfoundation/hardhat-verify@2.0.14(hardhat@2.24.2(ts-node@10.9.2(@types/node@22.15.29)(typescript@5.8.3))(typescript@5.8.3)))(hardhat@2.24.2(ts-node@10.9.2(@types/node@22.15.29)(typescript@5.8.3))(typescript@5.8.3))
+        specifier: ^1.8.1
+        version: 1.8.1(@nomicfoundation/hardhat-verify@2.0.14(hardhat@2.24.2(ts-node@10.9.2(@types/node@22.15.29)(typescript@5.8.3))(typescript@5.8.3)))(hardhat@2.24.2(ts-node@10.9.2(@types/node@22.15.29)(typescript@5.8.3))(typescript@5.8.3))
       '@nomicfoundation/hardhat-chai-matchers':
         specifier: ^2.0.8
         version: 2.0.8(@nomicfoundation/hardhat-ethers@3.0.8(ethers@6.14.3)(hardhat@2.24.2(ts-node@10.9.2(@types/node@22.15.29)(typescript@5.8.3))(typescript@5.8.3)))(chai@4.5.0)(ethers@6.14.3)(hardhat@2.24.2(ts-node@10.9.2(@types/node@22.15.29)(typescript@5.8.3))(typescript@5.8.3))
@@ -327,8 +327,8 @@ packages:
     peerDependencies:
       hardhat: ^2.22.5
 
-  '@matterlabs/hardhat-zksync-verify@1.8.0':
-    resolution: {integrity: sha512-iidDtuxIYSsirh38Na/5czdFhmr0gGLB9xiDW0WW8qb5zxb3e+e6OoPHzZW+z0C1yHlaMmiSW5pKxawd0P62zQ==}
+  '@matterlabs/hardhat-zksync-verify@1.8.1':
+    resolution: {integrity: sha512-9ClF740rZbHw920bslNSfAXoF6pIUwwLcqD0utv1N71SbErvTQV8PAeiH9HE1ZwFMFYYD24ssoqjz6glufAllg==}
     peerDependencies:
       '@nomicfoundation/hardhat-verify': ^2.0.8
       hardhat: ^2.22.5
@@ -1740,8 +1740,8 @@ packages:
     resolution: {integrity: sha512-yDYSgNMraqvnxiEXO4hi88+YZxaHC6QKzb5N84iRCTDeRO7ZALpir/lVmf/uXUhnwUr2O4HU8s/n6x+yNjQkHw==}
     engines: {node: '>= 14.17'}
 
-  form-data@4.0.2:
-    resolution: {integrity: sha512-hGfm/slu0ZabnNt4oaRZ6uREyfCj6P4fT/n6A1rGV+Z0VdGXjfOhVUpkn6qVQONHGIFwmveGXyDs75+nr6FM8w==}
+  form-data@4.0.3:
+    resolution: {integrity: sha512-qsITQPfmvMOSAdeyZ+12I1c+CKSstAFAwu+97zrnWAbIr5u8wfsExUzCesVLC8NgHuRUqNN4Zy6UPWUTRGslcA==}
     engines: {node: '>= 6'}
 
   forwarded-parse@2.1.2:
@@ -3538,7 +3538,7 @@ snapshots:
       - debug
       - supports-color
 
-  '@matterlabs/hardhat-zksync-verify@1.8.0(@nomicfoundation/hardhat-verify@2.0.14(hardhat@2.24.2(ts-node@10.9.2(@types/node@22.15.29)(typescript@5.8.3))(typescript@5.8.3)))(hardhat@2.24.2(ts-node@10.9.2(@types/node@22.15.29)(typescript@5.8.3))(typescript@5.8.3))':
+  '@matterlabs/hardhat-zksync-verify@1.8.1(@nomicfoundation/hardhat-verify@2.0.14(hardhat@2.24.2(ts-node@10.9.2(@types/node@22.15.29)(typescript@5.8.3))(typescript@5.8.3)))(hardhat@2.24.2(ts-node@10.9.2(@types/node@22.15.29)(typescript@5.8.3))(typescript@5.8.3))':
     dependencies:
       '@ethersproject/abi': 5.8.0
       '@ethersproject/address': 5.7.0
@@ -4529,7 +4529,7 @@ snapshots:
   axios@1.9.0(debug@4.4.1):
     dependencies:
       follow-redirects: 1.15.9(debug@4.4.1)
-      form-data: 4.0.2
+      form-data: 4.0.3
       proxy-from-env: 1.1.0
     transitivePeerDependencies:
       - debug
@@ -5214,11 +5214,12 @@ snapshots:
 
   form-data-encoder@2.1.4: {}
 
-  form-data@4.0.2:
+  form-data@4.0.3:
     dependencies:
       asynckit: 0.4.0
       combined-stream: 1.0.8
       es-set-tostringtag: 2.1.0
+      hasown: 2.0.2
       mime-types: 2.1.35
 
   forwarded-parse@2.1.2: {}
