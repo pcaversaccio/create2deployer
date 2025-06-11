@@ -85,9 +85,6 @@ const config: HardhatUserConfig = {
     localhost: {
       url: "http://127.0.0.1:8545",
     },
-    "truffle-dashboard": {
-      url: "http://localhost:24012/rpc",
-    },
     tenderly: {
       url: `https://rpc.tenderly.co/fork/${process.env.TENDERLY_FORK_ID}`,
     },
@@ -1077,6 +1074,60 @@ const config: HardhatUserConfig = {
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
+    immutableZkEVMTestnet: {
+      chainId: 13473,
+      url: process.env.IMMUTABLEZKEVM_TESTNET_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
+    immutableZkEVMMain: {
+      chainId: 13371,
+      url: process.env.IMMUTABLEZKEVM_MAINNET_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
+    abstractTestnet: {
+      chainId: 11124,
+      url: process.env.ABSTRACT_TESTNET_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
+    abstractMain: {
+      chainId: 2741,
+      url: process.env.ABSTRACT_MAINNET_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
+    hyperevmTestnet: {
+      chainId: 998,
+      url: process.env.HYPEREVM_TESTNET_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
+    hyperevmMain: {
+      chainId: 999,
+      url: process.env.HYPEREVM_MAINNET_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
+    kaiaMain: {
+      chainId: 8217,
+      url: process.env.KAIA_MAINNET_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
+    apeChainTestnet: {
+      chainId: 33111,
+      url: process.env.APECHAIN_TESTNET_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
+    apeChainMain: {
+      chainId: 33139,
+      url: process.env.APECHAIN_MAINNET_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
   },
   gasReporter: {
     enabled: process.env.REPORT_GAS !== undefined,
@@ -1326,6 +1377,17 @@ const config: HardhatUserConfig = {
       // For Bitlayer testnet & mainnet
       bitlayer: process.env.BITLAYER_API_KEY || "",
       bitlayerTestnet: process.env.BITLAYER_API_KEY || "",
+      // For Immutable zkEVM testnet & mainnet
+      immutableZkEVM: process.env.IMMUTABLEZKEVM_API_KEY || "",
+      immutableZkEVMTestnet: process.env.IMMUTABLEZKEVM_API_KEY || "",
+      // For Abstract testnet & mainnet
+      abstract: process.env.ABSTRACT_API_KEY || "",
+      abstractTestnet: process.env.ABSTRACT_API_KEY || "",
+      // For Kaia mainnet
+      kaia: process.env.OKLINK_API_KEY || "",
+      // For ApeChain testnet & mainnet
+      apeChain: process.env.APECHAIN_API_KEY || "",
+      apeChainTestnet: process.env.APECHAIN_API_KEY || "",
     },
     customChains: [
       {
@@ -2392,6 +2454,63 @@ const config: HardhatUserConfig = {
         urls: {
           apiURL: "https://api-testnet.btrscan.com/scan/api",
           browserURL: "https://testnet.btrscan.com",
+        },
+      },
+      {
+        network: "immutableZkEVM",
+        chainId: 13371,
+        urls: {
+          apiURL: "https://explorer.immutable.com/api",
+          browserURL: "https://explorer.immutable.com",
+        },
+      },
+      {
+        network: "immutableZkEVMTestnet",
+        chainId: 13473,
+        urls: {
+          apiURL: "https://explorer.testnet.immutable.com/api",
+          browserURL: "https://explorer.testnet.immutable.com",
+        },
+      },
+      {
+        network: "abstract",
+        chainId: 2741,
+        urls: {
+          apiURL: "https://api.abscan.org/api",
+          browserURL: "https://abscan.org",
+        },
+      },
+      {
+        network: "abstractTestnet",
+        chainId: 11124,
+        urls: {
+          apiURL: "https://api-sepolia.abscan.org/api",
+          browserURL: "https://sepolia.abscan.org",
+        },
+      },
+      {
+        network: "kaia",
+        chainId: 8217,
+        urls: {
+          apiURL:
+            "https://www.oklink.com/api/v5/explorer/contract/verify-source-code-plugin/KAIA",
+          browserURL: "https://www.oklink.com/kaia",
+        },
+      },
+      {
+        network: "apeChain",
+        chainId: 33139,
+        urls: {
+          apiURL: "https://api.apescan.io/api",
+          browserURL: "https://apescan.io",
+        },
+      },
+      {
+        network: "apeChainTestnet",
+        chainId: 33111,
+        urls: {
+          apiURL: "https://api-curtis.apescan.io/api",
+          browserURL: "https://curtis.apescan.io",
         },
       },
     ],
