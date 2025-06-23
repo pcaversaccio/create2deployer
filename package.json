@@ -236,7 +236,7 @@
     "hardhat-abi-exporter": "^2.11.0",
     "hardhat-contract-sizer": "^2.10.0",
     "hardhat-gas-reporter": "^2.3.0",
-    "prettier": "^3.5.3",
+    "prettier": "^3.6.0",
     "prettier-plugin-solidity": "^2.0.0",
     "solhint": "^5.1.0",
     "solidity-coverage": "^0.8.16",
