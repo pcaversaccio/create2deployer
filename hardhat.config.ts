@@ -14,7 +14,7 @@ import "hardhat-gas-reporter";
 import "solidity-coverage";
 import "hardhat-abi-exporter";
 
-dotenv.config();
+dotenv.config({ quiet: true });
 
 task("accounts", "Prints the list of accounts", async (_, hre) => {
   const accounts = await hre.ethers.getSigners();
