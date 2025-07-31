@@ -12,17 +12,17 @@ importers:
         specifier: ^9.32.0
         version: 9.32.0
       '@matterlabs/hardhat-zksync-deploy':
-        specifier: ^1.7.0
-        version: 1.7.0(ethers@6.15.0)(hardhat@2.26.1(ts-node@10.9.2(@types/node@24.1.0)(typescript@5.8.3))(typescript@5.8.3))(zksync-ethers@6.20.0(ethers@6.15.0))
+        specifier: ^1.8.0
+        version: 1.8.0(ethers@6.15.0)(hardhat@2.26.1(ts-node@10.9.2(@types/node@24.1.0)(typescript@5.8.3))(typescript@5.8.3))(zksync-ethers@6.20.0(ethers@6.15.0))
       '@matterlabs/hardhat-zksync-ethers':
-        specifier: ^1.3.0
-        version: 1.3.0(ethers@6.15.0)(ts-node@10.9.2(@types/node@24.1.0)(typescript@5.8.3))(typescript@5.8.3)(zksync-ethers@6.20.0(ethers@6.15.0))
+        specifier: ^1.4.0
+        version: 1.4.0(ethers@6.15.0)(ts-node@10.9.2(@types/node@24.1.0)(typescript@5.8.3))(typescript@5.8.3)(zksync-ethers@6.20.0(ethers@6.15.0))
       '@matterlabs/hardhat-zksync-solc':
         specifier: ^1.5.0
         version: 1.5.0(hardhat@2.26.1(ts-node@10.9.2(@types/node@24.1.0)(typescript@5.8.3))(typescript@5.8.3))
       '@matterlabs/hardhat-zksync-verify':
-        specifier: ^1.8.1
-        version: 1.8.1(@nomicfoundation/hardhat-verify@2.1.0(hardhat@2.26.1(ts-node@10.9.2(@types/node@24.1.0)(typescript@5.8.3))(typescript@5.8.3)))(hardhat@2.26.1(ts-node@10.9.2(@types/node@24.1.0)(typescript@5.8.3))(typescript@5.8.3))
+        specifier: ^1.9.0
+        version: 1.9.0(@nomicfoundation/hardhat-verify@2.1.0(hardhat@2.26.1(ts-node@10.9.2(@types/node@24.1.0)(typescript@5.8.3))(typescript@5.8.3)))(hardhat@2.26.1(ts-node@10.9.2(@types/node@24.1.0)(typescript@5.8.3))(typescript@5.8.3))
       '@nomicfoundation/hardhat-chai-matchers':
         specifier: ^2.1.0
         version: 2.1.0(@nomicfoundation/hardhat-ethers@3.1.0(ethers@6.15.0)(hardhat@2.26.1(ts-node@10.9.2(@types/node@24.1.0)(typescript@5.8.3))(typescript@5.8.3)))(chai@4.5.0)(ethers@6.15.0)(hardhat@2.26.1(ts-node@10.9.2(@types/node@24.1.0)(typescript@5.8.3))(typescript@5.8.3))
@@ -316,15 +316,15 @@ packages:
   '@js-sdsl/ordered-map@4.4.2':
     resolution: {integrity: sha512-iUKgm52T8HOE/makSxjqoWhe95ZJA1/G1sYsGev2JDKUSS14KAgg1LHb+Ba+IPow0xflbnSkOsZcO08C7w1gYw==}
 
-  '@matterlabs/hardhat-zksync-deploy@1.7.0':
-    resolution: {integrity: sha512-XQTTGeXssKDEIQaS8IHw0qyTPCZiobjgLx7Hu03y+U4PJW7N1EBkRh1Xbge/bZihJiO0uLLoobAiS0mksmzaeg==}
+  '@matterlabs/hardhat-zksync-deploy@1.8.0':
+    resolution: {integrity: sha512-9yrDYGvD7Itgi01fxp9DKZpjzu9mM1U6HhJ6BZVRDgUsN+kTYxjHlRsQLH9Z/q/CT7SSLPZ2TvLj1mBSAlDskQ==}
     peerDependencies:
       ethers: ^6.12.2
       hardhat: ^2.22.5
       zksync-ethers: ^6.15.0
 
-  '@matterlabs/hardhat-zksync-ethers@1.3.0':
-    resolution: {integrity: sha512-/wXb/InfXGyPD1/Tk4BdwMsCUSL3TqY/Crecy+aSGYudRZ4JsaPcsjjcc/HSMzX+j5Se6QINJ3uf9TabRd2loQ==}
+  '@matterlabs/hardhat-zksync-ethers@1.4.0':
+    resolution: {integrity: sha512-nsXgj75+yd/rsPJ2C1ljVy7UWsTprp5mfeTBW7pU97TKb7g4atyZYnWQc2mb8DRKYflnnozSBoEdV80pAZsu6A==}
     peerDependencies:
       ethers: ^6.12.2
       zksync-ethers: ^6.15.0
@@ -339,8 +339,8 @@ packages:
     peerDependencies:
       hardhat: ^2.22.5
 
-  '@matterlabs/hardhat-zksync-verify@1.8.1':
-    resolution: {integrity: sha512-9ClF740rZbHw920bslNSfAXoF6pIUwwLcqD0utv1N71SbErvTQV8PAeiH9HE1ZwFMFYYD24ssoqjz6glufAllg==}
+  '@matterlabs/hardhat-zksync-verify@1.9.0':
+    resolution: {integrity: sha512-apd8h4c237jU/kRVgPSdTVdg0QlNq1jC2Kretx4AR49biHMlAC5IaRhLwGaR8vn9jT5xTTfC7UZYhUvtseRWbQ==}
     peerDependencies:
       '@nomicfoundation/hardhat-verify': ^2.0.8
       hardhat: ^2.22.5
@@ -1763,8 +1763,8 @@ packages:
   flatted@3.3.3:
     resolution: {integrity: sha512-GX+ysw4PBCz0PzosHDepZGANEuFCMLrnRTiEy9McGjmkCQYwRq4A/X786G/fjM/+OjsWSU1ZrY5qyARZmO/uwg==}
 
-  follow-redirects@1.15.9:
-    resolution: {integrity: sha512-gew4GsXizNgdoRyqmyfMHyAmXsZDk6mHkSxZFCzW9gwlbtOW44CDtYavM+y+72qD/Vq2l550kMF52DT8fOLJqQ==}
+  follow-redirects@1.15.10:
+    resolution: {integrity: sha512-V7O/fFKM539IC2bweloFWuoiJ9OtI3W2uIqJPWM8IT5xxNyt73QtvVqmSpcDmk07ivmmlKB+rRY0vpQjIYNtKw==}
     engines: {node: '>=4.0'}
     peerDependencies:
       debug: '*'
@@ -3569,7 +3569,7 @@ snapshots:
 
   '@js-sdsl/ordered-map@4.4.2': {}
 
-  '@matterlabs/hardhat-zksync-deploy@1.7.0(ethers@6.15.0)(hardhat@2.26.1(ts-node@10.9.2(@types/node@24.1.0)(typescript@5.8.3))(typescript@5.8.3))(zksync-ethers@6.20.0(ethers@6.15.0))':
+  '@matterlabs/hardhat-zksync-deploy@1.8.0(ethers@6.15.0)(hardhat@2.26.1(ts-node@10.9.2(@types/node@24.1.0)(typescript@5.8.3))(typescript@5.8.3))(zksync-ethers@6.20.0(ethers@6.15.0))':
     dependencies:
       '@matterlabs/hardhat-zksync-solc': 1.5.0(hardhat@2.26.1(ts-node@10.9.2(@types/node@24.1.0)(typescript@5.8.3))(typescript@5.8.3))
       '@matterlabs/hardhat-zksync-telemetry': 1.1.1(debug@4.4.1)(hardhat@2.26.1(ts-node@10.9.2(@types/node@24.1.0)(typescript@5.8.3))(typescript@5.8.3))
@@ -3589,9 +3589,9 @@ snapshots:
       - encoding
       - supports-color
 
-  '@matterlabs/hardhat-zksync-ethers@1.3.0(ethers@6.15.0)(ts-node@10.9.2(@types/node@24.1.0)(typescript@5.8.3))(typescript@5.8.3)(zksync-ethers@6.20.0(ethers@6.15.0))':
+  '@matterlabs/hardhat-zksync-ethers@1.4.0(ethers@6.15.0)(ts-node@10.9.2(@types/node@24.1.0)(typescript@5.8.3))(typescript@5.8.3)(zksync-ethers@6.20.0(ethers@6.15.0))':
     dependencies:
-      '@matterlabs/hardhat-zksync-deploy': 1.7.0(ethers@6.15.0)(hardhat@2.26.1(ts-node@10.9.2(@types/node@24.1.0)(typescript@5.8.3))(typescript@5.8.3))(zksync-ethers@6.20.0(ethers@6.15.0))
+      '@matterlabs/hardhat-zksync-deploy': 1.8.0(ethers@6.15.0)(hardhat@2.26.1(ts-node@10.9.2(@types/node@24.1.0)(typescript@5.8.3))(typescript@5.8.3))(zksync-ethers@6.20.0(ethers@6.15.0))
       '@matterlabs/hardhat-zksync-solc': 1.5.0(hardhat@2.26.1(ts-node@10.9.2(@types/node@24.1.0)(typescript@5.8.3))(typescript@5.8.3))
       '@matterlabs/hardhat-zksync-telemetry': 1.1.1(debug@4.4.1)(hardhat@2.26.1(ts-node@10.9.2(@types/node@24.1.0)(typescript@5.8.3))(typescript@5.8.3))
       '@nomicfoundation/hardhat-ethers': 3.1.0(ethers@6.15.0)(hardhat@2.26.1(ts-node@10.9.2(@types/node@24.1.0)(typescript@5.8.3))(typescript@5.8.3))
@@ -3637,7 +3637,7 @@ snapshots:
       - debug
       - supports-color
 
-  '@matterlabs/hardhat-zksync-verify@1.8.1(@nomicfoundation/hardhat-verify@2.1.0(hardhat@2.26.1(ts-node@10.9.2(@types/node@24.1.0)(typescript@5.8.3))(typescript@5.8.3)))(hardhat@2.26.1(ts-node@10.9.2(@types/node@24.1.0)(typescript@5.8.3))(typescript@5.8.3))':
+  '@matterlabs/hardhat-zksync-verify@1.9.0(@nomicfoundation/hardhat-verify@2.1.0(hardhat@2.26.1(ts-node@10.9.2(@types/node@24.1.0)(typescript@5.8.3))(typescript@5.8.3)))(hardhat@2.26.1(ts-node@10.9.2(@types/node@24.1.0)(typescript@5.8.3))(typescript@5.8.3))':
     dependencies:
       '@ethersproject/abi': 5.8.0
       '@ethersproject/address': 5.7.0
@@ -4635,7 +4635,7 @@ snapshots:
 
   axios@1.11.0(debug@4.4.1):
     dependencies:
-      follow-redirects: 1.15.9(debug@4.4.1)
+      follow-redirects: 1.15.10(debug@4.4.1)
       form-data: 4.0.4
       proxy-from-env: 1.1.0
     transitivePeerDependencies:
@@ -5344,7 +5344,7 @@ snapshots:
 
   flatted@3.3.3: {}
 
-  follow-redirects@1.15.9(debug@4.4.1):
+  follow-redirects@1.15.10(debug@4.4.1):
     optionalDependencies:
       debug: 4.4.1(supports-color@8.1.1)
 
@@ -6489,7 +6489,7 @@ snapshots:
     dependencies:
       command-exists: 1.2.9
       commander: 8.3.0
-      follow-redirects: 1.15.9(debug@4.4.1)
+      follow-redirects: 1.15.10(debug@4.4.1)
       js-sha3: 0.8.0
       memorystream: 0.3.1
       semver: 5.7.2
