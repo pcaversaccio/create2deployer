@@ -984,6 +984,12 @@ const config: HardhatUserConfig = {
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
+    monadMain: {
+      chainId: 143,
+      url: process.env.MONAD_MAINNET_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
     cornTestnet: {
       chainId: 21000001,
       url: process.env.CORN_TESTNET_URL || "",

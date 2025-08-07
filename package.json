@@ -180,6 +180,7 @@
     "deploy:berachaintestnet": "npx hardhat run --network berachainTestnet scripts/deploy.ts",
     "deploy:berachainmain": "npx hardhat run --network berachainMain scripts/deploy.ts",
     "deploy:monadtestnet": "npx hardhat run --network monadTestnet scripts/deploy.ts",
+    "deploy:monadmain": "npx hardhat run --network monadMain scripts/deploy.ts",
     "deploy:corntestnet": "npx hardhat run --network cornTestnet scripts/deploy.ts",
     "deploy:cornmain": "npx hardhat run --network cornMain scripts/deploy.ts",
     "deploy:arenaztestnet": "npx hardhat run --network arenazTestnet scripts/deploy.ts",
