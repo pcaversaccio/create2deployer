@@ -244,8 +244,8 @@
     "ts-node": "^10.9.2",
     "typechain": "^8.3.2",
     "typescript": "^5.9.2",
-    "typescript-eslint": "^8.39.0",
-    "zksync-ethers": "^6.20.0"
+    "typescript-eslint": "^8.39.1",
+    "zksync-ethers": "^6.20.1"
   },
   "pnpm": {
     "onlyBuiltDependencies": [
