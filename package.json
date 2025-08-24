@@ -19,7 +19,7 @@
   },
   "author": "pcaversaccio (https://pcaversaccio.com)",
   "license": "MIT",
-  "packageManager": "pnpm@10.14.0",
+  "packageManager": "pnpm@10.15.0",
   "scripts": {
     "help": "npx hardhat help",
     "accounts": "npx hardhat accounts",
@@ -213,7 +213,7 @@
     "lint:fix": "pnpm run prettier:fix && pnpm run solhint:fix && npx eslint . --fix"
   },
   "devDependencies": {
-    "@eslint/js": "^9.33.0",
+    "@eslint/js": "^9.34.0",
     "@matterlabs/hardhat-zksync-deploy": "^1.8.0",
     "@matterlabs/hardhat-zksync-ethers": "^1.4.0",
     "@matterlabs/hardhat-zksync-solc": "^1.5.1",
@@ -230,7 +230,7 @@
     "@types/node": "^24.3.0",
     "chai": "^4.5.0",
     "dotenv": "^17.2.1",
-    "eslint": "^9.33.0",
+    "eslint": "^9.34.0",
     "eslint-config-prettier": "^10.1.8",
     "ethers": "^6.15.0",
     "hardhat": "^2.26.3",
@@ -239,7 +239,7 @@
     "hardhat-gas-reporter": "^2.3.0",
     "prettier": "^3.6.2",
     "prettier-plugin-solidity": "^2.1.0",
-    "solhint": "^6.0.0",
+    "solhint": "^6.0.1",
     "solidity-coverage": "^0.8.16",
     "ts-node": "^10.9.2",
     "typechain": "^8.3.2",
