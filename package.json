@@ -227,7 +227,7 @@
     "@typechain/hardhat": "^9.1.0",
     "@types/chai": "^4.3.20",
     "@types/mocha": "^10.0.10",
-    "@types/node": "^24.4.0",
+    "@types/node": "^24.5.0",
     "chai": "^4.5.0",
     "dotenv": "^17.2.2",
     "eslint": "^9.35.0",
@@ -244,7 +244,7 @@
     "ts-node": "^10.9.2",
     "typechain": "^8.3.2",
     "typescript": "^5.9.2",
-    "typescript-eslint": "^8.43.0",
+    "typescript-eslint": "^8.44.0",
     "zksync-ethers": "^6.20.1"
   },
   "pnpm": {
