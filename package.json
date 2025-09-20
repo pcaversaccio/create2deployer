@@ -19,7 +19,7 @@
   },
   "author": "pcaversaccio (https://pcaversaccio.com)",
   "license": "MIT",
-  "packageManager": "pnpm@10.16.1",
+  "packageManager": "pnpm@10.17.0",
   "scripts": {
     "help": "npx hardhat help",
     "accounts": "npx hardhat accounts",
@@ -213,7 +213,7 @@
     "lint:fix": "pnpm run prettier:fix && pnpm run solhint:fix && npx eslint . --fix"
   },
   "devDependencies": {
-    "@eslint/js": "^9.35.0",
+    "@eslint/js": "^9.36.0",
     "@matterlabs/hardhat-zksync-deploy": "^1.8.0",
     "@matterlabs/hardhat-zksync-ethers": "^1.4.0",
     "@matterlabs/hardhat-zksync-solc": "^1.5.1",
@@ -227,10 +227,10 @@
     "@typechain/hardhat": "^9.1.0",
     "@types/chai": "^4.3.20",
     "@types/mocha": "^10.0.10",
-    "@types/node": "^24.5.0",
+    "@types/node": "^24.5.2",
     "chai": "^4.5.0",
     "dotenv": "^17.2.2",
-    "eslint": "^9.35.0",
+    "eslint": "^9.36.0",
     "eslint-config-prettier": "^10.1.8",
     "ethers": "^6.15.0",
     "hardhat": "^2.26.3",
@@ -245,7 +245,7 @@
     "typechain": "^8.3.2",
     "typescript": "^5.9.2",
     "typescript-eslint": "^8.44.0",
-    "zksync-ethers": "^6.20.1"
+    "zksync-ethers": "^6.21.0"
   },
   "pnpm": {
     "onlyBuiltDependencies": [
