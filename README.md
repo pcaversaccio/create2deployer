@@ -90,7 +90,7 @@ All files                       |      100 |      100 |      100 |      100 |   
   - Metis Andromeda: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://andromeda-explorer.metis.io/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - Taiko: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://taikoscan.io/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - Mode: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://explorer.mode.network/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
-  - ZetaChain: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://explorer.zetachain.com/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
+  - ZetaChain: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://zetascan.com/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - 5ireChain: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://5irescan.io/contract/evm/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - Gravity Alpha: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://explorer.gravity.xyz/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - Unichain: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://uniscan.xyz/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
