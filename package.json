@@ -19,7 +19,7 @@
   },
   "author": "pcaversaccio (https://pcaversaccio.com)",
   "license": "MIT",
-  "packageManager": "pnpm@10.22.0",
+  "packageManager": "pnpm@10.23.0",
   "scripts": {
     "help": "npx hardhat help",
     "accounts": "npx hardhat accounts",
