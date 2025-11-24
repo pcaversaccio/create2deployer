@@ -98,6 +98,7 @@ All files                       |      100 |      100 |      100 |      100 |   
   - ZKsync Era: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://era.zksync.network/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - Abstract: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://abscan.org/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - Etherlink: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://explorer.etherlink.com/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
+  - Monad: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://monadscan.com/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
 - **Ethereum Test Networks:**
   - Rinkeby (⚠️ Deprecated): [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://rinkeby.etherscan.io/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - Ropsten (⚠️ Deprecated): [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://ropsten.etherscan.io/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
@@ -165,4 +166,4 @@ All files                       |      100 |      100 |      100 |      100 |   
   - ZKsync Era Testnet (Sepolia): [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://sepolia-era.zksync.network/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - Abstract Testnet (Sepolia): [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://sepolia.abscan.org/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - Etherlink Testnet (Ghostnet): [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://testnet.explorer.etherlink.com/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
-  - Monad Testnet: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://testnet.monadvision.com/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
+  - Monad Testnet: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://testnet.monadscan.com/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
