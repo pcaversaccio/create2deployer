@@ -1365,6 +1365,9 @@ const config: HardhatUserConfig = {
       // For Berachain testnet & mainnet
       berachain: process.env.BERACHAIN_API_KEY || "",
       berachainTestnet: process.env.BERACHAIN_API_KEY || "",
+      // For Monad testnet & mainnet
+      monad: process.env.MONAD_API_KEY || "",
+      monadTestnet: process.env.MONAD_API_KEY || "",
       // For Corn testnet & mainnet
       corn: process.env.CORN_API_KEY || "",
       cornTestnet: process.env.CORN_API_KEY || "",
@@ -2361,6 +2364,22 @@ const config: HardhatUserConfig = {
           apiURL:
             "https://api.routescan.io/v2/network/testnet/evm/80084/etherscan",
           browserURL: "https://bartio.beratrail.io",
+        },
+      },
+      {
+        network: "monad",
+        chainId: 143,
+        urls: {
+          apiURL: "https://api.monadscan.com/api",
+          browserURL: "https://monadscan.com",
+        },
+      },
+      {
+        network: "monadTestnet",
+        chainId: 10143,
+        urls: {
+          apiURL: "https://api-testnet.monadscan.com/api",
+          browserURL: "https://testnet.monadscan.com",
         },
       },
       {
