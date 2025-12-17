@@ -69,7 +69,7 @@ All files                       |      100 |      100 |      100 |      100 |   
   - Harmony: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://explorer.harmony.one/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - Autobahn (⚠️ Deprecated): [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://explorer.autobahn.network/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - Fuse Network: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://explorer.fuse.io/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
-  - Cronos: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://cronoscan.com/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
+  - Cronos: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://explorer.cronos.org/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - Evmos: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://www.mintscan.io/evmos/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - Boba Network: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://bobascan.com/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - Canto: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://tuber.build/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
