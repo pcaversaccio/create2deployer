@@ -919,7 +919,7 @@ const config: HardhatUserConfig = {
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
     etherlinkTestnet: {
-      chainId: 128123,
+      chainId: 127823,
       url: process.env.ETHERLINK_TESTNET_URL || "",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
@@ -2295,10 +2295,10 @@ const config: HardhatUserConfig = {
       },
       {
         network: "etherlinkTestnet",
-        chainId: 128123,
+        chainId: 127823,
         urls: {
-          apiURL: "https://testnet.explorer.etherlink.com/api",
-          browserURL: "https://testnet.explorer.etherlink.com",
+          apiURL: "https://shadownet.explorer.etherlink.com/api",
+          browserURL: "https://shadownet.explorer.etherlink.com",
         },
       },
       {

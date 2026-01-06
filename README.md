@@ -165,5 +165,6 @@ All files                       |      100 |      100 |      100 |      100 |   
   - Arena-Z Testnet (Sepolia): [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://arena-z.blockscout.com/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - ZKsync Era Testnet (Sepolia): [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://sepolia-era.zksync.network/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - Abstract Testnet (Sepolia): [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://sepolia.abscan.org/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
-  - Etherlink Testnet (Ghostnet): [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://testnet.explorer.etherlink.com/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
+  - Etherlink Testnet (Ghostnet; ⚠️ Deprecated): [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://testnet.explorer.etherlink.com/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
+  - Etherlink Testnet (Shadownet): [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://shadownet.explorer.etherlink.com/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - Monad Testnet: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://testnet.monadscan.com/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
