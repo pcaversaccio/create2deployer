@@ -323,7 +323,7 @@ const config: HardhatUserConfig = {
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
     bobaTestnet: {
-      chainId: 2888,
+      chainId: 28882,
       url: process.env.BOBA_TESTNET_URL || "",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
@@ -1506,10 +1506,10 @@ const config: HardhatUserConfig = {
       },
       {
         network: "bobaTestnet",
-        chainId: 2888,
+        chainId: 28882,
         urls: {
           apiURL:
-            "https://api.routescan.io/v2/network/testnet/evm/2888/etherscan",
+            "https://api.routescan.io/v2/network/testnet/evm/28882/etherscan",
           browserURL: "https://testnet.bobascan.com",
         },
       },
