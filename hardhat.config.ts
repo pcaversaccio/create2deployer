@@ -895,7 +895,7 @@ const config: HardhatUserConfig = {
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
     morphTestnet: {
-      chainId: 2810,
+      chainId: 2910,
       url: process.env.MORPH_TESTNET_URL || "",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
@@ -2257,16 +2257,16 @@ const config: HardhatUserConfig = {
         network: "morph",
         chainId: 2818,
         urls: {
-          apiURL: "https://explorer.morphl2.io/api",
-          browserURL: "https://explorer.morphl2.io",
+          apiURL: "https://explorer-api.morph.network/api",
+          browserURL: "https://explorer.morph.network",
         },
       },
       {
         network: "morphTestnet",
-        chainId: 2810,
+        chainId: 2910,
         urls: {
-          apiURL: "https://explorer-holesky.morphl2.io/api",
-          browserURL: "https://explorer-holesky.morphl2.io",
+          apiURL: "https://explorer-api-hoodi.morph.network/api",
+          browserURL: "https://explorer-hoodi.morph.network",
         },
       },
       {
