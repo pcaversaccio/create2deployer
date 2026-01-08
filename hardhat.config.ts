@@ -547,7 +547,7 @@ const config: HardhatUserConfig = {
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
     fraxtalTestnet: {
-      chainId: 2522,
+      chainId: 2523,
       url: process.env.FRAXTAL_TESTNET_URL || "",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
@@ -709,7 +709,7 @@ const config: HardhatUserConfig = {
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
     taikoTestnet: {
-      chainId: 167009,
+      chainId: 167013,
       url: process.env.TAIKO_TESTNET_URL || "",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
@@ -1803,10 +1803,10 @@ const config: HardhatUserConfig = {
       },
       {
         network: "fraxtalTestnet",
-        chainId: 2522,
+        chainId: 2523,
         urls: {
-          apiURL: "https://api-holesky.fraxscan.com/api",
-          browserURL: "https://holesky.fraxscan.com",
+          apiURL: "https://api-hoodi.fraxscan.com/api",
+          browserURL: "https://hoodi.fraxscan.com",
         },
       },
       {
@@ -1999,10 +1999,10 @@ const config: HardhatUserConfig = {
       },
       {
         network: "taikoTestnet",
-        chainId: 167009,
+        chainId: 167013,
         urls: {
-          apiURL: "https://api-hekla.taikoscan.io/api",
-          browserURL: "https://hekla.taikoscan.io",
+          apiURL: "https://api-hoodi.taikoscan.io/api",
+          browserURL: "https://hoodi.taikoscan.io",
         },
       },
       {
