@@ -205,6 +205,8 @@
     "deploy:kaiamain": "npx hardhat run --network kaiaMain scripts/deploy.ts",
     "deploy:apechaintestnet": "npx hardhat run --network apeChainTestnet scripts/deploy.ts",
     "deploy:apechainmain": "npx hardhat run --network apeChainMain scripts/deploy.ts",
+    "deploy:katanatestnet": "npx hardhat run --network katanaTestnet scripts/deploy.ts",
+    "deploy:katanamain": "npx hardhat run --network katanaMain scripts/deploy.ts",
     "prettier:check": "npx prettier -c \"**/*.{js,ts,md,sol,json,yml,yaml}\"",
     "prettier:fix": "npx prettier -w \"**/*.{js,ts,md,sol,json,yml,yaml}\"",
     "solhint:check": "npx solhint \"contracts/**/*.sol\"",

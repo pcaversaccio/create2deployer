@@ -1134,6 +1134,18 @@ const config: HardhatUserConfig = {
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
+    katanaTestnet: {
+      chainId: 737373,
+      url: process.env.KATANA_TESTNET_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
+    katanaMain: {
+      chainId: 747474,
+      url: process.env.KATANA_MAINNET_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
   },
   gasReporter: {
     enabled: process.env.REPORT_GAS !== undefined,
@@ -1397,6 +1409,9 @@ const config: HardhatUserConfig = {
       // For ApeChain testnet & mainnet
       apeChain: process.env.APECHAIN_API_KEY || "",
       apeChainTestnet: process.env.APECHAIN_API_KEY || "",
+      // For Katana testnet & mainnet
+      katana: process.env.KATANA_API_KEY || "",
+      katanaTestnet: process.env.KATANA_API_KEY || "",
     },
     customChains: [
       {
@@ -2536,6 +2551,22 @@ const config: HardhatUserConfig = {
         urls: {
           apiURL: "https://api-curtis.apescan.io/api",
           browserURL: "https://curtis.apescan.io",
+        },
+      },
+      {
+        network: "katana",
+        chainId: 747474,
+        urls: {
+          apiURL: "https://api.katanascan.com/api",
+          browserURL: "https://katanascan.com",
+        },
+      },
+      {
+        network: "katanaTestnet",
+        chainId: 737373,
+        urls: {
+          apiURL: "https://api-bokuto.katanascan.com/api",
+          browserURL: "https://bokuto.katanascan.com",
         },
       },
     ],
