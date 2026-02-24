@@ -55,7 +55,7 @@ All files                       |      100 |      100 |      100 |      100 |   
   - BNB Smart Chain: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://bscscan.com/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - OP (Optimism): [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://optimistic.etherscan.io/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - Arbitrum One: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://arbiscan.io/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
-  - Arbitrum Nova: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://nova.arbiscan.io/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
+  - Arbitrum Nova: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://arbitrum-nova.blockscout.com/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - Polygon: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://polygonscan.com/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - Polygon zkEVM: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://zkevm.polygonscan.com/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - Heco: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://hecoscan.io/#/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
