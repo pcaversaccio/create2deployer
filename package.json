@@ -19,7 +19,7 @@
   },
   "author": "pcaversaccio (https://pcaversaccio.com)",
   "license": "MIT",
-  "packageManager": "pnpm@10.32.0",
+  "packageManager": "pnpm@10.32.1",
   "scripts": {
     "help": "hardhat help",
     "accounts": "hardhat accounts",
@@ -241,7 +241,7 @@
     "hardhat-contract-sizer": "^2.10.1",
     "hardhat-gas-reporter": "^2.3.0",
     "prettier": "^3.8.1",
-    "prettier-plugin-solidity": "^2.2.1",
+    "prettier-plugin-solidity": "^2.3.0",
     "solhint": "^6.0.3",
     "solidity-coverage": "^0.8.17",
     "ts-node": "^10.9.2",
