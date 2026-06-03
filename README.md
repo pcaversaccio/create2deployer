@@ -82,7 +82,7 @@ All files                       |      100 |      100 |      100 |      100 |   
   - Manta Pacific: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://pacific-explorer.manta.network/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - Kroma: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://kroscan.io/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - Kava: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://kavascan.com/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
-  - X Layer: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://www.oklink.com/x-layer/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
+  - X Layer: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://www.oklink.com/x-layer/evm/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - Core: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://scan.coredao.org/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - Telos: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://www.teloscan.io/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - Rootstock: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://rootstock.blockscout.com/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
