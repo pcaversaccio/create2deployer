@@ -69,8 +69,8 @@ importers:
         specifier: ^6.17.0
         version: 6.17.0
       globals:
-        specifier: ^17.6.0
-        version: 17.6.0
+        specifier: ^17.7.0
+        version: 17.7.0
       hardhat:
         specifier: ^2.28.6
         version: 2.28.6(ts-node@10.9.2(@types/node@26.0.0)(typescript@6.0.3))(typescript@6.0.3)
@@ -90,8 +90,8 @@ importers:
         specifier: ^2.3.1
         version: 2.3.1(prettier@3.8.4)
       solhint:
-        specifier: ^6.2.2
-        version: 6.2.2(typescript@6.0.3)
+        specifier: ^6.2.3
+        version: 6.2.3(typescript@6.0.3)
       solidity-coverage:
         specifier: ^0.8.17
         version: 0.8.17(hardhat@2.28.6(ts-node@10.9.2(@types/node@26.0.0)(typescript@6.0.3))(typescript@6.0.3))
@@ -1881,8 +1881,8 @@ packages:
     resolution: {integrity: sha512-awConJSVCHVGND6x3tmMaKcQvwXLhjdkmomy2W+Goaui8YPgYgXJZewhg3fWC+DlfqqQuWg8AwqjGTD2nAPVWg==}
     engines: {node: '>=6'}
 
-  globals@17.6.0:
-    resolution: {integrity: sha512-sepffkT8stwnIYbsMBpoCHJuJM5l98FUF2AnE07hfvE0m/qp3R586hw4jF4uadbhvg1ooIdzuu7CsfD2jzCaNA==}
+  globals@17.7.0:
+    resolution: {integrity: sha512-Czmyns5dUsq4seFBR/Kdydhmo8y9kC79hiSkPn0YcGtNnYWnrgt0vjrSjx9tspoDGWm2CMarffRuLjM4xUz8xg==}
     engines: {node: '>=18'}
 
   globby@10.0.2:
@@ -2141,8 +2141,8 @@ packages:
   json-stable-stringify-without-jsonify@1.0.1:
     resolution: {integrity: sha512-Bdboy+l7tA3OGW6FjyFHWkP5LuByj1Tk33Ljyq0axyzdk9//JSi2u3fP1QSmd1KNwq6VOKYGlAu87CisVir6Pw==}
 
-  json-stream-stringify@3.1.6:
-    resolution: {integrity: sha512-x7fpwxOkbhFCaJDJ8vb1fBY3DdSa4AlITaz+HHILQJzdPMnHEFjxPwVUi1ALIbcIxDE0PNe/0i7frnY8QnBQog==}
+  json-stream-stringify@3.1.7:
+    resolution: {integrity: sha512-F4MWetLtY42YMaAKw5cV4e47zMD5aOT+tjjQWjX18ACtdkQ5Y/vrcfbcQ107Rh+MXjOCIx4KhW0wPmOvG8iQ5w==}
     engines: {node: '>=7.10.1'}
 
   jsonfile@4.0.0:
@@ -2761,8 +2761,8 @@ packages:
     resolution: {integrity: sha512-BR7VvDCVHO+q2xBEWskxS6DJE1qRnb7DxzUrogb71CWoSficBxYsiAGd+Kl0mmq/MprG9yArRkyrQxTO6XjMzA==}
     hasBin: true
 
-  semver@7.8.4:
-    resolution: {integrity: sha512-rUCObTnP32Q08R2uuIrt7r9PlEonuTmtuXYcW6s5kjdlj3xbnwe+21yXptAUYcMAABLkYYTtnmzb3w3EDZfueA==}
+  semver@7.8.5:
+    resolution: {integrity: sha512-Y7/KDsb8LjooZpwaqGyulO6DQlksgCncchHGk+sZIY4SBvUocMBEFH5Ur1fI4dV+Jvl0w6cjvucaIi40puRioA==}
     engines: {node: '>=10'}
     hasBin: true
 
@@ -2832,8 +2832,8 @@ packages:
     engines: {node: '>=10.0.0'}
     hasBin: true
 
-  solhint@6.2.2:
-    resolution: {integrity: sha512-s8NVDXjVFBYjG/hp+LEeduf+B/d7Aw4HRS225zYuOWOKlvNZSDyGT8oO6jQuBU5K9oEfGlRqAaBYGD8+um+UHQ==}
+  solhint@6.2.3:
+    resolution: {integrity: sha512-w8prJP3kaf3G9hkmH5RmkCanvTULHWpdn+t4MieMEMZDhC2gFoUbRjS0TmslgxzGIItoOtP/J5PvU0FrvC08wA==}
     engines: {node: '>=20'}
     hasBin: true
 
@@ -3145,8 +3145,8 @@ packages:
   v8-compile-cache-lib@3.0.1:
     resolution: {integrity: sha512-wa7YjyUGfNZngI/vtK0UHAN+lgDCxBPCylVXGp0zu59Fz5aiGtNXaq3DhIov063MorB+VfufLh3JlF2KdTK3xg==}
 
-  viem@2.52.2:
-    resolution: {integrity: sha512-HSU12p5aD/kAPZfrlbCUqdiP4P/c6hQ9AhfTS51VbLUQIjkWd1d5EjrCx/SCxZ0zhZVRn4Iv5X5WDqXPG8Ubew==}
+  viem@2.53.1:
+    resolution: {integrity: sha512-FhfJ/SW73CVosiyVLmIMVgKDRKYV1AGCLzZoHYvmNayyVff63Qi1ocPCk59LqC/cNw244RbBJjHnmxqXkE7NpA==}
     peerDependencies:
       typescript: '>=5.0.4'
     peerDependenciesMeta:
@@ -3607,7 +3607,7 @@ snapshots:
       hardhat: 2.28.6(ts-node@10.9.2(@types/node@26.0.0)(typescript@6.0.3))(typescript@6.0.3)
       lodash: 4.18.1
       proper-lockfile: 4.1.2
-      semver: 7.8.4
+      semver: 7.8.5
       sinon: 18.0.1
       sinon-chai: 3.7.0(chai@4.5.0)(sinon@18.0.1)
       undici: 6.27.0
@@ -3636,7 +3636,7 @@ snapshots:
       chalk: 4.1.2
       debug: 4.4.3(supports-color@8.1.1)
       hardhat: 2.28.6(ts-node@10.9.2(@types/node@26.0.0)(typescript@6.0.3))(typescript@6.0.3)
-      semver: 7.8.4
+      semver: 7.8.5
       sinon: 18.0.1
       sinon-chai: 3.7.0(chai@4.5.0)(sinon@18.0.1)
     transitivePeerDependencies:
@@ -3898,7 +3898,7 @@ snapshots:
       '@opentelemetry/instrumentation': 0.57.1(@opentelemetry/api@1.9.1)
       '@opentelemetry/semantic-conventions': 1.28.0
       forwarded-parse: 2.1.2
-      semver: 7.8.4
+      semver: 7.8.5
     transitivePeerDependencies:
       - supports-color
 
@@ -4031,7 +4031,7 @@ snapshots:
       '@types/shimmer': 1.2.0
       import-in-the-middle: 1.15.0
       require-in-the-middle: 7.5.2
-      semver: 7.8.4
+      semver: 7.8.5
       shimmer: 1.2.1
     transitivePeerDependencies:
       - supports-color
@@ -4043,7 +4043,7 @@ snapshots:
       '@types/shimmer': 1.2.0
       import-in-the-middle: 1.15.0
       require-in-the-middle: 7.5.2
-      semver: 7.8.4
+      semver: 7.8.5
       shimmer: 1.2.1
     transitivePeerDependencies:
       - supports-color
@@ -4055,7 +4055,7 @@ snapshots:
       '@types/shimmer': 1.2.0
       import-in-the-middle: 1.15.0
       require-in-the-middle: 7.5.2
-      semver: 7.8.4
+      semver: 7.8.5
       shimmer: 1.2.1
     transitivePeerDependencies:
       - supports-color
@@ -4464,7 +4464,7 @@ snapshots:
       '@typescript-eslint/visitor-keys': 8.61.1
       debug: 4.4.3(supports-color@8.1.1)
       minimatch: 10.2.5
-      semver: 7.8.4
+      semver: 7.8.5
       tinyglobby: 0.2.17
       ts-api-utils: 2.5.0(typescript@6.0.3)
       typescript: 6.0.3
@@ -5474,7 +5474,7 @@ snapshots:
       kind-of: 6.0.3
       which: 1.3.1
 
-  globals@17.6.0: {}
+  globals@17.7.0: {}
 
   globby@10.0.2:
     dependencies:
@@ -5546,7 +5546,7 @@ snapshots:
       lodash: 4.18.1
       markdown-table: 2.0.0
       sha1: 1.1.1
-      viem: 2.52.2(typescript@6.0.3)
+      viem: 2.53.1(typescript@6.0.3)
     transitivePeerDependencies:
       - bufferutil
       - debug
@@ -5577,7 +5577,7 @@ snapshots:
       fs-extra: 7.0.1
       immutable: 4.3.8
       io-ts: 1.10.4
-      json-stream-stringify: 3.1.6
+      json-stream-stringify: 3.1.7
       keccak: 3.0.4
       lodash: 4.18.1
       micro-eth-signer: 0.14.0
@@ -5784,7 +5784,7 @@ snapshots:
 
   json-stable-stringify-without-jsonify@1.0.1: {}
 
-  json-stream-stringify@3.1.6: {}
+  json-stream-stringify@3.1.7: {}
 
   jsonfile@4.0.0:
     optionalDependencies:
@@ -6084,7 +6084,7 @@ snapshots:
       got: 12.6.1
       registry-auth-token: 5.1.1
       registry-url: 6.0.1
-      semver: 7.8.4
+      semver: 7.8.5
 
   parent-module@1.0.1:
     dependencies:
@@ -6184,7 +6184,7 @@ snapshots:
       '@nomicfoundation/slang': 1.3.4
       '@solidity-parser/parser': 0.20.2
       prettier: 3.8.4
-      semver: 7.8.4
+      semver: 7.8.5
 
   prettier@2.8.8: {}
 
@@ -6390,7 +6390,7 @@ snapshots:
 
   semver@6.3.1: {}
 
-  semver@7.8.4: {}
+  semver@7.8.5: {}
 
   serialize-javascript@6.0.2:
     dependencies:
@@ -6472,7 +6472,7 @@ snapshots:
     transitivePeerDependencies:
       - debug
 
-  solhint@6.2.2(typescript@6.0.3):
+  solhint@6.2.3(typescript@6.0.3):
     dependencies:
       '@solidity-parser/parser': 0.20.2
       ajv: 8.20.0
@@ -6488,7 +6488,7 @@ snapshots:
       latest-version: 7.0.0
       lodash: 4.18.1
       pluralize: 8.0.0
-      semver: 7.8.4
+      semver: 7.8.5
       table: 6.9.0
       text-table: 0.2.0
     optionalDependencies:
@@ -6515,7 +6515,7 @@ snapshots:
       pify: 4.0.1
       recursive-readdir: 2.2.3
       sc-istanbul: 0.4.6
-      semver: 7.8.4
+      semver: 7.8.5
       shelljs: 0.8.5
       web3-utils: 1.10.4
 
@@ -6821,7 +6821,7 @@ snapshots:
 
   v8-compile-cache-lib@3.0.1: {}
 
-  viem@2.52.2(typescript@6.0.3):
+  viem@2.53.1(typescript@6.0.3):
     dependencies:
       '@noble/curves': 1.9.1
       '@noble/hashes': 1.8.0
