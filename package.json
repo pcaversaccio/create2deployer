@@ -19,7 +19,7 @@
   },
   "author": "pcaversaccio (https://pcaversaccio.com)",
   "license": "MIT",
-  "packageManager": "pnpm@11.14.0",
+  "packageManager": "pnpm@11.15.1",
   "scripts": {
     "help": "hardhat help",
     "accounts": "hardhat accounts",
