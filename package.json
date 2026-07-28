@@ -19,7 +19,7 @@
   },
   "author": "pcaversaccio (https://pcaversaccio.com)",
   "license": "MIT",
-  "packageManager": "pnpm@11.15.1",
+  "packageManager": "pnpm@11.17.0",
   "scripts": {
     "help": "hardhat help",
     "accounts": "hardhat accounts",
@@ -236,18 +236,18 @@
     "eslint-config-prettier": "^10.1.8",
     "ethers": "^6.17.0",
     "globals": "^17.7.0",
-    "hardhat": "^2.28.6",
+    "hardhat": "^2.29.0",
     "hardhat-abi-exporter": "^2.11.0",
     "hardhat-contract-sizer": "^2.10.1",
     "hardhat-gas-reporter": "^2.3.0",
-    "prettier": "^3.9.5",
+    "prettier": "^3.9.6",
     "prettier-plugin-solidity": "^2.3.1",
     "solhint": "^6.2.3",
     "solidity-coverage": "^0.8.17",
     "ts-node": "^10.9.2",
     "typechain": "^8.3.2",
     "typescript": "^6.0.3",
-    "typescript-eslint": "^8.64.0",
+    "typescript-eslint": "^8.65.0",
     "zksync-ethers": "^6.21.2"
   }
 }
