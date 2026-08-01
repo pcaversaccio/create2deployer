@@ -232,7 +232,7 @@
     "@types/node": "^26.1.1",
     "chai": "^4.5.0",
     "dotenv": "^17.4.2",
-    "eslint": "^10.7.0",
+    "eslint": "^10.8.0",
     "eslint-config-prettier": "^10.1.8",
     "ethers": "^6.17.0",
     "globals": "^17.7.0",
