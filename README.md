@@ -100,6 +100,7 @@ All files                       |      100 |      100 |      100 |      100 |   
   - Etherlink: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://explorer.etherlink.com/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - Monad: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://monadscan.com/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - Katana: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://katanascan.com/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
+  - Robinhood Chain: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://robinhoodchain.blockscout.com/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
 - **Ethereum Test Networks:**
   - Rinkeby (⚠️ Deprecated): [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://rinkeby.etherscan.io/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - Ropsten (⚠️ Deprecated): [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://ropsten.etherscan.io/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
@@ -170,3 +171,4 @@ All files                       |      100 |      100 |      100 |      100 |   
   - Etherlink Testnet (Shadownet): [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://shadownet.explorer.etherlink.com/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - Monad Testnet: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://testnet.monadscan.com/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
   - Katana Testnet: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://bokuto.katanascan.com/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
+  - Robinhood Chain Testnet (Sepolia): [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://explorer.testnet.chain.robinhood.com/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)

@@ -1151,6 +1151,18 @@ const config: HardhatUserConfig = {
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
+    robinhoodChainTestnet: {
+      chainId: 46630,
+      url: process.env.ROBINHOOD_CHAIN_TESTNET_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
+    robinhoodChainMain: {
+      chainId: 4663,
+      url: process.env.ROBINHOOD_CHAIN_MAINNET_URL || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
   },
   gasReporter: {
     enabled: process.env.REPORT_GAS !== undefined,
@@ -1417,6 +1429,9 @@ const config: HardhatUserConfig = {
       // For Katana testnet & mainnet
       katana: process.env.KATANA_API_KEY || "",
       katanaTestnet: process.env.KATANA_API_KEY || "",
+      // For Robinhood Chain testnet & mainnet
+      robinhoodChain: process.env.ROBINHOOD_CHAIN_API_KEY || "",
+      robinhoodChainTestnet: process.env.ROBINHOOD_CHAIN_API_KEY || "",
     },
     customChains: [
       {
@@ -2572,6 +2587,22 @@ const config: HardhatUserConfig = {
         urls: {
           apiURL: "https://api-bokuto.katanascan.com/api",
           browserURL: "https://bokuto.katanascan.com",
+        },
+      },
+      {
+        network: "robinhoodChain",
+        chainId: 4663,
+        urls: {
+          apiURL: "https://robinhoodchain.blockscout.com/api",
+          browserURL: "https://robinhoodchain.blockscout.com",
+        },
+      },
+      {
+        network: "robinhoodChainTestnet",
+        chainId: 46630,
+        urls: {
+          apiURL: "https://explorer.testnet.chain.robinhood.com/api",
+          browserURL: "https://explorer.testnet.chain.robinhood.com",
         },
       },
     ],

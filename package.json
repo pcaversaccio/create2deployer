@@ -207,6 +207,8 @@
     "deploy:apechainmain": "hardhat run --network apeChainMain scripts/deploy.ts",
     "deploy:katanatestnet": "hardhat run --network katanaTestnet scripts/deploy.ts",
     "deploy:katanamain": "hardhat run --network katanaMain scripts/deploy.ts",
+    "deploy:robinhoodchaintestnet": "hardhat run --network robinhoodChainTestnet scripts/deploy.ts",
+    "deploy:robinhoodchainmain": "hardhat run --network robinhoodChainMain scripts/deploy.ts",
     "prettier:check": "prettier -c \"**/*.{js,ts,md,sol,json,yml,yaml}\"",
     "prettier:fix": "prettier -w \"**/*.{js,ts,md,sol,json,yml,yaml}\"",
     "solhint:check": "solhint \"contracts/**/*.sol\"",
