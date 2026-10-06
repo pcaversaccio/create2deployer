@@ -233,7 +233,7 @@
     "@types/mocha": "^10.0.10",
     "@types/node": "^26.6.3",
     "chai": "^4.5.0",
-    "dotenv": "^17.4.2",
+    "dotenv": "^18.0.4",
     "eslint": "^10.11.0",
     "eslint-config-prettier": "^10.1.8",
     "ethers": "^6.17.0",
